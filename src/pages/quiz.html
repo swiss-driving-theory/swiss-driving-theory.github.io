@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz — CUT-Exam</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header-inner">
+      <a href="index.html" class="logo">
+        <div class="logo-icon">CUT</div>
+        <span>CUT-Exam</span>
+      </a>
+      <nav class="nav">
+        <a href="index.html" class="nav-btn">Home</a>
+        <a href="browse.html" class="nav-btn">Browse</a>
+        <select id="lang-select" class="lang-select" onchange="setLang(this.value)">
+          <option value="de">Deutsch</option>
+          <option value="fr">Français</option>
+          <option value="it">Italiano</option>
+        </select>
+      </nav>
+    </div>
+  </header>
+
+  <div class="filters-bar">
+    <div class="container">
+      <div class="filters-inner">
+        <div class="filter-group">
+          <label>Official Only</label>
+          <input type="checkbox" id="quiz-official" onchange="applyFilters()">
+        </div>
+        <div class="filter-group">
+          <label>Category</label>
+          <select id="quiz-category" onchange="applyFilters()">
+            <option value="all">All categories</option>
+          </select>
+        </div>
+        <div class="filter-group">
+          <label style="visibility:hidden;">Action</label>
+          <button class="btn btn-sm btn-primary" onclick="resetQuiz()">Restart Quiz</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="quiz-container">
+    <div class="quiz-container text-center">
+      <p style="color:var(--text-muted);">Loading questions...</p>
+    </div>
+  </div>
+
+  <script>
+    var allQuestions = [];
+    var quizQuestions = [];
+    var currentIndex = 0;
+    var answers = {};
+    var selectedIndices = [];
+    var checked = false;
+    var currentLang = "de";
+
+    function setLang(lang) {
+      currentLang = lang;
+      try { localStorage.setItem("cut-exam-lang", lang); } catch(e) {}
+      render();
+    }
+
+    function getCategoryLabel(catId) {
+      var labels = {
+        1: "Vehicle Equipment / Law",
+        2: "Traffic Signs",
+        3: "Traffic Signals / Behavior",
+        4: "Overtaking / Turning",
+        5: "Highway / Expressway",
+        6: "Right of Way / Priority",
+        7: "Parking",
+        8: "Distances / Speed",
+        9: "Vehicle Control / Situations",
+        10: "Special Situations / Vulnerable Users",
+        11: "Visibility / Lights",
+        12: "Emergency / Accidents / Insurance"
+      };
+      return labels[catId] || "Category " + catId;
+    }
+
+    function getTypeLabel(type) {
+      return type === "image" ? "Image" : "Text";
+    }
+
+    function escapeHtml(str) {
+      var div = document.createElement("div");
+      div.textContent = str;
+      return div.innerHTML;
+    }
+
+    function shuffleArray(arr) {
+      var a = arr.slice();
+      for (var i = a.length - 1; i > 0; i--) {
+        var j = Math.floor(Math.random() * (i + 1));
+        var temp = a[i]; a[i] = a[j]; a[j] = temp;
+      }
+      return a;
+    }
+
+    function getTranslation(q, lang) {
+      if (!q || !q.translations) return null;
+      return q.translations[lang] || q.translations["de"] || null;
+    }
+
+    async function loadData() {
+      var resp = await fetch("../../assets/questions.json");
+      if (!resp.ok) throw new Error("Failed to load questions.json: " + resp.status);
+      var text = await resp.text();
+      var data = JSON.parse(text);
+      allQuestions = data.questions || [];
+      return data;
+    }
+
+    function applyFilters() {
+      var officialOnly = document.getElementById("quiz-official").checked;
+      var categoryVal = document.getElementById("quiz-category").value;
+      var categoryId = categoryVal === "all" ? null : Number(categoryVal);
+
+      quizQuestions = allQuestions.filter(function(q) {
+        if (officialOnly && !q.official) return false;
+        if (categoryId !== null && q.category !== categoryId) return false;
+        return true;
+      });
+
+      if (quizQuestions.length === 0) {
+        document.getElementById("quiz-container").innerHTML = '<div class="quiz-container text-center"><h3>No questions match your filters</h3><p style="color:var(--text-muted);">Try adjusting the filters above.</p></div>';
+        return;
+      }
+
+      resetQuizState();
+    }
+
+    function resetQuizState() {
+      quizQuestions = shuffleArray(quizQuestions);
+      currentIndex = 0;
+      answers = {};
+      selectedIndices = [];
+      checked = false;
+      render();
+    }
+
+    function resetQuiz() {
+      resetQuizState();
+    }
+
+    function selectAnswer(index) {
+      if (checked) return;
+      var pos = selectedIndices.indexOf(index);
+      if (pos >= 0) {
+        selectedIndices.splice(pos, 1);
+      } else {
+        selectedIndices.push(index);
+      }
+      render();
+    }
+
+    function checkAnswer() {
+      if (selectedIndices.length === 0) return;
+      checked = true;
+      var q = quizQuestions[currentIndex];
+      answers[q.id] = selectedIndices.slice();
+      render();
+    }
+
+    function nextQuestion() {
+      if (currentIndex < quizQuestions.length - 1) {
+        currentIndex++;
+        selectedIndices = [];
+        checked = false;
+        render();
+      } else {
+        showResults();
+      }
+    }
+
+    function prevQuestion() {
+      if (currentIndex > 0) {
+        currentIndex--;
+        selectedIndices = [];
+        checked = false;
+        render();
+      }
+    }
+
+    function skipQuestion() {
+      var q = quizQuestions[currentIndex];
+      answers[q.id] = null;
+      nextQuestion();
+    }
+
+    function showResults() {
+      var correct = 0;
+      var wrong = [];
+      for (var i = 0; i < quizQuestions.length; i++) {
+        var q = quizQuestions[i];
+        var ans = answers[q.id];
+        if (ans !== undefined && ans !== null && ans.length > 0) {
+          var isCorrect = true;
+          var correctCount_q = 0;
+          for (var j = 0; j < q.answers.length; j++) {
+            if (q.answers[j].correct) correctCount_q++;
+          }
+          if (ans.length !== correctCount_q) {
+            isCorrect = false;
+          } else {
+            for (var k = 0; k < ans.length; k++) {
+              var found = false;
+              for (var j = 0; j < q.answers.length; j++) {
+                if (q.answers[j].index === ans[k] && q.answers[j].correct) {
+                  found = true;
+                  break;
+                }
+              }
+              if (!found) { isCorrect = false; break; }
+            }
+          }
+          if (isCorrect) correct++;
+          else wrong.push({ question: q, selected: ans });
+        }
+      }
+
+      var totalAttempted = 0;
+      for (var key in answers) {
+        if (answers[key] !== undefined && answers[key] !== null && answers[key].length > 0) {
+          totalAttempted++;
+        }
+      }
+      var pct = totalAttempted > 0 ? Math.round((correct / totalAttempted) * 100) : 0;
+
+      var html = '<div class="results-container">';
+      html += '  <div class="card">';
+      html += '    <h2>Quiz Complete</h2>';
+      html += '    <div class="results-score">' + pct + '%</div>';
+      html += '    <div class="results-detail">' + correct + ' correct out of ' + totalAttempted + ' attempted (' + quizQuestions.length + ' total questions)</div>';
+      html += '    <div class="text-center" style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;">';
+      html += '      <button class="btn btn-primary" onclick="resetQuiz()">Start New Quiz</button>';
+      html += '      <button class="btn btn-secondary" onclick="history.back()">Back</button>';
+      html += '    </div>';
+      html += '  </div>';
+
+      if (wrong.length > 0) {
+        html += '  <div class="card" style="margin-top:24px;">';
+        html += '    <h3>Wrong Answers (' + wrong.length + ')</h3>';
+        html += '    <div class="wrong-answers-list">';
+        for (var i = 0; i < wrong.length; i++) {
+          var w = wrong[i];
+          var t = getTranslation(w.question, currentLang) || {};
+          var qText = escapeHtml(t.question || "Question " + w.question.originalId);
+          var correctAns = [];
+          for (var j = 0; j < w.question.answers.length; j++) {
+            if (w.question.answers[j].correct) { correctAns.push(w.question.answers[j]); }
+          }
+          var correctText = "";
+          if (correctAns.length > 0 && t.options) {
+            var texts = [];
+            for (var k = 0; k < correctAns.length; k++) {
+              texts.push(escapeHtml(t.options[correctAns[k].index - 1] || "Answer " + correctAns[k].index));
+            }
+            correctText = texts.join(", ");
+          }
+          html += '      <div class="wrong-answer-item">';
+          html += '        <strong>#' + (i + 1) + '</strong> ' + qText;
+          html += '        <div style="margin-top:6px;color:var(--success);font-size:0.9rem;">Correct: ' + correctText + '</div>';
+          html += '      </div>';
+        }
+        html += '    </div>';
+        html += '  </div>';
+      }
+
+      html += '</div>';
+      document.getElementById("quiz-container").innerHTML = html;
+    }
+
+    function render() {
+      var q = quizQuestions[currentIndex];
+      if (!q) {
+        showResults();
+        return;
+      }
+
+      var t = getTranslation(q, currentLang) || {};
+      var questionText = t.question || "";
+      var options = t.options || [];
+      var explanations = t.explanations || {};
+      var current = currentIndex + 1;
+      var total = quizQuestions.length;
+      var pct = total > 0 ? Math.round((current / total) * 100) : 0;
+
+      var correctCount = 0;
+      var attemptedCount = 0;
+      for (var i = 0; i < quizQuestions.length; i++) {
+        var sq = quizQuestions[i];
+        var ans = answers[sq.id];
+        if (ans !== undefined && ans !== null && ans.length > 0) {
+          attemptedCount++;
+          var isCorrect = true;
+          var correctCount_q = 0;
+          for (var j = 0; j < sq.answers.length; j++) {
+            if (sq.answers[j].correct) correctCount_q++;
+          }
+          if (ans.length !== correctCount_q) {
+            isCorrect = false;
+          } else {
+            for (var k = 0; k < ans.length; k++) {
+              var found = false;
+              for (var j = 0; j < sq.answers.length; j++) {
+                if (sq.answers[j].index === ans[k] && sq.answers[j].correct) {
+                  found = true;
+                  break;
+                }
+              }
+              if (!found) { isCorrect = false; break; }
+            }
+          }
+          if (isCorrect) correctCount++;
+        }
+      }
+
+      var isImageType = q.type === "image";
+      var hasQuestionImage = !!q.questionImage;
+
+      var answersHtml = "";
+      if (isImageType) {
+        for (var i = 0; i < q.answers.length; i++) {
+          var a = q.answers[i];
+          var imgSrc = a.image ? "../../" + a.image : "";
+          var cls = "answer-btn";
+          if (checked) {
+            if (a.correct) cls += " correct";
+            else if (selectedIndices.indexOf(a.index) >= 0 && !a.correct) cls += " incorrect";
+          } else {
+            if (selectedIndices.indexOf(a.index) >= 0) cls += " correct";
+          }
+          var disabled = checked ? "disabled" : "";
+          answersHtml += '<div class="answer-wrapper">';
+          answersHtml += '<button class="' + cls + '" onclick="selectAnswer(' + a.index + ')" ' + disabled + ' style="width:100%;">';
+          if (imgSrc) answersHtml += '<img src="' + imgSrc + '" alt="Answer ' + a.index + '" loading="lazy">';
+          answersHtml += '  <span class="answer-label">' + a.index + '</span>';
+          answersHtml += '</button>';
+          if (checked && a.paragraph) {
+            var explText = explanations[a.paragraph];
+            if (explText) {
+              var explCls = "answer-explanation" + (a.correct ? " correct-explanation" : "");
+              answersHtml += '<div class="' + explCls + '">' + escapeHtml(explText) + '</div>';
+            }
+          }
+          answersHtml += '</div>';
+        }
+      } else {
+        for (var i = 0; i < q.answers.length; i++) {
+          var a = q.answers[i];
+          var text = options[a.index - 1] || "Option " + a.index;
+          var cls = "answer-btn";
+          if (checked) {
+            if (a.correct) cls += " correct";
+            else if (selectedIndices.indexOf(a.index) >= 0 && !a.correct) cls += " incorrect";
+          } else {
+            if (selectedIndices.indexOf(a.index) >= 0) cls += " correct";
+          }
+          var disabled = checked ? "disabled" : "";
+          answersHtml += '<div class="answer-wrapper">';
+          answersHtml += '<button class="' + cls + '" onclick="selectAnswer(' + a.index + ')" ' + disabled + ' style="width:100%;">';
+          answersHtml += '  <span class="answer-label">' + a.index + '</span>';
+          answersHtml += '  <span>' + escapeHtml(text) + '</span>';
+          answersHtml += '</button>';
+          if (checked && a.paragraph) {
+            var explText = explanations[a.paragraph];
+            if (explText) {
+              var explCls = "answer-explanation" + (a.correct ? " correct-explanation" : "");
+              answersHtml += '<div class="' + explCls + '">' + escapeHtml(explText) + '</div>';
+            }
+          }
+          answersHtml += '</div>';
+        }
+      }
+
+      var canPrev = currentIndex > 0;
+      var canNext = currentIndex < total - 1;
+      var isLast = currentIndex === total - 1;
+
+      var html = '<div class="quiz-container">';
+      html += '  <div class="progress-bar"><div class="progress-fill" style="width: ' + pct + '%"></div></div>';
+      html += '  <div class="progress-text">Question ' + current + ' of ' + total + '</div>';
+      html += '  <div class="question-display">';
+      html += '    <div class="question-header">';
+      html += '      <div style="display:flex;gap:8px;align-items:center;">';
+      html += '        <span class="badge badge-official">' + (q.official ? "Official" : "Practice") + '</span>';
+      html += '        <span class="badge badge-category">' + getCategoryLabel(q.category) + '</span>';
+      html += '        <span class="question-type-badge">' + getTypeLabel(q.type) + '</span>';
+      html += '      </div>';
+      html += '      <span style="font-size:0.85rem;color:var(--text-muted);">ID: ' + q.originalId + '</span>';
+      html += '    </div>';
+
+      if (hasQuestionImage || questionText) {
+        html += '    <div class="question-body">';
+        if (hasQuestionImage) {
+          html += '      <div class="question-image-side">';
+          html += '        <img src="../../' + q.questionImage + '" alt="Question image" loading="lazy">';
+          html += '      </div>';
+        }
+        html += '      <div class="question-content">';
+        if (questionText) {
+          html += '        <div class="question-text-main">' + escapeHtml(questionText) + '</div>';
+        }
+        html += '        <div class="answers-grid">' + answersHtml + '</div>';
+        html += '      </div>';
+        html += '    </div>';
+      } else {
+        html += '    <div class="answers-grid">' + answersHtml + '</div>';
+      }
+      html += '  </div>';
+
+      html += '  <div class="quiz-controls">';
+      html += '    <div class="score-display">';
+      html += '      <div class="score-item"><span class="score-correct">' + correctCount + '</span> correct</div>';
+      html += '      <div class="score-item"><span class="score-wrong">' + (attemptedCount - correctCount) + '</span> wrong</div>';
+      html += '      <div class="score-item"><span>' + attemptedCount + '</span> attempted</div>';
+      html += '    </div>';
+      html += '    <div style="display:flex;gap:8px;">';
+      html += '      <button class="btn btn-secondary" onclick="prevQuestion()" ' + (canPrev ? "" : "disabled") + '>Previous</button>';
+      if (!checked) {
+        html += '      <button class="btn btn-secondary" onclick="skipQuestion()">Skip</button>';
+        html += '      <button class="btn btn-primary" onclick="checkAnswer()" ' + (selectedIndices.length > 0 ? "" : "disabled") + '>Check Answer</button>';
+      } else {
+        html += '      <button class="btn btn-primary" onclick="nextQuestion()" ' + (canNext || isLast ? "" : "disabled") + '>' + (isLast ? "Finish" : "Next") + '</button>';
+      }
+      html += '    </div>';
+      html += '  </div>';
+      html += '</div>';
+
+      document.getElementById("quiz-container").innerHTML = html;
+    }
+
+    async function init() {
+      try {
+        await loadData();
+        populateCategorySelect();
+        applyFilters();
+      } catch (e) {
+        console.error("Failed to load data:", e);
+        document.getElementById("quiz-container").innerHTML = '<div class="quiz-container text-center"><div style="background:#ffebee;color:#c62828;padding:16px;border-radius:6px;border-left:4px solid #c62828;"><h3>Error loading quiz data</h3><p>' + e.message + '</p><p style="margin-top:8px;font-size:0.9rem;">Make sure you are running a local server (e.g., <code>python -m http.server 3000</code>) and not opening the file directly. Open browser DevTools (F12) to see the full error.</p></div></div>';
+      }
+    }
+
+    function populateCategorySelect() {
+      var cats = {};
+      for (var i = 0; i < allQuestions.length; i++) {
+        cats[allQuestions[i].category] = true;
+      }
+      var sorted = Object.keys(cats).map(Number).sort(function(a, b) { return a - b; });
+      var select = document.getElementById("quiz-category");
+      for (var i = 0; i < sorted.length; i++) {
+        var opt = document.createElement("option");
+        opt.value = sorted[i];
+        opt.textContent = getCategoryLabel(sorted[i]);
+        select.appendChild(opt);
+      }
+    }
+
+    document.addEventListener("DOMContentLoaded", init);
+  </script>
+</body>
+</html>
