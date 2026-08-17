@@ -1,6 +1,10 @@
 import { getQuestion, getTranslation, getQuestions, getSavedLanguage, setSavedLanguage } from "./data.js";
 import { getCategoryLabel, getCategoryColor, truncate, escapeHtml } from "./utils.js";
 
+function getAnswerLabel(index) {
+  return String.fromCharCode(96 + index);
+}
+
 let state = {
   questions: [],
   filteredIds: [],
@@ -26,25 +30,24 @@ function renderFilters() {
   if (!container) return;
 
   container.innerHTML = `
-    <div class="filters-bar">
+    <div class="toolbar">
       <div class="container">
-        <div class="filters-inner">
-          <div class="filter-group">
-            <label>Language</label>
-            <select id="filter-lang">
+        <div class="toolbar-inner">
+          <div class="toolbar-group">
+            <span class="toolbar-label">Language</span>
+            <select id="filter-lang" class="form-select">
               <option value="de">Deutsch</option>
               <option value="fr">Français</option>
               <option value="it">Italiano</option>
             </select>
           </div>
-          <div class="filter-group">
-            <label>Category</label>
-            <select id="filter-category">
+          <div class="toolbar-group">
+            <span class="toolbar-label">Category</span>
+            <select id="filter-category" class="form-select">
               <option value="all">All categories</option>
             </select>
           </div>
-          <div class="filter-group">
-            <label style="visibility:hidden;">Action</label>
+          <div class="toolbar-group">
             <button class="btn btn-sm btn-secondary" id="filter-reset">Reset</button>
           </div>
         </div>
@@ -188,12 +191,12 @@ function renderDetail(id) {
         ${q.answers
           .map(
             (a) => {
-              const text = options[a.index - 1] || `Answer ${a.index}`;
+              const text = options[a.index - 1] || `Answer ${getAnswerLabel(a.index)}`;
               const expl = a.paragraph ? explanations[a.paragraph] : null;
               let cls = "detail-answer";
               if (a.correct) cls += " correct";
               return `<div class="${cls}">
-                <div class="detail-answer-label">${a.correct ? "✓" : a.index}</div>
+                <div class="detail-answer-label">${a.correct ? "✓" : getAnswerLabel(a.index)}</div>
                 <div class="detail-answer-text">
                   <strong>${escapeHtml(text)}</strong>
                   ${expl ? `<div class="detail-explanation">${escapeHtml(expl)}</div>` : ""}

@@ -103,7 +103,26 @@ def parse_xmlexplanation(path):
         })
     q_attrs = dict(root.attrib)
     asa = q_attrs.get("asa", "0")
-    return answers, asa == "1"
+    frage_id = q_attrs.get("fragenummer")
+    return answers, asa == "1", frage_id
+
+
+def build_xmle_id_map(lang):
+    """Build a mapping from fragenummer (int) -> Path for a language's xmlequestions."""
+    xmle_dir = IMPORT_DIR / lang / "xmlequestions"
+    mapping = {}
+    for f in xmle_dir.iterdir():
+        if f.suffix != ".txt" or f.name == "Members.csv":
+            continue
+        try:
+            content = f.read_text(encoding="utf-8")
+            root = ET.fromstring(content)
+            frage_id = root.attrib.get("fragenummer")
+            if frage_id is not None:
+                mapping[int(frage_id)] = f
+        except Exception:
+            pass
+    return mapping
 
 
 def read_txtquestion(path, has_text_cast):
@@ -155,6 +174,11 @@ def main():
         else:
             lang_name_to_number[lang] = {}
 
+    # Build xmlequestions ID maps for each language (fragenummer -> file path)
+    lang_xmle_id_map = {}
+    for lang in LANGUAGES:
+        lang_xmle_id_map[lang] = build_xmle_id_map(lang)
+
     questions = []
 
     xml_dir = IMPORT_DIR / "de" / "xmlquestions"
@@ -177,10 +201,11 @@ def main():
         question_image = resolve_image(q_data["questionImageRef"], name_to_file)
 
         # Read German xmlequestions for official flag (primary source)
-        xmle_path_de = IMPORT_DIR / "de" / "xmlequestions" / f"{idx}.txt"
+        frage_id = int(q_data["frageId"]) if q_data.get("frageId") else None
+        xmle_path_de = lang_xmle_id_map["de"].get(frage_id) if frage_id else None
         official = False
-        if xmle_path_de.exists():
-            _, official = parse_xmlexplanation(xmle_path_de)
+        if xmle_path_de is not None:
+            _, official, _ = parse_xmlexplanation(xmle_path_de)
 
         # Build base answer objects from xmlquestions (structural: index, correct, image)
         base_answers = []
@@ -203,11 +228,11 @@ def main():
             question_text, options = read_txtquestion(txt_path, has_text_cast)
 
             # Read language-specific xmlequestions for paragraph, hidden, textRef
-            xmle_path = IMPORT_DIR / lang / "xmlequestions" / f"{idx}.txt"
+            xmle_path = lang_xmle_id_map[lang].get(frage_id) if frage_id else None
             xmle_answers = []
             official = False
-            if xmle_path.exists():
-                xmle_answers, official = parse_xmlexplanation(xmle_path)
+            if xmle_path is not None:
+                xmle_answers, official, _ = parse_xmlexplanation(xmle_path)
             else:
                 warn(f"No xmlequestions found for {lang}/xmlequestions/{idx}.txt")
 

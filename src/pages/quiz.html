@@ -25,21 +25,23 @@
     </div>
   </header>
 
-  <div class="filters-bar">
+  <div class="toolbar">
     <div class="container">
-      <div class="filters-inner">
-        <div class="filter-group">
-          <label>Official Only</label>
-          <input type="checkbox" id="quiz-official" onchange="applyFilters()">
+      <div class="toolbar-inner">
+        <div class="toolbar-group">
+          <span class="toolbar-label">Official questions</span>
+          <label class="toggle">
+            <input type="checkbox" id="quiz-official" onchange="applyFilters()">
+            <span class="toggle-track"><span class="toggle-thumb"></span></span>
+          </label>
         </div>
-        <div class="filter-group">
-          <label>Category</label>
-          <select id="quiz-category" onchange="applyFilters()">
+        <div class="toolbar-group">
+          <span class="toolbar-label">Category</span>
+          <select id="quiz-category" class="form-select" onchange="applyFilters()">
             <option value="all">All categories</option>
           </select>
         </div>
-        <div class="filter-group">
-          <label style="visibility:hidden;">Action</label>
+        <div class="toolbar-group">
           <button class="btn btn-sm btn-primary" onclick="resetQuiz()">Restart Quiz</button>
         </div>
       </div>
@@ -47,8 +49,10 @@
   </div>
 
   <div id="quiz-container">
-    <div class="quiz-container text-center">
-      <p style="color:var(--text-muted);">Loading questions...</p>
+    <div class="quiz-container text-center empty-state">
+      <div class="empty-state-icon">?</div>
+      <div class="empty-state-title">Loading questions...</div>
+      <div class="empty-state-desc">Fetching the latest questions from the server.</div>
     </div>
   </div>
 
@@ -85,8 +89,8 @@
       return labels[catId] || "Category " + catId;
     }
 
-    function getTypeLabel(type) {
-      return type === "image" ? "Image" : "Text";
+    function getAnswerLabel(index) {
+      return String.fromCharCode(96 + index);
     }
 
     function escapeHtml(str) {
@@ -130,7 +134,7 @@
       });
 
       if (quizQuestions.length === 0) {
-        document.getElementById("quiz-container").innerHTML = '<div class="quiz-container text-center"><h3>No questions match your filters</h3><p style="color:var(--text-muted);">Try adjusting the filters above.</p></div>';
+        document.getElementById("quiz-container").innerHTML = '<div class="quiz-container text-center empty-state empty-state-full"><div class="empty-state-icon">0</div><div class="empty-state-title">No questions match your filters</div><div class="empty-state-desc">Try adjusting the official-only toggle or category selector above.</div><div style="margin-top:var(--space-5);"><button class="btn btn-primary" onclick="resetQuiz()">Reset Filters</button></div></div>';
         return;
       }
 
@@ -234,20 +238,24 @@
       }
       var pct = totalAttempted > 0 ? Math.round((correct / totalAttempted) * 100) : 0;
 
+      var scoreColor = pct >= 80 ? "var(--success)" : pct >= 50 ? "var(--warning)" : "var(--error)";
+
       var html = '<div class="results-container">';
-      html += '  <div class="card">';
-      html += '    <h2>Quiz Complete</h2>';
-      html += '    <div class="results-score">' + pct + '%</div>';
-      html += '    <div class="results-detail">' + correct + ' correct out of ' + totalAttempted + ' attempted (' + quizQuestions.length + ' total questions)</div>';
-      html += '    <div class="text-center" style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;">';
+      html += '  <div class="card results-card">';
+      html += '    <h2 class="results-header">Quiz Complete</h2>';
+      html += '    <div class="results-score" style="color:' + scoreColor + ';">' + pct + '%</div>';
+      html += '    <div class="results-detail">' + correct + ' correct out of ' + totalAttempted + ' attempted (' + quizQuestions.length + ' total)</div>';
+      html += '    <div class="results-controls">';
       html += '      <button class="btn btn-primary" onclick="resetQuiz()">Start New Quiz</button>';
       html += '      <button class="btn btn-secondary" onclick="history.back()">Back</button>';
       html += '    </div>';
       html += '  </div>';
 
       if (wrong.length > 0) {
-        html += '  <div class="card" style="margin-top:24px;">';
-        html += '    <h3>Wrong Answers (' + wrong.length + ')</h3>';
+        html += '  <div class="card wrong-answers-section">';
+        html += '    <div class="wrong-header">';
+        html += '      <h3 class="wrong-title">Wrong Answers (' + wrong.length + ')</h3>';
+        html += '    </div>';
         html += '    <div class="wrong-answers-list">';
         for (var i = 0; i < wrong.length; i++) {
           var w = wrong[i];
@@ -266,8 +274,14 @@
             correctText = texts.join(", ");
           }
           html += '      <div class="wrong-answer-item">';
-          html += '        <strong>#' + (i + 1) + '</strong> ' + qText;
-          html += '        <div style="margin-top:6px;color:var(--success);font-size:0.9rem;">Correct: ' + correctText + '</div>';
+          html += '        <div class="flex items-start gap-3">';
+          html += '          <span class="wrong-answer-number">' + (i + 1) + '</span>';
+          html += '          <div class="flex-1"><div>' + qText + '</div>';
+          if (correctText) {
+            html += '            <div class="correct-answer-text">Correct: ' + correctText + '</div>';
+          }
+          html += '          </div>';
+          html += '        </div>';
           html += '      </div>';
         }
         html += '    </div>';
@@ -336,13 +350,13 @@
             if (a.correct) cls += " correct";
             else if (selectedIndices.indexOf(a.index) >= 0 && !a.correct) cls += " incorrect";
           } else {
-            if (selectedIndices.indexOf(a.index) >= 0) cls += " correct";
+            if (selectedIndices.indexOf(a.index) >= 0) cls += " selected";
           }
           var disabled = checked ? "disabled" : "";
           answersHtml += '<div class="answer-wrapper">';
-          answersHtml += '<button class="' + cls + '" onclick="selectAnswer(' + a.index + ')" ' + disabled + ' style="width:100%;">';
+          answersHtml += '<button class="' + cls + '" onclick="selectAnswer(' + a.index + ')" ' + disabled + '>';
           if (imgSrc) answersHtml += '<img src="' + imgSrc + '" alt="Answer ' + a.index + '" loading="lazy">';
-          answersHtml += '  <span class="answer-label">' + a.index + '</span>';
+          answersHtml += '  <span class="answer-label">' + getAnswerLabel(a.index) + '</span>';
           answersHtml += '</button>';
           if (checked && a.paragraph) {
             var explText = explanations[a.paragraph];
@@ -356,18 +370,18 @@
       } else {
         for (var i = 0; i < q.answers.length; i++) {
           var a = q.answers[i];
-          var text = options[a.index - 1] || "Option " + a.index;
+          var text = options[a.index - 1] || "Option " + getAnswerLabel(a.index);
           var cls = "answer-btn";
           if (checked) {
             if (a.correct) cls += " correct";
             else if (selectedIndices.indexOf(a.index) >= 0 && !a.correct) cls += " incorrect";
           } else {
-            if (selectedIndices.indexOf(a.index) >= 0) cls += " correct";
+            if (selectedIndices.indexOf(a.index) >= 0) cls += " selected";
           }
           var disabled = checked ? "disabled" : "";
           answersHtml += '<div class="answer-wrapper">';
-          answersHtml += '<button class="' + cls + '" onclick="selectAnswer(' + a.index + ')" ' + disabled + ' style="width:100%;">';
-          answersHtml += '  <span class="answer-label">' + a.index + '</span>';
+          answersHtml += '<button class="' + cls + '" onclick="selectAnswer(' + a.index + ')" ' + disabled + '>';
+          answersHtml += '  <span class="answer-label">' + getAnswerLabel(a.index) + '</span>';
           answersHtml += '  <span>' + escapeHtml(text) + '</span>';
           answersHtml += '</button>';
           if (checked && a.paragraph) {
@@ -387,33 +401,34 @@
 
       var html = '<div class="quiz-container">';
       html += '  <div class="progress-bar"><div class="progress-fill" style="width: ' + pct + '%"></div></div>';
-      html += '  <div class="progress-text">Question ' + current + ' of ' + total + '</div>';
+      html += '  <div class="progress-text">Question ' + current + ' of ' + total + ' (' + pct + '%)</div>';
       html += '  <div class="question-display">';
       html += '    <div class="question-header">';
-      html += '      <div style="display:flex;gap:8px;align-items:center;">';
+      html += '      <div class="flex items-center gap-3">';
       html += '        <span class="badge badge-official">' + (q.official ? "Official" : "Practice") + '</span>';
       html += '        <span class="badge badge-category">' + getCategoryLabel(q.category) + '</span>';
-      html += '        <span class="question-type-badge">' + getTypeLabel(q.type) + '</span>';
       html += '      </div>';
-      html += '      <span style="font-size:0.85rem;color:var(--text-muted);">ID: ' + q.originalId + '</span>';
+      html += '      <span class="question-id">ID: ' + q.originalId + '</span>';
       html += '    </div>';
 
       if (hasQuestionImage || questionText) {
-        html += '    <div class="question-body">';
-        if (hasQuestionImage) {
-          html += '      <div class="question-image-side">';
-          html += '        <img src="../../' + q.questionImage + '" alt="Question image" loading="lazy">';
-          html += '      </div>';
-        }
-        html += '      <div class="question-content">';
+        html += '    <div class="question-body-stacked">';
         if (questionText) {
-          html += '        <div class="question-text-main">' + escapeHtml(questionText) + '</div>';
+          html += '      <div class="question-text-main">' + escapeHtml(questionText) + '</div>';
         }
-        html += '        <div class="answers-grid">' + answersHtml + '</div>';
+        html += '      <div class="question-body">';
+        if (hasQuestionImage) {
+          html += '        <div class="question-image-side">';
+          html += '          <img src="../../' + q.questionImage + '" alt="Question image" loading="lazy">';
+          html += '        </div>';
+        }
+        html += '        <div class="question-content">';
+        html += '          <div class="answers-grid' + (isImageType ? ' answers-grid-images' : '') + '">' + answersHtml + '</div>';
+        html += '        </div>';
         html += '      </div>';
         html += '    </div>';
       } else {
-        html += '    <div class="answers-grid">' + answersHtml + '</div>';
+        html += '    <div class="answers-grid' + (isImageType ? ' answers-grid-images' : '') + '">' + answersHtml + '</div>';
       }
       html += '  </div>';
 
@@ -421,12 +436,12 @@
       html += '    <div class="score-display">';
       html += '      <div class="score-item"><span class="score-correct">' + correctCount + '</span> correct</div>';
       html += '      <div class="score-item"><span class="score-wrong">' + (attemptedCount - correctCount) + '</span> wrong</div>';
-      html += '      <div class="score-item"><span>' + attemptedCount + '</span> attempted</div>';
+      html += '      <div class="score-item"><span class="score-attempted">' + attemptedCount + '</span> attempted</div>';
       html += '    </div>';
-      html += '    <div style="display:flex;gap:8px;">';
+      html += '    <div class="quiz-actions flex gap-3">';
       html += '      <button class="btn btn-secondary" onclick="prevQuestion()" ' + (canPrev ? "" : "disabled") + '>Previous</button>';
       if (!checked) {
-        html += '      <button class="btn btn-secondary" onclick="skipQuestion()">Skip</button>';
+        html += '      <button class="btn btn-ghost" onclick="skipQuestion()">Skip</button>';
         html += '      <button class="btn btn-primary" onclick="checkAnswer()" ' + (selectedIndices.length > 0 ? "" : "disabled") + '>Check Answer</button>';
       } else {
         html += '      <button class="btn btn-primary" onclick="nextQuestion()" ' + (canNext || isLast ? "" : "disabled") + '>' + (isLast ? "Finish" : "Next") + '</button>';
@@ -445,7 +460,7 @@
         applyFilters();
       } catch (e) {
         console.error("Failed to load data:", e);
-        document.getElementById("quiz-container").innerHTML = '<div class="quiz-container text-center"><div style="background:#ffebee;color:#c62828;padding:16px;border-radius:6px;border-left:4px solid #c62828;"><h3>Error loading quiz data</h3><p>' + e.message + '</p><p style="margin-top:8px;font-size:0.9rem;">Make sure you are running a local server (e.g., <code>python -m http.server 3000</code>) and not opening the file directly. Open browser DevTools (F12) to see the full error.</p></div></div>';
+        document.getElementById("quiz-container").innerHTML = '<div class="quiz-container text-center empty-state empty-state-full"><div class="empty-state-icon">!</div><div class="empty-state-title">Error loading quiz data</div><div class="empty-state-desc">' + escapeHtml(e.message) + '</div><div style="margin-top:16px;font-size:var(--text-sm);color:var(--text-muted);">Make sure you are running a local server (e.g., <code style="background:var(--bg-tertiary);padding:2px 6px;border-radius:4px;font-family:var(--font-mono);">python -m http.server 3000</code>) and not opening the file directly.</div></div>';
       }
     }
 

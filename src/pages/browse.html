@@ -25,48 +25,54 @@
     </div>
   </header>
 
-  <div class="filters-bar">
+  <div class="toolbar">
     <div class="container">
-      <div class="filters-inner">
-        <div class="filter-group">
-          <label>Language</label>
-          <select id="filter-lang" onchange="setLang(this.value); renderQuestionList(); if (selectedId) renderDetail(selectedId);">
+      <div class="toolbar-inner">
+        <div class="toolbar-group">
+          <span class="toolbar-label">Language</span>
+          <select id="filter-lang" class="form-select" onchange="setLang(this.value); renderQuestionList(); if (selectedId) renderDetail(selectedId);">
             <option value="de">Deutsch</option>
             <option value="fr">Français</option>
             <option value="it">Italiano</option>
           </select>
         </div>
-        <div class="filter-group">
-          <label>Official Only</label>
-          <input type="checkbox" id="filter-official" onchange="applyBrowseFilters()">
+        <div class="toolbar-group">
+          <span class="toolbar-label">Official questions</span>
+          <label class="toggle">
+            <input type="checkbox" id="filter-official" onchange="applyBrowseFilters()">
+            <span class="toggle-track"><span class="toggle-thumb"></span></span>
+          </label>
         </div>
-        <div class="filter-group">
-          <label>Category</label>
-          <select id="filter-category" onchange="applyBrowseFilters()">
+        <div class="toolbar-group">
+          <span class="toolbar-label">Category</span>
+          <select id="filter-category" class="form-select" onchange="applyBrowseFilters()">
             <option value="all">All categories</option>
           </select>
         </div>
-        <div class="filter-group">
-          <label style="visibility:hidden;">Action</label>
+        <div class="toolbar-group">
           <button class="btn btn-sm btn-secondary" onclick="resetFilters()">Reset</button>
         </div>
       </div>
     </div>
   </div>
 
-  <main class="container" style="padding: 24px 20px;">
-    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:20px;flex-wrap:wrap;gap:12px;">
-      <h2 style="font-size:1.3rem;">Question Reference</h2>
-      <input type="text" id="browse-search" class="form-input" placeholder="Search questions..." style="max-width:300px;" oninput="applyBrowseFilters()">
+  <main class="container section-tight">
+    <div class="flex justify-between browse-header">
+      <h2 class="section-title-lg">Question Reference</h2>
+      <input type="text" id="browse-search" class="form-input search-input" placeholder="Search questions..." oninput="applyBrowseFilters()">
     </div>
 
-    <div style="display:flex;gap:20px;align-items:flex-start;">
-      <div style="flex:1;min-width:0;">
+    <div class="flex browse-layout">
+      <div class="browse-grid-wrap">
         <div id="question-grid" class="question-grid">
-          <p class="text-center" style="padding:40px;color:var(--text-muted);">Loading questions...</p>
+          <div class="empty-state">
+            <div class="empty-state-icon">?</div>
+            <div class="empty-state-title">Loading questions...</div>
+            <div class="empty-state-desc">Fetching questions from the server.</div>
+          </div>
         </div>
       </div>
-      <div id="detail-panel" style="width:380px;flex-shrink:0;position:sticky;top:80px;"></div>
+      <div id="detail-panel" class="detail-panel"></div>
     </div>
   </main>
 
@@ -101,6 +107,10 @@
 
     function getTypeLabel(type) {
       return type === "image" ? "Image" : "Text";
+    }
+
+    function getAnswerLabel(index) {
+      return String.fromCharCode(96 + index);
     }
 
     function escapeHtml(str) {
@@ -167,7 +177,7 @@
       if (!grid) return;
 
       if (filteredIds.length === 0) {
-        grid.innerHTML = '<p class="text-center" style="padding:40px;color:var(--text-muted);">No questions match your filters.</p>';
+        grid.innerHTML = '<div class="empty-state empty-state-full"><div class="empty-state-icon">0</div><div class="empty-state-title">No questions match your filters</div><div class="empty-state-desc">Try adjusting your search or filters above.</div></div>';
         return;
       }
 
@@ -176,15 +186,17 @@
         var q = allQuestions.find(q => q.id === filteredIds[i]);
         if (!q) continue;
         var t = getTranslation(q, currentLang) || {};
-        var text = truncate(t.question || "Question #" + q.id, 80);
+        var text = truncate(t.question || "Question #" + q.id, 90);
         var imageHtml = q.questionImage
           ? '<img src="../../' + q.questionImage + '" alt="" class="question-card-image" loading="lazy">'
           : "";
 
-        html += '<div class="question-card" onclick="selectQuestion(' + q.id + ')">';
+        var selectedClass = (selectedId === q.id) ? " selected" : "";
+
+        html += '<div class="question-card' + selectedClass + '" onclick="selectQuestion(' + q.id + ')">';
         html += '  <div class="question-card-header">';
         html += '    <span class="question-card-id">#' + q.id + ' &middot; ' + q.originalId + '</span>';
-        html += '    <div style="display:flex;gap:6px;">';
+        html += '    <div class="flex gap-2">';
         if (q.official) html += '<span class="badge badge-official">Official</span>';
         html += '      <span class="badge badge-category">' + getCategoryLabel(q.category) + '</span>';
         html += '    </div>';
@@ -192,7 +204,7 @@
         html += imageHtml;
         html += '  <div class="question-card-text">' + escapeHtml(text) + '</div>';
         html += '  <div class="question-card-footer">';
-        html += '    <span style="font-size:0.8rem;color:var(--text-muted);">' + getTypeLabel(q.type) + ' &middot; ' + q.answers.length + ' answers</span>';
+        html += '    <span>' + getTypeLabel(q.type) + ' &middot; ' + q.answers.length + ' answers</span>';
         html += '  </div>';
         html += '</div>';
       }
@@ -202,6 +214,7 @@
 
     function selectQuestion(id) {
       selectedId = id;
+      renderQuestionList();
       renderDetail(id);
     }
 
@@ -220,37 +233,37 @@
       var html = '<div class="detail-view">';
       html += '  <div class="detail-header">';
       html += '    <div>';
-      html += '      <h3 style="margin-bottom:8px;">Question #' + q.id + ' &middot; ' + q.originalId + '</h3>';
+      html += '      <h3 class="detail-question-text-lg">Question #' + q.id + ' &middot; ' + q.originalId + '</h3>';
       html += '      <div class="detail-meta">';
       if (q.official) html += '<span class="badge badge-official">Official</span>';
       html += '        <span class="badge badge-category">' + getCategoryLabel(q.category) + '</span>';
       html += '        <span class="badge badge-category">' + getTypeLabel(q.type) + '</span>';
       html += '      </div>';
       html += '    </div>';
-      html += '    <button class="btn btn-sm btn-secondary" onclick="closeDetail()">Close</button>';
+      html += '    <button class="btn btn-sm btn-ghost" onclick="closeDetail()">Close</button>';
       html += '  </div>';
 
       if (q.questionImage) {
-        html += '<img src="../../' + q.questionImage + '" alt="Question image" style="max-width:100%;max-height:300px;object-fit:contain;background:var(--bg-secondary);border-radius:var(--radius);margin-bottom:20px;">';
+        html += '<img src="../../' + q.questionImage + '" alt="Question image" class="detail-image">';
       }
 
       if (questionText) {
-        html += '<div class="detail-section"><div class="detail-section-title">Question</div><p style="font-size:1.05rem;line-height:1.6;">' + escapeHtml(questionText) + '</p></div>';
+        html += '<div class="detail-section"><div class="detail-section-title">Question</div><p class="detail-question-text">' + escapeHtml(questionText) + '</p></div>';
       }
 
       html += '<div class="detail-section"><div class="detail-section-title">Answers</div>';
       for (var i = 0; i < q.answers.length; i++) {
         var a = q.answers[i];
-        var text = options[a.index - 1] || "Answer " + a.index;
+        var text = options[a.index - 1] || "Answer " + getAnswerLabel(a.index);
         var expl = a.paragraph ? explanations[a.paragraph] : null;
         var cls = "detail-answer";
         if (a.correct) cls += " correct";
         html += '<div class="' + cls + '">';
-        html += '  <div class="detail-answer-label">' + (a.correct ? "&#10003;" : a.index) + '</div>';
+        html += '  <div class="detail-answer-label">' + (a.correct ? "&#10003;" : getAnswerLabel(a.index)) + '</div>';
         html += '  <div class="detail-answer-text">';
         html += '    <strong>' + escapeHtml(text) + '</strong>';
         if (expl) html += '<div class="detail-explanation">' + escapeHtml(expl) + '</div>';
-        if (a.hidden) html += '<div style="font-size:0.8rem;color:var(--text-muted);margin-top:4px;">(hidden)</div>';
+        if (a.hidden) html += '<div class="hidden-text">(hidden)</div>';
         html += '  </div>';
         html += '</div>';
       }
@@ -264,6 +277,7 @@
     function closeDetail() {
       selectedId = null;
       document.getElementById("detail-panel").innerHTML = "";
+      renderQuestionList();
     }
 
     async function init() {
@@ -273,7 +287,7 @@
         applyBrowseFilters();
       } catch (e) {
         console.error("Failed to load data:", e);
-        document.getElementById("question-grid").innerHTML = '<div style="background:#ffebee;color:#c62828;padding:16px;border-radius:6px;border-left:4px solid #c62828;"><h3>Error loading quiz data</h3><p>' + e.message + '</p><p style="margin-top:8px;font-size:0.9rem;">Make sure you are running a local server (e.g., <code>python -m http.server 3000</code>) and not opening the file directly. Open browser DevTools (F12) to see the full error.</p></div>';
+        document.getElementById("question-grid").innerHTML = '<div class="empty-state empty-state-full"><div class="empty-state-icon">!</div><div class="empty-state-title">Error loading quiz data</div><div class="empty-state-desc">' + escapeHtml(e.message) + '</div><div style="margin-top:16px;font-size:var(--text-sm);color:var(--text-muted);">Make sure you are running a local server (e.g., <code style="background:var(--bg-tertiary);padding:2px 6px;border-radius:4px;font-family:var(--font-mono);">python -m http.server 3000</code>) and not opening the file directly.</div></div>';
       }
     }
 

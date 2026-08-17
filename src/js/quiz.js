@@ -5,6 +5,10 @@ import { shuffleArray, truncate, escapeHtml } from "./utils.js";
 
 const SESSION_KEY = "cut-exam-quiz-state";
 
+function getAnswerLabel(index) {
+  return String.fromCharCode(96 + index);
+}
+
 let state = {
   questions: [],
   currentIndex: 0,
@@ -194,7 +198,7 @@ function render() {
           const disabled = state.showFeedback ? "disabled" : "";
           return `<button class="${cls}" onclick="window._quiz.selectAnswer(${a.index})" ${disabled}>
             ${imgSrc ? `<img src="${imgSrc}" alt="Answer ${a.index}" loading="lazy">` : ""}
-            <span class="answer-label">${a.index}</span>
+            <span class="answer-label">${getAnswerLabel(a.index)}</span>
           </button>`;
         }
       )
@@ -202,7 +206,7 @@ function render() {
   } else {
     answersHtml = q.answers
       .map((a, i) => {
-        const text = options[a.index - 1] || `Option ${a.index}`;
+        const text = options[a.index - 1] || `Option ${getAnswerLabel(a.index)}`;
         let cls = "answer-btn";
         if (state.showFeedback) {
           if (a.correct) cls += " correct";
@@ -210,7 +214,7 @@ function render() {
         }
         const disabled = state.showFeedback ? "disabled" : "";
         return `<button class="${cls}" onclick="window._quiz.selectAnswer(${a.index})" ${disabled}>
-          <span class="answer-label">${a.index}</span>
+          <span class="answer-label">${getAnswerLabel(a.index)}</span>
           <span>${escapeHtml(text)}</span>
         </button>`;
       })
@@ -247,7 +251,6 @@ function render() {
           <div style="display:flex;gap:8px;align-items:center;">
             <span class="badge badge-official">${q.official ? "Official" : "Practice"}</span>
             <span class="badge badge-category">${getCategoryLabel(q.category)}</span>
-            <span class="question-type-badge">${getTypeLabel(q.type)}</span>
           </div>
           <span style="font-size:0.85rem;color:var(--text-muted);">ID: ${q.originalId}</span>
         </div>

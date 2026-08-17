@@ -36,37 +36,39 @@
     </div>
   </section>
 
-  <section class="container" style="padding: 40px 20px;">
-    <div class="stats-grid">
-      <div class="stat-card">
-        <div class="stat-value" id="total-questions">--</div>
-        <div class="stat-label">Total Questions</div>
+  <section class="section">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-value" id="total-questions">--</div>
+          <div class="stat-label">Total Questions</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value" id="official-count">--</div>
+          <div class="stat-label">Official ASA</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">3</div>
+          <div class="stat-label">Languages</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">795</div>
+          <div class="stat-label">Images</div>
+        </div>
       </div>
-      <div class="stat-card">
-        <div class="stat-value" id="official-count">--</div>
-        <div class="stat-label">Official ASA</div>
-      </div>
-      <div class="stat-card">
-        <div class="stat-value">3</div>
-        <div class="stat-label">Languages</div>
-      </div>
-      <div class="stat-card">
-        <div class="stat-value">795</div>
-        <div class="stat-label">Images</div>
-      </div>
-    </div>
 
-    <div class="card">
-      <h2 class="card-title">About</h2>
-      <p style="line-height:1.7;color:var(--text-secondary);">
-        This quiz app contains questions from the Swiss driving theory exam (category B).
-        Questions are available in German, French, and Italian.
-        Use the <strong>Official</strong> filter to practice only official ASA questions,
-        or browse all questions in the reference section.
-      </p>
-      <div style="margin-top:20px;display:flex;gap:12px;flex-wrap:wrap;">
-        <a href="quiz.html" class="btn btn-primary">Start Quiz Now</a>
-        <a href="browse.html" class="btn btn-secondary">Browse Questions</a>
+      <div class="card">
+        <h2 class="card-title">About</h2>
+        <p class="about-text">
+          This quiz app contains questions from the Swiss driving theory exam (category B).
+          Questions are available in German, French, and Italian.
+          Use the <strong>Official</strong> filter to practice only official ASA questions,
+          or browse all questions in the reference section.
+        </p>
+        <div class="about-actions">
+          <a href="quiz.html" class="btn btn-primary">Start Quiz Now</a>
+          <a href="browse.html" class="btn btn-secondary">Browse Questions</a>
+        </div>
       </div>
     </div>
   </section>
@@ -96,8 +98,14 @@
         document.getElementById("official-count").textContent = allQuestions.filter(q => q.official).length.toLocaleString();
       } catch (e) {
         console.error("Failed to load data:", e);
-        document.body.innerHTML = '<div class="container" style="padding:40px;"><div style="background:#ffebee;color:#c62828;padding:16px;border-radius:6px;border-left:4px solid #c62828;"><h1>Error loading quiz data</h1><p>' + e.message + '</p><p style="margin-top:8px;font-size:0.9rem;">Make sure you are running a local server (e.g., <code>python -m http.server 3000</code>) and not opening the file directly.</p></div></div>';
+        document.body.innerHTML = '<div class="container error-container"><div class="error-box"><h1>Error loading quiz data</h1><p>' + escapeHtml(e.message) + '</p><p class="error-hint">Make sure you are running a local server (e.g., <code style="background:var(--bg-tertiary);padding:2px 6px;border-radius:var(--radius-xs);font-family:var(--font-mono);">python -m http.server 3000</code>) and not opening the file directly.</p></div></div>';
       }
+    }
+
+    function escapeHtml(str) {
+      var div = document.createElement("div");
+      div.textContent = str;
+      return div.innerHTML;
     }
 
     document.addEventListener("DOMContentLoaded", init);
