@@ -1,10 +1,15 @@
-export function getLanguageName(code) {
-  const names = { de: "Deutsch", fr: "Français", it: "Italiano" };
-  return names[code] || code;
+import { getCategoryLabel as _getCategoryLabel, getTypeLabel as _getTypeLabel, getLanguageName as _getLanguageName } from "./i18n.js";
+
+export function getCategoryLabel(catId, lang = "de") {
+  return _getCategoryLabel(catId, lang);
 }
 
-export function getTypeLabel(type) {
-  return type === "image" ? "Image" : "Text";
+export function getTypeLabel(type, lang = "de") {
+  return _getTypeLabel(type, lang);
+}
+
+export function getLanguageName(code, lang = "de") {
+  return _getLanguageName(code, lang);
 }
 
 export function truncate(text, maxLen = 80) {
@@ -30,40 +35,4 @@ export function escapeHtml(str) {
 
 export function formatNumber(n) {
   return n.toLocaleString();
-}
-
-export function getCategoryLabel(catId) {
-  const labels = {
-    1: "Vehicle Equipment / Law",
-    2: "Traffic Signs",
-    3: "Traffic Signals / Behavior",
-    4: "Overtaking / Turning",
-    5: "Highway / Expressway",
-    6: "Right of Way / Priority",
-    7: "Parking",
-    8: "Distances / Speed",
-    9: "Vehicle Control / Situations",
-    10: "Special Situations / Vulnerable Users",
-    11: "Visibility / Lights",
-    12: "Emergency / Accidents / Insurance",
-  };
-  return labels[catId] || `Category ${catId}`;
-}
-
-export function getCategoryColor(catId) {
-  const colors = {
-    1: "#e3f2fd",
-    2: "#fce4ec",
-    3: "#f3e5f5",
-    4: "#e8f5e9",
-    5: "#fff3e0",
-    6: "#f5f5f5",
-    7: "#e0f7fa",
-    8: "#e8eaf6",
-    9: "#fbe9e7",
-    10: "#ffebee",
-    11: "#e8f5e9",
-    12: "#f5f5f5",
-  };
-  return colors[catId] || "#f5f5f5";
 }

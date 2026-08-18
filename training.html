@@ -1,33 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Training — Swiss Driving Theory</title>
   <link rel="stylesheet" href="src/css/style.css">
 </head>
-<body>
+<body data-page="training">
   <header class="header">
     <div class="header-inner">
       <a href="index.html" class="logo">
         <div class="logo-icon">CH</div>
-        <span>Swiss Driving Theory</span>
+        <span data-i18n="appName">Swiss Driving Theory</span>
       </a>
       <nav class="nav">
-        <a href="index.html" class="nav-btn">Home</a>
-        <a href="exam.html" class="nav-btn">Exam</a>
-        <select id="lang-select" class="lang-select" onchange="setLang(this.value)">
-          <option value="de">Deutsch</option>
-          <option value="fr">Français</option>
-          <option value="it">Italiano</option>
-        </select>
+        <a href="index.html" class="nav-btn" data-i18n="home">Home</a>
+        <a href="exam.html" class="nav-btn" data-i18n="exam">Exam</a>
+        <select id="lang-select" class="lang-select"></select>
       </nav>
     </div>
   </header>
 
   <div class="mode-tabs">
-    <button class="mode-tab active" onclick="switchTab('quiz')">Quiz</button>
-    <button class="mode-tab" onclick="switchTab('browse')">Browse &amp; Study</button>
+    <button class="mode-tab active" onclick="window._app.switchTab('quiz')" data-i18n="quiz">Quiz</button>
+    <button class="mode-tab" onclick="window._app.switchTab('browse')" data-i18n="browseStudy">Browse & Study</button>
   </div>
 
   <div id="quiz-view" class="training-view active">
@@ -35,20 +31,20 @@
       <div class="container">
         <div class="toolbar-inner">
           <div class="toolbar-group">
-            <span class="toolbar-label">Official questions</span>
+            <span class="toolbar-label" data-i18n="officialQuestions">Official questions</span>
             <label class="toggle">
-              <input type="checkbox" id="quiz-official" onchange="applyFilters()">
+              <input type="checkbox" id="quiz-official" onchange="window._applyQuizFilters()">
               <span class="toggle-track"><span class="toggle-thumb"></span></span>
             </label>
           </div>
           <div class="toolbar-group">
-            <span class="toolbar-label">Category</span>
-            <select id="quiz-category" class="form-select" onchange="applyFilters()">
-              <option value="all">All categories</option>
+            <span class="toolbar-label" data-i18n="category">Category</span>
+            <select id="quiz-category" class="form-select" onchange="window._applyQuizFilters()">
+              <option value="all" data-i18n="allCategories">All categories</option>
             </select>
           </div>
           <div class="toolbar-group">
-            <button class="btn btn-sm btn-primary" onclick="resetQuiz()">Restart Quiz</button>
+            <button class="btn btn-sm btn-primary" onclick="window._quiz.resetQuiz()" data-i18n="restartQuiz">Restart Quiz</button>
           </div>
         </div>
       </div>
@@ -57,715 +53,33 @@
     <div id="quiz-container">
       <div class="quiz-container text-center empty-state">
         <div class="empty-state-icon">?</div>
-        <div class="empty-state-title">Loading questions...</div>
-        <div class="empty-state-desc">Fetching the latest questions from the server.</div>
+        <div class="empty-state-title" data-i18n="loadingQuestions">Loading questions...</div>
+        <div class="empty-state-desc" data-i18n="fetchingQuestions">Fetching the latest questions from the server.</div>
       </div>
     </div>
   </div>
 
   <div id="browse-view" class="training-view">
-    <div class="browse-toolbar">
-      <div class="container">
-        <div class="browse-toolbar-inner">
-          <div class="browse-search-wrap">
-            <input type="text" id="browse-search" class="browse-search" placeholder="Search questions..." oninput="applyBrowseFilters()">
-          </div>
-          <div class="toolbar-group">
-            <span class="toolbar-label">Official</span>
-            <label class="toggle">
-              <input type="checkbox" id="filter-official" onchange="applyBrowseFilters()">
-              <span class="toggle-track"><span class="toggle-thumb"></span></span>
-            </label>
-          </div>
-          <div class="toolbar-group">
-            <span class="toolbar-label">Category</span>
-            <select id="filter-category" class="form-select" onchange="applyBrowseFilters()">
-              <option value="all">All categories</option>
-            </select>
-          </div>
-          <div class="toolbar-group">
-            <button class="btn btn-sm btn-secondary" onclick="resetFilters()">Reset</button>
-          </div>
-        </div>
-      </div>
-    </div>
+    <div id="browse-filters"></div>
 
     <main class="container section-tight">
       <div id="question-grid" class="question-grid">
         <div class="empty-state">
           <div class="empty-state-icon">?</div>
-          <div class="empty-state-title">Loading questions...</div>
-          <div class="empty-state-desc">Fetching questions from the server.</div>
+          <div class="empty-state-title" data-i18n="loadingQuestions">Loading questions...</div>
+          <div class="empty-state-desc" data-i18n="fetchingQuestions">Fetching questions from the server.</div>
         </div>
       </div>
     </main>
 
-    <div class="browse-modal-overlay" id="browse-modal-overlay" onclick="closeModalOutside(event)">
+    <div class="browse-modal-overlay" id="browse-modal-overlay" onclick="window._app.closeModalOutside(event)">
       <div class="browse-modal" id="browse-modal">
-        <button class="browse-modal-close" onclick="closeDetail()" aria-label="Close">&times;</button>
+        <button class="browse-modal-close" onclick="window._app.closeDetail()" aria-label="Close">&times;</button>
         <div id="modal-content"></div>
       </div>
     </div>
   </div>
 
-  <script>
-    var allQuestions = [];
-    var quizQuestions = [];
-    var currentIndex = 0;
-    var answers = {};
-    var selectedIndices = [];
-    var checked = false;
-    var currentLang = "de";
-
-    var filteredIds = [];
-    var selectedId = null;
-
-    function setLang(lang) {
-      currentLang = lang;
-      try { localStorage.setItem("swiss-driving-theory-lang", lang); } catch(e) {}
-      render();
-      renderQuestionList();
-      if (selectedId) renderDetail(selectedId);
-    }
-
-    function switchTab(tab) {
-      document.querySelectorAll(".mode-tab").forEach(function(t) { t.classList.remove("active"); });
-      document.querySelectorAll(".training-view").forEach(function(v) { v.classList.remove("active"); });
-
-      if (tab === "quiz") {
-        document.querySelector('.mode-tab:first-child').classList.add("active");
-        document.getElementById("quiz-view").classList.add("active");
-      } else {
-        document.querySelector('.mode-tab:last-child').classList.add("active");
-        document.getElementById("browse-view").classList.add("active");
-        if (filteredIds.length === 0 && allQuestions.length > 0) {
-          applyBrowseFilters();
-        }
-      }
-    }
-
-    function getCategoryLabel(catId) {
-      var labels = {
-        1: "Vehicle Equipment / Law",
-        2: "Traffic Signs",
-        3: "Traffic Signals / Behavior",
-        4: "Overtaking / Turning",
-        5: "Highway / Expressway",
-        6: "Right of Way / Priority",
-        7: "Parking",
-        8: "Distances / Speed",
-        9: "Vehicle Control / Situations",
-        10: "Special Situations / Vulnerable Users",
-        11: "Visibility / Lights",
-        12: "Emergency / Accidents / Insurance"
-      };
-      return labels[catId] || "Category " + catId;
-    }
-
-    function getAnswerLabel(index) {
-      return String.fromCharCode(96 + index);
-    }
-
-    function escapeHtml(str) {
-      var div = document.createElement("div");
-      div.textContent = str;
-      return div.innerHTML;
-    }
-
-    function shuffleArray(arr) {
-      var a = arr.slice();
-      for (var i = a.length - 1; i > 0; i--) {
-        var j = Math.floor(Math.random() * (i + 1));
-        var temp = a[i]; a[i] = a[j]; a[j] = temp;
-      }
-      return a;
-    }
-
-    function getTranslation(q, lang) {
-      if (!q || !q.translations) return null;
-      return q.translations[lang] || q.translations["de"] || null;
-    }
-
-    function truncate(text, maxLen) {
-      maxLen = maxLen || 80;
-      if (!text) return "";
-      if (text.length <= maxLen) return text;
-      return text.slice(0, maxLen).trim() + "...";
-    }
-
-    async function loadData() {
-      var resp = await fetch("assets/questions.json");
-      if (!resp.ok) throw new Error("Failed to load questions.json: " + resp.status);
-      var text = await resp.text();
-      var data = JSON.parse(text);
-      allQuestions = data.questions || [];
-      return data;
-    }
-
-    // Quiz functions
-    function applyFilters() {
-      var officialOnly = document.getElementById("quiz-official").checked;
-      var categoryVal = document.getElementById("quiz-category").value;
-      var categoryId = categoryVal === "all" ? null : Number(categoryVal);
-
-      quizQuestions = allQuestions.filter(function(q) {
-        if (officialOnly && !q.official) return false;
-        if (categoryId !== null && q.category !== categoryId) return false;
-        return true;
-      });
-
-      if (quizQuestions.length === 0) {
-        document.getElementById("quiz-container").innerHTML = '<div class="quiz-container text-center empty-state empty-state-full"><div class="empty-state-icon">0</div><div class="empty-state-title">No questions match your filters</div><div class="empty-state-desc">Try adjusting the official-only toggle or category selector above.</div><div style="margin-top:var(--space-5);"><button class="btn btn-primary" onclick="resetQuiz()">Reset Filters</button></div></div>';
-        return;
-      }
-
-      resetQuizState();
-    }
-
-    function resetQuizState() {
-      quizQuestions = shuffleArray(quizQuestions);
-      currentIndex = 0;
-      answers = {};
-      selectedIndices = [];
-      checked = false;
-      render();
-    }
-
-    function resetQuiz() {
-      resetQuizState();
-    }
-
-    function selectAnswer(index) {
-      if (checked) return;
-      var pos = selectedIndices.indexOf(index);
-      if (pos >= 0) {
-        selectedIndices.splice(pos, 1);
-      } else {
-        selectedIndices.push(index);
-      }
-      render();
-    }
-
-    function checkAnswer() {
-      if (selectedIndices.length === 0) return;
-      checked = true;
-      var q = quizQuestions[currentIndex];
-      answers[q.id] = selectedIndices.slice();
-      render();
-    }
-
-    function nextQuestion() {
-      if (currentIndex < quizQuestions.length - 1) {
-        currentIndex++;
-        selectedIndices = [];
-        checked = false;
-        render();
-      } else {
-        showResults();
-      }
-    }
-
-    function prevQuestion() {
-      if (currentIndex > 0) {
-        currentIndex--;
-        selectedIndices = [];
-        checked = false;
-        render();
-      }
-    }
-
-    function skipQuestion() {
-      var q = quizQuestions[currentIndex];
-      answers[q.id] = null;
-      nextQuestion();
-    }
-
-    function showResults() {
-      var correct = 0;
-      var wrong = [];
-      for (var i = 0; i < quizQuestions.length; i++) {
-        var q = quizQuestions[i];
-        var ans = answers[q.id];
-        if (ans !== undefined && ans !== null && ans.length > 0) {
-          var isCorrect = true;
-          var correctCount_q = 0;
-          for (var j = 0; j < q.answers.length; j++) {
-            if (q.answers[j].correct) correctCount_q++;
-          }
-          if (ans.length !== correctCount_q) {
-            isCorrect = false;
-          } else {
-            for (var k = 0; k < ans.length; k++) {
-              var found = false;
-              for (var j = 0; j < q.answers.length; j++) {
-                if (q.answers[j].index === ans[k] && q.answers[j].correct) {
-                  found = true;
-                  break;
-                }
-              }
-              if (!found) { isCorrect = false; break; }
-            }
-          }
-          if (isCorrect) correct++;
-          else wrong.push({ question: q, selected: ans });
-        }
-      }
-
-      var totalAttempted = 0;
-      for (var key in answers) {
-        if (answers[key] !== undefined && answers[key] !== null && answers[key].length > 0) {
-          totalAttempted++;
-        }
-      }
-      var pct = totalAttempted > 0 ? Math.round((correct / totalAttempted) * 100) : 0;
-
-      var scoreColor = pct >= 80 ? "var(--success)" : pct >= 50 ? "var(--warning)" : "var(--error)";
-
-      var html = '<div class="results-container">';
-      html += '  <div class="card results-card">';
-      html += '    <h2 class="results-header">Training Complete</h2>';
-      html += '    <div class="results-score" style="color:' + scoreColor + ';">' + pct + '%</div>';
-      html += '    <div class="results-detail">' + correct + ' correct out of ' + totalAttempted + ' attempted (' + quizQuestions.length + ' total)</div>';
-      html += '    <div class="results-controls">';
-      html += '      <button class="btn btn-primary" onclick="resetQuiz()">Start New Quiz</button>';
-      html += '      <button class="btn btn-secondary" onclick="history.back()">Back</button>';
-      html += '    </div>';
-      html += '  </div>';
-
-      if (wrong.length > 0) {
-        html += '  <div class="card wrong-answers-section">';
-        html += '    <div class="wrong-header">';
-        html += '      <h3 class="wrong-title">Wrong Answers (' + wrong.length + ')</h3>';
-        html += '    </div>';
-        html += '    <div class="wrong-answers-list">';
-        for (var i = 0; i < wrong.length; i++) {
-          var w = wrong[i];
-          var t = getTranslation(w.question, currentLang) || {};
-          var qText = escapeHtml(t.question || "Question " + w.question.originalId);
-          var correctAns = [];
-          for (var j = 0; j < w.question.answers.length; j++) {
-            if (w.question.answers[j].correct) { correctAns.push(w.question.answers[j]); }
-          }
-          var correctText = "";
-          if (correctAns.length > 0 && t.options) {
-            var texts = [];
-            for (var k = 0; k < correctAns.length; k++) {
-              texts.push(escapeHtml(t.options[correctAns[k].index - 1] || "Answer " + correctAns[k].index));
-            }
-            correctText = texts.join(", ");
-          }
-          html += '      <div class="wrong-answer-item">';
-          html += '        <div class="flex items-start gap-3">';
-          html += '          <span class="wrong-answer-number">' + (i + 1) + '</span>';
-          html += '          <div class="flex-1"><div>' + qText + '</div>';
-          if (correctText) {
-            html += '            <div class="correct-answer-text">Correct: ' + correctText + '</div>';
-          }
-          html += '          </div>';
-          html += '        </div>';
-          html += '      </div>';
-        }
-        html += '    </div>';
-        html += '  </div>';
-      }
-
-      html += '</div>';
-      document.getElementById("quiz-container").innerHTML = html;
-    }
-
-    function render() {
-      var q = quizQuestions[currentIndex];
-      if (!q) {
-        showResults();
-        return;
-      }
-
-      var t = getTranslation(q, currentLang) || {};
-      var questionText = t.question || "";
-      var options = t.options || [];
-      var explanations = t.explanations || {};
-      var current = currentIndex + 1;
-      var total = quizQuestions.length;
-      var pct = total > 0 ? Math.round((current / total) * 100) : 0;
-
-      var correctCount = 0;
-      var attemptedCount = 0;
-      for (var i = 0; i < quizQuestions.length; i++) {
-        var sq = quizQuestions[i];
-        var ans = answers[sq.id];
-        if (ans !== undefined && ans !== null && ans.length > 0) {
-          attemptedCount++;
-          var isCorrect = true;
-          var correctCount_q = 0;
-          for (var j = 0; j < sq.answers.length; j++) {
-            if (sq.answers[j].correct) correctCount_q++;
-          }
-          if (ans.length !== correctCount_q) {
-            isCorrect = false;
-          } else {
-            for (var k = 0; k < ans.length; k++) {
-              var found = false;
-              for (var j = 0; j < sq.answers.length; j++) {
-                if (sq.answers[j].index === ans[k] && sq.answers[j].correct) {
-                  found = true;
-                  break;
-                }
-              }
-              if (!found) { isCorrect = false; break; }
-            }
-          }
-          if (isCorrect) correctCount++;
-        }
-      }
-
-      var isImageType = q.type === "image";
-      var hasQuestionImage = !!q.questionImage;
-
-      var answersHtml = "";
-      if (isImageType) {
-        for (var i = 0; i < q.answers.length; i++) {
-          var a = q.answers[i];
-          var imgSrc = a.image ? a.image : "";
-          var cls = "answer-btn";
-          if (checked) {
-            if (a.correct) cls += " correct";
-            else if (selectedIndices.indexOf(a.index) >= 0 && !a.correct) cls += " incorrect";
-          } else {
-            if (selectedIndices.indexOf(a.index) >= 0) cls += " selected";
-          }
-          var disabled = checked ? "disabled" : "";
-          answersHtml += '<div class="answer-wrapper">';
-          answersHtml += '<button class="' + cls + '" onclick="selectAnswer(' + a.index + ')" ' + disabled + '>';
-          if (imgSrc) answersHtml += '<img src="' + imgSrc + '" alt="Answer ' + a.index + '" loading="lazy">';
-          answersHtml += '  <span class="answer-label">' + getAnswerLabel(a.index) + '</span>';
-          answersHtml += '</button>';
-          if (checked && a.paragraph) {
-            var explText = explanations[a.paragraph];
-            if (explText) {
-              var explCls = "answer-explanation" + (a.correct ? " correct-explanation" : "");
-              answersHtml += '<div class="' + explCls + '">' + escapeHtml(explText) + '</div>';
-            }
-          }
-          answersHtml += '</div>';
-        }
-      } else {
-        for (var i = 0; i < q.answers.length; i++) {
-          var a = q.answers[i];
-          var text = options[a.index - 1] || "Option " + getAnswerLabel(a.index);
-          var cls = "answer-btn";
-          if (checked) {
-            if (a.correct) cls += " correct";
-            else if (selectedIndices.indexOf(a.index) >= 0 && !a.correct) cls += " incorrect";
-          } else {
-            if (selectedIndices.indexOf(a.index) >= 0) cls += " selected";
-          }
-          var disabled = checked ? "disabled" : "";
-          answersHtml += '<div class="answer-wrapper">';
-          answersHtml += '<button class="' + cls + '" onclick="selectAnswer(' + a.index + ')" ' + disabled + '>';
-          answersHtml += '  <span class="answer-label">' + getAnswerLabel(a.index) + '</span>';
-          answersHtml += '  <span>' + escapeHtml(text) + '</span>';
-          answersHtml += '</button>';
-          if (checked && a.paragraph) {
-            var explText = explanations[a.paragraph];
-            if (explText) {
-              var explCls = "answer-explanation" + (a.correct ? " correct-explanation" : "");
-              answersHtml += '<div class="' + explCls + '">' + escapeHtml(explText) + '</div>';
-            }
-          }
-          answersHtml += '</div>';
-        }
-      }
-
-      var canPrev = currentIndex > 0;
-      var canNext = currentIndex < total - 1;
-      var isLast = currentIndex === total - 1;
-
-      var html = '<div class="quiz-container">';
-      html += '  <div class="progress-bar"><div class="progress-fill" style="width: ' + pct + '%"></div></div>';
-      html += '  <div class="progress-text">Question ' + current + ' of ' + total + ' (' + pct + '%)</div>';
-      html += '  <div class="question-display">';
-      html += '    <div class="question-header">';
-      html += '      <div class="flex items-center gap-3">';
-      html += '        <span class="badge badge-official">' + (q.official ? "Official" : "Practice") + '</span>';
-      html += '        <span class="badge badge-category">' + getCategoryLabel(q.category) + '</span>';
-      html += '      </div>';
-      html += '      <span class="question-id">ID: ' + q.originalId + '</span>';
-      html += '    </div>';
-
-      if (hasQuestionImage || questionText) {
-        html += '    <div class="question-body-stacked">';
-        if (questionText) {
-          html += '      <div class="question-text-main">' + escapeHtml(questionText) + '</div>';
-        }
-        html += '      <div class="question-body">';
-        if (hasQuestionImage) {
-          html += '        <div class="question-image-side">';
-          html += '          <img src="' + q.questionImage + '" alt="Question image" loading="lazy">';
-          html += '        </div>';
-        }
-        html += '        <div class="question-content">';
-        html += '          <div class="answers-grid' + (isImageType ? ' answers-grid-images' : '') + '">' + answersHtml + '</div>';
-        html += '        </div>';
-        html += '      </div>';
-        html += '    </div>';
-      } else {
-        html += '    <div class="answers-grid' + (isImageType ? ' answers-grid-images' : '') + '">' + answersHtml + '</div>';
-      }
-      html += '  </div>';
-
-      html += '  <div class="quiz-controls">';
-      html += '    <div class="score-display">';
-      html += '      <div class="score-item"><span class="score-correct">' + correctCount + '</span> correct</div>';
-      html += '      <div class="score-item"><span class="score-wrong">' + (attemptedCount - correctCount) + '</span> wrong</div>';
-      html += '      <div class="score-item"><span>' + attemptedCount + '</span> attempted</div>';
-      html += '    </div>';
-      html += '    <div class="quiz-actions flex gap-3">';
-      html += '      <button class="btn btn-secondary" onclick="prevQuestion()" ' + (canPrev ? "" : "disabled") + '>Previous</button>';
-      if (!checked) {
-        html += '      <button class="btn btn-ghost" onclick="skipQuestion()">Skip</button>';
-        html += '      <button class="btn btn-primary" onclick="checkAnswer()" ' + (selectedIndices.length > 0 ? "" : "disabled") + '>Check Answer</button>';
-      } else {
-        html += '      <button class="btn btn-primary" onclick="nextQuestion()" ' + (canNext || isLast ? "" : "disabled") + '>' + (isLast ? "Finish" : "Next") + '</button>';
-      }
-      html += '    </div>';
-      html += '  </div>';
-      html += '</div>';
-
-      document.getElementById("quiz-container").innerHTML = html;
-    }
-
-    // Browse functions
-    function populateCategorySelect() {
-      var cats = {};
-      for (var i = 0; i < allQuestions.length; i++) {
-        cats[allQuestions[i].category] = true;
-      }
-      var sorted = Object.keys(cats).map(Number).sort(function(a, b) { return a - b; });
-
-      var quizSelect = document.getElementById("quiz-category");
-      var browseSelect = document.getElementById("filter-category");
-      var options = ['<option value="all">All categories</option>'];
-      for (var i = 0; i < sorted.length; i++) {
-        options.push('<option value="' + sorted[i] + '">' + getCategoryLabel(sorted[i]) + '</option>');
-      }
-      if (quizSelect) quizSelect.innerHTML = options.join("");
-      if (browseSelect) browseSelect.innerHTML = options.join("");
-    }
-
-    function applyBrowseFilters() {
-      var officialOnly = document.getElementById("filter-official").checked;
-      var categoryVal = document.getElementById("filter-category").value;
-      var categoryId = categoryVal === "all" ? null : Number(categoryVal);
-      var search = document.getElementById("browse-search").value.toLowerCase();
-
-      filteredIds = allQuestions
-        .filter(function(q) {
-          if (officialOnly && !q.official) return false;
-          if (categoryId !== null && q.category !== categoryId) return false;
-          if (search) {
-            var t = getTranslation(q, currentLang);
-            var text = (t && t.question ? t.question : "") + " " + (t && t.options ? t.options.join(" ") : "");
-            if (text.toLowerCase().indexOf(search) === -1) return false;
-          }
-          return true;
-        })
-        .map(function(q) { return q.id; });
-
-      renderQuestionList();
-    }
-
-    function resetFilters() {
-      filteredIds = allQuestions.map(function(q) { return q.id; });
-      selectedId = null;
-      document.getElementById("browse-search").value = "";
-      document.getElementById("filter-official").checked = false;
-      document.getElementById("filter-category").value = "all";
-      renderQuestionList();
-      closeDetail();
-    }
-
-    function renderQuestionList() {
-      var grid = document.getElementById("question-grid");
-      if (!grid) return;
-
-      if (filteredIds.length === 0) {
-        grid.innerHTML = '<div class="browse-empty"><div class="empty-state-icon">0</div><div class="empty-state-title">No questions match your filters</div><div class="empty-state-desc">Try adjusting your search or filters above.</div></div>';
-        return;
-      }
-
-      var html = "";
-      for (var i = 0; i < filteredIds.length; i++) {
-        var q = allQuestions.find(function(q) { return q.id === filteredIds[i]; });
-        if (!q) continue;
-        var t = getTranslation(q, currentLang) || {};
-        var text = truncate(t.question || "Question #" + q.id, 90);
-        var imageHtml = q.questionImage
-          ? '<img src="' + q.questionImage + '" alt="" class="question-card-image" loading="lazy">'
-          : "";
-        if (!imageHtml && q.type === "image" && q.answers.length > 0 && q.answers[0].image) {
-          imageHtml = '<img src="' + q.answers[0].image + '" alt="" class="question-card-image" loading="lazy">';
-        }
-
-        var selectedClass = (selectedId === q.id) ? " selected" : "";
-
-        html += '<div class="question-card' + selectedClass + '" onclick="selectQuestion(' + q.id + ')">';
-        html += '  <div class="question-card-header">';
-        html += '    <span class="question-card-id">#' + q.id + ' &middot; ' + q.originalId + '</span>';
-        html += '    <div class="flex gap-2">';
-        if (q.official) html += '<span class="badge badge-official">Official</span>';
-        html += '      <span class="badge badge-category">' + getCategoryLabel(q.category) + '</span>';
-        html += '    </div>';
-        html += '  </div>';
-        html += imageHtml;
-        html += '  <div class="question-card-text">' + escapeHtml(text) + '</div>';
-        html += '  <div class="question-card-footer">';
-        html += '    <span>' + (q.type === "image" ? "Image" : "Text") + ' &middot; ' + q.answers.length + ' answers</span>';
-        html += '  </div>';
-        html += '</div>';
-      }
-
-      grid.innerHTML = html;
-    }
-
-    function selectQuestion(id) {
-      selectedId = id;
-      renderQuestionList();
-      renderDetail(id);
-      document.getElementById("browse-modal-overlay").classList.add("open");
-      document.body.style.overflow = "hidden";
-    }
-
-    function renderDetail(id) {
-      var content = document.getElementById("modal-content");
-      if (!content) return;
-
-      var q = allQuestions.find(function(q) { return q.id === id; });
-      if (!q) return;
-
-      var t = getTranslation(q, currentLang) || {};
-      var questionText = t.question || "";
-      var options = t.options || [];
-      var explanations = t.explanations || {};
-      var isImageType = q.type === "image";
-      var hasQuestionImage = !!q.questionImage;
-
-      var answersHtml = "";
-      if (isImageType) {
-        for (var i = 0; i < q.answers.length; i++) {
-          var a = q.answers[i];
-          var imgSrc = a.image ? a.image : "";
-          var cls = "answer-btn";
-          if (a.correct) cls += " correct";
-          else if (a.hidden) cls += " incorrect";
-          answersHtml += '<div class="answer-wrapper">';
-          answersHtml += '<button class="' + cls + '" disabled>';
-          if (imgSrc) answersHtml += '<img src="' + imgSrc + '" alt="Answer ' + a.index + '" loading="lazy">';
-          answersHtml += '  <span class="answer-label">' + getAnswerLabel(a.index) + '</span>';
-          answersHtml += '</button>';
-          if (a.paragraph) {
-            var explText = explanations[a.paragraph];
-            if (explText) {
-              var explCls = "answer-explanation" + (a.correct ? " correct-explanation" : "");
-              answersHtml += '<div class="' + explCls + '">' + escapeHtml(explText) + '</div>';
-            }
-          }
-          answersHtml += '</div>';
-        }
-      } else {
-        for (var i = 0; i < q.answers.length; i++) {
-          var a = q.answers[i];
-          var text = options[a.index - 1] || "Answer " + getAnswerLabel(a.index);
-          var cls = "answer-btn";
-          if (a.correct) cls += " correct";
-          else if (a.hidden) cls += " incorrect";
-          answersHtml += '<div class="answer-wrapper">';
-          answersHtml += '<button class="' + cls + '" disabled>';
-          answersHtml += '  <span class="answer-label">' + getAnswerLabel(a.index) + '</span>';
-          answersHtml += '  <span>' + escapeHtml(text) + '</span>';
-          answersHtml += '</button>';
-          if (a.paragraph) {
-            var explText = explanations[a.paragraph];
-            if (explText) {
-              var explCls = "answer-explanation" + (a.correct ? " correct-explanation" : "");
-              answersHtml += '<div class="' + explCls + '">' + escapeHtml(explText) + '</div>';
-            }
-          }
-          answersHtml += '</div>';
-        }
-      }
-
-      var html = '<div class="question-display">';
-      html += '  <div class="question-header">';
-      html += '    <div class="flex items-center gap-3">';
-      html += '      <span class="badge badge-official">' + (q.official ? "Official" : "Practice") + '</span>';
-      html += '      <span class="badge badge-category">' + getCategoryLabel(q.category) + '</span>';
-      html += '      <span class="badge badge-category">' + (isImageType ? "Image" : "Text") + '</span>';
-      html += '    </div>';
-      html += '    <div class="flex items-center gap-2">';
-      html += '      <span class="question-id">ID: ' + q.originalId + '</span>';
-      html += '      <button class="btn btn-sm btn-ghost" onclick="closeDetail()">Close</button>';
-      html += '    </div>';
-      html += '  </div>';
-
-      if (hasQuestionImage || questionText) {
-        html += '  <div class="question-body-stacked">';
-        if (questionText) {
-          html += '    <div class="question-text-main">' + escapeHtml(questionText) + '</div>';
-        }
-        html += '    <div class="question-body">';
-        if (hasQuestionImage) {
-          html += '      <div class="question-image-side">';
-          html += '        <img src="' + q.questionImage + '" alt="Question image" loading="lazy">';
-          html += '      </div>';
-        }
-        html += '      <div class="question-content">';
-        html += '        <div class="answers-grid' + (isImageType ? ' answers-grid-images' : '') + '">' + answersHtml + '</div>';
-        html += '      </div>';
-        html += '    </div>';
-        html += '  </div>';
-      } else {
-        html += '  <div class="answers-grid' + (isImageType ? ' answers-grid-images' : '') + '">' + answersHtml + '</div>';
-      }
-      html += '</div>';
-
-      content.innerHTML = html;
-    }
-
-    function closeDetail() {
-      selectedId = null;
-      document.getElementById("browse-modal-overlay").classList.remove("open");
-      document.body.style.overflow = "";
-      renderQuestionList();
-    }
-
-    function closeModalOutside(event) {
-      if (event.target === document.getElementById("browse-modal-overlay")) {
-        closeDetail();
-      }
-    }
-
-    async function init() {
-      try {
-        await loadData();
-        populateCategorySelect();
-        applyFilters();
-        applyBrowseFilters();
-      } catch (e) {
-        console.error("Failed to load data:", e);
-        document.getElementById("quiz-container").innerHTML = '<div class="quiz-container text-center empty-state empty-state-full"><div class="empty-state-icon">!</div><div class="empty-state-title">Error loading quiz data</div><div class="empty-state-desc">' + escapeHtml(e.message) + '</div><div style="margin-top:16px;font-size:var(--text-sm);color:var(--text-muted);">Make sure you are running a local server (e.g., <code style="background:var(--bg-tertiary);padding:2px 6px;border-radius:4px;font-family:var(--font-mono);">python -m http.server 3000</code>) and not opening the file directly.</div></div>';
-      }
-    }
-
-    document.addEventListener("DOMContentLoaded", init);
-
-    document.addEventListener("keydown", function(e) {
-      if (e.key === "Escape") {
-        var overlay = document.getElementById("browse-modal-overlay");
-        if (overlay && overlay.classList.contains("open")) {
-          closeDetail();
-        }
-      }
-    });
-  </script>
+  <script type="module" src="src/js/app.js"></script>
 </body>
 </html>

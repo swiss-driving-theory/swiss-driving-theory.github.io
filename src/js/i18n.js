@@ -1,0 +1,336 @@
+export const SUPPORTED_LANGS = ["de", "fr", "it"];
+
+const translations = {
+  de: {
+    appName: "Schweizer Fahrschul-Theorie",
+    home: "Startseite",
+    training: "Training",
+    exam: "Prüfungssimulation",
+    startTraining: "Training starten",
+    startExam: "Prüfung starten",
+    totalQuestions: "Fragen insgesamt",
+    officialASA: "Offizielle ASA",
+    languages: "Sprachen",
+    images: "Bilder",
+    about: "Über",
+    aboutText:
+      "Diese App enthält Fragen aus der Schweizer Fahrtheorieprüfung (Kategorie B). Die Fragen sind auf Deutsch, Französisch und Italienisch verfügbar. Trainiere direkt mit sofortigem Feedback oder teste dich in der Prüfungssimulation unter echten Bedingungen (50 Fragen, 45 Minuten, 15 Fehlerpunkte-Limit).",
+    aboutTextFull:
+      "Diese App enthält Fragen aus der Schweizer Fahrtheorieprüfung (Kategorie B). Die Fragen sind auf Deutsch, Französisch und Italienisch verfügbar. Trainiere direkt mit sofortigem Feedback oder teste dich in der Prüfungssimulation unter echten Bedingungen (50 Fragen, 45 Minuten, 15 Fehlerpunkte-Limit).",
+    aboutTraining: "Training",
+    aboutExam: "Prüfungssimulation",
+    aboutConditions: "50 Fragen, 45 Minuten, 15 Fehlerpunkte-Limit",
+    loadingQuestions: "Fragen werden geladen...",
+    fetchingQuestions: "Fragen werden vom Server abgerufen.",
+    errorLoadingData: "Fehler beim Laden der Fragendaten",
+    errorHint:
+      "Stelle sicher, dass du einen lokalen Server verwendest (z. B. <code style=\"background:var(--bg-tertiary);padding:2px 6px;border-radius:var(--radius-xs);font-family:var(--font-mono);\">python -m http.server 3000</code>) und die Datei nicht direkt öffnest.",
+    quiz: "Quiz",
+    browseStudy: "Durchsuchen & Üben",
+    searchQuestions: "Fragen suchen...",
+    official: "Offiziell",
+    category: "Kategorie",
+    allCategories: "Alle Kategorien",
+    reset: "Zurücksetzen",
+    officialQuestions: "Offizielle Fragen",
+    restartQuiz: "Quiz neu starten",
+    noQuestionsMatch: "Keine Fragen gefunden",
+    tryAdjustingFilters:
+      "Passe die Filter an, um Ergebnisse zu sehen.",
+    resetFilters: "Filter zurücksetzen",
+    previous: "Zurück",
+    next: "Weiter",
+    finish: "Fertig",
+    checkAnswer: "Prüfen",
+    skip: "Überspringen",
+    questionOf: "Frage {current} von {total} ({pct}%)",
+    officialBadge: "Offiziell",
+    practiceBadge: "Übung",
+    trainingComplete: "Training beendet",
+    correctOutOf: "{correct} von {attempted} richtig ({total} total)",
+    startNewQuiz: "Nochmal üben",
+    back: "Zurück",
+    wrongAnswers: "Falsch ({count})",
+    correctLabel: "Richtig:",
+    imageType: "Bild",
+    textType: "Text",
+    answersCount: "{count} Antworten",
+    scoreCorrect: "richtig",
+    scoreWrong: "falsch",
+    scoreAttempted: "versucht",
+    close: "Schliessen",
+    examSimulation: "Prüfungssimulation",
+    questionCounter: "Frage {current}/{total}",
+    finishExam: "Prüfung abgeben",
+    preparingExam: "Deine Prüfung wird vorbereitet.",
+    examComplete: "Prüfung beendet",
+    passed: "Bestanden",
+    failed: "Nicht bestanden",
+    errorPoints: "Fehlerpunkte",
+    youPassed: "Bestanden!",
+    maxAllowed: "Maximal erlaubt: 15 Fehlerpunkte",
+    newExam: "Neue Prüfung",
+    questionReview: "Fragenübersicht",
+    correctBadge: "Richtig",
+    errorPointsBadge: "{points} Fehlerpunkte",
+    selectedLabel: "Ausgewählt:",
+    skippedLabel: "Übersprungen",
+    explanation: "Erklärung",
+    noOfficialQuestions: "Keine offiziellen Fragen verfügbar",
+    noOfficialQuestionsDesc:
+      "Die Fragendatenbank enthält keine offiziellen Fragen.",
+    statsQuestions: "Fragen",
+    statsOfficial: "Offizielle ASA",
+    statsLanguages: "Sprachen",
+    statsImages: "Bilder",
+  },
+  fr: {
+    appName: "Théorie de conduite suisse",
+    home: "Accueil",
+    training: "Entraînement",
+    exam: "Simulation d'examen",
+    startTraining: "Commencer l'entraînement",
+    startExam: "Commencer l'examen",
+    totalQuestions: "Questions au total",
+    officialASA: "Officiel ASA",
+    languages: "Langues",
+    images: "Images",
+    about: "À propos",
+    aboutText:
+      "Cette application contient des questions de l'examen de théorie de conduite suisse (catégorie B). Les questions sont disponibles en allemand, français et italien. Entraîne-toi directement avec un retour immédiat, ou teste-toi dans la simulation d'examen sous conditions réelles (50 questions, 45 minutes, limite de 15 points d'erreur).",
+    aboutTextFull:
+      "Cette application contient des questions de l'examen de théorie de conduite suisse (catégorie B). Les questions sont disponibles en allemand, français et italien. Entraîne-toi directement avec un retour immédiat, ou teste-toi dans la simulation d'examen sous conditions réelles (50 questions, 45 minutes, limite de 15 points d'erreur).",
+    aboutTraining: "Entraînement",
+    aboutExam: "Simulation d'examen",
+    aboutConditions: "50 questions, 45 minutes, limite de 15 points d'erreur",
+    loadingQuestions: "Chargement des questions...",
+    fetchingQuestions: "Récupération des dernières questions.",
+    errorLoadingData: "Erreur lors du chargement des données",
+    errorHint:
+      "Assure-toi d'utiliser un serveur local (par ex. <code style=\"background:var(--bg-tertiary);padding:2px 6px;border-radius:var(--radius-xs);font-family:var(--font-mono);\">python -m http.server 3000</code>) et d'ouvrir le fichier directement.",
+    quiz: "Quiz",
+    browseStudy: "Parcourir & Réviser",
+    searchQuestions: "Rechercher des questions...",
+    official: "Officiel",
+    category: "Catégorie",
+    allCategories: "Toutes catégories",
+    reset: "Réinitialiser",
+    officialQuestions: "Questions officielles",
+    restartQuiz: "Recommencer le quiz",
+    noQuestionsMatch: "Aucune question trouvée",
+    tryAdjustingFilters:
+      "Ajuste les filtres ci-dessus.",
+    resetFilters: "Réinitialiser les filtres",
+    previous: "Précédent",
+    next: "Suivant",
+    finish: "Fini",
+    checkAnswer: "Vérifier",
+    skip: "Passer",
+    questionOf: "Question {current} sur {total} ({pct}%)",
+    officialBadge: "Officiel",
+    practiceBadge: "Pratique",
+    trainingComplete: "Entraînement fini",
+    correctOutOf: "{correct} sur {attempted} correct ({total} total)",
+    startNewQuiz: "Recommencer",
+    back: "Retour",
+    wrongAnswers: "Faux ({count})",
+    correctLabel: "Correct :",
+    imageType: "Image",
+    textType: "Texte",
+    answersCount: "{count} réponses",
+    scoreCorrect: "correct",
+    scoreWrong: "faux",
+    scoreAttempted: "tentatives",
+    close: "Fermer",
+    examSimulation: "Simulation d'examen",
+    questionCounter: "Question {current}/{total}",
+    finishExam: "Terminer l'examen",
+    preparingExam: "Ta simulation est en préparation.",
+    examComplete: "Examen terminé",
+    passed: "Réussi",
+    failed: "Échoué",
+    errorPoints: "points d'erreur",
+    youPassed: "Réussi !",
+    maxAllowed: "Maximum autorisé : 15 points d'erreur",
+    newExam: "Nouvel examen",
+    questionReview: "Détail des questions",
+    correctBadge: "Correct",
+    errorPointsBadge: "{points} points d'erreur",
+    selectedLabel: "Sélectionné :",
+    skippedLabel: "Passé",
+    explanation: "Explication",
+    noOfficialQuestions: "Aucune question officielle disponible",
+    noOfficialQuestionsDesc:
+      "La banque de questions ne contient aucune question officielle.",
+    statsQuestions: "Questions",
+    statsOfficial: "Officiel ASA",
+    statsLanguages: "Langues",
+    statsImages: "Images",
+  },
+  it: {
+    appName: "Teoria di guida svizzera",
+    home: "Home",
+    training: "Allenamento",
+    exam: "Simulazione d'esame",
+    startTraining: "Inizia allenamento",
+    startExam: "Inizia esame",
+    totalQuestions: "Domande totali",
+    officialASA: "Ufficiale ASA",
+    languages: "Lingue",
+    images: "Immagini",
+    about: "Info",
+    aboutText:
+      "Questa app contiene domande dell'esame di teoria di guida svizzero (categoria B). Le domande sono disponibili in tedesco, francese e italiano. Usa l'allenamento per esercitarti con feedback immediato, o la simulazione d'esame per testarti in condizioni reali (50 domande, 45 minuti, limite di 15 punti errore).",
+    aboutTextFull:
+      "Questa app contiene domande dell'esame di teoria di guida svizzero (categoria B). Le domande sono disponibili in tedesco, francese e italiano. Allenati subito con feedback immediato o mettiti alla prova nella simulazione d'esame sotto condizioni reali (50 domande, 45 minuti, limite di 15 punti errore).",
+    aboutTraining: "Allenamento",
+    aboutExam: "Simulazione d'esame",
+    aboutConditions: "50 domande, 45 minuti, limite di 15 punti errore",
+    loadingQuestions: "Caricamento domande...",
+    fetchingQuestions: "Recupero delle domande dal server.",
+    errorLoadingData: "Errore nel caricamento dei dati",
+    errorHint:
+      "Assicurati di utilizzare un server locale (es. <code style=\"background:var(--bg-tertiary);padding:2px 6px;border-radius:var(--radius-xs);font-family:var(--font-mono);\">python -m http.server 3000</code>) e non aprire il file direttamente.",
+    quiz: "Quiz",
+    browseStudy: "Sfoglia & Ripassa",
+    searchQuestions: "Cerca domande...",
+    official: "Ufficiale",
+    category: "Categoria",
+    allCategories: "Tutte le categorie",
+    reset: "Ripristina",
+    officialQuestions: "Domande ufficiali",
+    restartQuiz: "Riavria quiz",
+    noQuestionsMatch: "Nessuna domanda trovata",
+    tryAdjustingFilters:
+      "Modifica i filtri sopra.",
+    resetFilters: "Ripristina filtri",
+    previous: "Precedente",
+    next: "Successivo",
+    finish: "Finito",
+    checkAnswer: "Controlla",
+    skip: "Salta",
+    questionOf: "Domanda {current} di {total} ({pct}%)",
+    officialBadge: "Ufficiale",
+    practiceBadge: "Pratica",
+    trainingComplete: "Allenamento finito",
+    correctOutOf: "{correct} su {attempted} corrette ({total} totali)",
+    startNewQuiz: "Riprova",
+    back: "Indietro",
+    wrongAnswers: "Sbagliate ({count})",
+    correctLabel: "Corretta:",
+    imageType: "Immagine",
+    textType: "Testo",
+    answersCount: "{count} risposte",
+    scoreCorrect: "corrette",
+    scoreWrong: "sbagliate",
+    scoreAttempted: "tentativi",
+    close: "Chiudi",
+    examSimulation: "Simulazione d'esame",
+    questionCounter: "Domanda {current}/{total}",
+    finishExam: "Termina esame",
+    preparingExam: "La simulazione è in preparazione.",
+    examComplete: "Esame completato",
+    passed: "Superato",
+    failed: "Non superato",
+    errorPoints: "punti errore",
+    youPassed: "Superato!",
+    maxAllowed: "Massimo consentito: 15 punti errore",
+    newExam: "Nuovo esame",
+    questionReview: "Dettaglio domande",
+    correctBadge: "Corretta",
+    errorPointsBadge: "{points} punti errore",
+    selectedLabel: "Selezionata:",
+    skippedLabel: "Saltata",
+    explanation: "Spiegazione",
+    noOfficialQuestions: "Nessuna domanda ufficiale disponibile",
+    noOfficialQuestionsDesc:
+      "Il database delle domande non contiene domande ufficiali.",
+    statsQuestions: "Domande",
+    statsOfficial: "Ufficiale ASA",
+    statsLanguages: "Lingue",
+    statsImages: "Immagini",
+  },
+};
+
+const categoryTranslations = {
+  de: {
+    1: "Fahrzeug / Gesetz",
+    2: "Verkehrsschilder",
+    3: "Signale / Verhalten",
+    4: "Überholen / Abbiegen",
+    5: "Autobahn / Autostrasse",
+    6: "Vorfahrt",
+    7: "Parkieren",
+    8: "Distanzen / Geschwindigkeit",
+    9: "Fahrzeugführung / Situationen",
+     10: "Spezialsituationen / Schutzbedürftige Verkehrsteilnehmer",
+    11: "Sicht / Beleuchtung",
+    12: "Notfall / Unfall / Versicherung",
+  },
+  fr: {
+    1: "Véhicule / Loi",
+    2: "Signaux",
+    3: "Signaux / Comportement",
+    4: "Dépassement / Virage",
+    5: "Autoroute / Semi-autoroute",
+    6: "Priorité",
+    7: "Stationnement",
+    8: "Distances / Vitesse",
+    9: "Conduite / Situations",
+     10: "Situations spéciales / Personnes vulnérables",
+    11: "Visibilité / Éclairage",
+    12: "Urgence / Accidents / Assurance",
+  },
+  it: {
+    1: "Veicolo / Legge",
+    2: "Segnali",
+    3: "Segnali / Comportamento",
+    4: "Sorpasso / Curva",
+    5: "Autostrada / Strada a scorrimento veloce",
+    6: "Precedenza",
+    7: "Parcheggio",
+    8: "Distanze / Velocità",
+    9: "Guida / Situazioni",
+     10: "Situazioni speciali / Persone vulnerabili",
+    11: "Visibilità / Luci",
+    12: "Emergenza / Incidenti / Assicurazione",
+  },
+};
+
+export function t(key, lang, vars = {}) {
+  const fallbackLang = "de";
+  let str =
+    (translations[lang] && translations[lang][key]) ||
+    translations[fallbackLang][key] ||
+    key;
+  Object.keys(vars).forEach((k) => {
+    str = str.replace(`{${k}}`, vars[k]);
+  });
+  return str;
+}
+
+export function getCategoryLabel(catId, lang) {
+  return (
+    categoryTranslations[lang]?.[catId] ||
+    categoryTranslations["de"][catId] ||
+    `Category ${catId}`
+  );
+}
+
+export function getTypeLabel(type, lang) {
+  return type === "image" ? t("imageType", lang) : t("textType", lang);
+}
+
+export function getLanguageName(code) {
+  const names = { de: "Deutsch", fr: "Français", it: "Italiano" };
+  return names[code] || code;
+}
+
+export function getPageTitle(page, lang) {
+  if (page === "quiz" || page === "training")
+    return `${t("training", lang)} — ${t("appName", lang)}`;
+  if (page === "browse")
+    return `${t("browseStudy", lang)} — ${t("appName", lang)}`;
+  if (page === "exam") return `${t("exam", lang)} — ${t("appName", lang)}`;
+  return t("appName", lang);
+}

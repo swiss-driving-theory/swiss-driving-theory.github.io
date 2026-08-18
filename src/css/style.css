@@ -618,6 +618,15 @@ h4 { font-size: var(--text-lg); font-weight: 600; line-height: var(--leading-tig
   color: var(--text-primary);
 }
 
+.question-image-main {
+  max-width: 100%;
+  max-height: 320px;
+  object-fit: contain;
+  background: var(--bg-secondary);
+  border-radius: var(--radius);
+  margin: var(--space-4) 0;
+}
+
 .question-body {
   display: flex;
   gap: var(--space-8);
@@ -1197,9 +1206,9 @@ h4 { font-size: var(--text-lg); font-weight: 600; line-height: var(--leading-tig
 }
 
 .exam-palette-dot.answered {
-  border-color: var(--success);
-  background: var(--success-bg);
-  color: var(--success);
+  border-color: #355da6;
+  background: rgba(53, 93, 166, 0.08);
+  color: #355da6;
 }
 
 .exam-palette-dot.skipped {
@@ -1254,10 +1263,11 @@ h4 { font-size: var(--text-lg); font-weight: 600; line-height: var(--leading-tig
 
 .browse-search {
   width: 100%;
-  padding: 10px var(--space-3);
+  height: 36px;
+  padding: 0 var(--space-3);
   border: 1px solid var(--border-color);
   border-radius: var(--radius-sm);
-  font-size: var(--text-base);
+  font-size: var(--text-sm);
   font-family: inherit;
   background: var(--bg-primary);
   transition: border-color 0.2s, box-shadow 0.2s;
@@ -1266,7 +1276,27 @@ h4 { font-size: var(--text-lg); font-weight: 600; line-height: var(--leading-tig
 .browse-search:focus {
   outline: none;
   border-color: var(--swiss-red);
-  box-shadow: 0 0 0 3px var(--swiss-red-light);
+  box-shadow: 0 0 0 3px rgba(215, 45, 45, 0.1);
+}
+
+.browse-toolbar .form-select,
+.browse-toolbar .btn-sm {
+  height: 36px;
+}
+
+.browse-toolbar .form-select {
+  padding-top: 0;
+  padding-bottom: 0;
+  font-size: var(--text-sm);
+}
+
+.browse-toolbar .btn-sm {
+  padding: 0 var(--space-4);
+  font-size: var(--text-sm);
+}
+
+.browse-toolbar .toggle {
+  align-items: center;
 }
 
 .browse-layout { display: block; }

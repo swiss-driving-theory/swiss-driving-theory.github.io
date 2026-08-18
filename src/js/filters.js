@@ -1,4 +1,5 @@
 import { getAllCategories } from "./data.js";
+import { t } from "./i18n.js";
 import { getCategoryLabel, getLanguageName } from "./utils.js";
 
 const LANGUAGE_KEY = "swiss-driving-theory-lang";
@@ -31,11 +32,11 @@ export function setSavedCategory(val) {
   else localStorage.setItem(CATEGORY_KEY, String(val));
 }
 
-export function populateLanguageSelect(selectEl, onChange) {
+export function populateLanguageSelect(selectEl, onChange, lang = "de") {
   const langs = [
-    { code: "de", name: "Deutsch" },
-    { code: "fr", name: "Français" },
-    { code: "it", name: "Italiano" },
+    { code: "de" },
+    { code: "fr" },
+    { code: "it" },
   ];
   selectEl.innerHTML = langs
     .map(
@@ -58,13 +59,13 @@ export function populateOfficialToggle(checkboxEl, onChange) {
   });
 }
 
-export function populateCategorySelect(selectEl, onChange) {
+export function populateCategorySelect(selectEl, onChange, lang = "de") {
   const cats = getAllCategories();
   const options = [
-    `<option value="all">All categories</option>`,
+    `<option value="all" data-i18n="allCategories">${t("allCategories", lang)}</option>`,
     ...cats.map(
       (c) =>
-        `<option value="${c}">${getCategoryLabel(c)}</option>`
+        `<option value="${c}" data-i18n="category-${c}">${getCategoryLabel(c, lang)}</option>`
     ),
   ].join("");
   selectEl.innerHTML = options;

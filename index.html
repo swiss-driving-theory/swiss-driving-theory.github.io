@@ -1,37 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Swiss Driving Theory</title>
   <link rel="stylesheet" href="src/css/style.css">
 </head>
-<body>
+<body data-page="home">
   <header class="header">
     <div class="header-inner">
       <a href="index.html" class="logo">
         <div class="logo-icon">CH</div>
-        <span>Swiss Driving Theory</span>
+        <span data-i18n="appName">Swiss Driving Theory</span>
       </a>
       <nav class="nav">
-        <a href="training.html" class="nav-btn">Training</a>
-        <a href="exam.html" class="nav-btn">Exam Simulation</a>
-        <select id="lang-select" class="lang-select" onchange="setLang(this.value)">
-          <option value="de">Deutsch</option>
-          <option value="fr">Français</option>
-          <option value="it">Italiano</option>
-        </select>
+        <a href="training.html" class="nav-btn" data-i18n="training">Training</a>
+        <a href="exam.html" class="nav-btn" data-i18n="exam">Exam Simulation</a>
+        <select id="lang-select" class="lang-select"></select>
       </nav>
     </div>
   </header>
 
   <section class="hero">
     <div class="container">
-      <h1>Swiss Driving Theory</h1>
-      <p>Prepare for your driving theory exam with official ASA questions. Available in German, French, and Italian.</p>
+      <h1 data-i18n="appName">Swiss Driving Theory</h1>
+      <p data-i18n="aboutText">Prepare for your driving theory exam with official ASA questions. Available in German, French, and Italian.</p>
       <div class="hero-actions">
-        <a href="training.html" class="hero-btn hero-btn-primary">Start Training</a>
-        <a href="exam.html" class="hero-btn hero-btn-secondary">Exam Simulation</a>
+        <a href="training.html" class="hero-btn hero-btn-primary" data-i18n="startTraining">Start Training</a>
+        <a href="exam.html" class="hero-btn hero-btn-secondary" data-i18n="startExam">Exam Simulation</a>
       </div>
     </div>
   </section>
@@ -41,73 +37,37 @@
       <div class="stats-grid">
         <div class="stat-card">
           <div class="stat-value" id="total-questions">--</div>
-          <div class="stat-label">Total Questions</div>
+          <div class="stat-label" data-i18n="totalQuestions">Total Questions</div>
         </div>
         <div class="stat-card">
           <div class="stat-value" id="official-count">--</div>
-          <div class="stat-label">Official ASA</div>
+          <div class="stat-label" data-i18n="officialASA">Official ASA</div>
         </div>
         <div class="stat-card">
           <div class="stat-value">3</div>
-          <div class="stat-label">Languages</div>
+          <div class="stat-label" data-i18n="languages">Languages</div>
         </div>
         <div class="stat-card">
           <div class="stat-value">795</div>
-          <div class="stat-label">Images</div>
+          <div class="stat-label" data-i18n="images">Images</div>
         </div>
       </div>
 
       <div class="card">
-        <h2 class="card-title">About</h2>
-        <p class="about-text">
+        <h2 class="card-title" data-i18n="about">About</h2>
+        <p class="about-text" data-i18n="aboutTextFull">
           This app contains questions from the Swiss driving theory exam (category B).
           Questions are available in German, French, and Italian.
-          Use <strong>Training</strong> to practice with immediate feedback, or try the <strong>Exam Simulation</strong> to test yourself under real exam conditions (50 questions, 45 minutes, 15 error points limit).
+          Use Training to practice with immediate feedback, or try the Exam Simulation to test yourself under real exam conditions (50 questions, 45 minutes, 15 error points limit).
         </p>
         <div class="about-actions">
-          <a href="training.html" class="btn btn-primary">Start Training</a>
-          <a href="exam.html" class="btn btn-secondary">Exam Simulation</a>
+          <a href="training.html" class="btn btn-primary" data-i18n="startTraining">Start Training</a>
+          <a href="exam.html" class="btn btn-secondary" data-i18n="startExam">Exam Simulation</a>
         </div>
       </div>
     </div>
   </section>
 
-  <script>
-    let allQuestions = [];
-    let currentLang = "de";
-
-    function setLang(lang) {
-      currentLang = lang;
-      try { localStorage.setItem("swiss-driving-theory-lang", lang); } catch(e) {}
-    }
-
-    async function loadData() {
-      const resp = await fetch("assets/questions.json");
-      if (!resp.ok) throw new Error("Failed to load questions.json: " + resp.status);
-      const text = await resp.text();
-      const data = JSON.parse(text);
-      allQuestions = data.questions || [];
-      return data;
-    }
-
-    async function init() {
-      try {
-        await loadData();
-        document.getElementById("total-questions").textContent = allQuestions.length.toLocaleString();
-        document.getElementById("official-count").textContent = allQuestions.filter(q => q.official).length.toLocaleString();
-      } catch (e) {
-        console.error("Failed to load data:", e);
-        document.body.innerHTML = '<div class="container error-container"><div class="error-box"><h1>Error loading quiz data</h1><p>' + escapeHtml(e.message) + '</p><p class="error-hint">Make sure you are running a local server (e.g., <code style="background:var(--bg-tertiary);padding:2px 6px;border-radius:var(--radius-xs);font-family:var(--font-mono);">python -m http.server 3000</code>) and not opening the file directly.</p></div></div>';
-      }
-    }
-
-    function escapeHtml(str) {
-      var div = document.createElement("div");
-      div.textContent = str;
-      return div.innerHTML;
-    }
-
-    document.addEventListener("DOMContentLoaded", init);
-  </script>
+  <script type="module" src="src/js/app.js"></script>
 </body>
 </html>
