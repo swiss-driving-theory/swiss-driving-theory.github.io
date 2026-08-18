@@ -143,7 +143,7 @@ img { max-width: 100%; height: auto; display: block; }
   background: var(--swiss-red);
   border-radius: 6px;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   color: white;
   font-weight: 700;
@@ -152,6 +152,7 @@ img { max-width: 100%; height: auto; display: block; }
   letter-spacing: 0px;
   flex-shrink: 0;
   position: relative;
+  padding-top: 6px;
 }
 
 .logo-icon::before,
@@ -584,7 +585,6 @@ h4 { font-size: var(--text-lg); font-weight: 600; line-height: var(--leading-tig
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow);
   padding: var(--space-6);
-  margin-bottom: var(--space-5);
   border: 1px solid var(--border-light);
   animation: fadeIn 0.3s ease;
 }
@@ -1287,10 +1287,10 @@ h4 { font-size: var(--text-lg); font-weight: 600; line-height: var(--leading-tig
   -webkit-backdrop-filter: blur(4px);
   z-index: 200;
   display: flex;
-  align-items: center;
   justify-content: center;
   padding: var(--space-6);
   overflow-y: auto;
+  overflow-x: hidden;
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.2s, visibility 0.2s;
@@ -1307,12 +1307,24 @@ h4 { font-size: var(--text-lg); font-weight: 600; line-height: var(--leading-tig
   box-shadow: var(--shadow-lg);
   width: 100%;
   max-width: 900px;
-  max-height: calc(100vh - var(--space-6) * 2);
+  height: fit-content;
+  max-height: none;
   padding: var(--space-6);
   position: relative;
   margin: auto;
   transform: translateY(20px);
   transition: transform 0.2s;
+  box-sizing: border-box;
+}
+
+.browse-modal .badge {
+  white-space: normal;
+  max-width: 100%;
+}
+
+.browse-modal .question-text-main {
+  word-break: break-word;
+  overflow-wrap: break-word;
 }
 
 .browse-modal-overlay.open .browse-modal {
@@ -1375,7 +1387,7 @@ h4 { font-size: var(--text-lg); font-weight: 600; line-height: var(--leading-tig
   .exam-header { flex-direction: column; align-items: stretch; }
   .exam-timer { text-align: center; }
   .browse-modal-overlay { padding: var(--space-3); }
-  .browse-modal { padding: var(--space-4); max-height: calc(100vh - var(--space-3) * 2); margin: var(--space-3) 0; }
+  .browse-modal { padding: var(--space-4); }
   .hero { padding: var(--space-12) 0; }
   .hero h1 { font-size: var(--text-3xl); }
   .hero p { font-size: var(--text-base); }
