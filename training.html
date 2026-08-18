@@ -98,13 +98,14 @@
           <div class="empty-state-desc">Fetching questions from the server.</div>
         </div>
       </div>
-
-      <div id="detail-container" style="display:none; margin-top: var(--space-6);">
-        <div class="question-display" id="detail-display">
-          <div id="detail-content"></div>
-        </div>
-      </div>
     </main>
+
+    <div class="browse-modal-overlay" id="browse-modal-overlay" onclick="closeModalOutside(event)">
+      <div class="browse-modal" id="browse-modal">
+        <button class="browse-modal-close" onclick="closeDetail()" aria-label="Close">&times;</button>
+        <div id="modal-content"></div>
+      </div>
+    </div>
   </div>
 
   <script>
@@ -630,12 +631,12 @@
       selectedId = id;
       renderQuestionList();
       renderDetail(id);
-      document.getElementById("detail-container").style.display = "block";
-      document.getElementById("detail-display").scrollIntoView({ behavior: "smooth", block: "start" });
+      document.getElementById("browse-modal-overlay").classList.add("open");
+      document.body.style.overflow = "hidden";
     }
 
     function renderDetail(id) {
-      var content = document.getElementById("detail-content");
+      var content = document.getElementById("modal-content");
       if (!content) return;
 
       var q = allQuestions.find(function(q) { return q.id === id; });
@@ -732,8 +733,15 @@
 
     function closeDetail() {
       selectedId = null;
-      document.getElementById("detail-container").style.display = "none";
+      document.getElementById("browse-modal-overlay").classList.remove("open");
+      document.body.style.overflow = "";
       renderQuestionList();
+    }
+
+    function closeModalOutside(event) {
+      if (event.target === document.getElementById("browse-modal-overlay")) {
+        closeDetail();
+      }
     }
 
     async function init() {
@@ -749,6 +757,15 @@
     }
 
     document.addEventListener("DOMContentLoaded", init);
+
+    document.addEventListener("keydown", function(e) {
+      if (e.key === "Escape") {
+        var overlay = document.getElementById("browse-modal-overlay");
+        if (overlay && overlay.classList.contains("open")) {
+          closeDetail();
+        }
+      }
+    });
   </script>
 </body>
 </html>
