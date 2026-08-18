@@ -91,19 +91,21 @@
     </div>
 
     <main class="container section-tight">
-      <div class="browse-layout">
-        <div class="browse-grid">
-          <div id="question-grid" class="question-grid">
-            <div class="empty-state">
-              <div class="empty-state-icon">?</div>
-              <div class="empty-state-title">Loading questions...</div>
-              <div class="empty-state-desc">Fetching questions from the server.</div>
-            </div>
-          </div>
+      <div id="question-grid" class="question-grid">
+        <div class="empty-state">
+          <div class="empty-state-icon">?</div>
+          <div class="empty-state-title">Loading questions...</div>
+          <div class="empty-state-desc">Fetching questions from the server.</div>
         </div>
-        <div id="detail-panel" class="browse-detail"></div>
       </div>
     </main>
+
+    <div class="browse-modal-overlay" id="browse-modal-overlay" onclick="closeModalOutside(event)">
+      <div class="browse-modal" id="browse-modal">
+        <button class="browse-modal-close" onclick="closeDetail()" aria-label="Close">&times;</button>
+        <div id="modal-content"></div>
+      </div>
+    </div>
   </div>
 
   <script>
@@ -579,7 +581,7 @@
       document.getElementById("filter-official").checked = false;
       document.getElementById("filter-category").value = "all";
       renderQuestionList();
-      document.getElementById("detail-panel").innerHTML = "";
+      closeDetail();
     }
 
     function renderQuestionList() {
@@ -626,10 +628,12 @@
       selectedId = id;
       renderQuestionList();
       renderDetail(id);
+      document.getElementById("browse-modal-overlay").classList.add("open");
+      document.body.style.overflow = "hidden";
     }
 
     function renderDetail(id) {
-      var panel = document.getElementById("detail-panel");
+      var panel = document.getElementById("modal-content");
       if (!panel) return;
 
       var q = allQuestions.find(function(q) { return q.id === id; });
@@ -681,13 +685,19 @@
       html += '</div>';
 
       panel.innerHTML = html;
-      panel.scrollIntoView({ behavior: "smooth", block: "start" });
     }
 
     function closeDetail() {
       selectedId = null;
-      document.getElementById("detail-panel").innerHTML = "";
+      document.getElementById("browse-modal-overlay").classList.remove("open");
+      document.body.style.overflow = "";
       renderQuestionList();
+    }
+
+    function closeModalOutside(event) {
+      if (event.target === document.getElementById("browse-modal-overlay")) {
+        closeDetail();
+      }
     }
 
     async function init() {
@@ -703,6 +713,15 @@
     }
 
     document.addEventListener("DOMContentLoaded", init);
+
+    document.addEventListener("keydown", function(e) {
+      if (e.key === "Escape") {
+        var overlay = document.getElementById("browse-modal-overlay");
+        if (overlay && overlay.classList.contains("open")) {
+          closeDetail();
+        }
+      }
+    });
   </script>
 </body>
 </html>
