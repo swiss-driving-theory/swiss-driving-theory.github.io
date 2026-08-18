@@ -3,15 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Browse — CUT-Exam</title>
-  <link rel="stylesheet" href="../css/style.css">
+  <title>Browse — Swiss Driving Theory</title>
+  <link rel="stylesheet" href="src/css/style.css">
 </head>
 <body>
   <header class="header">
     <div class="header-inner">
       <a href="index.html" class="logo">
-        <div class="logo-icon">CUT</div>
-        <span>CUT-Exam</span>
+        <div class="logo-icon">CH</div>
+        <span>Swiss Driving Theory</span>
       </a>
       <nav class="nav">
         <a href="index.html" class="nav-btn">Home</a>
@@ -84,7 +84,7 @@
 
     function setLang(lang) {
       currentLang = lang;
-      try { localStorage.setItem("cut-exam-lang", lang); } catch(e) {}
+      try { localStorage.setItem("swiss-driving-theory-lang", lang); } catch(e) {}
     }
 
     function getCategoryLabel(catId) {
@@ -132,7 +132,7 @@
     }
 
     async function loadData() {
-      var resp = await fetch("../../assets/questions.json");
+      var resp = await fetch("assets/questions.json");
       if (!resp.ok) throw new Error("Failed to load questions.json: " + resp.status);
       var text = await resp.text();
       var data = JSON.parse(text);
@@ -188,7 +188,7 @@
         var t = getTranslation(q, currentLang) || {};
         var text = truncate(t.question || "Question #" + q.id, 90);
         var imageHtml = q.questionImage
-          ? '<img src="../../' + q.questionImage + '" alt="" class="question-card-image" loading="lazy">'
+          ? '<img src="' + q.questionImage + '" alt="" class="question-card-image" loading="lazy">'
           : "";
 
         var selectedClass = (selectedId === q.id) ? " selected" : "";
@@ -244,7 +244,7 @@
       html += '  </div>';
 
       if (q.questionImage) {
-        html += '<img src="../../' + q.questionImage + '" alt="Question image" class="detail-image">';
+        html += '<img src="' + q.questionImage + '" alt="Question image" class="detail-image">';
       }
 
       if (questionText) {

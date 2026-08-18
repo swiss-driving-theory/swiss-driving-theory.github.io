@@ -1,4 +1,4 @@
-const STORAGE_KEY = "cut-exam-progress";
+const STORAGE_KEY = "swiss-driving-theory-progress";
 
 export function getProgress() {
   try {

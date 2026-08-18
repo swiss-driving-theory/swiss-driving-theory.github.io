@@ -1,9 +1,9 @@
 import { getAllCategories } from "./data.js";
 import { getCategoryLabel, getLanguageName } from "./utils.js";
 
-const LANGUAGE_KEY = "cut-exam-lang";
-const OFFICIAL_KEY = "cut-exam-official";
-const CATEGORY_KEY = "cut-exam-category";
+const LANGUAGE_KEY = "swiss-driving-theory-lang";
+const OFFICIAL_KEY = "swiss-driving-theory-official";
+const CATEGORY_KEY = "swiss-driving-theory-category";
 
 export function getSavedLanguage() {
   return localStorage.getItem(LANGUAGE_KEY) || "de";

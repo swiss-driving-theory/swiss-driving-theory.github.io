@@ -141,15 +141,36 @@ img { max-width: 100%; height: auto; display: block; }
   width: 32px;
   height: 32px;
   background: var(--swiss-red);
-  border-radius: var(--radius-sm);
+  border-radius: 6px;
   display: flex;
   align-items: center;
   justify-content: center;
   color: white;
   font-weight: 700;
-  font-size: var(--text-xs);
-  letter-spacing: 0.5px;
+  font-size: 14px;
+  line-height: 1;
+  letter-spacing: 0px;
   flex-shrink: 0;
+  position: relative;
+}
+
+.logo-icon::before,
+.logo-icon::after {
+  content: "";
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  opacity: 0.85;
+}
+
+.logo-icon::before {
+  background: linear-gradient(to right, white 0%, white 42%, transparent 42%);
+}
+
+.logo-icon::after {
+  background: linear-gradient(to right, transparent 58%, white 58%);
 }
 
 .nav { display: flex; gap: var(--space-2); align-items: center; }

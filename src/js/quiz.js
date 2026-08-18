@@ -3,7 +3,7 @@ import { getSavedLanguage, setSavedLanguage } from "./filters.js";
 import { recordAnswer, getSessionState, setSessionState, clearSessionState } from "./progress.js";
 import { shuffleArray, truncate, escapeHtml } from "./utils.js";
 
-const SESSION_KEY = "cut-exam-quiz-state";
+const SESSION_KEY = "swiss-driving-theory-quiz-state";
 
 function getAnswerLabel(index) {
   return String.fromCharCode(96 + index);

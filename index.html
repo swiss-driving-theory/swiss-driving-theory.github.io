@@ -1,11 +1,114 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="refresh" content="0; url=src/pages/index.html">
-  <title>CUT-Exam</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Swiss Driving Theory</title>
+  <link rel="stylesheet" href="src/css/style.css">
 </head>
 <body>
-  <p>Redirecting to <a href="src/pages/index.html">CUT-Exam</a>...</p>
+  <header class="header">
+    <div class="header-inner">
+      <a href="index.html" class="logo">
+        <div class="logo-icon">CH</div>
+        <span>Swiss Driving Theory</span>
+      </a>
+      <nav class="nav">
+        <a href="quiz.html" class="nav-btn">Start Quiz</a>
+        <a href="browse.html" class="nav-btn">Browse</a>
+        <select id="lang-select" class="lang-select" onchange="setLang(this.value)">
+          <option value="de">Deutsch</option>
+          <option value="fr">Français</option>
+          <option value="it">Italiano</option>
+        </select>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h1>Swiss Driving Theory Exam</h1>
+      <p>Practice with official ASA questions. Multiple languages. Image-based and text questions.</p>
+      <div class="hero-actions">
+        <a href="quiz.html" class="hero-btn hero-btn-primary">Start Quiz</a>
+        <a href="browse.html" class="hero-btn hero-btn-secondary">Browse Questions</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-value" id="total-questions">--</div>
+          <div class="stat-label">Total Questions</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value" id="official-count">--</div>
+          <div class="stat-label">Official ASA</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">3</div>
+          <div class="stat-label">Languages</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">795</div>
+          <div class="stat-label">Images</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2 class="card-title">About</h2>
+        <p class="about-text">
+          This quiz app contains questions from the Swiss driving theory exam (category B).
+          Questions are available in German, French, and Italian.
+          Use the <strong>Official</strong> filter to practice only official ASA questions,
+          or browse all questions in the reference section.
+        </p>
+        <div class="about-actions">
+          <a href="quiz.html" class="btn btn-primary">Start Quiz Now</a>
+          <a href="browse.html" class="btn btn-secondary">Browse Questions</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    let allQuestions = [];
+    let currentLang = "de";
+
+    function setLang(lang) {
+      currentLang = lang;
+      try { localStorage.setItem("swiss-driving-theory-lang", lang); } catch(e) {}
+    }
+
+    async function loadData() {
+      const resp = await fetch("assets/questions.json");
+      if (!resp.ok) throw new Error("Failed to load questions.json: " + resp.status);
+      const text = await resp.text();
+      const data = JSON.parse(text);
+      allQuestions = data.questions || [];
+      return data;
+    }
+
+    async function init() {
+      try {
+        await loadData();
+        document.getElementById("total-questions").textContent = allQuestions.length.toLocaleString();
+        document.getElementById("official-count").textContent = allQuestions.filter(q => q.official).length.toLocaleString();
+      } catch (e) {
+        console.error("Failed to load data:", e);
+        document.body.innerHTML = '<div class="container error-container"><div class="error-box"><h1>Error loading quiz data</h1><p>' + escapeHtml(e.message) + '</p><p class="error-hint">Make sure you are running a local server (e.g., <code style="background:var(--bg-tertiary);padding:2px 6px;border-radius:var(--radius-xs);font-family:var(--font-mono);">python -m http.server 3000</code>) and not opening the file directly.</p></div></div>';
+      }
+    }
+
+    function escapeHtml(str) {
+      var div = document.createElement("div");
+      div.textContent = str;
+      return div.innerHTML;
+    }
+
+    document.addEventListener("DOMContentLoaded", init);
+  </script>
 </body>
 </html>
