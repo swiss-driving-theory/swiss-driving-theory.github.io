@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Quiz — Swiss Driving Theory</title>
+  <title>Training — Swiss Driving Theory</title>
   <link rel="stylesheet" href="src/css/style.css">
 </head>
 <body>
@@ -15,7 +15,7 @@
       </a>
       <nav class="nav">
         <a href="index.html" class="nav-btn">Home</a>
-        <a href="browse.html" class="nav-btn">Browse</a>
+        <a href="exam.html" class="nav-btn">Exam</a>
         <select id="lang-select" class="lang-select" onchange="setLang(this.value)">
           <option value="de">Deutsch</option>
           <option value="fr">Français</option>
@@ -25,35 +25,85 @@
     </div>
   </header>
 
-  <div class="toolbar">
-    <div class="container">
-      <div class="toolbar-inner">
-        <div class="toolbar-group">
-          <span class="toolbar-label">Official questions</span>
-          <label class="toggle">
-            <input type="checkbox" id="quiz-official" onchange="applyFilters()">
-            <span class="toggle-track"><span class="toggle-thumb"></span></span>
-          </label>
+  <div class="mode-tabs">
+    <button class="mode-tab active" onclick="switchTab('quiz')">Quiz</button>
+    <button class="mode-tab" onclick="switchTab('browse')">Browse &amp; Study</button>
+  </div>
+
+  <div id="quiz-view" class="training-view active">
+    <div class="toolbar">
+      <div class="container">
+        <div class="toolbar-inner">
+          <div class="toolbar-group">
+            <span class="toolbar-label">Official questions</span>
+            <label class="toggle">
+              <input type="checkbox" id="quiz-official" onchange="applyFilters()">
+              <span class="toggle-track"><span class="toggle-thumb"></span></span>
+            </label>
+          </div>
+          <div class="toolbar-group">
+            <span class="toolbar-label">Category</span>
+            <select id="quiz-category" class="form-select" onchange="applyFilters()">
+              <option value="all">All categories</option>
+            </select>
+          </div>
+          <div class="toolbar-group">
+            <button class="btn btn-sm btn-primary" onclick="resetQuiz()">Restart Quiz</button>
+          </div>
         </div>
-        <div class="toolbar-group">
-          <span class="toolbar-label">Category</span>
-          <select id="quiz-category" class="form-select" onchange="applyFilters()">
-            <option value="all">All categories</option>
-          </select>
-        </div>
-        <div class="toolbar-group">
-          <button class="btn btn-sm btn-primary" onclick="resetQuiz()">Restart Quiz</button>
-        </div>
+      </div>
+    </div>
+
+    <div id="quiz-container">
+      <div class="quiz-container text-center empty-state">
+        <div class="empty-state-icon">?</div>
+        <div class="empty-state-title">Loading questions...</div>
+        <div class="empty-state-desc">Fetching the latest questions from the server.</div>
       </div>
     </div>
   </div>
 
-  <div id="quiz-container">
-    <div class="quiz-container text-center empty-state">
-      <div class="empty-state-icon">?</div>
-      <div class="empty-state-title">Loading questions...</div>
-      <div class="empty-state-desc">Fetching the latest questions from the server.</div>
+  <div id="browse-view" class="training-view">
+    <div class="browse-toolbar">
+      <div class="container">
+        <div class="browse-toolbar-inner">
+          <div class="browse-search-wrap">
+            <input type="text" id="browse-search" class="browse-search" placeholder="Search questions..." oninput="applyBrowseFilters()">
+          </div>
+          <div class="toolbar-group">
+            <span class="toolbar-label">Official</span>
+            <label class="toggle">
+              <input type="checkbox" id="filter-official" onchange="applyBrowseFilters()">
+              <span class="toggle-track"><span class="toggle-thumb"></span></span>
+            </label>
+          </div>
+          <div class="toolbar-group">
+            <span class="toolbar-label">Category</span>
+            <select id="filter-category" class="form-select" onchange="applyBrowseFilters()">
+              <option value="all">All categories</option>
+            </select>
+          </div>
+          <div class="toolbar-group">
+            <button class="btn btn-sm btn-secondary" onclick="resetFilters()">Reset</button>
+          </div>
+        </div>
+      </div>
     </div>
+
+    <main class="container section-tight">
+      <div class="browse-layout">
+        <div class="browse-grid">
+          <div id="question-grid" class="question-grid">
+            <div class="empty-state">
+              <div class="empty-state-icon">?</div>
+              <div class="empty-state-title">Loading questions...</div>
+              <div class="empty-state-desc">Fetching questions from the server.</div>
+            </div>
+          </div>
+        </div>
+        <div id="detail-panel" class="browse-detail"></div>
+      </div>
+    </main>
   </div>
 
   <script>
@@ -65,10 +115,31 @@
     var checked = false;
     var currentLang = "de";
 
+    var filteredIds = [];
+    var selectedId = null;
+
     function setLang(lang) {
       currentLang = lang;
       try { localStorage.setItem("swiss-driving-theory-lang", lang); } catch(e) {}
       render();
+      renderQuestionList();
+      if (selectedId) renderDetail(selectedId);
+    }
+
+    function switchTab(tab) {
+      document.querySelectorAll(".mode-tab").forEach(function(t) { t.classList.remove("active"); });
+      document.querySelectorAll(".training-view").forEach(function(v) { v.classList.remove("active"); });
+
+      if (tab === "quiz") {
+        document.querySelector('.mode-tab:first-child').classList.add("active");
+        document.getElementById("quiz-view").classList.add("active");
+      } else {
+        document.querySelector('.mode-tab:last-child').classList.add("active");
+        document.getElementById("browse-view").classList.add("active");
+        if (filteredIds.length === 0 && allQuestions.length > 0) {
+          applyBrowseFilters();
+        }
+      }
     }
 
     function getCategoryLabel(catId) {
@@ -113,6 +184,13 @@
       return q.translations[lang] || q.translations["de"] || null;
     }
 
+    function truncate(text, maxLen) {
+      maxLen = maxLen || 80;
+      if (!text) return "";
+      if (text.length <= maxLen) return text;
+      return text.slice(0, maxLen).trim() + "...";
+    }
+
     async function loadData() {
       var resp = await fetch("assets/questions.json");
       if (!resp.ok) throw new Error("Failed to load questions.json: " + resp.status);
@@ -122,6 +200,7 @@
       return data;
     }
 
+    // Quiz functions
     function applyFilters() {
       var officialOnly = document.getElementById("quiz-official").checked;
       var categoryVal = document.getElementById("quiz-category").value;
@@ -242,7 +321,7 @@
 
       var html = '<div class="results-container">';
       html += '  <div class="card results-card">';
-      html += '    <h2 class="results-header">Quiz Complete</h2>';
+      html += '    <h2 class="results-header">Training Complete</h2>';
       html += '    <div class="results-score" style="color:' + scoreColor + ';">' + pct + '%</div>';
       html += '    <div class="results-detail">' + correct + ' correct out of ' + totalAttempted + ' attempted (' + quizQuestions.length + ' total)</div>';
       html += '    <div class="results-controls">';
@@ -436,7 +515,7 @@
       html += '    <div class="score-display">';
       html += '      <div class="score-item"><span class="score-correct">' + correctCount + '</span> correct</div>';
       html += '      <div class="score-item"><span class="score-wrong">' + (attemptedCount - correctCount) + '</span> wrong</div>';
-      html += '      <div class="score-item"><span class="score-attempted">' + attemptedCount + '</span> attempted</div>';
+      html += '      <div class="score-item"><span>' + attemptedCount + '</span> attempted</div>';
       html += '    </div>';
       html += '    <div class="quiz-actions flex gap-3">';
       html += '      <button class="btn btn-secondary" onclick="prevQuestion()" ' + (canPrev ? "" : "disabled") + '>Previous</button>';
@@ -453,29 +532,171 @@
       document.getElementById("quiz-container").innerHTML = html;
     }
 
-    async function init() {
-      try {
-        await loadData();
-        populateCategorySelect();
-        applyFilters();
-      } catch (e) {
-        console.error("Failed to load data:", e);
-        document.getElementById("quiz-container").innerHTML = '<div class="quiz-container text-center empty-state empty-state-full"><div class="empty-state-icon">!</div><div class="empty-state-title">Error loading quiz data</div><div class="empty-state-desc">' + escapeHtml(e.message) + '</div><div style="margin-top:16px;font-size:var(--text-sm);color:var(--text-muted);">Make sure you are running a local server (e.g., <code style="background:var(--bg-tertiary);padding:2px 6px;border-radius:4px;font-family:var(--font-mono);">python -m http.server 3000</code>) and not opening the file directly.</div></div>';
-      }
-    }
-
+    // Browse functions
     function populateCategorySelect() {
       var cats = {};
       for (var i = 0; i < allQuestions.length; i++) {
         cats[allQuestions[i].category] = true;
       }
       var sorted = Object.keys(cats).map(Number).sort(function(a, b) { return a - b; });
-      var select = document.getElementById("quiz-category");
+      var select = document.getElementById("filter-category");
       for (var i = 0; i < sorted.length; i++) {
         var opt = document.createElement("option");
         opt.value = sorted[i];
         opt.textContent = getCategoryLabel(sorted[i]);
         select.appendChild(opt);
+      }
+    }
+
+    function applyBrowseFilters() {
+      var officialOnly = document.getElementById("filter-official").checked;
+      var categoryVal = document.getElementById("filter-category").value;
+      var categoryId = categoryVal === "all" ? null : Number(categoryVal);
+      var search = document.getElementById("browse-search").value.toLowerCase();
+
+      filteredIds = allQuestions
+        .filter(function(q) {
+          if (officialOnly && !q.official) return false;
+          if (categoryId !== null && q.category !== categoryId) return false;
+          if (search) {
+            var t = getTranslation(q, currentLang);
+            var text = (t && t.question ? t.question : "") + " " + (t && t.options ? t.options.join(" ") : "");
+            if (text.toLowerCase().indexOf(search) === -1) return false;
+          }
+          return true;
+        })
+        .map(function(q) { return q.id; });
+
+      renderQuestionList();
+    }
+
+    function resetFilters() {
+      filteredIds = allQuestions.map(function(q) { return q.id; });
+      selectedId = null;
+      document.getElementById("browse-search").value = "";
+      document.getElementById("filter-official").checked = false;
+      document.getElementById("filter-category").value = "all";
+      renderQuestionList();
+      document.getElementById("detail-panel").innerHTML = "";
+    }
+
+    function renderQuestionList() {
+      var grid = document.getElementById("question-grid");
+      if (!grid) return;
+
+      if (filteredIds.length === 0) {
+        grid.innerHTML = '<div class="browse-empty"><div class="empty-state-icon">0</div><div class="empty-state-title">No questions match your filters</div><div class="empty-state-desc">Try adjusting your search or filters above.</div></div>';
+        return;
+      }
+
+      var html = "";
+      for (var i = 0; i < filteredIds.length; i++) {
+        var q = allQuestions.find(function(q) { return q.id === filteredIds[i]; });
+        if (!q) continue;
+        var t = getTranslation(q, currentLang) || {};
+        var text = truncate(t.question || "Question #" + q.id, 90);
+        var imageHtml = q.questionImage
+          ? '<img src="' + q.questionImage + '" alt="" class="question-card-image" loading="lazy">'
+          : "";
+
+        var selectedClass = (selectedId === q.id) ? " selected" : "";
+
+        html += '<div class="question-card' + selectedClass + '" onclick="selectQuestion(' + q.id + ')">';
+        html += '  <div class="question-card-header">';
+        html += '    <span class="question-card-id">#' + q.id + ' &middot; ' + q.originalId + '</span>';
+        html += '    <div class="flex gap-2">';
+        if (q.official) html += '<span class="badge badge-official">Official</span>';
+        html += '      <span class="badge badge-category">' + getCategoryLabel(q.category) + '</span>';
+        html += '    </div>';
+        html += '  </div>';
+        html += imageHtml;
+        html += '  <div class="question-card-text">' + escapeHtml(text) + '</div>';
+        html += '  <div class="question-card-footer">';
+        html += '    <span>' + (q.type === "image" ? "Image" : "Text") + ' &middot; ' + q.answers.length + ' answers</span>';
+        html += '  </div>';
+        html += '</div>';
+      }
+
+      grid.innerHTML = html;
+    }
+
+    function selectQuestion(id) {
+      selectedId = id;
+      renderQuestionList();
+      renderDetail(id);
+    }
+
+    function renderDetail(id) {
+      var panel = document.getElementById("detail-panel");
+      if (!panel) return;
+
+      var q = allQuestions.find(function(q) { return q.id === id; });
+      if (!q) return;
+
+      var t = getTranslation(q, currentLang) || {};
+      var questionText = t.question || "";
+      var options = t.options || [];
+      var explanations = t.explanations || {};
+
+      var html = '<div class="detail-view">';
+      html += '  <div class="detail-header">';
+      html += '    <div>';
+      html += '      <h3 class="detail-question-text-lg">Question #' + q.id + ' &middot; ' + q.originalId + '</h3>';
+      html += '      <div class="detail-meta">';
+      if (q.official) html += '<span class="badge badge-official">Official</span>';
+      html += '        <span class="badge badge-category">' + getCategoryLabel(q.category) + '</span>';
+      html += '        <span class="badge badge-category">' + (q.type === "image" ? "Image" : "Text") + '</span>';
+      html += '      </div>';
+      html += '    </div>';
+      html += '    <button class="btn btn-sm btn-ghost" onclick="closeDetail()">Close</button>';
+      html += '  </div>';
+
+      if (q.questionImage) {
+        html += '<img src="' + q.questionImage + '" alt="Question image" class="detail-image">';
+      }
+
+      if (questionText) {
+        html += '<div class="detail-section"><div class="detail-section-title">Question</div><p class="detail-question-text">' + escapeHtml(questionText) + '</p></div>';
+      }
+
+      html += '<div class="detail-section"><div class="detail-section-title">Answers</div>';
+      for (var i = 0; i < q.answers.length; i++) {
+        var a = q.answers[i];
+        var text = options[a.index - 1] || "Answer " + getAnswerLabel(a.index);
+        var expl = a.paragraph ? explanations[a.paragraph] : null;
+        var cls = "detail-answer";
+        if (a.correct) cls += " correct";
+        html += '<div class="' + cls + '">';
+        html += '  <div class="detail-answer-label">' + (a.correct ? "&#10003;" : getAnswerLabel(a.index)) + '</div>';
+        html += '  <div class="detail-answer-text">';
+        html += '    <strong>' + escapeHtml(text) + '</strong>';
+        if (expl) html += '<div class="detail-explanation">' + escapeHtml(expl) + '</div>';
+        if (a.hidden) html += '<div class="hidden-text">(hidden)</div>';
+        html += '  </div>';
+        html += '</div>';
+      }
+      html += '</div>';
+      html += '</div>';
+
+      panel.innerHTML = html;
+      panel.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+
+    function closeDetail() {
+      selectedId = null;
+      document.getElementById("detail-panel").innerHTML = "";
+      renderQuestionList();
+    }
+
+    async function init() {
+      try {
+        await loadData();
+        populateCategorySelect();
+        applyFilters();
+        applyBrowseFilters();
+      } catch (e) {
+        console.error("Failed to load data:", e);
+        document.getElementById("quiz-container").innerHTML = '<div class="quiz-container text-center empty-state empty-state-full"><div class="empty-state-icon">!</div><div class="empty-state-title">Error loading quiz data</div><div class="empty-state-desc">' + escapeHtml(e.message) + '</div><div style="margin-top:16px;font-size:var(--text-sm);color:var(--text-muted);">Make sure you are running a local server (e.g., <code style="background:var(--bg-tertiary);padding:2px 6px;border-radius:4px;font-family:var(--font-mono);">python -m http.server 3000</code>) and not opening the file directly.</div></div>';
       }
     }
 

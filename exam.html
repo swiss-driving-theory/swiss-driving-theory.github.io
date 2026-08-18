@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exam Simulation — Swiss Driving Theory</title>
+  <link rel="stylesheet" href="src/css/style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header-inner">
+      <a href="index.html" class="logo">
+        <div class="logo-icon">CH</div>
+        <span>Swiss Driving Theory</span>
+      </a>
+      <nav class="nav">
+        <a href="index.html" class="nav-btn">Home</a>
+        <a href="training.html" class="nav-btn">Training</a>
+        <select id="lang-select" class="lang-select" onchange="setLang(this.value)">
+          <option value="de">Deutsch</option>
+          <option value="fr">Français</option>
+          <option value="it">Italiano</option>
+        </select>
+      </nav>
+    </div>
+  </header>
+
+  <div class="container section-tight">
+    <div class="exam-header">
+      <div>
+        <h2 class="section-title-lg">Exam Simulation</h2>
+        <div class="progress-text" id="exam-counter">Question 1 of 50</div>
+      </div>
+      <div class="flex items-center gap-3">
+        <div class="exam-timer" id="exam-timer">45:00</div>
+        <button class="btn btn-primary" onclick="finishExam()">Finish Exam</button>
+      </div>
+    </div>
+
+    <div class="exam-palette" id="exam-palette"></div>
+
+    <div id="exam-container">
+      <div class="quiz-container text-center empty-state">
+        <div class="empty-state-icon">?</div>
+        <div class="empty-state-title">Loading questions...</div>
+        <div class="empty-state-desc">Preparing your exam simulation.</div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    var allQuestions = [];
+    var examQuestions = [];
+    var currentIndex = 0;
+    var answers = {};
+    var currentLang = "de";
+    var timerInterval = null;
+    var timeRemaining = 45 * 60;
+
+    function setLang(lang) {
+      currentLang = lang;
+      try { localStorage.setItem("swiss-driving-theory-lang", lang); } catch(e) {}
+      render();
+    }
+
+    function getCategoryLabel(catId) {
+      var labels = {
+        1: "Vehicle Equipment / Law",
+        2: "Traffic Signs",
+        3: "Traffic Signals / Behavior",
+        4: "Overtaking / Turning",
+        5: "Highway / Expressway",
+        6: "Right of Way / Priority",
+        7: "Parking",
+        8: "Distances / Speed",
+        9: "Vehicle Control / Situations",
+        10: "Special Situations / Vulnerable Users",
+        11: "Visibility / Lights",
+        12: "Emergency / Accidents / Insurance"
+      };
+      return labels[catId] || "Category " + catId;
+    }
+
+    function getAnswerLabel(index) {
+      return String.fromCharCode(96 + index);
+    }
+
+    function escapeHtml(str) {
+      var div = document.createElement("div");
+      div.textContent = str;
+      return div.innerHTML;
+    }
+
+    function shuffleArray(arr) {
+      var a = arr.slice();
+      for (var i = a.length - 1; i > 0; i--) {
+        var j = Math.floor(Math.random() * (i + 1));
+        var temp = a[i]; a[i] = a[j]; a[j] = temp;
+      }
+      return a;
+    }
+
+    function getTranslation(q, lang) {
+      if (!q || !q.translations) return null;
+      return q.translations[lang] || q.translations["de"] || null;
+    }
+
+    async function loadData() {
+      var resp = await fetch("assets/questions.json");
+      if (!resp.ok) throw new Error("Failed to load questions.json: " + resp.status);
+      var text = await resp.text();
+      var data = JSON.parse(text);
+      allQuestions = data.questions || [];
+      return data;
+    }
+
+    function calculateErrorPoints(questions, answers) {
+      var totalErrorPoints = 0;
+      var questionErrorPoints = {};
+
+      for (var i = 0; i < questions.length; i++) {
+        var q = questions[i];
+        var ans = answers[q.id];
+        var ep = 0;
+
+        if (ans === undefined || ans === null || ans.length === 0) {
+          ep = q.answers.filter(function(a) { return a.correct; }).length;
+        } else {
+          var correctIndices = {};
+          for (var j = 0; j < q.answers.length; j++) {
+            if (q.answers[j].correct) {
+              correctIndices[q.answers[j].index] = true;
+            }
+          }
+          for (var k = 0; k < ans.length; k++) {
+            if (!correctIndices[ans[k]]) {
+              ep++;
+            }
+          }
+          for (var key in correctIndices) {
+            if (ans.indexOf(Number(key)) === -1) {
+              ep++;
+            }
+          }
+        }
+
+        ep = Math.min(ep, 3);
+        questionErrorPoints[q.id] = ep;
+        totalErrorPoints += ep;
+      }
+
+      return { total: totalErrorPoints, perQuestion: questionErrorPoints };
+    }
+
+    function formatTime(seconds) {
+      var m = Math.floor(seconds / 60);
+      var s = seconds % 60;
+      return (m < 10 ? "0" : "") + m + ":" + (s < 10 ? "0" : "") + s;
+    }
+
+    function startTimer() {
+      var timerEl = document.getElementById("exam-timer");
+      timerInterval = setInterval(function() {
+        timeRemaining--;
+        timerEl.textContent = formatTime(timeRemaining);
+        if (timeRemaining <= 300) {
+          timerEl.classList.add("warning");
+        }
+        if (timeRemaining <= 0) {
+          clearInterval(timerInterval);
+          finishExam();
+        }
+      }, 1000);
+    }
+
+    function selectAnswer(index) {
+      var q = examQuestions[currentIndex];
+      var pos = answers[q.id];
+      if (pos === undefined || pos === null) {
+        answers[q.id] = [index];
+      } else {
+        var idx = pos.indexOf(index);
+        if (idx >= 0) {
+          pos.splice(idx, 1);
+          if (pos.length === 0) {
+            answers[q.id] = null;
+          }
+        } else {
+          pos.push(index);
+        }
+      }
+      renderPalette();
+      render();
+    }
+
+    function nextQuestion() {
+      if (currentIndex < examQuestions.length - 1) {
+        currentIndex++;
+        render();
+        renderPalette();
+      }
+    }
+
+    function prevQuestion() {
+      if (currentIndex > 0) {
+        currentIndex--;
+        render();
+        renderPalette();
+      }
+    }
+
+    function goToQuestion(index) {
+      if (index >= 0 && index < examQuestions.length) {
+        currentIndex = index;
+        render();
+        renderPalette();
+      }
+    }
+
+    function finishExam() {
+      clearInterval(timerInterval);
+      var results = calculateErrorPoints(examQuestions, answers);
+      var passed = results.total <= 15;
+      showExamResults(results, passed);
+    }
+
+    function showExamResults(results, passed) {
+      var container = document.getElementById("exam-container");
+      var verdictClass = passed ? "pass" : "fail";
+      var verdictText = passed ? "Passed" : "Failed";
+      var pointsClass = passed ? "pass" : "fail";
+
+      var html = '<div class="results-container">';
+      html += '  <div class="card results-card">';
+      html += '    <h2 class="results-header">Exam Complete</h2>';
+      html += '    <div class="exam-result-verdict ' + verdictClass + '">' + verdictText + '</div>';
+      html += '    <div class="results-score">' + results.total + ' <span style="font-size:0.5em;font-weight:600;">Fehlerpunkte</span></div>';
+      html += '    <div class="results-detail">' + (passed ? "You passed!" : "Maximum allowed: 15 error points") + '</div>';
+      html += '    <div class="results-controls">';
+      html += '      <button class="btn btn-primary" onclick="location.reload()">New Exam</button>';
+      html += '      <a href="index.html" class="btn btn-secondary">Home</a>';
+      html += '    </div>';
+      html += '  </div>';
+
+      html += '  <div class="card wrong-answers-section">';
+      html += '    <div class="wrong-header">';
+      html += '      <h3 class="wrong-title">Question Review</h3>';
+      html += '    </div>';
+      html += '    <div class="wrong-answers-list">';
+
+      for (var i = 0; i < examQuestions.length; i++) {
+        var q = examQuestions[i];
+        var ep = results.perQuestion[q.id] || 0;
+        var ans = answers[q.id];
+        var t = getTranslation(q, currentLang) || {};
+        var qText = escapeHtml(t.question || "Question " + q.originalId);
+
+        var statusBadge = "";
+        if (ep === 0) statusBadge = '<span class="badge badge-success">Correct</span>';
+        else statusBadge = '<span class="badge badge-error">' + ep + ' Fehlerpunkte</span>';
+
+        var selectedText = "";
+        if (ans !== undefined && ans !== null && ans.length > 0) {
+          var texts = [];
+          for (var k = 0; k < ans.length; k++) {
+            var aIndex = ans[k];
+            var aText = t.options && t.options[aIndex - 1] ? escapeHtml(t.options[aIndex - 1]) : "Answer " + getAnswerLabel(aIndex);
+            texts.push(aText);
+          }
+          selectedText = '<div style="margin-top:6px;font-size:var(--text-sm);color:var(--text-muted);">Selected: ' + texts.join(", ") + '</div>';
+        } else if (ans === null) {
+          selectedText = '<div style="margin-top:6px;font-size:var(--text-sm);color:var(--text-muted);">Skipped</div>';
+        }
+
+        var correctTexts = [];
+        for (var j = 0; j < q.answers.length; j++) {
+          if (q.answers[j].correct) {
+            var cText = t.options && t.options[q.answers[j].index - 1] ? escapeHtml(t.options[q.answers[j].index - 1]) : "Answer " + getAnswerLabel(q.answers[j].index);
+            correctTexts.push(cText);
+          }
+        }
+
+        html += '      <div class="wrong-answer-item">';
+        html += '        <div class="flex items-start gap-3">';
+        html += '          <span class="wrong-answer-number">' + (i + 1) + '</span>';
+        html += '          <div class="flex-1">';
+        html += '            <div class="flex items-center gap-2" style="margin-bottom:4px;">';
+        html += '              <span class="badge badge-official">' + (q.official ? "Official" : "Practice") + '</span>';
+        html += '              <span class="badge badge-category">' + getCategoryLabel(q.category) + '</span>';
+        html += '              ' + statusBadge;
+        html += '            </div>';
+        html += '            <div>' + qText + '</div>';
+        html += selectedText;
+        if (correctTexts.length > 0) {
+          html += '            <div class="correct-answer-text">Correct: ' + correctTexts.join(", ") + '</div>';
+        }
+        html += '          </div>';
+        html += '        </div>';
+        html += '      </div>';
+      }
+
+      html += '    </div>';
+      html += '  </div>';
+      html += '</div>';
+
+      container.innerHTML = html;
+    }
+
+    function renderPalette() {
+      var palette = document.getElementById("exam-palette");
+      var html = "";
+      for (var i = 0; i < examQuestions.length; i++) {
+        var q = examQuestions[i];
+        var ans = answers[q.id];
+        var cls = "exam-palette-dot";
+        if (i === currentIndex) cls += " current";
+        else if (ans !== undefined && ans !== null && ans.length > 0) cls += " answered";
+        else if (ans === null) cls += " skipped";
+        html += '<div class="' + cls + '" onclick="goToQuestion(' + i + ')">' + (i + 1) + '</div>';
+      }
+      palette.innerHTML = html;
+    }
+
+    function render() {
+      var q = examQuestions[currentIndex];
+      if (!q) {
+        finishExam();
+        return;
+      }
+
+      var t = getTranslation(q, currentLang) || {};
+      var questionText = t.question || "";
+      var options = t.options || [];
+      var explanations = t.explanations || {};
+      var current = currentIndex + 1;
+      var total = examQuestions.length;
+      var pct = total > 0 ? Math.round((current / total) * 100) : 0;
+
+      var isImageType = q.type === "image";
+      var hasQuestionImage = !!q.questionImage;
+
+      var ans = answers[q.id];
+      var selectedIndices = (ans !== undefined && ans !== null) ? ans : [];
+
+      var answersHtml = "";
+      if (isImageType) {
+        for (var i = 0; i < q.answers.length; i++) {
+          var a = q.answers[i];
+          var imgSrc = a.image ? a.image : "";
+          var cls = "answer-btn";
+          if (selectedIndices.indexOf(a.index) >= 0) cls += " selected";
+          answersHtml += '<div class="answer-wrapper">';
+          answersHtml += '<button class="' + cls + '" onclick="selectAnswer(' + a.index + ')">';
+          if (imgSrc) answersHtml += '<img src="' + imgSrc + '" alt="Answer ' + a.index + '" loading="lazy">';
+          answersHtml += '  <span class="answer-label">' + getAnswerLabel(a.index) + '</span>';
+          answersHtml += '</button>';
+          answersHtml += '</div>';
+        }
+      } else {
+        for (var i = 0; i < q.answers.length; i++) {
+          var a = q.answers[i];
+          var text = options[a.index - 1] || "Option " + getAnswerLabel(a.index);
+          var cls = "answer-btn";
+          if (selectedIndices.indexOf(a.index) >= 0) cls += " selected";
+          answersHtml += '<div class="answer-wrapper">';
+          answersHtml += '<button class="' + cls + '" onclick="selectAnswer(' + a.index + ')">';
+          answersHtml += '  <span class="answer-label">' + getAnswerLabel(a.index) + '</span>';
+          answersHtml += '  <span>' + escapeHtml(text) + '</span>';
+          answersHtml += '</button>';
+          answersHtml += '</div>';
+        }
+      }
+
+      var canPrev = currentIndex > 0;
+      var canNext = currentIndex < total - 1;
+
+      var html = '<div class="quiz-container">';
+      html += '  <div class="progress-bar"><div class="progress-fill" style="width: ' + pct + '%"></div></div>';
+      html += '  <div class="progress-text">Question ' + current + ' of ' + total + ' (' + pct + '%)</div>';
+      html += '  <div class="question-display">';
+      html += '    <div class="question-header">';
+      html += '      <div class="flex items-center gap-3">';
+      html += '        <span class="badge badge-official">' + (q.official ? "Official" : "Practice") + '</span>';
+      html += '        <span class="badge badge-category">' + getCategoryLabel(q.category) + '</span>';
+      html += '      </div>';
+      html += '      <span class="question-id">ID: ' + q.originalId + '</span>';
+      html += '    </div>';
+
+      if (hasQuestionImage || questionText) {
+        html += '    <div class="question-body-stacked">';
+        if (questionText) {
+          html += '      <div class="question-text-main">' + escapeHtml(questionText) + '</div>';
+        }
+        html += '      <div class="question-body">';
+        if (hasQuestionImage) {
+          html += '        <div class="question-image-side">';
+          html += '          <img src="' + q.questionImage + '" alt="Question image" loading="lazy">';
+          html += '        </div>';
+        }
+        html += '        <div class="question-content">';
+        html += '          <div class="answers-grid' + (isImageType ? ' answers-grid-images' : '') + '">' + answersHtml + '</div>';
+        html += '        </div>';
+        html += '      </div>';
+        html += '    </div>';
+      } else {
+        html += '    <div class="answers-grid' + (isImageType ? ' answers-grid-images' : '') + '">' + answersHtml + '</div>';
+      }
+      html += '  </div>';
+
+      html += '  <div class="quiz-controls">';
+      html += '    <div class="quiz-actions flex gap-3">';
+      html += '      <button class="btn btn-secondary" onclick="prevQuestion()" ' + (canPrev ? "" : "disabled") + '>Previous</button>';
+      html += '      <button class="btn btn-primary" onclick="nextQuestion()" ' + (canNext ? "" : "disabled") + '>' + (currentIndex === total - 1 ? "Finish" : "Next") + '</button>';
+      html += '    </div>';
+      html += '  </div>';
+      html += '</div>';
+
+      document.getElementById("exam-container").innerHTML = html;
+      document.getElementById("exam-counter").textContent = "Question " + current + " of " + total;
+    }
+
+    async function init() {
+      try {
+        await loadData();
+        var officialQuestions = allQuestions.filter(function(q) { return q.official; });
+        if (officialQuestions.length === 0) {
+          document.getElementById("exam-container").innerHTML = '<div class="quiz-container text-center empty-state empty-state-full"><div class="empty-state-icon">!</div><div class="empty-state-title">No official questions available</div><div class="empty-state-desc">The question bank does not contain any official questions.</div></div>';
+          return;
+        }
+        examQuestions = shuffleArray(officialQuestions).slice(0, 50);
+        currentIndex = 0;
+        answers = {};
+        renderPalette();
+        render();
+        startTimer();
+      } catch (e) {
+        console.error("Failed to load data:", e);
+        document.getElementById("exam-container").innerHTML = '<div class="quiz-container text-center empty-state empty-state-full"><div class="empty-state-icon">!</div><div class="empty-state-title">Error loading quiz data</div><div class="empty-state-desc">' + escapeHtml(e.message) + '</div><div style="margin-top:16px;font-size:var(--text-sm);color:var(--text-muted);">Make sure you are running a local server (e.g., <code style="background:var(--bg-tertiary);padding:2px 6px;border-radius:4px;font-family:var(--font-mono);">python -m http.server 3000</code>) and not opening the file directly.</div></div>';
+      }
+    }
+
+    document.addEventListener("DOMContentLoaded", init);
+  </script>
+</body>
+</html>
