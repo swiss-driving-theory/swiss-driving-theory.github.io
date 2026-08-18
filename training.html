@@ -602,6 +602,9 @@
         var imageHtml = q.questionImage
           ? '<img src="' + q.questionImage + '" alt="" class="question-card-image" loading="lazy">'
           : "";
+        if (!imageHtml && q.type === "image" && q.answers.length > 0 && q.answers[0].image) {
+          imageHtml = '<img src="' + q.answers[0].image + '" alt="" class="question-card-image" loading="lazy">';
+        }
 
         var selectedClass = (selectedId === q.id) ? " selected" : "";
 
@@ -666,20 +669,39 @@
       }
 
       html += '<div class="detail-section"><div class="detail-section-title">Answers</div>';
-      for (var i = 0; i < q.answers.length; i++) {
-        var a = q.answers[i];
-        var text = options[a.index - 1] || "Answer " + getAnswerLabel(a.index);
-        var expl = a.paragraph ? explanations[a.paragraph] : null;
-        var cls = "detail-answer";
-        if (a.correct) cls += " correct";
-        html += '<div class="' + cls + '">';
-        html += '  <div class="detail-answer-label">' + (a.correct ? "&#10003;" : getAnswerLabel(a.index)) + '</div>';
-        html += '  <div class="detail-answer-text">';
-        html += '    <strong>' + escapeHtml(text) + '</strong>';
-        if (expl) html += '<div class="detail-explanation">' + escapeHtml(expl) + '</div>';
-        if (a.hidden) html += '<div class="hidden-text">(hidden)</div>';
-        html += '  </div>';
+      if (q.type === "image") {
+        html += '<div style="display:flex;flex-wrap:wrap;gap:16px;">';
+        for (var i = 0; i < q.answers.length; i++) {
+          var a = q.answers[i];
+          var expl = a.paragraph ? explanations[a.paragraph] : null;
+          var cls = "detail-answer";
+          if (a.correct) cls += " correct";
+          html += '<div class="' + cls + '" style="flex:0 0 auto;min-width:140px;">';
+          if (a.image) {
+            html += '<img src="' + a.image + '" alt="Answer ' + getAnswerLabel(a.index) + '" style="max-width:120px;max-height:120px;object-fit:contain;display:block;margin-bottom:8px;">';
+          }
+          html += '  <div class="detail-answer-label">' + (a.correct ? "&#10003;" : getAnswerLabel(a.index)) + '</div>';
+          if (expl) html += '<div class="detail-explanation">' + escapeHtml(expl) + '</div>';
+          if (a.hidden) html += '<div class="hidden-text">(hidden)</div>';
+          html += '</div>';
+        }
         html += '</div>';
+      } else {
+        for (var i = 0; i < q.answers.length; i++) {
+          var a = q.answers[i];
+          var text = options[a.index - 1] || "Answer " + getAnswerLabel(a.index);
+          var expl = a.paragraph ? explanations[a.paragraph] : null;
+          var cls = "detail-answer";
+          if (a.correct) cls += " correct";
+          html += '<div class="' + cls + '">';
+          html += '  <div class="detail-answer-label">' + (a.correct ? "&#10003;" : getAnswerLabel(a.index)) + '</div>';
+          html += '  <div class="detail-answer-text">';
+          html += '    <strong>' + escapeHtml(text) + '</strong>';
+          if (expl) html += '<div class="detail-explanation">' + escapeHtml(expl) + '</div>';
+          if (a.hidden) html += '<div class="hidden-text">(hidden)</div>';
+          html += '  </div>';
+          html += '</div>';
+        }
       }
       html += '</div>';
       html += '</div>';
