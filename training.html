@@ -539,13 +539,15 @@
         cats[allQuestions[i].category] = true;
       }
       var sorted = Object.keys(cats).map(Number).sort(function(a, b) { return a - b; });
-      var select = document.getElementById("filter-category");
+
+      var quizSelect = document.getElementById("quiz-category");
+      var browseSelect = document.getElementById("filter-category");
+      var options = ['<option value="all">All categories</option>'];
       for (var i = 0; i < sorted.length; i++) {
-        var opt = document.createElement("option");
-        opt.value = sorted[i];
-        opt.textContent = getCategoryLabel(sorted[i]);
-        select.appendChild(opt);
+        options.push('<option value="' + sorted[i] + '">' + getCategoryLabel(sorted[i]) + '</option>');
       }
+      if (quizSelect) quizSelect.innerHTML = options.join("");
+      if (browseSelect) browseSelect.innerHTML = options.join("");
     }
 
     function applyBrowseFilters() {
