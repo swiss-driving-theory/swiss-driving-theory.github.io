@@ -98,14 +98,13 @@
           <div class="empty-state-desc">Fetching questions from the server.</div>
         </div>
       </div>
-    </main>
 
-    <div class="browse-modal-overlay" id="browse-modal-overlay" onclick="closeModalOutside(event)">
-      <div class="browse-modal" id="browse-modal">
-        <button class="browse-modal-close" onclick="closeDetail()" aria-label="Close">&times;</button>
-        <div id="modal-content"></div>
+      <div id="detail-container" style="display:none; margin-top: var(--space-6);">
+        <div class="question-display" id="detail-display">
+          <div id="detail-content"></div>
+        </div>
       </div>
-    </div>
+    </main>
   </div>
 
   <script>
@@ -631,13 +630,13 @@
       selectedId = id;
       renderQuestionList();
       renderDetail(id);
-      document.getElementById("browse-modal-overlay").classList.add("open");
-      document.body.style.overflow = "hidden";
+      document.getElementById("detail-container").style.display = "block";
+      document.getElementById("detail-display").scrollIntoView({ behavior: "smooth", block: "start" });
     }
 
     function renderDetail(id) {
-      var panel = document.getElementById("modal-content");
-      if (!panel) return;
+      var content = document.getElementById("detail-content");
+      if (!content) return;
 
       var q = allQuestions.find(function(q) { return q.id === id; });
       if (!q) return;
@@ -646,80 +645,95 @@
       var questionText = t.question || "";
       var options = t.options || [];
       var explanations = t.explanations || {};
+      var isImageType = q.type === "image";
+      var hasQuestionImage = !!q.questionImage;
 
-      var html = '<div class="detail-view">';
-      html += '  <div class="detail-header">';
-      html += '    <div>';
-      html += '      <h3 class="detail-question-text-lg">Question #' + q.id + ' &middot; ' + q.originalId + '</h3>';
-      html += '      <div class="detail-meta">';
-      if (q.official) html += '<span class="badge badge-official">Official</span>';
-      html += '        <span class="badge badge-category">' + getCategoryLabel(q.category) + '</span>';
-      html += '        <span class="badge badge-category">' + (q.type === "image" ? "Image" : "Text") + '</span>';
-      html += '      </div>';
-      html += '    </div>';
-      html += '    <button class="btn btn-sm btn-ghost" onclick="closeDetail()">Close</button>';
-      html += '  </div>';
-
-      if (q.questionImage) {
-        html += '<img src="' + q.questionImage + '" alt="Question image" class="detail-image">';
-      }
-
-      if (questionText) {
-        html += '<div class="detail-section"><div class="detail-section-title">Question</div><p class="detail-question-text">' + escapeHtml(questionText) + '</p></div>';
-      }
-
-      html += '<div class="detail-section"><div class="detail-section-title">Answers</div>';
-      if (q.type === "image") {
-        html += '<div style="display:flex;flex-wrap:wrap;gap:16px;">';
+      var answersHtml = "";
+      if (isImageType) {
         for (var i = 0; i < q.answers.length; i++) {
           var a = q.answers[i];
-          var expl = a.paragraph ? explanations[a.paragraph] : null;
-          var cls = "detail-answer";
+          var imgSrc = a.image ? a.image : "";
+          var cls = "answer-btn";
           if (a.correct) cls += " correct";
-          html += '<div class="' + cls + '" style="flex:0 0 auto;min-width:140px;">';
-          if (a.image) {
-            html += '<img src="' + a.image + '" alt="Answer ' + getAnswerLabel(a.index) + '" style="max-width:120px;max-height:120px;object-fit:contain;display:block;margin-bottom:8px;">';
+          else if (a.hidden) cls += " incorrect";
+          answersHtml += '<div class="answer-wrapper">';
+          answersHtml += '<button class="' + cls + '" disabled>';
+          if (imgSrc) answersHtml += '<img src="' + imgSrc + '" alt="Answer ' + a.index + '" loading="lazy">';
+          answersHtml += '  <span class="answer-label">' + getAnswerLabel(a.index) + '</span>';
+          answersHtml += '</button>';
+          if (a.paragraph) {
+            var explText = explanations[a.paragraph];
+            if (explText) {
+              var explCls = "answer-explanation" + (a.correct ? " correct-explanation" : "");
+              answersHtml += '<div class="' + explCls + '">' + escapeHtml(explText) + '</div>';
+            }
           }
-          html += '  <div class="detail-answer-label">' + (a.correct ? "&#10003;" : getAnswerLabel(a.index)) + '</div>';
-          if (expl) html += '<div class="detail-explanation">' + escapeHtml(expl) + '</div>';
-          if (a.hidden) html += '<div class="hidden-text">(hidden)</div>';
-          html += '</div>';
+          answersHtml += '</div>';
         }
-        html += '</div>';
       } else {
         for (var i = 0; i < q.answers.length; i++) {
           var a = q.answers[i];
           var text = options[a.index - 1] || "Answer " + getAnswerLabel(a.index);
-          var expl = a.paragraph ? explanations[a.paragraph] : null;
-          var cls = "detail-answer";
+          var cls = "answer-btn";
           if (a.correct) cls += " correct";
-          html += '<div class="' + cls + '">';
-          html += '  <div class="detail-answer-label">' + (a.correct ? "&#10003;" : getAnswerLabel(a.index)) + '</div>';
-          html += '  <div class="detail-answer-text">';
-          html += '    <strong>' + escapeHtml(text) + '</strong>';
-          if (expl) html += '<div class="detail-explanation">' + escapeHtml(expl) + '</div>';
-          if (a.hidden) html += '<div class="hidden-text">(hidden)</div>';
-          html += '  </div>';
-          html += '</div>';
+          else if (a.hidden) cls += " incorrect";
+          answersHtml += '<div class="answer-wrapper">';
+          answersHtml += '<button class="' + cls + '" disabled>';
+          answersHtml += '  <span class="answer-label">' + getAnswerLabel(a.index) + '</span>';
+          answersHtml += '  <span>' + escapeHtml(text) + '</span>';
+          answersHtml += '</button>';
+          if (a.paragraph) {
+            var explText = explanations[a.paragraph];
+            if (explText) {
+              var explCls = "answer-explanation" + (a.correct ? " correct-explanation" : "");
+              answersHtml += '<div class="' + explCls + '">' + escapeHtml(explText) + '</div>';
+            }
+          }
+          answersHtml += '</div>';
         }
       }
-      html += '</div>';
+
+      var html = '<div class="question-display">';
+      html += '  <div class="question-header">';
+      html += '    <div class="flex items-center gap-3">';
+      html += '      <span class="badge badge-official">' + (q.official ? "Official" : "Practice") + '</span>';
+      html += '      <span class="badge badge-category">' + getCategoryLabel(q.category) + '</span>';
+      html += '      <span class="badge badge-category">' + (isImageType ? "Image" : "Text") + '</span>';
+      html += '    </div>';
+      html += '    <div class="flex items-center gap-2">';
+      html += '      <span class="question-id">ID: ' + q.originalId + '</span>';
+      html += '      <button class="btn btn-sm btn-ghost" onclick="closeDetail()">Close</button>';
+      html += '    </div>';
+      html += '  </div>';
+
+      if (hasQuestionImage || questionText) {
+        html += '  <div class="question-body-stacked">';
+        if (questionText) {
+          html += '    <div class="question-text-main">' + escapeHtml(questionText) + '</div>';
+        }
+        html += '    <div class="question-body">';
+        if (hasQuestionImage) {
+          html += '      <div class="question-image-side">';
+          html += '        <img src="' + q.questionImage + '" alt="Question image" loading="lazy">';
+          html += '      </div>';
+        }
+        html += '      <div class="question-content">';
+        html += '        <div class="answers-grid' + (isImageType ? ' answers-grid-images' : '') + '">' + answersHtml + '</div>';
+        html += '      </div>';
+        html += '    </div>';
+        html += '  </div>';
+      } else {
+        html += '  <div class="answers-grid' + (isImageType ? ' answers-grid-images' : '') + '">' + answersHtml + '</div>';
+      }
       html += '</div>';
 
-      panel.innerHTML = html;
+      content.innerHTML = html;
     }
 
     function closeDetail() {
       selectedId = null;
-      document.getElementById("browse-modal-overlay").classList.remove("open");
-      document.body.style.overflow = "";
+      document.getElementById("detail-container").style.display = "none";
       renderQuestionList();
-    }
-
-    function closeModalOutside(event) {
-      if (event.target === document.getElementById("browse-modal-overlay")) {
-        closeDetail();
-      }
     }
 
     async function init() {
@@ -735,15 +749,6 @@
     }
 
     document.addEventListener("DOMContentLoaded", init);
-
-    document.addEventListener("keydown", function(e) {
-      if (e.key === "Escape") {
-        var overlay = document.getElementById("browse-modal-overlay");
-        if (overlay && overlay.classList.contains("open")) {
-          closeDetail();
-        }
-      }
-    });
   </script>
 </body>
 </html>

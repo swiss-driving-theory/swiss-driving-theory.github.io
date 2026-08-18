@@ -1278,71 +1278,7 @@ h4 { font-size: var(--text-lg); font-weight: 600; line-height: var(--leading-tig
   color: var(--text-muted);
 }
 
-/* Browse modal */
-.browse-modal-overlay {
-  position: fixed;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.5);
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
-  z-index: 200;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: var(--space-6);
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.2s, visibility 0.2s;
-}
-
-.browse-modal-overlay.open {
-  opacity: 1;
-  visibility: visible;
-}
-
-.browse-modal {
-  background: var(--bg-primary);
-  border-radius: var(--radius-lg);
-  box-shadow: var(--shadow-lg);
-  width: 100%;
-  max-width: 900px;
-  max-height: calc(100vh - var(--space-6) * 2);
-  overflow-y: auto;
-  padding: var(--space-6);
-  position: relative;
-  transform: translateY(20px);
-  transition: transform 0.2s;
-}
-
-.browse-modal-overlay.open .browse-modal {
-  transform: translateY(0);
-}
-
-.browse-modal-close {
-  position: sticky;
-  top: 0;
-  float: right;
-  z-index: 10;
-  background: var(--bg-primary);
-  border: 1px solid var(--border-color);
-  border-radius: var(--radius-full);
-  width: 36px;
-  height: 36px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  font-size: var(--text-lg);
-  color: var(--text-secondary);
-  transition: all 0.2s;
-  box-shadow: var(--shadow-sm);
-}
-
-.browse-modal-close:hover {
-  background: var(--bg-secondary);
-  color: var(--text-primary);
-  border-color: var(--text-muted);
-}
+#detail-container { animation: fadeIn 0.3s ease; }
 
 /* Error points display */
 .error-points-display {
@@ -1373,8 +1309,6 @@ h4 { font-size: var(--text-lg); font-weight: 600; line-height: var(--leading-tig
 @media (max-width: 768px) {
   .exam-header { flex-direction: column; align-items: stretch; }
   .exam-timer { text-align: center; }
-  .browse-modal-overlay { padding: var(--space-3); }
-  .browse-modal { padding: var(--space-4); max-height: calc(100vh - var(--space-3) * 2); }
 }
 .text-center { text-align: center; }
 .mb-0 { margin-bottom: 0; }
@@ -1476,6 +1410,7 @@ h4 { font-size: var(--text-lg); font-weight: 600; line-height: var(--leading-tig
     padding: var(--space-3);
   }
   .question-image-side img { max-height: 320px; }
+  #detail-container { margin-top: var(--space-4); }
 }
 
 @media (max-width: 480px) {
