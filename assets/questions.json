@@ -70248,22 +70248,78 @@
           }
         }
       }
+    },
+    {
+      "id": 960,
+      "originalId": "50377",
+      "type": "text",
+      "category": 11,
+      "official": true,
+      "questionImage": "assets/images/795.png",
+      "answers": [
+        {
+          "index": 1,
+          "correct": false,
+          "image": null,
+          "paragraph": "a",
+          "hidden": false
+        },
+        {
+          "index": 2,
+          "correct": false,
+          "image": null,
+          "paragraph": "b",
+          "hidden": false
+        },
+        {
+          "index": 3,
+          "correct": true,
+          "image": null,
+          "paragraph": "c",
+          "hidden": false
+        }
+      ],
+      "translations": {
+        "de": {
+          "question": "IST DIE SICHTWEITE ERHEBLICH EINGESCHRÄNKT, ...",
+          "options": [
+            "... verlasse ich mich auf die Lichtautomatik des Fahrzeugs.",
+            "... sind Tagfahrlichter angemessen.",
+            "... muss ich die Abblendlichter einschalten."
+          ],
+          "explanations": {
+            "a": "... verlasse ich mich auf die Lichtautomatik des Fahrzeugs.",
+            "b": "... sind Tagfahrlichter angemessen.",
+            "c": "... muss ich die Abblendlichter einschalten."
+          }
+        },
+        "fr": {
+          "question": "Si la visibilité est considérablement réduite ...",
+          "options": [
+            "... je fais confiance à l'allumage automatique des feux du véhicule.",
+            "... les feux de circulation diurnes sont appropriés.",
+            "... je dois enclencher les feux de croisement."
+          ],
+          "explanations": {
+            "a": "... je fais confiance à l'allumage automatique des feux du véhicule.",
+            "b": "... les feux de circulation diurnes sont appropriés.",
+            "c": "... je dois enclencher les feux de croisement."
+          }
+        },
+        "it": {
+          "question": "Se la visibilità è notevolmente limitata ...",
+          "options": [
+            "... faccio affidamento all'accensione automatica delle luci del veicolo.",
+            "... è opportuno accendere le luci di circolazione diurna.",
+            "... devo accendere i fari anabbaglianti."
+          ],
+          "explanations": {
+            "a": "... faccio affidamento all'accensione automatica delle luci del veicolo.",
+            "b": "... è opportuno accendere le luci di circolazione diurna.",
+            "c": "... devo accendere i fari anabbaglianti."
+          }
+        }
+      }
     }
-  ],
-  "meta": {
-    "totalQuestions": 959,
-    "languages": [
-      "de",
-      "fr",
-      "it"
-    ],
-    "exportedFrom": "DirectorCastRipper_D12",
-    "notes": [
-      "Answers are keyed by paragraph label (a, b, c, d...).",
-      "Multiple answers can be correct (correct: true on more than one).",
-      "Image-type questions (type=image) have image filenames in answers[].image.",
-      "Text-type questions (type=text) may have a questionImage (diagram/sign).",
-      "Missing translations are null."
-    ]
-  }
+  ]
 }
