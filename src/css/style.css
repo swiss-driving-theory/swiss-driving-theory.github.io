@@ -793,6 +793,16 @@ h4 { font-size: var(--text-lg); font-weight: 600; line-height: var(--leading-tig
 
 .answer-explanation.correct-explanation { border-left-color: var(--success); }
 
+.question-explanation {
+  margin-top: var(--space-3);
+  padding: var(--space-3) var(--space-4);
+  background: var(--bg-secondary);
+  border-radius: var(--radius-sm);
+  font-size: var(--text-base);
+  line-height: var(--leading-relaxed);
+  border-left: 3px solid #355da6;
+}
+
 /* Explanation panel */
 .explanation-panel {
   background: var(--bg-secondary);

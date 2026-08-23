@@ -1,7 +1,7 @@
 import { getQuestion, getTranslation, getOptions, getExplanation } from "./data.js";
 import { getSavedLanguage, setSavedLanguage } from "./filters.js";
 import { recordAnswer, getSessionState, setSessionState, clearSessionState } from "./progress.js";
-import { shuffleArray, truncate, escapeHtml, getCategoryLabel } from "./utils.js";
+import { shuffleArray, truncate, escapeHtml, escapeHtmlWithBreaks, getCategoryLabel } from "./utils.js";
 import { t } from "./i18n.js";
 
 const SESSION_KEY = "swiss-driving-theory-quiz-state";
@@ -209,6 +209,7 @@ function render() {
   const questionText = tq.question || "";
   const options = tq.options || [];
   const explanations = tq.explanations || {};
+  const questionExplanation = tq.questionExplanation || "";
   const current = state.currentIndex + 1;
   const total = state.questions.length;
   const pct = total > 0 ? Math.round((current / total) * 100) : 0;
@@ -316,6 +317,9 @@ function render() {
     html += '    </div>';
   } else {
     html += `    <div class="answers-grid${isImageType ? " answers-grid-images" : ""}">${answersHtml}</div>`;
+  }
+  if (state.checked && questionExplanation) {
+    html += `    <div class="question-explanation">${escapeHtmlWithBreaks(questionExplanation)}</div>`;
   }
   html += '  </div>';
 

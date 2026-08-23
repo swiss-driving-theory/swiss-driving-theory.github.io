@@ -33,6 +33,10 @@ export function escapeHtml(str) {
   return div.innerHTML;
 }
 
+export function escapeHtmlWithBreaks(str) {
+  return escapeHtml(str).replace(/\r?\n/g, "<br>");
+}
+
 export function formatNumber(n) {
   return n.toLocaleString();
 }

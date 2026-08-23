@@ -1,6 +1,6 @@
 import { getTranslation, getOptions, getExplanation, getQuestion, getOfficialQuestions } from "./data.js";
 import { getSavedLanguage, setSavedLanguage } from "./filters.js";
-import { shuffleArray, escapeHtml, getCategoryLabel } from "./utils.js";
+import { shuffleArray, escapeHtml, escapeHtmlWithBreaks, getCategoryLabel } from "./utils.js";
 import { t } from "./i18n.js";
 import { getSessionState, setSessionState, clearSessionState } from "./progress.js";
 
@@ -238,11 +238,13 @@ function showExamResults(results, passed) {
       }
     }
 
+    const questionExplanation = (tq.questionExplanation || "").trim();
+
     html += `      <div class="wrong-answer-item">`;
     html += `        <div class="flex items-start gap-3">`;
     html += `          <span class="wrong-answer-number">${i + 1}</span>`;
     html += `          <div class="flex-1">`;
-    html += `            <div class="flex items-center gap-2" style="margin-bottom:4px;">`;
+    html += `            <div class="flex items-center gap-2" style="margin-bottom:4px;flex-wrap:wrap;">`;
     html += `              <span class="badge badge-official">${q.official ? t("officialBadge", state.language) : t("practiceBadge", state.language)}</span>`;
     html += `              <span class="badge badge-category">${getCategoryLabel(q.category, state.language)}</span>`;
     html += `              ${statusBadge}`;
@@ -251,6 +253,9 @@ function showExamResults(results, passed) {
     html += selectedText;
     if (correctTexts.length > 0) {
       html += `            <div class="correct-answer-text">${t("correctLabel", state.language)} ${correctTexts.join(", ")}</div>`;
+    }
+    if (questionExplanation) {
+      html += `            <div class="question-explanation">${escapeHtmlWithBreaks(questionExplanation)}</div>`;
     }
     html += `          </div>`;
     html += `        </div>`;

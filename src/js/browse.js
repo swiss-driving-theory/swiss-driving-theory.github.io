@@ -1,6 +1,6 @@
 import { getQuestion, getTranslation, getQuestions } from "./data.js";
 import { getSavedLanguage, setSavedLanguage } from "./filters.js";
-import { getCategoryLabel, getTypeLabel, truncate, escapeHtml } from "./utils.js";
+import { getCategoryLabel, getTypeLabel, truncate, escapeHtml, escapeHtmlWithBreaks } from "./utils.js";
 import { t } from "./i18n.js";
 
 function getAnswerLabel(index) {
@@ -168,6 +168,7 @@ function renderDetail(id) {
   const questionText = tq.question || "";
   const options = tq.options || [];
   const explanations = tq.explanations || {};
+  const questionExplanation = (tq.questionExplanation || "").trim();
   const isImageType = q.type === "image";
   const hasQuestionImage = !!q.questionImage;
 
@@ -247,6 +248,9 @@ function renderDetail(id) {
     html += '  </div>';
   } else {
     html += `    <div class="answers-grid${isImageType ? " answers-grid-images" : ""}">${answersHtml}</div>`;
+  }
+  if (questionExplanation) {
+    html += `    <div class="question-explanation">${escapeHtmlWithBreaks(questionExplanation)}</div>`;
   }
   html += '</div>';
 
