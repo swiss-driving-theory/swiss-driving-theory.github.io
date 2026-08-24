@@ -13,6 +13,11 @@
         <div class="logo-icon">CH</div>
         <span data-i18n="appName">Swiss Driving Theory</span>
       </a>
+      <button class="hamburger" aria-label="Menu" onclick="window._app.toggleDrawer()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
       <nav class="nav">
         <a href="index.html" class="nav-btn" data-i18n="home">Home</a>
         <a href="training.html" class="nav-btn" data-i18n="training">Training</a>
@@ -20,6 +25,17 @@
       </nav>
     </div>
   </header>
+
+  <div class="drawer-overlay" id="drawer-overlay" onclick="window._app.closeDrawer()">
+    <div class="drawer" id="drawer" onclick="event.stopPropagation()">
+      <button class="drawer-close" aria-label="Close menu" onclick="window._app.closeDrawer()">&times;</button>
+      <nav class="drawer-nav">
+        <a href="index.html" class="nav-btn" data-i18n="home">Home</a>
+        <a href="training.html" class="nav-btn" data-i18n="training">Training</a>
+      </nav>
+      <select id="drawer-lang-select" class="lang-select"></select>
+    </div>
+  </div>
 
   <div class="container section-tight">
     <div class="exam-header">

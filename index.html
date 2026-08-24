@@ -13,6 +13,11 @@
         <div class="logo-icon">CH</div>
         <span data-i18n="appName">Swiss Driving Theory</span>
       </a>
+      <button class="hamburger" aria-label="Menu" onclick="window._app.toggleDrawer()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
       <nav class="nav">
         <a href="training.html" class="nav-btn" data-i18n="training">Training</a>
         <a href="exam.html" class="nav-btn" data-i18n="exam">Exam Simulation</a>
@@ -20,6 +25,17 @@
       </nav>
     </div>
   </header>
+
+  <div class="drawer-overlay" id="drawer-overlay" onclick="window._app.closeDrawer()">
+    <div class="drawer" id="drawer" onclick="event.stopPropagation()">
+      <button class="drawer-close" aria-label="Close menu" onclick="window._app.closeDrawer()">&times;</button>
+      <nav class="drawer-nav">
+        <a href="training.html" class="nav-btn" data-i18n="training">Training</a>
+        <a href="exam.html" class="nav-btn" data-i18n="exam">Exam Simulation</a>
+      </nav>
+      <select id="drawer-lang-select" class="lang-select"></select>
+    </div>
+  </div>
 
   <section class="hero">
     <div class="container">
@@ -50,19 +66,6 @@
         <div class="stat-card">
           <div class="stat-value">795</div>
           <div class="stat-label" data-i18n="images">Images</div>
-        </div>
-      </div>
-
-      <div class="card">
-        <h2 class="card-title" data-i18n="about">About</h2>
-        <p class="about-text" data-i18n="aboutTextFull">
-          This app contains questions from the Swiss driving theory exam (category B).
-          Questions are available in German, French, and Italian.
-          Use Training to practice with immediate feedback, or try the Exam Simulation to test yourself under real exam conditions (50 questions, 45 minutes, 15 error points limit).
-        </p>
-        <div class="about-actions">
-          <a href="training.html" class="btn btn-primary" data-i18n="startTraining">Start Training</a>
-          <a href="exam.html" class="btn btn-secondary" data-i18n="startExam">Exam Simulation</a>
         </div>
       </div>
     </div>

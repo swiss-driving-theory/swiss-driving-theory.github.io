@@ -14,9 +14,7 @@ const translations = {
     images: "Bilder",
     about: "Über",
     aboutText:
-      "Diese App enthält Fragen aus der Schweizer Fahrtheorieprüfung (Kategorie B). Die Fragen sind auf Deutsch, Französisch und Italienisch verfügbar. Trainiere direkt mit sofortigem Feedback oder teste dich in der Prüfungssimulation unter echten Bedingungen (50 Fragen, 45 Minuten, 15 Fehlerpunkte-Limit).",
-    aboutTextFull:
-      "Diese App enthält Fragen aus der Schweizer Fahrtheorieprüfung (Kategorie B). Die Fragen sind auf Deutsch, Französisch und Italienisch verfügbar. Trainiere direkt mit sofortigem Feedback oder teste dich in der Prüfungssimulation unter echten Bedingungen (50 Fragen, 45 Minuten, 15 Fehlerpunkte-Limit).",
+      "Theorieprüfung Kat. B — offizielle ASA-Fragen in drei Sprachen.",
     aboutTraining: "Training",
     aboutExam: "Prüfungssimulation",
     aboutConditions: "50 Fragen, 45 Minuten, 15 Fehlerpunkte-Limit",
@@ -97,9 +95,7 @@ const translations = {
     images: "Images",
     about: "À propos",
     aboutText:
-      "Cette application contient des questions de l'examen de théorie de conduite suisse (catégorie B). Les questions sont disponibles en allemand, français et italien. Entraîne-toi directement avec un retour immédiat, ou teste-toi dans la simulation d'examen sous conditions réelles (50 questions, 45 minutes, limite de 15 points d'erreur).",
-    aboutTextFull:
-      "Cette application contient des questions de l'examen de théorie de conduite suisse (catégorie B). Les questions sont disponibles en allemand, français et italien. Entraîne-toi directement avec un retour immédiat, ou teste-toi dans la simulation d'examen sous conditions réelles (50 questions, 45 minutes, limite de 15 points d'erreur).",
+      "Examen théorique cat. B — questions officielles ASA en trois langues.",
     aboutTraining: "Entraînement",
     aboutExam: "Simulation d'examen",
     aboutConditions: "50 questions, 45 minutes, limite de 15 points d'erreur",
@@ -180,9 +176,7 @@ const translations = {
     images: "Immagini",
     about: "Info",
     aboutText:
-      "Questa app contiene domande dell'esame di teoria di guida svizzero (categoria B). Le domande sono disponibili in tedesco, francese e italiano. Usa l'allenamento per esercitarti con feedback immediato, o la simulazione d'esame per testarti in condizioni reali (50 domande, 45 minuti, limite di 15 punti errore).",
-    aboutTextFull:
-      "Questa app contiene domande dell'esame di teoria di guida svizzero (categoria B). Le domande sono disponibili in tedesco, francese e italiano. Allenati subito con feedback immediato o mettiti alla prova nella simulazione d'esame sotto condizioni reali (50 domande, 45 minuti, limite di 15 punti errore).",
+      "Esame teorico cat. B — domande ufficiali ASA in tre lingue.",
     aboutTraining: "Allenamento",
     aboutExam: "Simulazione d'esame",
     aboutConditions: "50 domande, 45 minuti, limite di 15 punti errore",
@@ -263,7 +257,7 @@ const categoryTranslations = {
     7: "Parkieren / Halten",
     8: "Distanzen / Geschwindigkeit",
     9: "Fahrzeugführung / Situationen",
-    10: "Spezialsituationen / Schutzbedürftige Verkehrsteilnehmer",
+     10: "Spezialsituationen / Personen",
     11: "Sicht / Beleuchtung",
     12: "Notfall / Unfall / Versicherung",
   },

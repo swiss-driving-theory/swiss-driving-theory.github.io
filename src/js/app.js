@@ -60,6 +60,7 @@ async function init() {
       document.documentElement.lang = newLang;
       document.title = getPageTitle(currentPage, newLang);
       applyI18n(newLang);
+      syncDrawerLangSelect(newLang);
       if (currentPage === "quiz") {
         window._quiz?.setLanguage(newLang);
       } else if (currentPage === "training") {
@@ -74,6 +75,38 @@ async function init() {
       }
     }, lang);
   }
+
+  const drawerLangSelect = document.getElementById("drawer-lang-select");
+  if (drawerLangSelect) {
+    populateLanguageSelect(drawerLangSelect, (newLang) => {
+      setSavedLanguage(newLang);
+      document.documentElement.lang = newLang;
+      document.title = getPageTitle(currentPage, newLang);
+      applyI18n(newLang);
+      const mainLangSelect = document.getElementById("lang-select");
+      if (mainLangSelect) mainLangSelect.value = newLang;
+      if (currentPage === "quiz") {
+        window._quiz?.setLanguage(newLang);
+      } else if (currentPage === "training") {
+        window._quiz?.setLanguage(newLang);
+        window._browse?.setLanguage(newLang);
+        window._browse?.applyBrowseFilters();
+      } else if (currentPage === "exam") {
+        window._exam?.setLanguage(newLang);
+      } else if (currentPage === "browse") {
+        window._browse?.setLanguage(newLang);
+        window._browse?.applyBrowseFilters();
+      }
+    }, lang);
+  }
+
+  document.querySelectorAll(".drawer .nav-btn").forEach((btn) => {
+    btn.addEventListener("click", () => closeDrawer());
+  });
+
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") closeDrawer();
+  });
 
   if (currentPage === "quiz") initQuizPage();
   else if (currentPage === "browse") initBrowsePage();
@@ -186,7 +219,36 @@ export function closeModalOutside(event) {
   }
 }
 
-window._app = { switchTab, closeDetail, closeModalOutside };
+export function toggleDrawer() {
+  const overlay = document.getElementById("drawer-overlay");
+  const hamburger = document.querySelector(".hamburger");
+  if (!overlay) return;
+  const isOpen = overlay.classList.contains("open");
+  if (isOpen) {
+    closeDrawer();
+  } else {
+    overlay.classList.add("open");
+    document.body.style.overflow = "hidden";
+    hamburger?.classList.add("open");
+  }
+}
+
+export function closeDrawer() {
+  const overlay = document.getElementById("drawer-overlay");
+  const hamburger = document.querySelector(".hamburger");
+  if (overlay) {
+    overlay.classList.remove("open");
+    document.body.style.overflow = "";
+    hamburger?.classList.remove("open");
+  }
+}
+
+function syncDrawerLangSelect(lang) {
+  const drawerLangSelect = document.getElementById("drawer-lang-select");
+  if (drawerLangSelect) drawerLangSelect.value = lang;
+}
+
+window._app = { switchTab, closeDetail, closeModalOutside, toggleDrawer, closeDrawer };
 window._applyQuizFilters = applyQuizFilters;
 
 if (document.readyState === "loading") {
