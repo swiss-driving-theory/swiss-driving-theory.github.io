@@ -316,7 +316,7 @@ function render() {
       let cls = "answer-btn";
       if (selectedIndices.indexOf(a.index) >= 0) cls += " selected";
       answersHtml += `<div class="answer-wrapper">`;
-      answersHtml += `<button class="${cls}" onclick="window._exam.selectAnswer(${a.index})">`;
+      answersHtml += `<button type="button" class="${cls}" onclick="window._exam.selectAnswer(${a.index})">`;
       if (imgSrc) answersHtml += `<img src="${imgSrc}" alt="Answer ${a.index}" loading="lazy">`;
       answersHtml += `  <span class="answer-label">${getAnswerLabel(a.index)}</span>`;
       answersHtml += `</button>`;
@@ -329,7 +329,7 @@ function render() {
       let cls = "answer-btn";
       if (selectedIndices.indexOf(a.index) >= 0) cls += " selected";
       answersHtml += `<div class="answer-wrapper">`;
-      answersHtml += `<button class="${cls}" onclick="window._exam.selectAnswer(${a.index})">`;
+      answersHtml += `<button type="button" class="${cls}" onclick="window._exam.selectAnswer(${a.index})">`;
       answersHtml += `  <span class="answer-label">${getAnswerLabel(a.index)}</span>`;
       answersHtml += `  <span>${escapeHtml(text)}</span>`;
       answersHtml += `</button>`;
@@ -345,7 +345,7 @@ function render() {
   html += `  <div class="progress-text">${t("questionOf", lang, { current, total, pct })}</div>`;
   html += `  <div class="question-display">`;
   html += `    <div class="question-header">`;
-  html += `      <div class="flex items-center gap-3">`;
+  html += `      <div class="flex items-center gap-3 flex-wrap">`;
   html += `        <span class="badge badge-official">${q.official ? t("officialBadge", lang) : t("practiceBadge", lang)}</span>`;
   html += `        <span class="badge badge-category">${getCategoryLabel(q.category, lang)}</span>`;
   html += `      </div>`;

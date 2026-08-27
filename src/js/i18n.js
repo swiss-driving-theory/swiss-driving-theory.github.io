@@ -193,7 +193,7 @@ const translations = {
     allCategories: "Tutte le categorie",
     reset: "Ripristina",
     officialQuestions: "Domande ufficiali",
-    restartQuiz: "Riavria quiz",
+    restartQuiz: "Riavvia quiz",
     noQuestionsMatch: "Nessuna domanda trovata",
     tryAdjustingFilters:
       "Modifica i filtri sopra.",

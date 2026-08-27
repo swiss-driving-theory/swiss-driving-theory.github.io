@@ -219,7 +219,7 @@ function renderDetail(id) {
 
   let html = '<div class="question-display">';
   html += '  <div class="question-header">';
-  html += '    <div class="flex items-center gap-3">';
+  html += '    <div class="flex items-center gap-3 flex-wrap">';
   html += `      <span class="badge badge-official">${q.official ? t("officialBadge", state.language) : t("practiceBadge", state.language)}</span>`;
   html += `      <span class="badge badge-category">${getCategoryLabel(q.category, state.language)}</span>`;
   html += `      <span class="badge badge-category">${getTypeLabel(q.type, state.language)}</span>`;
