@@ -37,7 +37,7 @@ async function init() {
     console.error("Failed to load data:", e);
     const lang = getSavedLanguage();
     document.body.innerHTML = `
-      <div class="container" style="padding:40px;">
+      <div class="container error-container">
         <h1>${t("errorLoadingData", lang)}</h1>
         <p>${e.message}</p>
         <p class="error-hint">${t("errorHint", lang)}</p>
@@ -147,7 +147,7 @@ export function applyQuizFilters() {
     document.getElementById("quiz-container").innerHTML = `
       <div class="quiz-container text-center">
         <h3>${t("noQuestionsMatch", lang)}</h3>
-        <p style="color:var(--text-muted);">${t("tryAdjustingFilters", lang)}</p>
+        <p class="error-hint">${t("tryAdjustingFilters", lang)}</p>
       </div>
     `;
     return;

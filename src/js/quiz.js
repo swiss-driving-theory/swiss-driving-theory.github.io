@@ -160,7 +160,7 @@ function showResults() {
             total: state.questions.length,
           })}
         </div>
-        <div class="text-center" style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;">
+        <div class="flex items-center gap-3 flex-wrap" style="justify-content:center;">
           <button class="btn btn-primary" onclick="location.reload()">${t("startNewQuiz", state.language)}</button>
           <button class="btn btn-secondary" onclick="history.back()">${t("back", state.language)}</button>
         </div>
@@ -176,7 +176,7 @@ function showResults() {
               const correctText = correctAns ? escapeHtml(tq.options?.[correctAns.index - 1] || `Answer ${correctAns.index}`) : "";
               return `<div class="wrong-answer-item">
                 <strong>#${i + 1}</strong> ${qText}
-                <div style="margin-top:6px;color:var(--success);font-size:0.9rem;">${t("correctLabel", state.language)} ${correctText}</div>
+                <div class="correct-answer-text">${t("correctLabel", state.language)} ${correctText}</div>
               </div>`;
             }).join("")}
           </div>
@@ -329,7 +329,7 @@ function render() {
   html += `      <div class="score-item"><span class="score-wrong">${attemptedCount - correctCount}</span> ${t("scoreWrong", lang)}</div>`;
   html += `      <div class="score-item"><span>${attemptedCount}</span> ${t("scoreAttempted", lang)}</div>`;
   html += '    </div>';
-  html += '    <div style="display:flex;gap:8px;">';
+  html += '    <div class="flex gap-2">';
   html += `      <button class="btn btn-secondary" onclick="window._quiz.prevQuestion()" ${!canPrev ? "disabled" : ""}>${t("previous", lang)}</button>`;
   html += `      <button class="btn btn-primary" onclick="window._quiz.checkAnswer()" ${state.checked || state.selectedIndices.length === 0 ? "disabled" : ""}>${t("checkAnswer", lang)}</button>`;
   html += `      <button class="btn btn-primary" onclick="window._quiz.nextQuestion()" ${!canNext && !isLast ? "disabled" : ""}>${isLast ? t("finish", lang) : t("next", lang)}</button>`;

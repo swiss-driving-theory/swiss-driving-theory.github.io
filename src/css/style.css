@@ -26,6 +26,7 @@
   --shadow: 0 2px 8px rgba(0,0,0,0.06), 0 1px 3px rgba(0,0,0,0.04);
   --shadow-md: 0 4px 12px rgba(0,0,0,0.08), 0 2px 4px rgba(0,0,0,0.04);
   --shadow-lg: 0 8px 24px rgba(0,0,0,0.1), 0 4px 8px rgba(0,0,0,0.05);
+  --radius: var(--radius-md);
   --radius-xs: 4px;
   --radius-sm: 6px;
   --radius-md: 10px;
@@ -87,7 +88,7 @@ img { max-width: 100%; height: auto; display: block; }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  *, *::before, *::after { transition-duration: 0.01ms !important; animation-duration: 0.01ms !important; }
+  *, *::before, *::after { transition-duration: 0.01ms !important; animation-duration: 0.01ms !important; animation: none !important; }
   html { scroll-behavior: auto; }
 }
 
@@ -601,17 +602,6 @@ h4 { font-size: var(--text-lg); font-weight: 600; line-height: var(--leading-tig
   align-items: center;
 }
 
-.toolbar .form-select {
-  padding-top: 0;
-  padding-bottom: 0;
-  font-size: var(--text-sm);
-}
-
-.toolbar .btn-sm {
-  padding: 0 var(--space-4);
-  font-size: var(--text-sm);
-}
-
 /* Question card grid */
 .question-grid {
   display: grid;
@@ -1104,7 +1094,7 @@ h4 { font-size: var(--text-lg); font-weight: 600; line-height: var(--leading-tig
   border-radius: var(--radius-sm);
   padding: var(--space-3);
   margin-top: var(--space-2);
-  margin-left: 36px;
+  margin-left: calc(var(--space-3) + 24px + var(--space-1));
   font-size: var(--text-sm);
   line-height: var(--leading-relaxed);
   border: 1px solid var(--border-light);
@@ -1298,19 +1288,46 @@ h4 { font-size: var(--text-lg); font-weight: 600; line-height: var(--leading-tig
   justify-content: space-between;
   gap: var(--space-4);
   margin-bottom: var(--space-4);
+  margin-left: var(--space-4);
+  margin-right: var(--space-4);
   flex-wrap: wrap;
+  padding: var(--space-4) 0;
+}
+
+.exam-title-group {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.exam-title-group h2 {
+  margin: 0;
+  line-height: var(--leading-tight);
+}
+
+.exam-actions {
+  display: flex;
+  align-items: stretch;
+  gap: var(--space-3);
 }
 
 .exam-timer {
-  font-size: var(--text-2xl);
-  font-weight: 700;
+  font-size: var(--text-base);
+  font-weight: 600;
   font-variant-numeric: tabular-nums;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.06em;
   color: var(--text-primary);
   background: var(--bg-secondary);
-  padding: var(--space-2) var(--space-4);
+  padding: 10px var(--space-5);
   border-radius: var(--radius-sm);
-  border: 1px solid var(--border-color);
+  border: 1px solid transparent;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.4;
+  white-space: nowrap;
+  font-family: inherit;
+  appearance: none;
 }
 
 .exam-timer.warning {
@@ -1330,7 +1347,9 @@ h4 { font-size: var(--text-lg); font-weight: 600; line-height: var(--leading-tig
   flex-wrap: wrap;
   gap: var(--space-2);
   margin-bottom: var(--space-4);
-  padding: var(--space-3);
+  margin-left: var(--space-4);
+  margin-right: var(--space-4);
+  padding: var(--space-3) var(--space-4);
   background: var(--bg-primary);
   border-radius: var(--radius-md);
   border: 1px solid var(--border-light);
@@ -1379,8 +1398,12 @@ h4 { font-size: var(--text-lg); font-weight: 600; line-height: var(--leading-tig
 .mode-tabs {
   display: flex;
   gap: var(--space-1);
-  margin-bottom: var(--space-5);
+  margin-bottom: 0;
   border-bottom: 1px solid var(--border-color);
+  max-width: var(--max-width);
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 var(--space-6);
 }
 
 .mode-tab {
@@ -1516,7 +1539,7 @@ h4 { font-size: var(--text-lg); font-weight: 600; line-height: var(--leading-tig
 
 .question-card-badges {
   display: flex;
-  gap: 6px;
+  gap: var(--space-2);
   flex-wrap: wrap;
 }
 
@@ -1534,9 +1557,9 @@ h4 { font-size: var(--text-lg); font-weight: 600; line-height: var(--leading-tig
 }
 
 .browse-modal-close {
-  position: sticky;
-  top: 0;
-  float: right;
+  position: absolute;
+  top: var(--space-4);
+  right: var(--space-4);
   z-index: 10;
   background: var(--bg-primary);
   border: 1px solid var(--border-color);
@@ -1619,6 +1642,10 @@ h4 { font-size: var(--text-lg); font-weight: 600; line-height: var(--leading-tig
     padding: var(--space-3);
   }
   .question-image-side img { max-height: 320px; }
+  .exam-palette-dot { width: 24px; height: 24px; font-size: 10px; }
+  .exam-header { padding: var(--space-4) var(--space-4); }
+  .exam-actions { justify-content: center; }
+  .exam-palette { padding: var(--space-3) var(--space-3); }
 }
 
 .text-center { text-align: center; }
@@ -1691,6 +1718,7 @@ h4 { font-size: var(--text-lg); font-weight: 600; line-height: var(--leading-tig
 .error-container { padding: var(--space-10); }
 .error-box { background: var(--error-bg); color: var(--error); padding: var(--space-5); border-radius: var(--radius-md); border-left: 4px solid var(--error); }
 .error-hint { margin-top: var(--space-3); font-size: var(--text-sm); color: var(--text-muted); }
+.error-hint code { background: var(--bg-tertiary); padding: 2px 6px; border-radius: var(--radius-xs); font-family: var(--font-mono); }
 
 @media (max-width: 480px) {
   .stats-grid { grid-template-columns: 1fr; }
@@ -1698,13 +1726,19 @@ h4 { font-size: var(--text-lg); font-weight: 600; line-height: var(--leading-tig
   .hero-actions { flex-direction: column; align-items: center; }
   .hero-btn { width: 100%; justify-content: center; }
   .card { padding: var(--space-4); }
+  .question-card { padding: var(--space-4); }
+  .stat-card { padding: var(--space-4); }
   .question-display { padding: var(--space-4); }
   .answer-btn { padding: var(--space-3); }
+  .answers-grid-images { grid-template-columns: 1fr; }
   .logo { font-size: var(--text-base); }
   .logo-icon { width: 28px; height: 28px; font-size: 12px; padding-top: 5px; }
-  .nav-btn { padding: 4px var(--space-1); font-size: var(--text-xs); }
-  .lang-select { font-size: var(--text-xs); }
+  .browse-modal-overlay { padding: var(--space-2); }
+  .browse-modal { padding: var(--space-3); }
   .hero { padding: var(--space-6) 0; }
+  .exam-palette-dot { width: 22px; height: 22px; font-size: 9px; }
+  .exam-header { padding: var(--space-3) var(--space-3); }
+  .exam-palette { padding: var(--space-2) var(--space-3); }
 }
 
 @media (min-width: 1400px) {

@@ -137,13 +137,13 @@ function renderQuestionList() {
         ${imageHtml}
         <div class="question-card-text">${escapeHtml(text)}</div>
         <div class="question-card-footer">
-          <span style="font-size:0.8rem;color:var(--text-muted);">${getTypeLabel(q.type, state.language)} · ${q.answers.length} ${t("answersCount", state.language, { count: q.answers.length })}</span>
+          <span class="hidden-text">${getTypeLabel(q.type, state.language)} · ${q.answers.length} ${t("answersCount", state.language, { count: q.answers.length })}</span>
         </div>
       </div>
     `;
   }).join("");
 
-  grid.innerHTML = items || `<p class="text-center" style="padding:40px;color:var(--text-muted);">${t("noQuestionsMatch", state.language)}</p>`;
+  grid.innerHTML = items || `<p class="text-center browse-empty empty-state-full">${t("noQuestionsMatch", state.language)}</p>`;
 }
 
 export function selectQuestion(id) {

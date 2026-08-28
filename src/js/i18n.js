@@ -22,7 +22,7 @@ const translations = {
     fetchingQuestions: "Fragen werden vom Server abgerufen.",
     errorLoadingData: "Fehler beim Laden der Fragendaten",
     errorHint:
-      "Stelle sicher, dass du einen lokalen Server verwendest (z. B. <code style=\"background:var(--bg-tertiary);padding:2px 6px;border-radius:var(--radius-xs);font-family:var(--font-mono);\">python -m http.server 3000</code>) und die Datei nicht direkt öffnest.",
+      "Stelle sicher, dass du einen lokalen Server verwendest (z. B. <code>python -m http.server 3000</code>) und die Datei nicht direkt öffnest.",
     quiz: "Quiz",
     browseStudy: "Durchsuchen & Üben",
     searchQuestions: "Fragen suchen...",
@@ -103,7 +103,7 @@ const translations = {
      fetchingQuestions: "Récupération des questions en cours.",
     errorLoadingData: "Erreur lors du chargement des données",
     errorHint:
-      "Assure-toi d'utiliser un serveur local (par ex. <code style=\"background:var(--bg-tertiary);padding:2px 6px;border-radius:var(--radius-xs);font-family:var(--font-mono);\">python -m http.server 3000</code>) et d'ouvrir le fichier directement.",
+      "Assure-toi d'utiliser un serveur local (par ex. <code>python -m http.server 3000</code>) et d'ouvrir le fichier directement.",
     quiz: "Quiz",
     browseStudy: "Parcourir & Réviser",
     searchQuestions: "Rechercher des questions...",
@@ -184,7 +184,7 @@ const translations = {
     fetchingQuestions: "Recupero delle domande dal server.",
     errorLoadingData: "Errore nel caricamento dei dati",
     errorHint:
-      "Assicurati di utilizzare un server locale (es. <code style=\"background:var(--bg-tertiary);padding:2px 6px;border-radius:var(--radius-xs);font-family:var(--font-mono);\">python -m http.server 3000</code>) e non aprire il file direttamente.",
+      "Assicurati di utilizzare un server locale (es. <code>python -m http.server 3000</code>) e non aprire il file direttamente.",
     quiz: "Quiz",
     browseStudy: "Sfoglia & Ripassa",
     searchQuestions: "Cerca domande...",

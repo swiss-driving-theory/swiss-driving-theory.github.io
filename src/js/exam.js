@@ -192,7 +192,7 @@ function showExamResults(results, passed) {
   html += `  <div class="card results-card">`;
   html += `    <h2 class="results-header">${t("examComplete", state.language)}</h2>`;
   html += `    <div class="exam-result-verdict ${verdictClass}">${verdictText}</div>`;
-  html += `    <div class="results-score">${results.total} <span style="font-size:0.5em;font-weight:600;">${t("errorPoints", state.language, { points: "" })}</span></div>`;
+  html += `    <div class="results-score">${results.total} <span style="font-size:var(--text-xs);font-weight:600;">${t("errorPoints", state.language, { points: "" })}</span></div>`;
   html += `    <div class="results-detail">${passed ? t("youPassed", state.language) : t("maxAllowed", state.language)}</div>`;
   html += `    <div class="results-controls">`;
   html += `      <button class="btn btn-primary" onclick="location.reload()">${t("newExam", state.language)}</button>`;
@@ -225,9 +225,9 @@ function showExamResults(results, passed) {
         const aText = tq.options && tq.options[aIndex - 1] ? escapeHtml(tq.options[aIndex - 1]) : `Answer ${getAnswerLabel(aIndex)}`;
         texts.push(aText);
       }
-      selectedText = `<div style="margin-top:6px;font-size:var(--text-sm);color:var(--text-muted);">${t("selectedLabel", state.language)} ${texts.join(", ")}</div>`;
+      selectedText = `<div class="error-hint">${t("selectedLabel", state.language)} ${texts.join(", ")}</div>`;
     } else if (ans === null) {
-      selectedText = `<div style="margin-top:6px;font-size:var(--text-sm);color:var(--text-muted);">${t("skippedLabel", state.language)}</div>`;
+       selectedText = `<div class="error-hint">${t("skippedLabel", state.language)}</div>`;
     }
 
     const correctTexts = [];
@@ -244,7 +244,7 @@ function showExamResults(results, passed) {
     html += `        <div class="flex items-start gap-3">`;
     html += `          <span class="wrong-answer-number">${i + 1}</span>`;
     html += `          <div class="flex-1">`;
-    html += `            <div class="flex items-center gap-2" style="margin-bottom:4px;flex-wrap:wrap;">`;
+    html += `            <div class="flex items-center gap-2 flex-wrap">`;
     html += `              <span class="badge badge-official">${q.official ? t("officialBadge", state.language) : t("practiceBadge", state.language)}</span>`;
     html += `              <span class="badge badge-category">${getCategoryLabel(q.category, state.language)}</span>`;
     html += `              ${statusBadge}`;
