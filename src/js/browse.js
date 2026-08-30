@@ -225,7 +225,9 @@ function renderDetail(id) {
   html += `      <span class="badge badge-category">${getTypeLabel(q.type, state.language)}</span>`;
   html += '    </div>';
   html += '    <div class="flex items-center gap-2">';
-  html += `      <span class="question-id">ID: ${q.originalId}</span>`;
+  if (q.originalId) {
+    html += `      <span class="question-id">ID: ${q.originalId}</span>`;
+  }
   html += `      <button class="btn btn-sm btn-ghost" onclick="window._browse.closeDetail()">${t("close", state.language)}</button>`;
   html += '    </div>';
   html += '  </div>';

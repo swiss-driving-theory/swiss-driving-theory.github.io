@@ -349,7 +349,9 @@ function render() {
   html += `        <span class="badge badge-official">${q.official ? t("officialBadge", lang) : t("practiceBadge", lang)}</span>`;
   html += `        <span class="badge badge-category">${getCategoryLabel(q.category, lang)}</span>`;
   html += `      </div>`;
-  html += `      <span class="question-id">ID: ${q.originalId}</span>`;
+  if (q.originalId) {
+    html += `      <span class="question-id">ID: ${q.originalId}</span>`;
+  }
   html += `    </div>`;
 
   if (hasQuestionImage || questionText) {

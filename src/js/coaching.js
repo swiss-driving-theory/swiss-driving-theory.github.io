@@ -324,10 +324,16 @@ export function continueCoaching() {
 }
 
 function render() {
-  const item = state.queue[state.currentIndex];
-  if (!item) {
-    finishCoaching();
-    return;
+  let item = state.queue[state.currentIndex];
+
+  while (!item || !item.question || !item.question.id) {
+    if (state.currentIndex < state.queue.length - 1) {
+      state.currentIndex += 1;
+      item = state.queue[state.currentIndex];
+    } else {
+      finishCoaching();
+      return;
+    }
   }
 
   const q = item.question;
@@ -449,7 +455,9 @@ function render() {
     html += `        <span class="badge badge-success">${t("coachingBonus", lang)}</span>`;
   }
   html += '      </div>';
-  html += `      <span class="question-id">ID: ${q.originalId}</span>`;
+  if (q.originalId) {
+    html += `      <span class="question-id">ID: ${q.originalId}</span>`;
+  }
   html += '    </div>';
 
   if (hasQuestionImage || questionText) {
