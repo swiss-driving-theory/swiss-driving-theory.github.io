@@ -64760,7 +64760,7 @@
     {
       "originalId": "20040",
       "type": "text",
-      "category": 1001,
+      "category": 9,
       "official": true,
       "questionImage": "assets/images/20040.jpg",
       "answers": [
@@ -64823,7 +64823,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1001,
+      "category": 9,
       "official": false,
       "questionImage": "assets/images/25041.jpg",
       "answers": [
@@ -64886,7 +64886,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1001,
+      "category": 9,
       "official": false,
       "questionImage": "assets/images/20069.jpg",
       "answers": [
@@ -64949,7 +64949,7 @@
     {
       "originalId": "20156",
       "type": "text",
-      "category": 1001,
+      "category": 9,
       "official": true,
       "questionImage": "assets/images/20156.jpg",
       "answers": [
@@ -65012,7 +65012,7 @@
     {
       "originalId": "25050",
       "type": "text",
-      "category": 1001,
+      "category": 9,
       "official": true,
       "questionImage": "assets/images/25050.jpg",
       "answers": [
@@ -65075,7 +65075,7 @@
     {
       "originalId": "25034",
       "type": "text",
-      "category": 1001,
+      "category": 9,
       "official": true,
       "questionImage": "assets/images/25034.jpg",
       "answers": [
@@ -65138,7 +65138,7 @@
     {
       "originalId": "20035",
       "type": "text",
-      "category": 1001,
+      "category": 9,
       "official": true,
       "questionImage": "assets/images/20035.jpg",
       "answers": [
@@ -65201,7 +65201,7 @@
     {
       "originalId": "20229",
       "type": "text",
-      "category": 1001,
+      "category": 9,
       "official": true,
       "questionImage": "assets/images/20229.jpg",
       "answers": [
@@ -65264,7 +65264,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1001,
+      "category": 9,
       "official": false,
       "questionImage": "assets/images/20251.jpg",
       "answers": [
@@ -65327,7 +65327,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1001,
+      "category": 9,
       "official": false,
       "questionImage": "assets/images/20095.jpg",
       "answers": [
@@ -65390,7 +65390,7 @@
     {
       "originalId": "50007",
       "type": "text",
-      "category": 1001,
+      "category": 9,
       "official": true,
       "questionImage": "assets/images/50007.jpg",
       "answers": [
@@ -65453,7 +65453,7 @@
     {
       "originalId": "20275",
       "type": "text",
-      "category": 1001,
+      "category": 9,
       "official": true,
       "questionImage": "assets/images/20275.jpg",
       "answers": [
@@ -65516,7 +65516,7 @@
     {
       "originalId": "21211",
       "type": "text",
-      "category": 1001,
+      "category": 9,
       "official": true,
       "questionImage": "assets/images/21211.jpg",
       "answers": [
@@ -65579,7 +65579,7 @@
     {
       "originalId": "30006",
       "type": "text",
-      "category": 1001,
+      "category": 9,
       "official": true,
       "questionImage": "assets/images/30006.jpg",
       "answers": [
@@ -65642,7 +65642,7 @@
     {
       "originalId": "30029",
       "type": "text",
-      "category": 1001,
+      "category": 9,
       "official": true,
       "questionImage": "assets/images/30029.jpg",
       "answers": [
@@ -65705,7 +65705,7 @@
     {
       "originalId": "30050",
       "type": "text",
-      "category": 1001,
+      "category": 9,
       "official": true,
       "questionImage": "assets/images/30050.jpg",
       "answers": [
@@ -65768,7 +65768,7 @@
     {
       "originalId": "30080",
       "type": "text",
-      "category": 1001,
+      "category": 9,
       "official": true,
       "questionImage": "assets/images/30080.jpg",
       "answers": [
@@ -65831,7 +65831,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1001,
+      "category": 9,
       "official": false,
       "questionImage": "assets/images/40001.jpg",
       "answers": [
@@ -65894,7 +65894,7 @@
     {
       "originalId": "40007",
       "type": "text",
-      "category": 1001,
+      "category": 9,
       "official": true,
       "questionImage": "assets/images/40007.jpg",
       "answers": [
@@ -65957,7 +65957,7 @@
     {
       "originalId": "40008",
       "type": "text",
-      "category": 1001,
+      "category": 9,
       "official": true,
       "questionImage": "assets/images/40008.jpg",
       "answers": [
@@ -66020,7 +66020,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1001,
+      "category": 9,
       "official": false,
       "questionImage": "assets/images/40082.jpg",
       "answers": [
@@ -66083,7 +66083,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1001,
+      "category": 9,
       "official": false,
       "questionImage": "assets/images/40102.jpg",
       "answers": [
@@ -66146,7 +66146,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1001,
+      "category": 9,
       "official": false,
       "questionImage": "assets/images/40154.jpg",
       "answers": [
@@ -66209,7 +66209,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1001,
+      "category": 9,
       "official": false,
       "questionImage": "assets/images/25043.jpg",
       "answers": [
@@ -66272,7 +66272,7 @@
     {
       "originalId": "25045",
       "type": "text",
-      "category": 1001,
+      "category": 9,
       "official": true,
       "questionImage": "assets/images/25045.jpg",
       "answers": [
@@ -66335,7 +66335,7 @@
     {
       "originalId": "40246",
       "type": "text",
-      "category": 1001,
+      "category": 9,
       "official": true,
       "questionImage": "assets/images/40246.jpg",
       "answers": [
@@ -66398,7 +66398,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1001,
+      "category": 9,
       "official": false,
       "questionImage": "assets/images/40275.jpg",
       "answers": [
@@ -66461,7 +66461,7 @@
     {
       "originalId": "40296",
       "type": "text",
-      "category": 1001,
+      "category": 9,
       "official": true,
       "questionImage": "assets/images/40296.jpg",
       "answers": [
@@ -66524,7 +66524,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1001,
+      "category": 9,
       "official": false,
       "questionImage": "assets/images/25051.jpg",
       "answers": [
@@ -66587,7 +66587,7 @@
     {
       "originalId": "40328",
       "type": "text",
-      "category": 1001,
+      "category": 9,
       "official": true,
       "questionImage": "assets/images/40328.jpg",
       "answers": [
@@ -66650,7 +66650,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1001,
+      "category": 9,
       "official": false,
       "questionImage": "assets/images/40331.jpg",
       "answers": [
@@ -66713,7 +66713,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1001,
+      "category": 9,
       "official": false,
       "questionImage": "assets/images/41600.jpg",
       "answers": [
@@ -66766,7 +66766,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1001,
+      "category": 9,
       "official": false,
       "questionImage": "assets/images/41773.jpg",
       "answers": [
@@ -66829,7 +66829,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1001,
+      "category": 9,
       "official": false,
       "questionImage": "assets/images/41774.jpg",
       "answers": [
@@ -66892,7 +66892,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1001,
+      "category": 9,
       "official": false,
       "questionImage": "assets/images/41777.jpg",
       "answers": [
@@ -66955,7 +66955,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1001,
+      "category": 9,
       "official": false,
       "questionImage": "assets/images/41778.jpg",
       "answers": [
@@ -67008,7 +67008,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1001,
+      "category": 9,
       "official": false,
       "questionImage": "assets/images/41779.jpg",
       "answers": [
@@ -67071,7 +67071,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1001,
+      "category": 9,
       "official": false,
       "questionImage": "assets/images/50008.jpg",
       "answers": [
@@ -67134,7 +67134,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1001,
+      "category": 9,
       "official": false,
       "questionImage": "assets/images/40326.jpg",
       "answers": [
@@ -67197,7 +67197,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1001,
+      "category": 9,
       "official": false,
       "questionImage": "assets/images/20230.jpg",
       "answers": [
@@ -67260,7 +67260,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1001,
+      "category": 9,
       "official": false,
       "questionImage": "assets/images/25044.jpg",
       "answers": [
@@ -67323,7 +67323,7 @@
     {
       "originalId": "25001",
       "type": "text",
-      "category": 1001,
+      "category": 9,
       "official": true,
       "questionImage": "assets/images/25001.jpg",
       "answers": [
@@ -67386,7 +67386,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1001,
+      "category": 9,
       "official": false,
       "questionImage": "assets/images/50018.jpg",
       "answers": [
@@ -67449,7 +67449,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1001,
+      "category": 9,
       "official": false,
       "questionImage": "assets/images/50019.jpg",
       "answers": [
@@ -67512,7 +67512,7 @@
     {
       "originalId": "25046",
       "type": "text",
-      "category": 1001,
+      "category": 9,
       "official": true,
       "questionImage": "assets/images/25046.jpg",
       "answers": [
@@ -67575,7 +67575,7 @@
     {
       "originalId": "50484",
       "type": "text",
-      "category": 1001,
+      "category": 9,
       "official": true,
       "questionImage": "assets/images/50484.jpg",
       "answers": [
@@ -67638,7 +67638,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1001,
+      "category": 9,
       "official": false,
       "questionImage": "assets/images/30080split.jpg",
       "answers": [
@@ -67701,7 +67701,7 @@
     {
       "originalId": "25053",
       "type": "text",
-      "category": 1001,
+      "category": 9,
       "official": true,
       "questionImage": "assets/images/25053.jpg",
       "answers": [
@@ -67764,7 +67764,7 @@
     {
       "originalId": "21212",
       "type": "text",
-      "category": 1001,
+      "category": 9,
       "official": true,
       "questionImage": "assets/images/21212.jpg",
       "answers": [
@@ -67827,7 +67827,7 @@
     {
       "originalId": "21213",
       "type": "text",
-      "category": 1001,
+      "category": 9,
       "official": true,
       "questionImage": "assets/images/21213.jpg",
       "answers": [
@@ -67890,7 +67890,7 @@
     {
       "originalId": "21214",
       "type": "text",
-      "category": 1001,
+      "category": 9,
       "official": true,
       "questionImage": "assets/images/21214.jpg",
       "answers": [
@@ -67953,7 +67953,7 @@
     {
       "originalId": "25052",
       "type": "text",
-      "category": 1001,
+      "category": 9,
       "official": true,
       "questionImage": "assets/images/25052.jpg",
       "answers": [
@@ -68016,7 +68016,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1001,
+      "category": 9,
       "official": false,
       "questionImage": "assets/images/50422.jpg",
       "answers": [
@@ -68079,7 +68079,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1001,
+      "category": 9,
       "official": false,
       "questionImage": "assets/images/50454.jpg",
       "answers": [
@@ -68142,7 +68142,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1001,
+      "category": 9,
       "official": false,
       "questionImage": "assets/images/41682.jpg",
       "answers": [
@@ -68205,7 +68205,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1001,
+      "category": 9,
       "official": false,
       "questionImage": "assets/images/50457.jpg",
       "answers": [
@@ -68268,7 +68268,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1001,
+      "category": 9,
       "official": false,
       "questionImage": "assets/images/2858.jpg",
       "answers": [
@@ -68331,7 +68331,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1001,
+      "category": 9,
       "official": false,
       "questionImage": "assets/images/1000.jpg",
       "answers": [
@@ -68394,7 +68394,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1001,
+      "category": 9,
       "official": false,
       "questionImage": "assets/images/2940.jpg",
       "answers": [
@@ -68457,7 +68457,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1001,
+      "category": 9,
       "official": false,
       "questionImage": "assets/images/2871.jpg",
       "answers": [
@@ -68520,7 +68520,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1001,
+      "category": 9,
       "official": false,
       "questionImage": "assets/images/1007.jpg",
       "answers": [
@@ -68583,7 +68583,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1001,
+      "category": 9,
       "official": false,
       "questionImage": "assets/images/1518.jpg",
       "answers": [
@@ -68646,7 +68646,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1001,
+      "category": 9,
       "official": false,
       "questionImage": "assets/images/1519.jpg",
       "answers": [
@@ -68709,7 +68709,7 @@
     {
       "originalId": "25037",
       "type": "text",
-      "category": 1002,
+      "category": 7,
       "official": true,
       "questionImage": "assets/images/25037.jpg",
       "answers": [
@@ -68772,7 +68772,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1002,
+      "category": 7,
       "official": false,
       "questionImage": "assets/images/20120.jpg",
       "answers": [
@@ -68835,7 +68835,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1002,
+      "category": 7,
       "official": false,
       "questionImage": "assets/images/20121.jpg",
       "answers": [
@@ -68898,7 +68898,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1002,
+      "category": 7,
       "official": false,
       "questionImage": "assets/images/25038.jpg",
       "answers": [
@@ -68961,7 +68961,7 @@
     {
       "originalId": "20225",
       "type": "text",
-      "category": 1002,
+      "category": 7,
       "official": true,
       "questionImage": "assets/images/20225.jpg",
       "answers": [
@@ -69024,7 +69024,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1002,
+      "category": 7,
       "official": false,
       "questionImage": "assets/images/50426.jpg",
       "answers": [
@@ -69087,7 +69087,7 @@
     {
       "originalId": "30005",
       "type": "text",
-      "category": 1002,
+      "category": 7,
       "official": true,
       "questionImage": "assets/images/30005.jpg",
       "answers": [
@@ -69150,7 +69150,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1002,
+      "category": 7,
       "official": false,
       "questionImage": "assets/images/40025.jpg",
       "answers": [
@@ -69213,7 +69213,7 @@
     {
       "originalId": "40041",
       "type": "text",
-      "category": 1002,
+      "category": 7,
       "official": true,
       "questionImage": "assets/images/40041.jpg",
       "answers": [
@@ -69276,7 +69276,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1002,
+      "category": 7,
       "official": false,
       "questionImage": "assets/images/41598.jpg",
       "answers": [
@@ -69329,7 +69329,7 @@
     {
       "originalId": "20054",
       "type": "text",
-      "category": 1002,
+      "category": 7,
       "official": true,
       "questionImage": "assets/images/20054.jpg",
       "answers": [
@@ -69392,7 +69392,7 @@
     {
       "originalId": "25032",
       "type": "text",
-      "category": 1002,
+      "category": 7,
       "official": true,
       "questionImage": "assets/images/25032.jpg",
       "answers": [
@@ -69455,7 +69455,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1002,
+      "category": 7,
       "official": false,
       "questionImage": "assets/images/20187.jpg",
       "answers": [
@@ -69518,7 +69518,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1002,
+      "category": 7,
       "official": false,
       "questionImage": "assets/images/20222.jpg",
       "answers": [
@@ -69581,7 +69581,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1002,
+      "category": 7,
       "official": false,
       "questionImage": "assets/images/50427.jpg",
       "answers": [
@@ -69644,7 +69644,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1002,
+      "category": 7,
       "official": false,
       "questionImage": "assets/images/40103.jpg",
       "answers": [
@@ -69697,7 +69697,7 @@
     {
       "originalId": "50491",
       "type": "text",
-      "category": 1002,
+      "category": 7,
       "official": true,
       "questionImage": "assets/images/50491.jpg",
       "answers": [
@@ -69760,7 +69760,7 @@
     {
       "originalId": "50428",
       "type": "text",
-      "category": 1002,
+      "category": 7,
       "official": true,
       "questionImage": "assets/images/50428.jpg",
       "answers": [
@@ -69823,7 +69823,7 @@
     {
       "originalId": "50429",
       "type": "text",
-      "category": 1002,
+      "category": 7,
       "official": true,
       "questionImage": "assets/images/50429.jpg",
       "answers": [
@@ -69886,7 +69886,7 @@
     {
       "originalId": "50483",
       "type": "text",
-      "category": 1002,
+      "category": 7,
       "official": true,
       "questionImage": "assets/images/50483.jpg",
       "answers": [
@@ -69949,7 +69949,7 @@
     {
       "originalId": "50490",
       "type": "text",
-      "category": 1002,
+      "category": 7,
       "official": true,
       "questionImage": "assets/images/50490.jpg",
       "answers": [
@@ -70012,7 +70012,7 @@
     {
       "originalId": "20026",
       "type": "text",
-      "category": 1003,
+      "category": 4,
       "official": true,
       "questionImage": "assets/images/20026.jpg",
       "answers": [
@@ -70075,7 +70075,7 @@
     {
       "originalId": "40010",
       "type": "text",
-      "category": 1003,
+      "category": 4,
       "official": true,
       "questionImage": "assets/images/40010.jpg",
       "answers": [
@@ -70138,7 +70138,7 @@
     {
       "originalId": "20046",
       "type": "text",
-      "category": 1003,
+      "category": 4,
       "official": true,
       "questionImage": "assets/images/20046.jpg",
       "answers": [
@@ -70201,7 +70201,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1003,
+      "category": 4,
       "official": false,
       "questionImage": "assets/images/20110.jpg",
       "answers": [
@@ -70264,7 +70264,7 @@
     {
       "originalId": "20152",
       "type": "text",
-      "category": 1003,
+      "category": 4,
       "official": true,
       "questionImage": "assets/images/20152.jpg",
       "answers": [
@@ -70327,7 +70327,7 @@
     {
       "originalId": "20169",
       "type": "text",
-      "category": 1003,
+      "category": 4,
       "official": true,
       "questionImage": "assets/images/20169.jpg",
       "answers": [
@@ -70390,7 +70390,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1003,
+      "category": 4,
       "official": false,
       "questionImage": "assets/images/20142.jpg",
       "answers": [
@@ -70453,7 +70453,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1003,
+      "category": 4,
       "official": false,
       "questionImage": "assets/images/20205.jpg",
       "answers": [
@@ -70516,7 +70516,7 @@
     {
       "originalId": "25040",
       "type": "text",
-      "category": 1003,
+      "category": 4,
       "official": true,
       "questionImage": "assets/images/25040.jpg",
       "answers": [
@@ -70579,7 +70579,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1003,
+      "category": 4,
       "official": false,
       "questionImage": "assets/images/20252.jpg",
       "answers": [
@@ -70642,7 +70642,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1003,
+      "category": 4,
       "official": false,
       "questionImage": "assets/images/20281.jpg",
       "answers": [
@@ -70705,7 +70705,7 @@
     {
       "originalId": "20282",
       "type": "text",
-      "category": 1003,
+      "category": 4,
       "official": true,
       "questionImage": "assets/images/20282.jpg",
       "answers": [
@@ -70768,7 +70768,7 @@
     {
       "originalId": "20291",
       "type": "text",
-      "category": 1003,
+      "category": 4,
       "official": true,
       "questionImage": "assets/images/20291.jpg",
       "answers": [
@@ -70831,7 +70831,7 @@
     {
       "originalId": "30020",
       "type": "text",
-      "category": 1003,
+      "category": 4,
       "official": true,
       "questionImage": "assets/images/30020.jpg",
       "answers": [
@@ -70894,7 +70894,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1003,
+      "category": 4,
       "official": false,
       "questionImage": "assets/images/30054.jpg",
       "answers": [
@@ -70957,7 +70957,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1003,
+      "category": 4,
       "official": false,
       "questionImage": "assets/images/30082.jpg",
       "answers": [
@@ -71020,7 +71020,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1003,
+      "category": 4,
       "official": false,
       "questionImage": "assets/images/30090.jpg",
       "answers": [
@@ -71083,7 +71083,7 @@
     {
       "originalId": "40031",
       "type": "text",
-      "category": 1003,
+      "category": 4,
       "official": true,
       "questionImage": "assets/images/40031.jpg",
       "answers": [
@@ -71146,7 +71146,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1003,
+      "category": 4,
       "official": false,
       "questionImage": "assets/images/40045.jpg",
       "answers": [
@@ -71209,7 +71209,7 @@
     {
       "originalId": "40062",
       "type": "text",
-      "category": 1003,
+      "category": 4,
       "official": true,
       "questionImage": "assets/images/40062.jpg",
       "answers": [
@@ -71272,7 +71272,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1003,
+      "category": 4,
       "official": false,
       "questionImage": "assets/images/40068.jpg",
       "answers": [
@@ -71335,7 +71335,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1003,
+      "category": 4,
       "official": false,
       "questionImage": "assets/images/40098.jpg",
       "answers": [
@@ -71398,7 +71398,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1003,
+      "category": 4,
       "official": false,
       "questionImage": "assets/images/40106.jpg",
       "answers": [
@@ -71461,7 +71461,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1003,
+      "category": 4,
       "official": false,
       "questionImage": "assets/images/40113.jpg",
       "answers": [
@@ -71514,7 +71514,7 @@
     {
       "originalId": "40115",
       "type": "text",
-      "category": 1003,
+      "category": 4,
       "official": true,
       "questionImage": "assets/images/40115.jpg",
       "answers": [
@@ -71577,7 +71577,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1003,
+      "category": 4,
       "official": false,
       "questionImage": "assets/images/40117.jpg",
       "answers": [
@@ -71640,7 +71640,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1003,
+      "category": 4,
       "official": false,
       "questionImage": "assets/images/40131.jpg",
       "answers": [
@@ -71703,7 +71703,7 @@
     {
       "originalId": "40139",
       "type": "text",
-      "category": 1003,
+      "category": 4,
       "official": true,
       "questionImage": "assets/images/40139.jpg",
       "answers": [
@@ -71766,7 +71766,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1003,
+      "category": 4,
       "official": false,
       "questionImage": "assets/images/40140.jpg",
       "answers": [
@@ -71829,7 +71829,7 @@
     {
       "originalId": "40157",
       "type": "text",
-      "category": 1003,
+      "category": 4,
       "official": true,
       "questionImage": "assets/images/40157.jpg",
       "answers": [
@@ -71892,7 +71892,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1003,
+      "category": 4,
       "official": false,
       "questionImage": "assets/images/40197.jpg",
       "answers": [
@@ -71955,7 +71955,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1003,
+      "category": 4,
       "official": false,
       "questionImage": "assets/images/40219.jpg",
       "answers": [
@@ -72018,7 +72018,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1003,
+      "category": 4,
       "official": false,
       "questionImage": "assets/images/40251.jpg",
       "answers": [
@@ -72081,7 +72081,7 @@
     {
       "originalId": "40254",
       "type": "text",
-      "category": 1003,
+      "category": 4,
       "official": true,
       "questionImage": "assets/images/40254.jpg",
       "answers": [
@@ -72144,7 +72144,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1003,
+      "category": 4,
       "official": false,
       "questionImage": "assets/images/40260.jpg",
       "answers": [
@@ -72207,7 +72207,7 @@
     {
       "originalId": "40264",
       "type": "text",
-      "category": 1003,
+      "category": 4,
       "official": true,
       "questionImage": "assets/images/40264.jpg",
       "answers": [
@@ -72270,7 +72270,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1003,
+      "category": 4,
       "official": false,
       "questionImage": "assets/images/40306.jpg",
       "answers": [
@@ -72333,7 +72333,7 @@
     {
       "originalId": "50020",
       "type": "text",
-      "category": 1003,
+      "category": 4,
       "official": true,
       "questionImage": "assets/images/50020.jpg",
       "answers": [
@@ -72396,7 +72396,7 @@
     {
       "originalId": "40338",
       "type": "text",
-      "category": 1003,
+      "category": 4,
       "official": true,
       "questionImage": "assets/images/40338.jpg",
       "answers": [
@@ -72459,7 +72459,7 @@
     {
       "originalId": "40341",
       "type": "text",
-      "category": 1003,
+      "category": 4,
       "official": true,
       "questionImage": "assets/images/40341.jpg",
       "answers": [
@@ -72522,7 +72522,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1003,
+      "category": 4,
       "official": false,
       "questionImage": "assets/images/41603.jpg",
       "answers": [
@@ -72585,7 +72585,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1003,
+      "category": 4,
       "official": false,
       "questionImage": "assets/images/41607.jpg",
       "answers": [
@@ -72638,7 +72638,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1003,
+      "category": 4,
       "official": false,
       "questionImage": "assets/images/41611.jpg",
       "answers": [
@@ -72701,7 +72701,7 @@
     {
       "originalId": "41790",
       "type": "text",
-      "category": 1003,
+      "category": 4,
       "official": true,
       "questionImage": "assets/images/41790.jpg",
       "answers": [
@@ -72764,7 +72764,7 @@
     {
       "originalId": "40332",
       "type": "text",
-      "category": 1003,
+      "category": 4,
       "official": true,
       "questionImage": "assets/images/40332.jpg",
       "answers": [
@@ -72827,7 +72827,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1003,
+      "category": 4,
       "official": false,
       "questionImage": "assets/images/41790split.jpg",
       "answers": [
@@ -72890,7 +72890,7 @@
     {
       "originalId": "25076",
       "type": "text",
-      "category": 1003,
+      "category": 4,
       "official": true,
       "questionImage": "assets/images/25076.jpg",
       "answers": [
@@ -72953,7 +72953,7 @@
     {
       "originalId": "50004",
       "type": "text",
-      "category": 1003,
+      "category": 4,
       "official": true,
       "questionImage": "assets/images/50004.jpg",
       "answers": [
@@ -73016,7 +73016,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1003,
+      "category": 4,
       "official": false,
       "questionImage": "assets/images/40209.jpg",
       "answers": [
@@ -73079,7 +73079,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1003,
+      "category": 4,
       "official": false,
       "questionImage": "assets/images/40167.jpg",
       "answers": [
@@ -73142,7 +73142,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1003,
+      "category": 4,
       "official": false,
       "questionImage": "assets/images/20014.jpg",
       "answers": [
@@ -73205,7 +73205,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1003,
+      "category": 4,
       "official": false,
       "questionImage": "assets/images/20030.jpg",
       "answers": [
@@ -73268,7 +73268,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1003,
+      "category": 4,
       "official": false,
       "questionImage": "assets/images/25042.jpg",
       "answers": [
@@ -73331,7 +73331,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1003,
+      "category": 4,
       "official": false,
       "questionImage": "assets/images/20056.jpg",
       "answers": [
@@ -73394,7 +73394,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1003,
+      "category": 4,
       "official": false,
       "questionImage": "assets/images/20107.jpg",
       "answers": [
@@ -73457,7 +73457,7 @@
     {
       "originalId": "20162",
       "type": "text",
-      "category": 1003,
+      "category": 4,
       "official": true,
       "questionImage": "assets/images/20162.jpg",
       "answers": [
@@ -73520,7 +73520,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1003,
+      "category": 4,
       "official": false,
       "questionImage": "assets/images/20174.jpg",
       "answers": [
@@ -73583,7 +73583,7 @@
     {
       "originalId": "20176",
       "type": "text",
-      "category": 1003,
+      "category": 4,
       "official": true,
       "questionImage": "assets/images/20176.jpg",
       "answers": [
@@ -73646,7 +73646,7 @@
     {
       "originalId": "50005",
       "type": "text",
-      "category": 1003,
+      "category": 4,
       "official": true,
       "questionImage": "assets/images/50005.jpg",
       "answers": [
@@ -73709,7 +73709,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1003,
+      "category": 4,
       "official": false,
       "questionImage": "assets/images/21209.jpg",
       "answers": [
@@ -73772,7 +73772,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1003,
+      "category": 4,
       "official": false,
       "questionImage": "assets/images/40064.jpg",
       "answers": [
@@ -73825,7 +73825,7 @@
     {
       "originalId": "20191",
       "type": "text",
-      "category": 1003,
+      "category": 4,
       "official": true,
       "questionImage": "assets/images/20191.jpg",
       "answers": [
@@ -73888,7 +73888,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1003,
+      "category": 4,
       "official": false,
       "questionImage": "assets/images/40144.jpg",
       "answers": [
@@ -73951,7 +73951,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1003,
+      "category": 4,
       "official": false,
       "questionImage": "assets/images/50017.jpg",
       "answers": [
@@ -74014,7 +74014,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1003,
+      "category": 4,
       "official": false,
       "questionImage": "assets/images/50054.jpg",
       "answers": [
@@ -74077,7 +74077,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1003,
+      "category": 4,
       "official": false,
       "questionImage": "assets/images/50425.jpg",
       "answers": [
@@ -74140,7 +74140,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1003,
+      "category": 4,
       "official": false,
       "questionImage": "assets/images/50460-alt.jpg",
       "answers": [
@@ -74203,7 +74203,7 @@
     {
       "originalId": "50479",
       "type": "text",
-      "category": 1003,
+      "category": 4,
       "official": true,
       "questionImage": "assets/images/50479.jpg",
       "answers": [
@@ -74266,7 +74266,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1003,
+      "category": 4,
       "official": false,
       "questionImage": "assets/images/4162.jpg",
       "answers": [
@@ -74329,7 +74329,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1003,
+      "category": 4,
       "official": false,
       "questionImage": "assets/images/3690.jpg",
       "answers": [
@@ -74392,7 +74392,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1003,
+      "category": 4,
       "official": false,
       "questionImage": "assets/images/4912.jpg",
       "answers": [
@@ -74455,7 +74455,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1003,
+      "category": 4,
       "official": false,
       "questionImage": "assets/images/2863.jpg",
       "answers": [
@@ -74518,7 +74518,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1003,
+      "category": 4,
       "official": false,
       "questionImage": "assets/images/4740.jpg",
       "answers": [
@@ -74581,7 +74581,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1003,
+      "category": 4,
       "official": false,
       "questionImage": "assets/images/5064.jpg",
       "answers": [
@@ -74644,7 +74644,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1003,
+      "category": 4,
       "official": false,
       "questionImage": "assets/images/3132.jpg",
       "answers": [
@@ -74707,7 +74707,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1003,
+      "category": 4,
       "official": false,
       "questionImage": "assets/images/4780.jpg",
       "answers": [
@@ -74770,7 +74770,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1003,
+      "category": 4,
       "official": false,
       "questionImage": "assets/images/4744.jpg",
       "answers": [
@@ -74833,7 +74833,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1003,
+      "category": 4,
       "official": false,
       "questionImage": "assets/images/4836.jpg",
       "answers": [
@@ -74896,7 +74896,7 @@
     {
       "originalId": "20002",
       "type": "text",
-      "category": 1004,
+      "category": 5,
       "official": true,
       "questionImage": "assets/images/20002.jpg",
       "answers": [
@@ -74959,7 +74959,7 @@
     {
       "originalId": "20010",
       "type": "text",
-      "category": 1004,
+      "category": 5,
       "official": true,
       "questionImage": "assets/images/20010.jpg",
       "answers": [
@@ -75022,7 +75022,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1004,
+      "category": 5,
       "official": false,
       "questionImage": "assets/images/20023.jpg",
       "answers": [
@@ -75085,7 +75085,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1004,
+      "category": 5,
       "official": false,
       "questionImage": "assets/images/20032.jpg",
       "answers": [
@@ -75148,7 +75148,7 @@
     {
       "originalId": "20037",
       "type": "text",
-      "category": 1004,
+      "category": 5,
       "official": true,
       "questionImage": "assets/images/20037.jpg",
       "answers": [
@@ -75211,7 +75211,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1004,
+      "category": 5,
       "official": false,
       "questionImage": "assets/images/25023.jpg",
       "answers": [
@@ -75274,7 +75274,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1004,
+      "category": 5,
       "official": false,
       "questionImage": "assets/images/20063.jpg",
       "answers": [
@@ -75337,7 +75337,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1004,
+      "category": 5,
       "official": false,
       "questionImage": "assets/images/20161.jpg",
       "answers": [
@@ -75400,7 +75400,7 @@
     {
       "originalId": "20279",
       "type": "text",
-      "category": 1004,
+      "category": 5,
       "official": true,
       "questionImage": "assets/images/20279.jpg",
       "answers": [
@@ -75463,7 +75463,7 @@
     {
       "originalId": "20284",
       "type": "text",
-      "category": 1004,
+      "category": 5,
       "official": true,
       "questionImage": "assets/images/20284.jpg",
       "answers": [
@@ -75526,7 +75526,7 @@
     {
       "originalId": "21129",
       "type": "text",
-      "category": 1004,
+      "category": 5,
       "official": true,
       "questionImage": "assets/images/21129.jpg",
       "answers": [
@@ -75589,7 +75589,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1004,
+      "category": 5,
       "official": false,
       "questionImage": "assets/images/30099.jpg",
       "answers": [
@@ -75652,7 +75652,7 @@
     {
       "originalId": "50467",
       "type": "text",
-      "category": 1004,
+      "category": 5,
       "official": true,
       "questionImage": "assets/images/50467.jpg",
       "answers": [
@@ -75715,7 +75715,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1004,
+      "category": 5,
       "official": false,
       "questionImage": "assets/images/40019.jpg",
       "answers": [
@@ -75778,7 +75778,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1004,
+      "category": 5,
       "official": false,
       "questionImage": "assets/images/40085.jpg",
       "answers": [
@@ -75841,7 +75841,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1004,
+      "category": 5,
       "official": false,
       "questionImage": "assets/images/40174.jpg",
       "answers": [
@@ -75894,7 +75894,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1004,
+      "category": 5,
       "official": false,
       "questionImage": "assets/images/40184.jpg",
       "answers": [
@@ -75957,7 +75957,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1004,
+      "category": 5,
       "official": false,
       "questionImage": "assets/images/25024.jpg",
       "answers": [
@@ -76020,7 +76020,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1004,
+      "category": 5,
       "official": false,
       "questionImage": "assets/images/40221.jpg",
       "answers": [
@@ -76083,7 +76083,7 @@
     {
       "originalId": "40237",
       "type": "text",
-      "category": 1004,
+      "category": 5,
       "official": true,
       "questionImage": "assets/images/40237.jpg",
       "answers": [
@@ -76146,7 +76146,7 @@
     {
       "originalId": "40266",
       "type": "text",
-      "category": 1004,
+      "category": 5,
       "official": true,
       "questionImage": "assets/images/40266.jpg",
       "answers": [
@@ -76209,7 +76209,7 @@
     {
       "originalId": "40272",
       "type": "text",
-      "category": 1004,
+      "category": 5,
       "official": true,
       "questionImage": "assets/images/40272.jpg",
       "answers": [
@@ -76272,7 +76272,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1004,
+      "category": 5,
       "official": false,
       "questionImage": "assets/images/40311.jpg",
       "answers": [
@@ -76335,7 +76335,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1004,
+      "category": 5,
       "official": false,
       "questionImage": "assets/images/41588.jpg",
       "answers": [
@@ -76398,7 +76398,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1004,
+      "category": 5,
       "official": false,
       "questionImage": "assets/images/41589.jpg",
       "answers": [
@@ -76461,7 +76461,7 @@
     {
       "originalId": "41606",
       "type": "text",
-      "category": 1004,
+      "category": 5,
       "official": true,
       "questionImage": "assets/images/41606.jpg",
       "answers": [
@@ -76524,7 +76524,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1004,
+      "category": 5,
       "official": false,
       "questionImage": "assets/images/41796.jpg",
       "answers": [
@@ -76587,7 +76587,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1004,
+      "category": 5,
       "official": false,
       "questionImage": "assets/images/50466.jpg",
       "answers": [
@@ -76650,7 +76650,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1004,
+      "category": 5,
       "official": false,
       "questionImage": "assets/images/20034.jpg",
       "answers": [
@@ -76713,7 +76713,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1004,
+      "category": 5,
       "official": false,
       "questionImage": "assets/images/25022.jpg",
       "answers": [
@@ -76776,7 +76776,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1004,
+      "category": 5,
       "official": false,
       "questionImage": "assets/images/20077.jpg",
       "answers": [
@@ -76839,7 +76839,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1004,
+      "category": 5,
       "official": false,
       "questionImage": "assets/images/20244.jpg",
       "answers": [
@@ -76902,7 +76902,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1004,
+      "category": 5,
       "official": false,
       "questionImage": "assets/images/20253.jpg",
       "answers": [
@@ -76965,7 +76965,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1004,
+      "category": 5,
       "official": false,
       "questionImage": "assets/images/20276.jpg",
       "answers": [
@@ -77028,7 +77028,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1004,
+      "category": 5,
       "official": false,
       "questionImage": "assets/images/20283.jpg",
       "answers": [
@@ -77091,7 +77091,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1004,
+      "category": 5,
       "official": false,
       "questionImage": "assets/images/20322.jpg",
       "answers": [
@@ -77154,7 +77154,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1004,
+      "category": 5,
       "official": false,
       "questionImage": "assets/images/21208.jpg",
       "answers": [
@@ -77217,7 +77217,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1004,
+      "category": 5,
       "official": false,
       "questionImage": "assets/images/40076.jpg",
       "answers": [
@@ -77280,7 +77280,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1004,
+      "category": 5,
       "official": false,
       "questionImage": "assets/images/40226.jpg",
       "answers": [
@@ -77343,7 +77343,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1004,
+      "category": 5,
       "official": false,
       "questionImage": "assets/images/50009.jpg",
       "answers": [
@@ -77406,7 +77406,7 @@
     {
       "originalId": "50423",
       "type": "text",
-      "category": 1004,
+      "category": 5,
       "official": true,
       "questionImage": "assets/images/50423.jpg",
       "answers": [
@@ -77469,7 +77469,7 @@
     {
       "originalId": "50431",
       "type": "text",
-      "category": 1004,
+      "category": 5,
       "official": true,
       "questionImage": "assets/images/50431.jpg",
       "answers": [
@@ -77532,7 +77532,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1004,
+      "category": 5,
       "official": false,
       "questionImage": "assets/images/41680.jpg",
       "answers": [
@@ -77595,7 +77595,7 @@
     {
       "originalId": "50500",
       "type": "text",
-      "category": 1004,
+      "category": 5,
       "official": true,
       "questionImage": "assets/images/50500.jpg",
       "answers": [
@@ -77658,7 +77658,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1004,
+      "category": 5,
       "official": false,
       "questionImage": "assets/images/4215.jpg",
       "answers": [
@@ -77721,7 +77721,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1004,
+      "category": 5,
       "official": false,
       "questionImage": "assets/images/1006.jpg",
       "answers": [
@@ -77784,7 +77784,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1004,
+      "category": 5,
       "official": false,
       "questionImage": "assets/images/2819.jpg",
       "answers": [
@@ -77847,7 +77847,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1004,
+      "category": 5,
       "official": false,
       "questionImage": "assets/images/1003.jpg",
       "answers": [
@@ -77910,7 +77910,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1004,
+      "category": 5,
       "official": false,
       "questionImage": "assets/images/2830.jpg",
       "answers": [
@@ -77973,7 +77973,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1004,
+      "category": 5,
       "official": false,
       "questionImage": "assets/images/2786.jpg",
       "answers": [
@@ -78036,7 +78036,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1004,
+      "category": 5,
       "official": false,
       "questionImage": "assets/images/3004.jpg",
       "answers": [
@@ -78099,7 +78099,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1004,
+      "category": 5,
       "official": false,
       "questionImage": "assets/images/2968.jpg",
       "answers": [
@@ -78162,7 +78162,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1004,
+      "category": 5,
       "official": false,
       "questionImage": "assets/images/1002.jpg",
       "answers": [
@@ -78225,7 +78225,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1004,
+      "category": 5,
       "official": false,
       "questionImage": "assets/images/1001.jpg",
       "answers": [
@@ -78288,7 +78288,7 @@
     {
       "originalId": "20025",
       "type": "text",
-      "category": 1005,
+      "category": 6,
       "official": true,
       "questionImage": "assets/images/20025.jpg",
       "answers": [
@@ -78351,7 +78351,7 @@
     {
       "originalId": "25047",
       "type": "text",
-      "category": 1005,
+      "category": 6,
       "official": true,
       "questionImage": "assets/images/25047.jpg",
       "answers": [
@@ -78414,7 +78414,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1005,
+      "category": 6,
       "official": false,
       "questionImage": "assets/images/20052.jpg",
       "answers": [
@@ -78477,7 +78477,7 @@
     {
       "originalId": "50016",
       "type": "text",
-      "category": 1005,
+      "category": 6,
       "official": true,
       "questionImage": "assets/images/50016.jpg",
       "answers": [
@@ -78540,7 +78540,7 @@
     {
       "originalId": "20150",
       "type": "text",
-      "category": 1005,
+      "category": 6,
       "official": true,
       "questionImage": "assets/images/20150.jpg",
       "answers": [
@@ -78603,7 +78603,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1005,
+      "category": 6,
       "official": false,
       "questionImage": "assets/images/20166.jpg",
       "answers": [
@@ -78666,7 +78666,7 @@
     {
       "originalId": "25020",
       "type": "text",
-      "category": 1005,
+      "category": 6,
       "official": true,
       "questionImage": "assets/images/25020.jpg",
       "answers": [
@@ -78729,7 +78729,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1005,
+      "category": 6,
       "official": false,
       "questionImage": "assets/images/50056.jpg",
       "answers": [
@@ -78792,7 +78792,7 @@
     {
       "originalId": "20247",
       "type": "text",
-      "category": 1005,
+      "category": 6,
       "official": true,
       "questionImage": "assets/images/20247.jpg",
       "answers": [
@@ -78855,7 +78855,7 @@
     {
       "originalId": "20331",
       "type": "text",
-      "category": 1005,
+      "category": 6,
       "official": true,
       "questionImage": "assets/images/20331.jpg",
       "answers": [
@@ -78918,7 +78918,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1005,
+      "category": 6,
       "official": false,
       "questionImage": "assets/images/30001.jpg",
       "answers": [
@@ -78981,7 +78981,7 @@
     {
       "originalId": "30002",
       "type": "text",
-      "category": 1005,
+      "category": 6,
       "official": true,
       "questionImage": "assets/images/30002.jpg",
       "answers": [
@@ -79044,7 +79044,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1005,
+      "category": 6,
       "official": false,
       "questionImage": "assets/images/30003.jpg",
       "answers": [
@@ -79107,7 +79107,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1005,
+      "category": 6,
       "official": false,
       "questionImage": "assets/images/30007.jpg",
       "answers": [
@@ -79170,7 +79170,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1005,
+      "category": 6,
       "official": false,
       "questionImage": "assets/images/30008.jpg",
       "answers": [
@@ -79233,7 +79233,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1005,
+      "category": 6,
       "official": false,
       "questionImage": "assets/images/30014.jpg",
       "answers": [
@@ -79296,7 +79296,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1005,
+      "category": 6,
       "official": false,
       "questionImage": "assets/images/30015.jpg",
       "answers": [
@@ -79359,7 +79359,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1005,
+      "category": 6,
       "official": false,
       "questionImage": "assets/images/30017.jpg",
       "answers": [
@@ -79422,7 +79422,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1005,
+      "category": 6,
       "official": false,
       "questionImage": "assets/images/30019.jpg",
       "answers": [
@@ -79485,7 +79485,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1005,
+      "category": 6,
       "official": false,
       "questionImage": "assets/images/30024split.jpg",
       "answers": [
@@ -79548,7 +79548,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1005,
+      "category": 6,
       "official": false,
       "questionImage": "assets/images/30025split.jpg",
       "answers": [
@@ -79611,7 +79611,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1005,
+      "category": 6,
       "official": false,
       "questionImage": "assets/images/30028.jpg",
       "answers": [
@@ -79674,7 +79674,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1005,
+      "category": 6,
       "official": false,
       "questionImage": "assets/images/30031split.jpg",
       "answers": [
@@ -79737,7 +79737,7 @@
     {
       "originalId": "30035",
       "type": "text",
-      "category": 1005,
+      "category": 6,
       "official": true,
       "questionImage": "assets/images/30035.jpg",
       "answers": [
@@ -79800,7 +79800,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1005,
+      "category": 6,
       "official": false,
       "questionImage": "assets/images/30037.jpg",
       "answers": [
@@ -79863,7 +79863,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1005,
+      "category": 6,
       "official": false,
       "questionImage": "assets/images/30048.jpg",
       "answers": [
@@ -79926,7 +79926,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1005,
+      "category": 6,
       "official": false,
       "questionImage": "assets/images/30056split.jpg",
       "answers": [
@@ -79989,7 +79989,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1005,
+      "category": 6,
       "official": false,
       "questionImage": "assets/images/30058.jpg",
       "answers": [
@@ -80052,7 +80052,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1005,
+      "category": 6,
       "official": false,
       "questionImage": "assets/images/30059split.jpg",
       "answers": [
@@ -80115,7 +80115,7 @@
     {
       "originalId": "30062",
       "type": "text",
-      "category": 1005,
+      "category": 6,
       "official": true,
       "questionImage": "assets/images/30062.jpg",
       "answers": [
@@ -80178,7 +80178,7 @@
     {
       "originalId": "30066",
       "type": "text",
-      "category": 1005,
+      "category": 6,
       "official": true,
       "questionImage": "assets/images/30066.jpg",
       "answers": [
@@ -80241,7 +80241,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1005,
+      "category": 6,
       "official": false,
       "questionImage": "assets/images/30067.jpg",
       "answers": [
@@ -80304,7 +80304,7 @@
     {
       "originalId": "30070",
       "type": "text",
-      "category": 1005,
+      "category": 6,
       "official": true,
       "questionImage": "assets/images/30070.jpg",
       "answers": [
@@ -80367,7 +80367,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1005,
+      "category": 6,
       "official": false,
       "questionImage": "assets/images/30072.jpg",
       "answers": [
@@ -80430,7 +80430,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1005,
+      "category": 6,
       "official": false,
       "questionImage": "assets/images/30077.jpg",
       "answers": [
@@ -80493,7 +80493,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1005,
+      "category": 6,
       "official": false,
       "questionImage": "assets/images/30081.jpg",
       "answers": [
@@ -80556,7 +80556,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1005,
+      "category": 6,
       "official": false,
       "questionImage": "assets/images/30083.jpg",
       "answers": [
@@ -80619,7 +80619,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1005,
+      "category": 6,
       "official": false,
       "questionImage": "assets/images/30085.jpg",
       "answers": [
@@ -80682,7 +80682,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1005,
+      "category": 6,
       "official": false,
       "questionImage": "assets/images/30086split.jpg",
       "answers": [
@@ -80745,7 +80745,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1005,
+      "category": 6,
       "official": false,
       "questionImage": "assets/images/30094.jpg",
       "answers": [
@@ -80808,7 +80808,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1005,
+      "category": 6,
       "official": false,
       "questionImage": "assets/images/30096.jpg",
       "answers": [
@@ -80871,7 +80871,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1005,
+      "category": 6,
       "official": false,
       "questionImage": "assets/images/30106.jpg",
       "answers": [
@@ -80934,7 +80934,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1005,
+      "category": 6,
       "official": false,
       "questionImage": "assets/images/40024.jpg",
       "answers": [
@@ -80987,7 +80987,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1005,
+      "category": 6,
       "official": false,
       "questionImage": "assets/images/40030.jpg",
       "answers": [
@@ -81050,7 +81050,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1005,
+      "category": 6,
       "official": false,
       "questionImage": "assets/images/40054.jpg",
       "answers": [
@@ -81113,7 +81113,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1005,
+      "category": 6,
       "official": false,
       "questionImage": "assets/images/40080.jpg",
       "answers": [
@@ -81176,7 +81176,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1005,
+      "category": 6,
       "official": false,
       "questionImage": "assets/images/40136.jpg",
       "answers": [
@@ -81239,7 +81239,7 @@
     {
       "originalId": "40152",
       "type": "text",
-      "category": 1005,
+      "category": 6,
       "official": true,
       "questionImage": "assets/images/40152.jpg",
       "answers": [
@@ -81302,7 +81302,7 @@
     {
       "originalId": "40229",
       "type": "text",
-      "category": 1005,
+      "category": 6,
       "official": true,
       "questionImage": "assets/images/40229.jpg",
       "answers": [
@@ -81365,7 +81365,7 @@
     {
       "originalId": "40242",
       "type": "text",
-      "category": 1005,
+      "category": 6,
       "official": true,
       "questionImage": "assets/images/40242.jpg",
       "answers": [
@@ -81428,7 +81428,7 @@
     {
       "originalId": "40293",
       "type": "text",
-      "category": 1005,
+      "category": 6,
       "official": true,
       "questionImage": "assets/images/40293.jpg",
       "answers": [
@@ -81491,7 +81491,7 @@
     {
       "originalId": "40318",
       "type": "text",
-      "category": 1005,
+      "category": 6,
       "official": true,
       "questionImage": "assets/images/40318.jpg",
       "answers": [
@@ -81554,7 +81554,7 @@
     {
       "originalId": "41599",
       "type": "text",
-      "category": 1005,
+      "category": 6,
       "official": true,
       "questionImage": "assets/images/41599.jpg",
       "answers": [
@@ -81617,7 +81617,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1005,
+      "category": 6,
       "official": false,
       "questionImage": "assets/images/41608.jpg",
       "answers": [
@@ -81680,7 +81680,7 @@
     {
       "originalId": "41609",
       "type": "text",
-      "category": 1005,
+      "category": 6,
       "official": true,
       "questionImage": "assets/images/41609.jpg",
       "answers": [
@@ -81743,7 +81743,7 @@
     {
       "originalId": "41788",
       "type": "text",
-      "category": 1005,
+      "category": 6,
       "official": true,
       "questionImage": "assets/images/41788.jpg",
       "answers": [
@@ -81806,7 +81806,7 @@
     {
       "originalId": "41789",
       "type": "text",
-      "category": 1005,
+      "category": 6,
       "official": true,
       "questionImage": "assets/images/41789.jpg",
       "answers": [
@@ -81869,7 +81869,7 @@
     {
       "originalId": "41792",
       "type": "text",
-      "category": 1005,
+      "category": 6,
       "official": true,
       "questionImage": "assets/images/41792.jpg",
       "answers": [
@@ -81932,7 +81932,7 @@
     {
       "originalId": "41793",
       "type": "text",
-      "category": 1005,
+      "category": 6,
       "official": true,
       "questionImage": "assets/images/41793.jpg",
       "answers": [
@@ -81995,7 +81995,7 @@
     {
       "originalId": "41794",
       "type": "text",
-      "category": 1005,
+      "category": 6,
       "official": true,
       "questionImage": "assets/images/41794.jpg",
       "answers": [
@@ -82058,7 +82058,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1005,
+      "category": 6,
       "official": false,
       "questionImage": "assets/images/41795.jpg",
       "answers": [
@@ -82121,7 +82121,7 @@
     {
       "originalId": "50351",
       "type": "text",
-      "category": 1005,
+      "category": 6,
       "official": true,
       "questionImage": "assets/images/50351.jpg",
       "answers": [
@@ -82184,7 +82184,7 @@
     {
       "originalId": "50350",
       "type": "text",
-      "category": 1005,
+      "category": 6,
       "official": true,
       "questionImage": "assets/images/50350.jpg",
       "answers": [
@@ -82247,7 +82247,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1005,
+      "category": 6,
       "official": false,
       "questionImage": "assets/images/50373.jpg",
       "answers": [
@@ -82310,7 +82310,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1005,
+      "category": 6,
       "official": false,
       "questionImage": "assets/images/30008split.jpg",
       "answers": [
@@ -82373,7 +82373,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1005,
+      "category": 6,
       "official": false,
       "questionImage": "assets/images/30014split.jpg",
       "answers": [
@@ -82436,7 +82436,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1005,
+      "category": 6,
       "official": false,
       "questionImage": "assets/images/30019split.jpg",
       "answers": [
@@ -82499,7 +82499,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1005,
+      "category": 6,
       "official": false,
       "questionImage": "assets/images/30024.jpg",
       "answers": [
@@ -82562,7 +82562,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1005,
+      "category": 6,
       "official": false,
       "questionImage": "assets/images/30025.jpg",
       "answers": [
@@ -82625,7 +82625,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1005,
+      "category": 6,
       "official": false,
       "questionImage": "assets/images/30031.jpg",
       "answers": [
@@ -82688,7 +82688,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1005,
+      "category": 6,
       "official": false,
       "questionImage": "assets/images/30056.jpg",
       "answers": [
@@ -82751,7 +82751,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1005,
+      "category": 6,
       "official": false,
       "questionImage": "assets/images/30059.jpg",
       "answers": [
@@ -82814,7 +82814,7 @@
     {
       "originalId": "31089",
       "type": "text",
-      "category": 1005,
+      "category": 6,
       "official": true,
       "questionImage": "assets/images/31089.jpg",
       "answers": [
@@ -82877,7 +82877,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1005,
+      "category": 6,
       "official": false,
       "questionImage": "assets/images/30067split.jpg",
       "answers": [
@@ -82940,7 +82940,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1005,
+      "category": 6,
       "official": false,
       "questionImage": "assets/images/30072split.jpg",
       "answers": [
@@ -83003,7 +83003,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1005,
+      "category": 6,
       "official": false,
       "questionImage": "assets/images/30077split.jpg",
       "answers": [
@@ -83066,7 +83066,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1005,
+      "category": 6,
       "official": false,
       "questionImage": "assets/images/30086.jpg",
       "answers": [
@@ -83129,7 +83129,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1005,
+      "category": 6,
       "official": false,
       "questionImage": "assets/images/30094split.jpg",
       "answers": [
@@ -83192,7 +83192,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1005,
+      "category": 6,
       "official": false,
       "questionImage": "assets/images/30106split.jpg",
       "answers": [
@@ -83255,7 +83255,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1005,
+      "category": 6,
       "official": false,
       "questionImage": "assets/images/40133.jpg",
       "answers": [
@@ -83318,7 +83318,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1005,
+      "category": 6,
       "official": false,
       "questionImage": "assets/images/40195.jpg",
       "answers": [
@@ -83381,7 +83381,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1005,
+      "category": 6,
       "official": false,
       "questionImage": "assets/images/41624.jpg",
       "answers": [
@@ -83434,7 +83434,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1005,
+      "category": 6,
       "official": false,
       "questionImage": "assets/images/1501.jpg",
       "answers": [
@@ -83497,7 +83497,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1005,
+      "category": 6,
       "official": false,
       "questionImage": "assets/images/30016.jpg",
       "answers": [
@@ -83560,7 +83560,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1005,
+      "category": 6,
       "official": false,
       "questionImage": "assets/images/1502.jpg",
       "answers": [
@@ -83623,7 +83623,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1005,
+      "category": 6,
       "official": false,
       "questionImage": "assets/images/30023.jpg",
       "answers": [
@@ -83686,7 +83686,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1005,
+      "category": 6,
       "official": false,
       "questionImage": "assets/images/1503.jpg",
       "answers": [
@@ -83749,7 +83749,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1005,
+      "category": 6,
       "official": false,
       "questionImage": "assets/images/30038.jpg",
       "answers": [
@@ -83812,7 +83812,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1005,
+      "category": 6,
       "official": false,
       "questionImage": "assets/images/1504.jpg",
       "answers": [
@@ -83875,7 +83875,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1005,
+      "category": 6,
       "official": false,
       "questionImage": "assets/images/30043.jpg",
       "answers": [
@@ -83938,7 +83938,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1005,
+      "category": 6,
       "official": false,
       "questionImage": "assets/images/3847.jpg",
       "answers": [
@@ -84001,7 +84001,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1005,
+      "category": 6,
       "official": false,
       "questionImage": "assets/images/30057.jpg",
       "answers": [
@@ -84064,7 +84064,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1005,
+      "category": 6,
       "official": false,
       "questionImage": "assets/images/3830.jpg",
       "answers": [
@@ -84127,7 +84127,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1005,
+      "category": 6,
       "official": false,
       "questionImage": "assets/images/30075.jpg",
       "answers": [
@@ -84190,7 +84190,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1005,
+      "category": 6,
       "official": false,
       "questionImage": "assets/images/3243.jpg",
       "answers": [
@@ -84253,7 +84253,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1005,
+      "category": 6,
       "official": false,
       "questionImage": "assets/images/30078.jpg",
       "answers": [
@@ -84316,7 +84316,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1005,
+      "category": 6,
       "official": false,
       "questionImage": "assets/images/4432.jpg",
       "answers": [
@@ -84379,7 +84379,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1005,
+      "category": 6,
       "official": false,
       "questionImage": "assets/images/30084.jpg",
       "answers": [
@@ -84442,7 +84442,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1005,
+      "category": 6,
       "official": false,
       "questionImage": "assets/images/4729.jpg",
       "answers": [
@@ -84505,7 +84505,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1005,
+      "category": 6,
       "official": false,
       "questionImage": "assets/images/30088.jpg",
       "answers": [
@@ -84568,7 +84568,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1005,
+      "category": 6,
       "official": false,
       "questionImage": "assets/images/4333.jpg",
       "answers": [
@@ -84631,7 +84631,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1005,
+      "category": 6,
       "official": false,
       "questionImage": "assets/images/30093.jpg",
       "answers": [
@@ -84694,7 +84694,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1005,
+      "category": 6,
       "official": false,
       "questionImage": "assets/images/1505.jpg",
       "answers": [
@@ -84757,7 +84757,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1005,
+      "category": 6,
       "official": false,
       "questionImage": "assets/images/1506.jpg",
       "answers": [
@@ -84820,7 +84820,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1005,
+      "category": 6,
       "official": false,
       "questionImage": "assets/images/1507.jpg",
       "answers": [
@@ -84883,7 +84883,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1005,
+      "category": 6,
       "official": false,
       "questionImage": "assets/images/1508.jpg",
       "answers": [
@@ -84946,7 +84946,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1005,
+      "category": 6,
       "official": false,
       "questionImage": "assets/images/1509.jpg",
       "answers": [
@@ -85009,7 +85009,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1005,
+      "category": 6,
       "official": false,
       "questionImage": "assets/images/1510.jpg",
       "answers": [
@@ -85072,7 +85072,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1005,
+      "category": 6,
       "official": false,
       "questionImage": "assets/images/1511.jpg",
       "answers": [
@@ -85135,7 +85135,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1005,
+      "category": 6,
       "official": false,
       "questionImage": "assets/images/1512.jpg",
       "answers": [
@@ -85198,7 +85198,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1005,
+      "category": 6,
       "official": false,
       "questionImage": "assets/images/4800.jpg",
       "answers": [
@@ -85261,7 +85261,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1005,
+      "category": 6,
       "official": false,
       "questionImage": "assets/images/3857.jpg",
       "answers": [
@@ -85324,7 +85324,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1005,
+      "category": 6,
       "official": false,
       "questionImage": "assets/images/50455.jpg",
       "answers": [
@@ -85387,7 +85387,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1005,
+      "category": 6,
       "official": false,
       "questionImage": "assets/images/1513.jpg",
       "answers": [
@@ -85450,7 +85450,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1005,
+      "category": 6,
       "official": false,
       "questionImage": "assets/images/1514.jpg",
       "answers": [
@@ -85513,7 +85513,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1005,
+      "category": 6,
       "official": false,
       "questionImage": "assets/images/1515.jpg",
       "answers": [
@@ -85576,7 +85576,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1005,
+      "category": 6,
       "official": false,
       "questionImage": "assets/images/1516.jpg",
       "answers": [
@@ -85639,7 +85639,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1006,
+      "category": 8,
       "official": false,
       "questionImage": "assets/images/20097.jpg",
       "answers": [
@@ -85702,7 +85702,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1006,
+      "category": 8,
       "official": false,
       "questionImage": "assets/images/20099.jpg",
       "answers": [
@@ -85765,7 +85765,7 @@
     {
       "originalId": "25039",
       "type": "text",
-      "category": 1006,
+      "category": 8,
       "official": true,
       "questionImage": "assets/images/25039.jpg",
       "answers": [
@@ -85828,7 +85828,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1006,
+      "category": 8,
       "official": false,
       "questionImage": "assets/images/20178.jpg",
       "answers": [
@@ -85891,7 +85891,7 @@
     {
       "originalId": "20212",
       "type": "text",
-      "category": 1006,
+      "category": 8,
       "official": true,
       "questionImage": "assets/images/20212.jpg",
       "answers": [
@@ -85954,7 +85954,7 @@
     {
       "originalId": "20232",
       "type": "text",
-      "category": 1006,
+      "category": 8,
       "official": true,
       "questionImage": "assets/images/20232.jpg",
       "answers": [
@@ -86017,7 +86017,7 @@
     {
       "originalId": "20246",
       "type": "text",
-      "category": 1006,
+      "category": 8,
       "official": true,
       "questionImage": "assets/images/20246.jpg",
       "answers": [
@@ -86080,7 +86080,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1006,
+      "category": 8,
       "official": false,
       "questionImage": "assets/images/40057.jpg",
       "answers": [
@@ -86143,7 +86143,7 @@
     {
       "originalId": "40084",
       "type": "text",
-      "category": 1006,
+      "category": 8,
       "official": true,
       "questionImage": "assets/images/40084.jpg",
       "answers": [
@@ -86206,7 +86206,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1006,
+      "category": 8,
       "official": false,
       "questionImage": "assets/images/40119.jpg",
       "answers": [
@@ -86269,7 +86269,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1006,
+      "category": 8,
       "official": false,
       "questionImage": "assets/images/40138.jpg",
       "answers": [
@@ -86332,7 +86332,7 @@
     {
       "originalId": "50378",
       "type": "text",
-      "category": 1006,
+      "category": 8,
       "official": true,
       "questionImage": "assets/images/50378.jpg",
       "answers": [
@@ -86395,7 +86395,7 @@
     {
       "originalId": "25003",
       "type": "text",
-      "category": 1006,
+      "category": 8,
       "official": true,
       "questionImage": "assets/images/25003.jpg",
       "answers": [
@@ -86458,7 +86458,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1006,
+      "category": 8,
       "official": false,
       "questionImage": "assets/images/40153.jpg",
       "answers": [
@@ -86521,7 +86521,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1006,
+      "category": 8,
       "official": false,
       "questionImage": "assets/images/40261.jpg",
       "answers": [
@@ -86584,7 +86584,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1006,
+      "category": 8,
       "official": false,
       "questionImage": "assets/images/40295.jpg",
       "answers": [
@@ -86647,7 +86647,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1006,
+      "category": 8,
       "official": false,
       "questionImage": "assets/images/40309.jpg",
       "answers": [
@@ -86710,7 +86710,7 @@
     {
       "originalId": "40315",
       "type": "text",
-      "category": 1006,
+      "category": 8,
       "official": true,
       "questionImage": "assets/images/40315.jpg",
       "answers": [
@@ -86773,7 +86773,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1006,
+      "category": 8,
       "official": false,
       "questionImage": "assets/images/40320.jpg",
       "answers": [
@@ -86836,7 +86836,7 @@
     {
       "originalId": "25054",
       "type": "text",
-      "category": 1006,
+      "category": 8,
       "official": true,
       "questionImage": "assets/images/25054.jpg",
       "answers": [
@@ -86899,7 +86899,7 @@
     {
       "originalId": "20006",
       "type": "text",
-      "category": 1006,
+      "category": 8,
       "official": true,
       "questionImage": "assets/images/20006.jpg",
       "answers": [
@@ -86962,7 +86962,7 @@
     {
       "originalId": "20051",
       "type": "text",
-      "category": 1006,
+      "category": 8,
       "official": true,
       "questionImage": "assets/images/20051.jpg",
       "answers": [
@@ -87025,7 +87025,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1006,
+      "category": 8,
       "official": false,
       "questionImage": "assets/images/20062.jpg",
       "answers": [
@@ -87088,7 +87088,7 @@
     {
       "originalId": "25057",
       "type": "text",
-      "category": 1006,
+      "category": 8,
       "official": true,
       "questionImage": "assets/images/25057.jpg",
       "answers": [
@@ -87151,7 +87151,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1006,
+      "category": 8,
       "official": false,
       "questionImage": "assets/images/25048.jpg",
       "answers": [
@@ -87214,7 +87214,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1006,
+      "category": 8,
       "official": false,
       "questionImage": "assets/images/20220.jpg",
       "answers": [
@@ -87277,7 +87277,7 @@
     {
       "originalId": "50372",
       "type": "text",
-      "category": 1006,
+      "category": 8,
       "official": true,
       "questionImage": "assets/images/50372.jpg",
       "answers": [
@@ -87340,7 +87340,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1006,
+      "category": 8,
       "official": false,
       "questionImage": "assets/images/1008.jpg",
       "answers": [
@@ -87403,7 +87403,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1006,
+      "category": 8,
       "official": false,
       "questionImage": "assets/images/1004.jpg",
       "answers": [
@@ -87466,7 +87466,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1006,
+      "category": 8,
       "official": false,
       "questionImage": "assets/images/1010.jpg",
       "answers": [
@@ -87529,7 +87529,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1006,
+      "category": 8,
       "official": false,
       "questionImage": "assets/images/1011.jpg",
       "answers": [
@@ -87592,7 +87592,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1006,
+      "category": 8,
       "official": false,
       "questionImage": "assets/images/1012.jpg",
       "answers": [
@@ -87655,7 +87655,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1006,
+      "category": 8,
       "official": false,
       "questionImage": "assets/images/1013.jpg",
       "answers": [
@@ -87718,7 +87718,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1006,
+      "category": 8,
       "official": false,
       "questionImage": "assets/images/2879.jpg",
       "answers": [
@@ -87781,7 +87781,7 @@
     {
       "originalId": "25049",
       "type": "text",
-      "category": 1007,
+      "category": 2,
       "official": true,
       "questionImage": "assets/images/25049.jpg",
       "answers": [
@@ -87844,7 +87844,7 @@
     {
       "originalId": "20019",
       "type": "text",
-      "category": 1007,
+      "category": 2,
       "official": true,
       "questionImage": "assets/images/20019.jpg",
       "answers": [
@@ -87907,7 +87907,7 @@
     {
       "originalId": "20045",
       "type": "text",
-      "category": 1007,
+      "category": 2,
       "official": true,
       "questionImage": "assets/images/20045.jpg",
       "answers": [
@@ -87970,7 +87970,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1007,
+      "category": 2,
       "official": false,
       "questionImage": "assets/images/25005.jpg",
       "answers": [
@@ -88033,7 +88033,7 @@
     {
       "originalId": "25011",
       "type": "text",
-      "category": 1007,
+      "category": 2,
       "official": true,
       "questionImage": "assets/images/25011.jpg",
       "answers": [
@@ -88096,7 +88096,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1007,
+      "category": 2,
       "official": false,
       "questionImage": "assets/images/20189.jpg",
       "answers": [
@@ -88159,7 +88159,7 @@
     {
       "originalId": "20195",
       "type": "text",
-      "category": 1007,
+      "category": 2,
       "official": true,
       "questionImage": "assets/images/20195.jpg",
       "answers": [
@@ -88222,7 +88222,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1007,
+      "category": 2,
       "official": false,
       "questionImage": "assets/images/40257.jpg",
       "answers": [
@@ -88285,7 +88285,7 @@
     {
       "originalId": "25006",
       "type": "text",
-      "category": 1007,
+      "category": 2,
       "official": true,
       "questionImage": "assets/images/25006.jpg",
       "answers": [
@@ -88348,7 +88348,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1007,
+      "category": 2,
       "official": false,
       "questionImage": "assets/images/30013.jpg",
       "answers": [
@@ -88411,7 +88411,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1007,
+      "category": 2,
       "official": false,
       "questionImage": "assets/images/30022.jpg",
       "answers": [
@@ -88474,7 +88474,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1007,
+      "category": 2,
       "official": false,
       "questionImage": "assets/images/30032.jpg",
       "answers": [
@@ -88537,7 +88537,7 @@
     {
       "originalId": "25012",
       "type": "text",
-      "category": 1007,
+      "category": 2,
       "official": true,
       "questionImage": "assets/images/25012.jpg",
       "answers": [
@@ -88600,7 +88600,7 @@
     {
       "originalId": "30036",
       "type": "text",
-      "category": 1007,
+      "category": 2,
       "official": true,
       "questionImage": "assets/images/30036.jpg",
       "answers": [
@@ -88663,7 +88663,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1007,
+      "category": 2,
       "official": false,
       "questionImage": "assets/images/30041.jpg",
       "answers": [
@@ -88726,7 +88726,7 @@
     {
       "originalId": "30053",
       "type": "text",
-      "category": 1007,
+      "category": 2,
       "official": true,
       "questionImage": "assets/images/30053.jpg",
       "answers": [
@@ -88789,7 +88789,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1007,
+      "category": 2,
       "official": false,
       "questionImage": "assets/images/30063.jpg",
       "answers": [
@@ -88852,7 +88852,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1007,
+      "category": 2,
       "official": false,
       "questionImage": "assets/images/30071split.jpg",
       "answers": [
@@ -88915,7 +88915,7 @@
     {
       "originalId": "25013",
       "type": "text",
-      "category": 1007,
+      "category": 2,
       "official": true,
       "questionImage": "assets/images/25013.jpg",
       "answers": [
@@ -88978,7 +88978,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1007,
+      "category": 2,
       "official": false,
       "questionImage": "assets/images/30044.jpg",
       "answers": [
@@ -89041,7 +89041,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1007,
+      "category": 2,
       "official": false,
       "questionImage": "assets/images/30097.jpg",
       "answers": [
@@ -89104,7 +89104,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1007,
+      "category": 2,
       "official": false,
       "questionImage": "assets/images/30100.jpg",
       "answers": [
@@ -89167,7 +89167,7 @@
     {
       "originalId": "30102",
       "type": "text",
-      "category": 1007,
+      "category": 2,
       "official": true,
       "questionImage": "assets/images/30102.jpg",
       "answers": [
@@ -89230,7 +89230,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1007,
+      "category": 2,
       "official": false,
       "questionImage": "assets/images/40003.jpg",
       "answers": [
@@ -89293,7 +89293,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1007,
+      "category": 2,
       "official": false,
       "questionImage": "assets/images/40020.jpg",
       "answers": [
@@ -89356,7 +89356,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1007,
+      "category": 2,
       "official": false,
       "questionImage": "assets/images/40027.jpg",
       "answers": [
@@ -89419,7 +89419,7 @@
     {
       "originalId": "40035",
       "type": "text",
-      "category": 1007,
+      "category": 2,
       "official": true,
       "questionImage": "assets/images/40035.jpg",
       "answers": [
@@ -89482,7 +89482,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1007,
+      "category": 2,
       "official": false,
       "questionImage": "assets/images/50043.jpg",
       "answers": [
@@ -89545,7 +89545,7 @@
     {
       "originalId": "40039",
       "type": "text",
-      "category": 1007,
+      "category": 2,
       "official": true,
       "questionImage": "assets/images/40039.jpg",
       "answers": [
@@ -89608,7 +89608,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1007,
+      "category": 2,
       "official": false,
       "questionImage": "assets/images/40051.jpg",
       "answers": [
@@ -89661,7 +89661,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1007,
+      "category": 2,
       "official": false,
       "questionImage": "assets/images/40061.jpg",
       "answers": [
@@ -89724,7 +89724,7 @@
     {
       "originalId": "40073",
       "type": "text",
-      "category": 1007,
+      "category": 2,
       "official": true,
       "questionImage": "assets/images/40073.jpg",
       "answers": [
@@ -89787,7 +89787,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1007,
+      "category": 2,
       "official": false,
       "questionImage": "assets/images/40079.jpg",
       "answers": [
@@ -89850,7 +89850,7 @@
     {
       "originalId": "40087",
       "type": "text",
-      "category": 1007,
+      "category": 2,
       "official": true,
       "questionImage": "assets/images/40087.jpg",
       "answers": [
@@ -89913,7 +89913,7 @@
     {
       "originalId": "40089",
       "type": "text",
-      "category": 1007,
+      "category": 2,
       "official": true,
       "questionImage": "assets/images/40089.jpg",
       "answers": [
@@ -89976,7 +89976,7 @@
     {
       "originalId": "40090",
       "type": "text",
-      "category": 1007,
+      "category": 2,
       "official": true,
       "questionImage": "assets/images/40090.jpg",
       "answers": [
@@ -90039,7 +90039,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1007,
+      "category": 2,
       "official": false,
       "questionImage": "assets/images/40112.jpg",
       "answers": [
@@ -90102,7 +90102,7 @@
     {
       "originalId": "40130",
       "type": "text",
-      "category": 1007,
+      "category": 2,
       "official": true,
       "questionImage": "assets/images/40130.jpg",
       "answers": [
@@ -90165,7 +90165,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1007,
+      "category": 2,
       "official": false,
       "questionImage": "assets/images/40146.jpg",
       "answers": [
@@ -90228,7 +90228,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1007,
+      "category": 2,
       "official": false,
       "questionImage": "assets/images/40156.jpg",
       "answers": [
@@ -90291,7 +90291,7 @@
     {
       "originalId": "40160",
       "type": "text",
-      "category": 1007,
+      "category": 2,
       "official": true,
       "questionImage": "assets/images/40160.jpg",
       "answers": [
@@ -90354,7 +90354,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1007,
+      "category": 2,
       "official": false,
       "questionImage": "assets/images/40165.jpg",
       "answers": [
@@ -90417,7 +90417,7 @@
     {
       "originalId": "40168",
       "type": "text",
-      "category": 1007,
+      "category": 2,
       "official": true,
       "questionImage": "assets/images/40168.jpg",
       "answers": [
@@ -90480,7 +90480,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1007,
+      "category": 2,
       "official": false,
       "questionImage": "assets/images/25014.jpg",
       "answers": [
@@ -90543,7 +90543,7 @@
     {
       "originalId": "40175",
       "type": "text",
-      "category": 1007,
+      "category": 2,
       "official": true,
       "questionImage": "assets/images/40175.jpg",
       "answers": [
@@ -90606,7 +90606,7 @@
     {
       "originalId": "40186",
       "type": "text",
-      "category": 1007,
+      "category": 2,
       "official": true,
       "questionImage": "assets/images/40186.jpg",
       "answers": [
@@ -90669,7 +90669,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1007,
+      "category": 2,
       "official": false,
       "questionImage": "assets/images/40187.jpg",
       "answers": [
@@ -90732,7 +90732,7 @@
     {
       "originalId": "50430",
       "type": "text",
-      "category": 1007,
+      "category": 2,
       "official": true,
       "questionImage": "assets/images/50430.jpg",
       "answers": [
@@ -90795,7 +90795,7 @@
     {
       "originalId": "25015",
       "type": "text",
-      "category": 1007,
+      "category": 2,
       "official": true,
       "questionImage": "assets/images/25015.jpg",
       "answers": [
@@ -90858,7 +90858,7 @@
     {
       "originalId": "50435",
       "type": "text",
-      "category": 1007,
+      "category": 2,
       "official": true,
       "questionImage": "assets/images/50435.jpg",
       "answers": [
@@ -90921,7 +90921,7 @@
     {
       "originalId": "40194",
       "type": "text",
-      "category": 1007,
+      "category": 2,
       "official": true,
       "questionImage": "assets/images/40194.jpg",
       "answers": [
@@ -90984,7 +90984,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1007,
+      "category": 2,
       "official": false,
       "questionImage": "assets/images/40199.jpg",
       "answers": [
@@ -91047,7 +91047,7 @@
     {
       "originalId": "25016",
       "type": "text",
-      "category": 1007,
+      "category": 2,
       "official": true,
       "questionImage": "assets/images/25016.jpg",
       "answers": [
@@ -91110,7 +91110,7 @@
     {
       "originalId": "31086",
       "type": "text",
-      "category": 1007,
+      "category": 2,
       "official": true,
       "questionImage": "assets/images/31086.jpg",
       "answers": [
@@ -91173,7 +91173,7 @@
     {
       "originalId": "40231",
       "type": "text",
-      "category": 1007,
+      "category": 2,
       "official": true,
       "questionImage": "assets/images/40231.jpg",
       "answers": [
@@ -91236,7 +91236,7 @@
     {
       "originalId": "40236",
       "type": "text",
-      "category": 1007,
+      "category": 2,
       "official": true,
       "questionImage": "assets/images/40236.jpg",
       "answers": [
@@ -91299,7 +91299,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1007,
+      "category": 2,
       "official": false,
       "questionImage": "assets/images/25018.jpg",
       "answers": [
@@ -91362,7 +91362,7 @@
     {
       "originalId": "40255",
       "type": "text",
-      "category": 1007,
+      "category": 2,
       "official": true,
       "questionImage": "assets/images/40255.jpg",
       "answers": [
@@ -91425,7 +91425,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1007,
+      "category": 2,
       "official": false,
       "questionImage": "assets/images/40265.jpg",
       "answers": [
@@ -91488,7 +91488,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1007,
+      "category": 2,
       "official": false,
       "questionImage": "assets/images/40267.jpg",
       "answers": [
@@ -91551,7 +91551,7 @@
     {
       "originalId": "40282",
       "type": "text",
-      "category": 1007,
+      "category": 2,
       "official": true,
       "questionImage": "assets/images/40282.jpg",
       "answers": [
@@ -91614,7 +91614,7 @@
     {
       "originalId": "40283",
       "type": "text",
-      "category": 1007,
+      "category": 2,
       "official": true,
       "questionImage": "assets/images/40283.jpg",
       "answers": [
@@ -91677,7 +91677,7 @@
     {
       "originalId": "40317",
       "type": "text",
-      "category": 1007,
+      "category": 2,
       "official": true,
       "questionImage": "assets/images/40317.jpg",
       "answers": [
@@ -91740,7 +91740,7 @@
     {
       "originalId": "40321",
       "type": "text",
-      "category": 1007,
+      "category": 2,
       "official": true,
       "questionImage": "assets/images/40321.jpg",
       "answers": [
@@ -91803,7 +91803,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1007,
+      "category": 2,
       "official": false,
       "questionImage": "assets/images/25019.jpg",
       "answers": [
@@ -91866,7 +91866,7 @@
     {
       "originalId": "40339",
       "type": "text",
-      "category": 1007,
+      "category": 2,
       "official": true,
       "questionImage": "assets/images/40339.jpg",
       "answers": [
@@ -91929,7 +91929,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1007,
+      "category": 2,
       "official": false,
       "questionImage": "assets/images/41601.jpg",
       "answers": [
@@ -91992,7 +91992,7 @@
     {
       "originalId": "41622",
       "type": "text",
-      "category": 1007,
+      "category": 2,
       "official": true,
       "questionImage": "assets/images/41622.jpg",
       "answers": [
@@ -92055,7 +92055,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1007,
+      "category": 2,
       "official": false,
       "questionImage": "assets/images/41623.jpg",
       "answers": [
@@ -92108,7 +92108,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1007,
+      "category": 2,
       "official": false,
       "questionImage": "assets/images/41625.jpg",
       "answers": [
@@ -92171,7 +92171,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1007,
+      "category": 2,
       "official": false,
       "questionImage": "assets/images/41781.jpg",
       "answers": [
@@ -92234,7 +92234,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1007,
+      "category": 2,
       "official": false,
       "questionImage": "assets/images/41782.jpg",
       "answers": [
@@ -92297,7 +92297,7 @@
     {
       "originalId": "41783",
       "type": "text",
-      "category": 1007,
+      "category": 2,
       "official": true,
       "questionImage": "assets/images/41783.jpg",
       "answers": [
@@ -92360,7 +92360,7 @@
     {
       "originalId": "41784",
       "type": "text",
-      "category": 1007,
+      "category": 2,
       "official": true,
       "questionImage": "assets/images/41784.jpg",
       "answers": [
@@ -92423,7 +92423,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1007,
+      "category": 2,
       "official": false,
       "questionImage": "assets/images/41785.jpg",
       "answers": [
@@ -92486,7 +92486,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1007,
+      "category": 2,
       "official": false,
       "questionImage": "assets/images/41786.jpg",
       "answers": [
@@ -92549,7 +92549,7 @@
     {
       "originalId": "41787",
       "type": "text",
-      "category": 1007,
+      "category": 2,
       "official": true,
       "questionImage": "assets/images/41787.jpg",
       "answers": [
@@ -92612,7 +92612,7 @@
     {
       "originalId": "41791",
       "type": "text",
-      "category": 1007,
+      "category": 2,
       "official": true,
       "questionImage": "assets/images/41791.jpg",
       "answers": [
@@ -92675,7 +92675,7 @@
     {
       "originalId": "41797",
       "type": "text",
-      "category": 1007,
+      "category": 2,
       "official": true,
       "questionImage": "assets/images/41797.jpg",
       "answers": [
@@ -92738,7 +92738,7 @@
     {
       "originalId": "41798",
       "type": "text",
-      "category": 1007,
+      "category": 2,
       "official": true,
       "questionImage": "assets/images/41798.jpg",
       "answers": [
@@ -92801,7 +92801,7 @@
     {
       "originalId": "41799",
       "type": "text",
-      "category": 1007,
+      "category": 2,
       "official": true,
       "questionImage": "assets/images/41799.jpg",
       "answers": [
@@ -92864,7 +92864,7 @@
     {
       "originalId": "41800",
       "type": "text",
-      "category": 1007,
+      "category": 2,
       "official": true,
       "questionImage": "assets/images/41800.jpg",
       "answers": [
@@ -92927,7 +92927,7 @@
     {
       "originalId": "41801",
       "type": "text",
-      "category": 1007,
+      "category": 2,
       "official": true,
       "questionImage": "assets/images/41801.jpg",
       "answers": [
@@ -92990,7 +92990,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1007,
+      "category": 2,
       "official": false,
       "questionImage": "assets/images/41802.jpg",
       "answers": [
@@ -93053,7 +93053,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1007,
+      "category": 2,
       "official": false,
       "questionImage": "assets/images/40073split.jpg",
       "answers": [
@@ -93116,7 +93116,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1007,
+      "category": 2,
       "official": false,
       "questionImage": "assets/images/25021.jpg",
       "answers": [
@@ -93179,7 +93179,7 @@
     {
       "originalId": "40191",
       "type": "text",
-      "category": 1007,
+      "category": 2,
       "official": true,
       "questionImage": "assets/images/40191.jpg",
       "answers": [
@@ -93242,7 +93242,7 @@
     {
       "originalId": "25027",
       "type": "text",
-      "category": 1007,
+      "category": 2,
       "official": true,
       "questionImage": "assets/images/25027.jpg",
       "answers": [
@@ -93305,7 +93305,7 @@
     {
       "originalId": "50481",
       "type": "text",
-      "category": 1007,
+      "category": 2,
       "official": true,
       "questionImage": "assets/images/50481.jpg",
       "answers": [
@@ -93368,7 +93368,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1007,
+      "category": 2,
       "official": false,
       "questionImage": "assets/images/25029.jpg",
       "answers": [
@@ -93431,7 +93431,7 @@
     {
       "originalId": "25008",
       "type": "text",
-      "category": 1007,
+      "category": 2,
       "official": true,
       "questionImage": "assets/images/25008.jpg",
       "answers": [
@@ -93494,7 +93494,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1007,
+      "category": 2,
       "official": false,
       "questionImage": "assets/images/25007.jpg",
       "answers": [
@@ -93557,7 +93557,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1007,
+      "category": 2,
       "official": false,
       "questionImage": "assets/images/30053split.jpg",
       "answers": [
@@ -93620,7 +93620,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1007,
+      "category": 2,
       "official": false,
       "questionImage": "assets/images/30071.jpg",
       "answers": [
@@ -93683,7 +93683,7 @@
     {
       "originalId": "25030",
       "type": "text",
-      "category": 1007,
+      "category": 2,
       "official": true,
       "questionImage": "assets/images/25030.jpg",
       "answers": [
@@ -93746,7 +93746,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1007,
+      "category": 2,
       "official": false,
       "questionImage": "assets/images/20009.jpg",
       "answers": [
@@ -93809,7 +93809,7 @@
     {
       "originalId": "20012",
       "type": "text",
-      "category": 1007,
+      "category": 2,
       "official": true,
       "questionImage": "assets/images/20012.jpg",
       "answers": [
@@ -93872,7 +93872,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1007,
+      "category": 2,
       "official": false,
       "questionImage": "assets/images/25031.jpg",
       "answers": [
@@ -93935,7 +93935,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1007,
+      "category": 2,
       "official": false,
       "questionImage": "assets/images/25009.jpg",
       "answers": [
@@ -93998,7 +93998,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1007,
+      "category": 2,
       "official": false,
       "questionImage": "assets/images/20227.jpg",
       "answers": [
@@ -94061,7 +94061,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1007,
+      "category": 2,
       "official": false,
       "questionImage": "assets/images/20265.jpg",
       "answers": [
@@ -94124,7 +94124,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1007,
+      "category": 2,
       "official": false,
       "questionImage": "assets/images/40048.jpg",
       "answers": [
@@ -94187,7 +94187,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1007,
+      "category": 2,
       "official": false,
       "questionImage": "assets/images/40052.jpg",
       "answers": [
@@ -94250,7 +94250,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1007,
+      "category": 2,
       "official": false,
       "questionImage": "assets/images/40125.jpg",
       "answers": [
@@ -94313,7 +94313,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1007,
+      "category": 2,
       "official": false,
       "questionImage": "assets/images/40222.jpg",
       "answers": [
@@ -94376,7 +94376,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1007,
+      "category": 2,
       "official": false,
       "questionImage": "assets/images/30004.jpg",
       "answers": [
@@ -94439,7 +94439,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1007,
+      "category": 2,
       "official": false,
       "questionImage": "assets/images/25033.jpg",
       "answers": [
@@ -94502,7 +94502,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1007,
+      "category": 2,
       "official": false,
       "questionImage": "assets/images/50015.jpg",
       "answers": [
@@ -94565,7 +94565,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1007,
+      "category": 2,
       "official": false,
       "questionImage": "assets/images/50493.jpg",
       "answers": [
@@ -94628,7 +94628,7 @@
     {
       "originalId": "50470",
       "type": "text",
-      "category": 1007,
+      "category": 2,
       "official": true,
       "questionImage": "assets/images/50470.jpg",
       "answers": [
@@ -94691,7 +94691,7 @@
     {
       "originalId": "50488",
       "type": "text",
-      "category": 1007,
+      "category": 2,
       "official": true,
       "questionImage": "assets/images/50488.jpg",
       "answers": [
@@ -94754,7 +94754,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1007,
+      "category": 2,
       "official": false,
       "questionImage": "assets/images/3710.jpg",
       "answers": [
@@ -94817,7 +94817,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1007,
+      "category": 2,
       "official": false,
       "questionImage": "assets/images/1517.jpg",
       "answers": [
@@ -94880,7 +94880,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1007,
+      "category": 2,
       "official": false,
       "questionImage": "assets/images/4362.jpg",
       "answers": [
@@ -94943,7 +94943,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1007,
+      "category": 2,
       "official": false,
       "questionImage": "assets/images/1014.jpg",
       "answers": [
@@ -95006,7 +95006,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1007,
+      "category": 2,
       "official": false,
       "questionImage": "assets/images/4438.jpg",
       "answers": [
@@ -95069,7 +95069,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1007,
+      "category": 2,
       "official": false,
       "questionImage": "assets/images/5002.jpg",
       "answers": [
@@ -95132,7 +95132,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1007,
+      "category": 2,
       "official": false,
       "questionImage": "assets/images/2918.jpg",
       "answers": [
@@ -95195,7 +95195,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1008,
+      "category": 1,
       "official": false,
       "questionImage": "assets/images/20008.jpg",
       "answers": [
@@ -95258,7 +95258,7 @@
     {
       "originalId": "20033",
       "type": "text",
-      "category": 1008,
+      "category": 1,
       "official": true,
       "questionImage": "assets/images/20033.jpg",
       "answers": [
@@ -95321,7 +95321,7 @@
     {
       "originalId": "20109",
       "type": "text",
-      "category": 1008,
+      "category": 1,
       "official": true,
       "questionImage": "assets/images/20109.jpg",
       "answers": [
@@ -95384,7 +95384,7 @@
     {
       "originalId": "20117",
       "type": "text",
-      "category": 1008,
+      "category": 1,
       "official": true,
       "questionImage": "assets/images/20117.jpg",
       "answers": [
@@ -95447,7 +95447,7 @@
     {
       "originalId": "20140",
       "type": "text",
-      "category": 1008,
+      "category": 1,
       "official": true,
       "questionImage": "assets/images/20140.jpg",
       "answers": [
@@ -95510,7 +95510,7 @@
     {
       "originalId": "20132",
       "type": "text",
-      "category": 1008,
+      "category": 1,
       "official": true,
       "questionImage": "assets/images/20132.jpg",
       "answers": [
@@ -95573,7 +95573,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1008,
+      "category": 1,
       "official": false,
       "questionImage": "assets/images/20036.jpg",
       "answers": [
@@ -95636,7 +95636,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1008,
+      "category": 1,
       "official": false,
       "questionImage": "assets/images/20213.jpg",
       "answers": [
@@ -95699,7 +95699,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1008,
+      "category": 1,
       "official": false,
       "questionImage": "assets/images/20216.jpg",
       "answers": [
@@ -95762,7 +95762,7 @@
     {
       "originalId": "20223",
       "type": "text",
-      "category": 1008,
+      "category": 1,
       "official": true,
       "questionImage": "assets/images/20223.jpg",
       "answers": [
@@ -95825,7 +95825,7 @@
     {
       "originalId": "20264",
       "type": "text",
-      "category": 1008,
+      "category": 1,
       "official": true,
       "questionImage": "assets/images/20264.jpg",
       "answers": [
@@ -95888,7 +95888,7 @@
     {
       "originalId": "20298",
       "type": "text",
-      "category": 1008,
+      "category": 1,
       "official": true,
       "questionImage": "assets/images/20298.jpg",
       "answers": [
@@ -95951,7 +95951,7 @@
     {
       "originalId": "25035",
       "type": "text",
-      "category": 1008,
+      "category": 1,
       "official": true,
       "questionImage": "assets/images/25035.jpg",
       "answers": [
@@ -96014,7 +96014,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1008,
+      "category": 1,
       "official": false,
       "questionImage": "assets/images/20309.jpg",
       "answers": [
@@ -96077,7 +96077,7 @@
     {
       "originalId": "25036",
       "type": "text",
-      "category": 1008,
+      "category": 1,
       "official": true,
       "questionImage": "assets/images/25036.jpg",
       "answers": [
@@ -96140,7 +96140,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1008,
+      "category": 1,
       "official": false,
       "questionImage": "assets/images/20328.jpg",
       "answers": [
@@ -96203,7 +96203,7 @@
     {
       "originalId": "50433",
       "type": "text",
-      "category": 1008,
+      "category": 1,
       "official": true,
       "questionImage": "assets/images/50433.jpg",
       "answers": [
@@ -96266,7 +96266,7 @@
     {
       "originalId": "50190",
       "type": "text",
-      "category": 1008,
+      "category": 1,
       "official": true,
       "questionImage": "assets/images/50190.jpg",
       "answers": [
@@ -96329,7 +96329,7 @@
     {
       "originalId": "40250",
       "type": "text",
-      "category": 1008,
+      "category": 1,
       "official": true,
       "questionImage": "assets/images/40250.jpg",
       "answers": [
@@ -96392,7 +96392,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1008,
+      "category": 1,
       "official": false,
       "questionImage": "assets/images/41590.jpg",
       "answers": [
@@ -96455,7 +96455,7 @@
     {
       "originalId": "41591",
       "type": "text",
-      "category": 1008,
+      "category": 1,
       "official": true,
       "questionImage": "assets/images/41591.jpg",
       "answers": [
@@ -96518,7 +96518,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1008,
+      "category": 1,
       "official": false,
       "questionImage": "assets/images/50191.jpg",
       "answers": [
@@ -96581,7 +96581,7 @@
     {
       "originalId": "20079",
       "type": "text",
-      "category": 1008,
+      "category": 1,
       "official": true,
       "questionImage": "assets/images/20079.jpg",
       "answers": [
@@ -96644,7 +96644,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1008,
+      "category": 1,
       "official": false,
       "questionImage": "assets/images/41595.jpg",
       "answers": [
@@ -96707,7 +96707,7 @@
     {
       "originalId": "41596",
       "type": "text",
-      "category": 1008,
+      "category": 1,
       "official": true,
       "questionImage": "assets/images/41596.jpg",
       "answers": [
@@ -96770,7 +96770,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1008,
+      "category": 1,
       "official": false,
       "questionImage": "assets/images/41597.jpg",
       "answers": [
@@ -96833,7 +96833,7 @@
     {
       "originalId": "41615",
       "type": "text",
-      "category": 1008,
+      "category": 1,
       "official": true,
       "questionImage": "assets/images/41615.jpg",
       "answers": [
@@ -96896,7 +96896,7 @@
     {
       "originalId": "41616",
       "type": "text",
-      "category": 1008,
+      "category": 1,
       "official": true,
       "questionImage": "assets/images/41616.jpg",
       "answers": [
@@ -96959,7 +96959,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1008,
+      "category": 1,
       "official": false,
       "questionImage": "assets/images/41617.jpg",
       "answers": [
@@ -97022,7 +97022,7 @@
     {
       "originalId": "41626",
       "type": "text",
-      "category": 1008,
+      "category": 1,
       "official": true,
       "questionImage": "assets/images/41626.jpg",
       "answers": [
@@ -97085,7 +97085,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1008,
+      "category": 1,
       "official": false,
       "questionImage": "assets/images/41764.jpg",
       "answers": [
@@ -97148,7 +97148,7 @@
     {
       "originalId": "50377",
       "type": "text",
-      "category": 1008,
+      "category": 1,
       "official": true,
       "questionImage": "assets/images/50377.jpg",
       "answers": [
@@ -97211,7 +97211,7 @@
     {
       "originalId": "50006",
       "type": "text",
-      "category": 1008,
+      "category": 1,
       "official": true,
       "questionImage": "assets/images/50006.jpg",
       "answers": [
@@ -97274,7 +97274,7 @@
     {
       "originalId": "41767",
       "type": "text",
-      "category": 1008,
+      "category": 1,
       "official": true,
       "questionImage": "assets/images/41767.jpg",
       "answers": [
@@ -97337,7 +97337,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1008,
+      "category": 1,
       "official": false,
       "questionImage": "assets/images/41768.jpg",
       "answers": [
@@ -97400,7 +97400,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1008,
+      "category": 1,
       "official": false,
       "questionImage": "assets/images/41769.jpg",
       "answers": [
@@ -97463,7 +97463,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1008,
+      "category": 1,
       "official": false,
       "questionImage": "assets/images/50375.jpg",
       "answers": [
@@ -97526,7 +97526,7 @@
     {
       "originalId": "41772",
       "type": "text",
-      "category": 1008,
+      "category": 1,
       "official": true,
       "questionImage": "assets/images/41772.jpg",
       "answers": [
@@ -97589,7 +97589,7 @@
     {
       "originalId": "20068",
       "type": "text",
-      "category": 1008,
+      "category": 1,
       "official": true,
       "questionImage": "assets/images/20068.jpg",
       "answers": [
@@ -97652,7 +97652,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1008,
+      "category": 1,
       "official": false,
       "questionImage": "assets/images/41592.jpg",
       "answers": [
@@ -97715,7 +97715,7 @@
     {
       "originalId": "20306",
       "type": "text",
-      "category": 1008,
+      "category": 1,
       "official": true,
       "questionImage": "assets/images/20306.jpg",
       "answers": [
@@ -97778,7 +97778,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1008,
+      "category": 1,
       "official": false,
       "questionImage": "assets/images/41594.jpg",
       "answers": [
@@ -97841,7 +97841,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1008,
+      "category": 1,
       "official": false,
       "questionImage": "assets/images/50463.jpg",
       "answers": [
@@ -97904,7 +97904,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1008,
+      "category": 1,
       "official": false,
       "questionImage": "assets/images/50376.jpg",
       "answers": [
@@ -97967,7 +97967,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1008,
+      "category": 1,
       "official": false,
       "questionImage": "assets/images/41765.jpg",
       "answers": [
@@ -98030,7 +98030,7 @@
     {
       "originalId": "50379",
       "type": "text",
-      "category": 1008,
+      "category": 1,
       "official": true,
       "questionImage": "assets/images/50379.jpg",
       "answers": [
@@ -98093,7 +98093,7 @@
     {
       "originalId": "25002",
       "type": "text",
-      "category": 1008,
+      "category": 1,
       "official": true,
       "questionImage": "assets/images/25002.jpg",
       "answers": [
@@ -98156,7 +98156,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1008,
+      "category": 1,
       "official": false,
       "questionImage": "assets/images/20003.jpg",
       "answers": [
@@ -98219,7 +98219,7 @@
     {
       "originalId": "25017",
       "type": "text",
-      "category": 1008,
+      "category": 1,
       "official": true,
       "questionImage": "assets/images/25017.jpg",
       "answers": [
@@ -98282,7 +98282,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1008,
+      "category": 1,
       "official": false,
       "questionImage": "assets/images/25025.jpg",
       "answers": [
@@ -98345,7 +98345,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1008,
+      "category": 1,
       "official": false,
       "questionImage": "assets/images/20015.jpg",
       "answers": [
@@ -98408,7 +98408,7 @@
     {
       "originalId": "25056",
       "type": "text",
-      "category": 1008,
+      "category": 1,
       "official": true,
       "questionImage": "assets/images/25056.jpg",
       "answers": [
@@ -98471,7 +98471,7 @@
     {
       "originalId": "20083",
       "type": "text",
-      "category": 1008,
+      "category": 1,
       "official": true,
       "questionImage": "assets/images/20083.jpg",
       "answers": [
@@ -98534,7 +98534,7 @@
     {
       "originalId": "25058",
       "type": "text",
-      "category": 1008,
+      "category": 1,
       "official": true,
       "questionImage": "assets/images/25058.jpg",
       "answers": [
@@ -98597,7 +98597,7 @@
     {
       "originalId": "20094",
       "type": "text",
-      "category": 1008,
+      "category": 1,
       "official": true,
       "questionImage": "assets/images/20094.jpg",
       "answers": [
@@ -98660,7 +98660,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1008,
+      "category": 1,
       "official": false,
       "questionImage": "assets/images/50189.jpg",
       "answers": [
@@ -98723,7 +98723,7 @@
     {
       "originalId": "20321",
       "type": "text",
-      "category": 1008,
+      "category": 1,
       "official": true,
       "questionImage": "assets/images/20321.jpg",
       "answers": [
@@ -98786,7 +98786,7 @@
     {
       "originalId": "21210",
       "type": "text",
-      "category": 1008,
+      "category": 1,
       "official": true,
       "questionImage": "assets/images/21210.jpg",
       "answers": [
@@ -98849,7 +98849,7 @@
     {
       "originalId": "50011",
       "type": "text",
-      "category": 1008,
+      "category": 1,
       "official": true,
       "questionImage": "assets/images/50011.jpg",
       "answers": [
@@ -98912,7 +98912,7 @@
     {
       "originalId": "50012",
       "type": "text",
-      "category": 1008,
+      "category": 1,
       "official": true,
       "questionImage": "assets/images/50012.jpg",
       "answers": [
@@ -98975,7 +98975,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1008,
+      "category": 1,
       "official": false,
       "questionImage": "assets/images/41766.jpg",
       "answers": [
@@ -99038,7 +99038,7 @@
     {
       "originalId": "50014",
       "type": "text",
-      "category": 1008,
+      "category": 1,
       "official": true,
       "questionImage": "assets/images/50014.jpg",
       "answers": [
@@ -99101,7 +99101,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1008,
+      "category": 1,
       "official": false,
       "questionImage": "assets/images/50013.jpg",
       "answers": [
@@ -99164,7 +99164,7 @@
     {
       "originalId": "50460",
       "type": "text",
-      "category": 1008,
+      "category": 1,
       "official": true,
       "questionImage": "assets/images/50460.jpg",
       "answers": [
@@ -99227,7 +99227,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1008,
+      "category": 1,
       "official": false,
       "questionImage": "assets/images/50478.jpg",
       "answers": [
@@ -99290,7 +99290,7 @@
     {
       "originalId": "50485",
       "type": "text",
-      "category": 1008,
+      "category": 1,
       "official": true,
       "questionImage": "assets/images/50485.jpg",
       "answers": [
@@ -99353,7 +99353,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1008,
+      "category": 1,
       "official": false,
       "questionImage": "assets/images/1015.jpg",
       "answers": [
@@ -99416,7 +99416,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1008,
+      "category": 1,
       "official": false,
       "questionImage": "assets/images/3955.jpg",
       "answers": [
@@ -99479,7 +99479,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1008,
+      "category": 1,
       "official": false,
       "questionImage": "assets/images/2878.jpg",
       "answers": [
@@ -99542,7 +99542,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1008,
+      "category": 1,
       "official": false,
       "questionImage": "assets/images/1005.jpg",
       "answers": [
@@ -99605,7 +99605,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1008,
+      "category": 1,
       "official": false,
       "questionImage": "assets/images/4775.jpg",
       "answers": [
@@ -99668,7 +99668,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1009,
+      "category": 1,
       "official": false,
       "questionImage": "assets/images/20096.jpg",
       "answers": [
@@ -99731,7 +99731,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1009,
+      "category": 1,
       "official": false,
       "questionImage": "assets/images/20245.jpg",
       "answers": [
@@ -99794,7 +99794,7 @@
     {
       "originalId": "50432",
       "type": "text",
-      "category": 1009,
+      "category": 1,
       "official": true,
       "questionImage": "assets/images/50432.jpg",
       "answers": [
@@ -99857,7 +99857,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1009,
+      "category": 1,
       "official": false,
       "questionImage": "assets/images/50482.jpg",
       "answers": [
@@ -99920,7 +99920,7 @@
     {
       "originalId": "50486",
       "type": "text",
-      "category": 1009,
+      "category": 1,
       "official": true,
       "questionImage": "assets/images/50486.jpg",
       "answers": [
@@ -99983,7 +99983,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1009,
+      "category": 1,
       "official": false,
       "questionImage": "assets/images/2880.jpg",
       "answers": [
@@ -100046,7 +100046,7 @@
     {
       "originalId": "50510",
       "type": "text",
-      "category": 1008,
+      "category": 1,
       "official": true,
       "questionImage": "assets/images/50510.jpg",
       "answers": [
@@ -100109,7 +100109,7 @@
     {
       "originalId": "50546",
       "type": "text",
-      "category": 1008,
+      "category": 1,
       "official": true,
       "questionImage": "assets/images/50546.jpg",
       "answers": [
@@ -100172,7 +100172,7 @@
     {
       "originalId": "50551",
       "type": "text",
-      "category": 1008,
+      "category": 1,
       "official": true,
       "questionImage": "assets/images/50551.jpg",
       "answers": [
@@ -100235,7 +100235,7 @@
     {
       "originalId": "50522",
       "type": "text",
-      "category": 1008,
+      "category": 1,
       "official": true,
       "questionImage": "assets/images/50522.jpg",
       "answers": [
@@ -100298,7 +100298,7 @@
     {
       "originalId": "50518",
       "type": "text",
-      "category": 1009,
+      "category": 1,
       "official": true,
       "questionImage": "assets/images/50518.jpg",
       "answers": [
@@ -100361,7 +100361,7 @@
     {
       "originalId": "50519",
       "type": "text",
-      "category": 1009,
+      "category": 1,
       "official": true,
       "questionImage": "assets/images/50519.jpg",
       "answers": [
@@ -100424,7 +100424,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1008,
+      "category": 1,
       "official": false,
       "questionImage": "assets/images/8001.jpg",
       "answers": [
@@ -100487,7 +100487,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1008,
+      "category": 1,
       "official": false,
       "questionImage": "assets/images/8002.jpg",
       "answers": [
@@ -100550,7 +100550,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1008,
+      "category": 1,
       "official": false,
       "questionImage": "assets/images/8003.jpg",
       "answers": [
@@ -100613,7 +100613,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1008,
+      "category": 1,
       "official": false,
       "questionImage": "assets/images/8004.jpg",
       "answers": [
@@ -100676,7 +100676,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1008,
+      "category": 1,
       "official": false,
       "questionImage": "assets/images/8005.jpg",
       "answers": [
@@ -100739,7 +100739,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1005,
+      "category": 6,
       "official": false,
       "questionImage": "assets/images/1520.jpg",
       "answers": [
@@ -100802,7 +100802,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1005,
+      "category": 6,
       "official": false,
       "questionImage": "assets/images/1521.jpg",
       "answers": [
@@ -100865,7 +100865,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1005,
+      "category": 6,
       "official": false,
       "questionImage": "assets/images/1522.jpg",
       "answers": [
@@ -100928,7 +100928,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1005,
+      "category": 6,
       "official": false,
       "questionImage": "assets/images/1523.jpg",
       "answers": [
@@ -100991,7 +100991,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1005,
+      "category": 6,
       "official": false,
       "questionImage": "assets/images/1524.jpg",
       "answers": [
@@ -101054,7 +101054,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1005,
+      "category": 6,
       "official": false,
       "questionImage": "assets/images/1525.jpg",
       "answers": [
@@ -101117,7 +101117,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1005,
+      "category": 6,
       "official": false,
       "questionImage": "assets/images/1526.jpg",
       "answers": [
@@ -101180,7 +101180,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1005,
+      "category": 6,
       "official": false,
       "questionImage": "assets/images/1527.jpg",
       "answers": [
@@ -101243,7 +101243,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1005,
+      "category": 6,
       "official": false,
       "questionImage": "assets/images/1528.jpg",
       "answers": [
@@ -101306,7 +101306,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1005,
+      "category": 6,
       "official": false,
       "questionImage": "assets/images/1529.jpg",
       "answers": [
@@ -101369,7 +101369,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1005,
+      "category": 6,
       "official": false,
       "questionImage": "assets/images/1530.jpg",
       "answers": [
@@ -101432,7 +101432,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1005,
+      "category": 6,
       "official": false,
       "questionImage": "assets/images/1531.jpg",
       "answers": [
@@ -101495,7 +101495,7 @@
     {
       "originalId": "20100",
       "type": "text",
-      "category": 1007,
+      "category": 2,
       "official": true,
       "questionImage": "assets/images/20100.jpg",
       "answers": [
@@ -101558,7 +101558,7 @@
     {
       "originalId": "50501",
       "type": "text",
-      "category": 1007,
+      "category": 2,
       "official": true,
       "questionImage": "assets/images/50501.jpg",
       "answers": [
@@ -101621,7 +101621,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1007,
+      "category": 2,
       "official": false,
       "questionImage": "assets/images/1532.jpg",
       "answers": [
@@ -101684,7 +101684,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1001,
+      "category": 9,
       "official": false,
       "questionImage": "assets/images/40246.jpg",
       "answers": [
@@ -101747,7 +101747,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1001,
+      "category": 9,
       "official": false,
       "questionImage": "assets/images/40275.jpg",
       "answers": [
@@ -101810,7 +101810,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1001,
+      "category": 9,
       "official": false,
       "questionImage": "assets/images/40296.jpg",
       "answers": [
@@ -101873,7 +101873,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1001,
+      "category": 9,
       "official": false,
       "questionImage": "assets/images/20275.jpg",
       "answers": [
@@ -101936,7 +101936,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1001,
+      "category": 9,
       "official": false,
       "questionImage": "assets/images/30006.jpg",
       "answers": [
@@ -101999,7 +101999,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1001,
+      "category": 9,
       "official": false,
       "questionImage": "assets/images/30029.jpg",
       "answers": [
@@ -102062,7 +102062,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1001,
+      "category": 9,
       "official": false,
       "questionImage": "assets/images/30050.jpg",
       "answers": [
@@ -102125,7 +102125,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1001,
+      "category": 9,
       "official": false,
       "questionImage": "assets/images/50484.jpg",
       "answers": [
@@ -102188,7 +102188,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1002,
+      "category": 7,
       "official": false,
       "questionImage": "assets/images/50491.jpg",
       "answers": [
@@ -102251,7 +102251,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1003,
+      "category": 4,
       "official": false,
       "questionImage": "assets/images/40197.jpg",
       "answers": [
@@ -102314,7 +102314,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1003,
+      "category": 4,
       "official": false,
       "questionImage": "assets/images/40260.jpg",
       "answers": [
@@ -102377,7 +102377,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1003,
+      "category": 4,
       "official": false,
       "questionImage": "assets/images/40341.jpg",
       "answers": [
@@ -102440,7 +102440,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1003,
+      "category": 4,
       "official": false,
       "questionImage": "assets/images/41611.jpg",
       "answers": [
@@ -102503,7 +102503,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1003,
+      "category": 4,
       "official": false,
       "questionImage": "assets/images/20205.jpg",
       "answers": [
@@ -102566,7 +102566,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1003,
+      "category": 4,
       "official": false,
       "questionImage": "assets/images/20191.jpg",
       "answers": [
@@ -102629,7 +102629,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1004,
+      "category": 5,
       "official": false,
       "questionImage": "assets/images/40019.jpg",
       "answers": [
@@ -102692,7 +102692,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1004,
+      "category": 5,
       "official": false,
       "questionImage": "assets/images/40272.jpg",
       "answers": [
@@ -102755,7 +102755,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1004,
+      "category": 5,
       "official": false,
       "questionImage": "assets/images/40311.jpg",
       "answers": [
@@ -102818,7 +102818,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1004,
+      "category": 5,
       "official": false,
       "questionImage": "assets/images/41588.jpg",
       "answers": [
@@ -102881,7 +102881,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1004,
+      "category": 5,
       "official": false,
       "questionImage": "assets/images/41589.jpg",
       "answers": [
@@ -102944,7 +102944,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1004,
+      "category": 5,
       "official": false,
       "questionImage": "assets/images/41796.jpg",
       "answers": [
@@ -103007,7 +103007,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1004,
+      "category": 5,
       "official": false,
       "questionImage": "assets/images/50467.jpg",
       "answers": [
@@ -103070,7 +103070,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1004,
+      "category": 5,
       "official": false,
       "questionImage": "assets/images/1003.jpg",
       "answers": [
@@ -103133,7 +103133,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1004,
+      "category": 5,
       "official": false,
       "questionImage": "assets/images/1002.jpg",
       "answers": [
@@ -103196,7 +103196,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1004,
+      "category": 5,
       "official": false,
       "questionImage": "assets/images/3004.jpg",
       "answers": [
@@ -103259,7 +103259,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1005,
+      "category": 6,
       "official": false,
       "questionImage": "assets/images/41792.jpg",
       "answers": [
@@ -103322,7 +103322,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1005,
+      "category": 6,
       "official": false,
       "questionImage": "assets/images/40054.jpg",
       "answers": [
@@ -103385,7 +103385,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1005,
+      "category": 6,
       "official": false,
       "questionImage": "assets/images/40136.jpg",
       "answers": [
@@ -103448,7 +103448,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1005,
+      "category": 6,
       "official": false,
       "questionImage": "assets/images/40152.jpg",
       "answers": [
@@ -103511,7 +103511,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1005,
+      "category": 6,
       "official": false,
       "questionImage": "assets/images/40318.jpg",
       "answers": [
@@ -103574,7 +103574,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1005,
+      "category": 6,
       "official": false,
       "questionImage": "assets/images/41609.jpg",
       "answers": [
@@ -103637,7 +103637,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1005,
+      "category": 6,
       "official": false,
       "questionImage": "assets/images/41788.jpg",
       "answers": [
@@ -103700,7 +103700,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1005,
+      "category": 6,
       "official": false,
       "questionImage": "assets/images/41789.jpg",
       "answers": [
@@ -103763,7 +103763,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1005,
+      "category": 6,
       "official": false,
       "questionImage": "assets/images/41792.jpg",
       "answers": [
@@ -103826,7 +103826,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1005,
+      "category": 6,
       "official": false,
       "questionImage": "assets/images/41793.jpg",
       "answers": [
@@ -103889,7 +103889,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1005,
+      "category": 6,
       "official": false,
       "questionImage": "assets/images/41794.jpg",
       "answers": [
@@ -103952,7 +103952,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1005,
+      "category": 6,
       "official": false,
       "questionImage": "assets/images/41795.jpg",
       "answers": [
@@ -104015,7 +104015,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1005,
+      "category": 6,
       "official": false,
       "questionImage": "assets/images/20166.jpg",
       "answers": [
@@ -104078,7 +104078,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1005,
+      "category": 6,
       "official": false,
       "questionImage": "assets/images/30035.jpg",
       "answers": [
@@ -104141,7 +104141,7 @@
     {
       "originalId": "0",
       "type": "text",
-      "category": 1005,
+      "category": 6,
       "official": true,
       "questionImage": "assets/images/30035.jpg",
       "answers": [
@@ -104204,7 +104204,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1005,
+      "category": 6,
       "official": false,
       "questionImage": "assets/images/30048.jpg",
       "answers": [
@@ -104267,7 +104267,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1005,
+      "category": 6,
       "official": false,
       "questionImage": "assets/images/30066.jpg",
       "answers": [
@@ -104330,7 +104330,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1005,
+      "category": 6,
       "official": false,
       "questionImage": "assets/images/30070.jpg",
       "answers": [
@@ -104393,7 +104393,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1005,
+      "category": 6,
       "official": false,
       "questionImage": "assets/images/30081.jpg",
       "answers": [
@@ -104456,7 +104456,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1005,
+      "category": 6,
       "official": false,
       "questionImage": "assets/images/30085.jpg",
       "answers": [
@@ -104519,7 +104519,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1005,
+      "category": 6,
       "official": false,
       "questionImage": "assets/images/30096.jpg",
       "answers": [
@@ -104582,7 +104582,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1005,
+      "category": 6,
       "official": false,
       "questionImage": "assets/images/30016.jpg",
       "answers": [
@@ -104645,7 +104645,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1005,
+      "category": 6,
       "official": false,
       "questionImage": "assets/images/30038.jpg",
       "answers": [
@@ -104708,7 +104708,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1005,
+      "category": 6,
       "official": false,
       "questionImage": "assets/images/30043.jpg",
       "answers": [
@@ -104771,7 +104771,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1005,
+      "category": 6,
       "official": false,
       "questionImage": "assets/images/30057.jpg",
       "answers": [
@@ -104834,7 +104834,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1005,
+      "category": 6,
       "official": false,
       "questionImage": "assets/images/30075.jpg",
       "answers": [
@@ -104897,7 +104897,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1005,
+      "category": 6,
       "official": false,
       "questionImage": "assets/images/30078.jpg",
       "answers": [
@@ -104960,7 +104960,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1005,
+      "category": 6,
       "official": false,
       "questionImage": "assets/images/30084.jpg",
       "answers": [
@@ -105023,7 +105023,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1005,
+      "category": 6,
       "official": false,
       "questionImage": "assets/images/30088.jpg",
       "answers": [
@@ -105086,7 +105086,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1005,
+      "category": 6,
       "official": false,
       "questionImage": "assets/images/30093.jpg",
       "answers": [
@@ -105149,7 +105149,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1006,
+      "category": 8,
       "official": false,
       "questionImage": "assets/images/50378.jpg",
       "answers": [
@@ -105212,7 +105212,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1007,
+      "category": 2,
       "official": false,
       "questionImage": "assets/images/40160.jpg",
       "answers": [
@@ -105275,7 +105275,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1007,
+      "category": 2,
       "official": false,
       "questionImage": "assets/images/40168.jpg",
       "answers": [
@@ -105338,7 +105338,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1007,
+      "category": 2,
       "official": false,
       "questionImage": "assets/images/40168.jpg",
       "answers": [
@@ -105401,7 +105401,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1007,
+      "category": 2,
       "official": false,
       "questionImage": "assets/images/40175.jpg",
       "answers": [
@@ -105464,7 +105464,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1007,
+      "category": 2,
       "official": false,
       "questionImage": "assets/images/40199.jpg",
       "answers": [
@@ -105527,7 +105527,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1007,
+      "category": 2,
       "official": false,
       "questionImage": "assets/images/40231.jpg",
       "answers": [
@@ -105590,7 +105590,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1007,
+      "category": 2,
       "official": false,
       "questionImage": "assets/images/40267.jpg",
       "answers": [
@@ -105653,7 +105653,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1007,
+      "category": 2,
       "official": false,
       "questionImage": "assets/images/40283.jpg",
       "answers": [
@@ -105716,7 +105716,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1007,
+      "category": 2,
       "official": false,
       "questionImage": "assets/images/40321.jpg",
       "answers": [
@@ -105779,7 +105779,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1007,
+      "category": 2,
       "official": false,
       "questionImage": "assets/images/41781.jpg",
       "answers": [
@@ -105842,7 +105842,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1007,
+      "category": 2,
       "official": false,
       "questionImage": "assets/images/41783.jpg",
       "answers": [
@@ -105905,7 +105905,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1007,
+      "category": 2,
       "official": false,
       "questionImage": "assets/images/41784.jpg",
       "answers": [
@@ -105968,7 +105968,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1007,
+      "category": 2,
       "official": false,
       "questionImage": "assets/images/41785.jpg",
       "answers": [
@@ -106031,7 +106031,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1007,
+      "category": 2,
       "official": false,
       "questionImage": "assets/images/41786.jpg",
       "answers": [
@@ -106094,7 +106094,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1007,
+      "category": 2,
       "official": false,
       "questionImage": "assets/images/41787.jpg",
       "answers": [
@@ -106157,7 +106157,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1007,
+      "category": 2,
       "official": false,
       "questionImage": "assets/images/41791.jpg",
       "answers": [
@@ -106220,7 +106220,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1007,
+      "category": 2,
       "official": false,
       "questionImage": "assets/images/41797.jpg",
       "answers": [
@@ -106283,7 +106283,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1007,
+      "category": 2,
       "official": false,
       "questionImage": "assets/images/41798.jpg",
       "answers": [
@@ -106346,7 +106346,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1007,
+      "category": 2,
       "official": false,
       "questionImage": "assets/images/41799.jpg",
       "answers": [
@@ -106409,7 +106409,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1007,
+      "category": 2,
       "official": false,
       "questionImage": "assets/images/30102.jpg",
       "answers": [
@@ -106472,7 +106472,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1007,
+      "category": 2,
       "official": false,
       "questionImage": "assets/images/40090.jpg",
       "answers": [
@@ -106525,7 +106525,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1007,
+      "category": 2,
       "official": false,
       "questionImage": "assets/images/40257.jpg",
       "answers": [
@@ -106588,7 +106588,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1007,
+      "category": 2,
       "official": false,
       "questionImage": "assets/images/50481.jpg",
       "answers": [
@@ -106651,7 +106651,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1008,
+      "category": 1,
       "official": false,
       "questionImage": "assets/images/50433.jpg",
       "answers": [
@@ -106714,7 +106714,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1008,
+      "category": 1,
       "official": false,
       "questionImage": "assets/images/50019.jpg",
       "answers": [
@@ -106777,7 +106777,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1008,
+      "category": 1,
       "official": false,
       "questionImage": "assets/images/50018.jpg",
       "answers": [
@@ -106840,7 +106840,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1008,
+      "category": 1,
       "official": false,
       "questionImage": "assets/images/41595.jpg",
       "answers": [
@@ -106903,7 +106903,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1008,
+      "category": 1,
       "official": false,
       "questionImage": "assets/images/41597.jpg",
       "answers": [
@@ -106966,7 +106966,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1008,
+      "category": 1,
       "official": false,
       "questionImage": "assets/images/20223.jpg",
       "answers": [
@@ -107029,7 +107029,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1008,
+      "category": 1,
       "official": false,
       "questionImage": "assets/images/20132.jpg",
       "answers": [
@@ -107092,7 +107092,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1008,
+      "category": 1,
       "official": false,
       "questionImage": "assets/images/20306.jpg",
       "answers": [
@@ -107155,7 +107155,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1008,
+      "category": 1,
       "official": false,
       "questionImage": "assets/images/50377.jpg",
       "answers": [
@@ -107218,7 +107218,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1008,
+      "category": 1,
       "official": false,
       "questionImage": "assets/images/2878.jpg",
       "answers": [
@@ -107281,7 +107281,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1008,
+      "category": 1,
       "official": false,
       "questionImage": "assets/images/8001.jpg",
       "answers": [
@@ -107344,7 +107344,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1008,
+      "category": 1,
       "official": false,
       "questionImage": "assets/images/8001.jpg",
       "answers": [
@@ -107407,7 +107407,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1008,
+      "category": 1,
       "official": false,
       "questionImage": "assets/images/8001.jpg",
       "answers": [
@@ -107470,7 +107470,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1008,
+      "category": 1,
       "official": false,
       "questionImage": "assets/images/8002.jpg",
       "answers": [
@@ -107533,7 +107533,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1008,
+      "category": 1,
       "official": false,
       "questionImage": "assets/images/8001.jpg",
       "answers": [
@@ -107596,7 +107596,7 @@
     {
       "originalId": null,
       "type": "text",
-      "category": 1008,
+      "category": 1,
       "official": false,
       "questionImage": "assets/images/8001.jpg",
       "answers": [
