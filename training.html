@@ -39,6 +39,7 @@
 
   <div class="mode-tabs">
     <button class="mode-tab active" onclick="window._app.switchTab('quiz')" data-i18n="quiz">Quiz</button>
+    <button class="mode-tab" onclick="window._app.switchTab('coaching')" data-i18n="coaching">Coaching</button>
     <button class="mode-tab" onclick="window._app.switchTab('browse')" data-i18n="browseStudy">Browse & Study</button>
   </div>
 
@@ -73,6 +74,18 @@
         <div class="empty-state-desc" data-i18n="fetchingQuestions">Fetching the latest questions from the server.</div>
       </div>
     </div>
+  </div>
+
+  <div id="coaching-view" class="training-view">
+    <main class="container section-tight">
+      <div id="coaching-container">
+        <div class="empty-state">
+          <div class="empty-state-icon">?</div>
+          <div class="empty-state-title" data-i18n="loadingQuestions">Loading questions...</div>
+          <div class="empty-state-desc" data-i18n="fetchingQuestions">Fetching the latest questions from the server.</div>
+        </div>
+      </div>
+    </main>
   </div>
 
   <div id="browse-view" class="training-view">

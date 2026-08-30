@@ -3,6 +3,7 @@ import { getSavedLanguage, setSavedLanguage, populateLanguageSelect, populateOff
 import { initQuiz, resetQuiz } from "./quiz.js";
 import { initBrowse, applyBrowseFilters, resetFilters } from "./browse.js";
 import { initExam } from "./exam.js";
+import { initCoaching } from "./coaching.js";
 import { getPageTitle, t, getCategoryLabel } from "./i18n.js";
 
 let allQuestions = [];
@@ -65,6 +66,7 @@ async function init() {
         window._quiz?.setLanguage(newLang);
       } else if (currentPage === "training") {
         window._quiz?.setLanguage(newLang);
+        window._coaching?.setLanguage(newLang);
         window._browse?.setLanguage(newLang);
         window._browse?.applyBrowseFilters();
       } else if (currentPage === "exam") {
@@ -89,6 +91,7 @@ async function init() {
         window._quiz?.setLanguage(newLang);
       } else if (currentPage === "training") {
         window._quiz?.setLanguage(newLang);
+        window._coaching?.setLanguage(newLang);
         window._browse?.setLanguage(newLang);
         window._browse?.applyBrowseFilters();
       } else if (currentPage === "exam") {
@@ -182,7 +185,14 @@ function initBrowsePage() {
 
 function initTrainingPage() {
   initQuizPage();
+  initCoachingPage();
   initBrowsePage();
+}
+
+function initCoachingPage() {
+  if (window._coaching) {
+    window._coaching.initCoaching();
+  }
 }
 
 function initExamPage() {
@@ -196,8 +206,16 @@ export function switchTab(tab) {
   if (tab === "quiz") {
     document.querySelector('.mode-tab:first-child').classList.add("active");
     document.getElementById("quiz-view").classList.add("active");
+  } else if (tab === "coaching") {
+    const coachingTab = document.querySelectorAll('.mode-tab')[1];
+    coachingTab.classList.add("active");
+    document.getElementById("coaching-view").classList.add("active");
+    if (window._coaching) {
+      window._coaching.initCoaching();
+    }
   } else {
-    document.querySelector('.mode-tab:last-child').classList.add("active");
+    const browseTab = document.querySelector('.mode-tab:last-child');
+    browseTab.classList.add("active");
     document.getElementById("browse-view").classList.add("active");
     const questionGrid = document.getElementById("question-grid");
     if (questionGrid && questionGrid.children.length === 0 && allQuestions.length > 0) {

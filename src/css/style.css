@@ -974,6 +974,7 @@ h4 { font-size: var(--text-lg); font-weight: 600; line-height: var(--leading-tig
 }
 
 .quiz-actions { margin-left: auto; }
+.quiz-controls .btn { min-width: 100px; }
 
 .score-display { display: flex; gap: var(--space-5); font-size: var(--text-sm); }
 
@@ -1279,6 +1280,86 @@ h4 { font-size: var(--text-lg); font-weight: 600; line-height: var(--leading-tig
   border-radius: 50%;
   font-size: 11px;
   flex-shrink: 0;
+}
+
+/* Coaching mode */
+.coaching-stacked-bar {
+  display: flex;
+  height: 10px;
+  border-radius: var(--radius-full);
+  overflow: hidden;
+  background: var(--bg-tertiary);
+  margin-bottom: var(--space-2);
+}
+
+.coaching-segment {
+  height: 100%;
+  transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.coaching-segment-mastered { background: var(--success); }
+.coaching-segment-box3 { background: #34a853; }
+.coaching-segment-box2 { background: #fbbc04; }
+.coaching-segment-box1 { background: var(--error); }
+
+.coaching-legend {
+  display: flex;
+  gap: var(--space-4);
+  flex-wrap: wrap;
+  font-size: var(--text-xs);
+  color: var(--text-secondary);
+}
+
+.coaching-legend-item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-1);
+  opacity: 1;
+  transition: opacity 0.2s;
+}
+
+.coaching-legend-empty {
+  opacity: 0.35;
+}
+
+.coaching-legend-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: var(--radius-full);
+  flex-shrink: 0;
+}
+
+.coaching-legend-mastered { background: var(--success); }
+.coaching-legend-box3 { background: #34a853; }
+.coaching-legend-box2 { background: #fbbc04; }
+.coaching-legend-box1 { background: var(--error); }
+
+.coaching-top-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-4);
+  margin-bottom: var(--space-3);
+}
+
+.btn-coaching-reset {
+  background: transparent;
+  border: none;
+  color: var(--text-secondary);
+  opacity: 0.5;
+  font-size: var(--text-xs);
+  line-height: 1;
+  padding: 2px 4px;
+  cursor: pointer;
+  border-radius: var(--radius-sm);
+  transition: opacity 0.2s, background 0.2s, color 0.2s;
+  white-space: nowrap;
+}
+
+.btn-coaching-reset:hover {
+  opacity: 1;
+  background: var(--bg-secondary);
+  color: var(--text-primary);
 }
 
 /* Exam mode */
