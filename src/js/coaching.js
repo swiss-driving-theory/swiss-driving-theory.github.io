@@ -106,7 +106,7 @@ export function resetCoachingProgress() {
 }
 
 function advanceBox(questionId, correct) {
-  const currentBox = state.boxes[questionId] || 1;
+  const currentBox = state.boxes[questionId] ?? 1;
   if (correct) {
     if (currentBox >= 3) {
       state.boxes[questionId] = 0;
@@ -130,7 +130,7 @@ function buildQueue() {
   const box3 = [];
 
   for (const q of state.questions) {
-    const box = state.boxes[q.id] || 1;
+    const box = state.boxes[q.id] ?? 1;
     if (box === 0) continue;
     if (box === 1) box1.push(q);
     else if (box === 2) box2.push(q);
@@ -266,7 +266,7 @@ function showResults() {
   let mastered = 0;
 
   for (const q of state.questions) {
-    const box = state.boxes[q.id] || 1;
+    const box = state.boxes[q.id] ?? 1;
     if (box === 0) mastered++;
     else if (box === 1) box1++;
     else if (box === 2) box2++;
@@ -409,7 +409,7 @@ function render() {
   let box3 = 0;
   let mastered = 0;
   for (const oq of state.questions) {
-    const box = state.boxes[oq.id] || 1;
+    const box = state.boxes[oq.id] ?? 1;
     if (box === 0) mastered++;
     else if (box === 1) box1++;
     else if (box === 2) box2++;
