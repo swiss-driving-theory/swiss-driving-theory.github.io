@@ -148,38 +148,10 @@ img { max-width: 100%; height: auto; display: block; }
 .logo-icon {
   width: 32px;
   height: 32px;
-  background: var(--swiss-red);
   border-radius: 6px;
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  color: white;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1;
-  letter-spacing: 0px;
+  display: block;
   flex-shrink: 0;
-  position: relative;
-  padding-top: 6px;
-}
-
-.logo-icon::before,
-.logo-icon::after {
-  content: "";
-  position: absolute;
-  bottom: 5px;
-  left: 0;
-  right: 0;
-  height: 2px;
-  opacity: 0.85;
-}
-
-.logo-icon::before {
-  background: linear-gradient(to right, white 0%, white 42%, transparent 42%);
-}
-
-.logo-icon::after {
-  background: linear-gradient(to right, transparent 58%, white 58%);
+  object-fit: contain;
 }
 
 .nav { display: flex; gap: var(--space-2); align-items: center; }
@@ -1941,7 +1913,7 @@ h4 { font-size: var(--text-lg); font-weight: 600; line-height: var(--leading-tig
   .answer-btn { padding: var(--space-3); }
   .answers-grid-images { grid-template-columns: 1fr; }
   .logo { font-size: var(--text-base); }
-  .logo-icon { width: 28px; height: 28px; font-size: 12px; padding-top: 5px; }
+  .logo-icon { width: 28px; height: 28px; }
   .browse-modal-overlay { padding: var(--space-2); }
   .browse-modal { padding: var(--space-3); }
   .hero { padding: var(--space-6) 0; }

@@ -5,12 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Exam Simulation — Swiss Driving Theory</title>
   <link rel="stylesheet" href="src/css/style.css">
+  <link rel="manifest" href="./manifest.json">
+  <meta name="theme-color" content="#C41E3A">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <link rel="apple-touch-icon" href="./assets/icons/icon-192x192.png">
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
 </head>
 <body data-page="exam">
   <header class="header">
     <div class="header-inner">
       <a href="index.html" class="logo">
-        <div class="logo-icon">CH</div>
+        <img class="logo-icon" src="./assets/icons/icon.svg" alt="">
         <span data-i18n="appName">Swiss Driving Theory</span>
       </a>
       <button class="hamburger" aria-label="Menu" onclick="window._app.toggleDrawer()">
@@ -21,6 +27,7 @@
       <nav class="nav">
         <a href="index.html" class="nav-btn" data-i18n="home">Home</a>
         <a href="training.html" class="nav-btn" data-i18n="training">Training</a>
+        <button id="install-btn" class="nav-btn hidden" data-i18n="installApp">Install App</button>
         <select id="lang-select" class="lang-select"></select>
       </nav>
     </div>
@@ -32,6 +39,7 @@
       <nav class="drawer-nav">
         <a href="index.html" class="nav-btn" data-i18n="home">Home</a>
         <a href="training.html" class="nav-btn" data-i18n="training">Training</a>
+        <button id="drawer-install-btn" class="nav-btn" data-i18n="installApp">Install App</button>
       </nav>
       <select id="drawer-lang-select" class="lang-select"></select>
     </div>
@@ -61,5 +69,61 @@
   </div>
 
   <script type="module" src="src/js/app.js"></script>
+  <script>
+    let deferredPrompt = null;
+    const installBtn = document.getElementById('install-btn');
+    const drawerInstallBtn = document.getElementById('drawer-install-btn');
+
+    function showInstallButtons() {
+      if (installBtn) installBtn.classList.remove('hidden');
+      if (drawerInstallBtn) drawerInstallBtn.classList.remove('hidden');
+    }
+
+    function hideInstallButtons() {
+      if (installBtn) installBtn.classList.add('hidden');
+      if (drawerInstallBtn) drawerInstallBtn.classList.add('hidden');
+    }
+
+    window.addEventListener('beforeinstallprompt', (e) => {
+      e.preventDefault();
+      deferredPrompt = e;
+      showInstallButtons();
+      console.log('PWA install prompt available');
+    });
+
+    async function triggerInstall() {
+      if (!deferredPrompt) return;
+      deferredPrompt.prompt();
+      const { outcome } = await deferredPrompt.userChoice;
+      console.log('Install prompt outcome:', outcome);
+      deferredPrompt = null;
+      hideInstallButtons();
+    }
+
+    if (installBtn) {
+      installBtn.addEventListener('click', triggerInstall);
+    }
+
+    if (drawerInstallBtn) {
+      drawerInstallBtn.addEventListener('click', triggerInstall);
+    }
+
+    window.addEventListener('appinstalled', () => {
+      console.log('PWA installed');
+      hideInstallButtons();
+    });
+
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('./service-worker.js')
+          .then((reg) => {
+            console.log('ServiceWorker registered:', reg.scope);
+            if (reg.waiting) console.log('ServiceWorker waiting:', reg.waiting);
+            if (reg.installing) console.log('ServiceWorker installing:', reg.installing);
+          })
+          .catch((err) => console.error('ServiceWorker registration failed:', err));
+      });
+    }
+  </script>
 </body>
 </html>

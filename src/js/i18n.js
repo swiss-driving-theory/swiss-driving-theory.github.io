@@ -15,6 +15,7 @@ const translations = {
     about: "Über",
     aboutText:
       "Theorieprüfung Kat. B — offizielle ASA-Fragen in drei Sprachen.",
+    installApp: "App installieren",
     aboutTraining: "Training",
     aboutExam: "Prüfungssimulation",
     aboutConditions: "50 Fragen, 45 Minuten, 15 Fehlerpunkte-Limit",
@@ -109,6 +110,7 @@ const translations = {
     about: "À propos",
     aboutText:
       "Examen théorique cat. B — questions officielles ASA en trois langues.",
+    installApp: "Installer l'app",
     aboutTraining: "Entraînement",
     aboutExam: "Simulation d'examen",
      aboutConditions: "50 questions, 45 minutes, limite de 15 points de faute",
@@ -203,6 +205,7 @@ const translations = {
     about: "Informazioni",
     aboutText:
       "Esame teorico cat. B — domande ufficiali ASA in tre lingue.",
+    installApp: "Installa app",
     aboutTraining: "Esercitazione",
     aboutExam: "Simulazione d'esame",
     aboutConditions: "50 domande, 45 minuti, limite di 15 punti di errore",
