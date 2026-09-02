@@ -1,7 +1,7 @@
 import { getOfficialQuestions, getQuestions, getTranslation } from "./data.js";
 import { getSavedLanguage, setSavedLanguage } from "./filters.js";
 import { getSessionState, setSessionState, clearSessionState } from "./progress.js";
-import { shuffleArray, escapeHtml, escapeHtmlWithBreaks, getCategoryLabel } from "./utils.js";
+import { shuffleArray, truncate, escapeHtml, escapeHtmlWithBreaks, getCategoryLabel } from "./utils.js";
 import { t } from "./i18n.js";
 
 const SESSION_KEY = "swiss-driving-theory-coaching-state";
@@ -108,7 +108,9 @@ export function resetCoachingProgress() {
 function advanceBox(questionId, correct) {
   const currentBox = state.boxes[questionId] ?? 1;
   if (correct) {
-    if (currentBox >= 3) {
+    if (currentBox === 0) {
+      return;
+    } else if (currentBox >= 3) {
       state.boxes[questionId] = 0;
     } else {
       state.boxes[questionId] = currentBox + 1;
@@ -439,10 +441,10 @@ function render() {
   html += '  </div>';
   html += '  <div class="coaching-top-row">';
   html += '    <div class="coaching-legend">';
-  html += `      <span class="coaching-legend-item${mastered === 0 ? ' coaching-legend-empty' : ''}"><span class="coaching-legend-dot coaching-legend-mastered"></span>${mastered}</span>`;
-  html += `      <span class="coaching-legend-item${box3 === 0 ? ' coaching-legend-empty' : ''}"><span class="coaching-legend-dot coaching-legend-box3"></span>${box3}</span>`;
-  html += `      <span class="coaching-legend-item${box2 === 0 ? ' coaching-legend-empty' : ''}"><span class="coaching-legend-dot coaching-legend-box2"></span>${box2}</span>`;
-  html += `      <span class="coaching-legend-item${box1 === 0 ? ' coaching-legend-empty' : ''}"><span class="coaching-legend-dot coaching-legend-box1"></span>${box1}</span>`;
+  html += `      <button type="button" class="coaching-legend-item${mastered === 0 ? ' coaching-legend-empty' : ''}" onclick="window._coaching.openBoxModal(0)"><span class="coaching-legend-dot coaching-legend-mastered"></span>${mastered}</button>`;
+  html += `      <button type="button" class="coaching-legend-item${box3 === 0 ? ' coaching-legend-empty' : ''}" onclick="window._coaching.openBoxModal(3)"><span class="coaching-legend-dot coaching-legend-box3"></span>${box3}</button>`;
+  html += `      <button type="button" class="coaching-legend-item${box2 === 0 ? ' coaching-legend-empty' : ''}" onclick="window._coaching.openBoxModal(2)"><span class="coaching-legend-dot coaching-legend-box2"></span>${box2}</button>`;
+  html += `      <button type="button" class="coaching-legend-item${box1 === 0 ? ' coaching-legend-empty' : ''}" onclick="window._coaching.openBoxModal(1)"><span class="coaching-legend-dot coaching-legend-box1"></span>${box1}</button>`;
   html += '    </div>';
   html += `    <button class="btn-coaching-reset" onclick="window._coaching.resetCoachingProgress()">${t("resetCoachingProgress", lang)}</button>`;
   html += '  </div>';
@@ -499,6 +501,110 @@ export function getState() {
   return state;
 }
 
+function getQuestionsInBox(boxNumber) {
+  const result = [];
+  for (const q of state.questions) {
+    const box = state.boxes[q.id] ?? 1;
+    if (box === boxNumber) result.push(q);
+  }
+  return result;
+}
+
+export function openBoxModal(boxNumber) {
+  const overlay = document.getElementById("coaching-modal-overlay");
+  const content = document.getElementById("coaching-modal-content");
+  if (!overlay || !content) return;
+
+  const lang = state.language;
+  let title, dotClass;
+  if (boxNumber === 0) {
+    title = t("coachingMastered", lang);
+    dotClass = "coaching-legend-mastered";
+  } else {
+    const key = `coachingBox${boxNumber}`;
+    title = t(key, lang);
+    dotClass = `coaching-legend-box${boxNumber}`;
+  }
+
+  const questions = getQuestionsInBox(boxNumber);
+
+  let html = '<div class="coaching-modal-header">';
+  html += `  <span class="coaching-modal-dot ${dotClass}"></span>`;
+  html += `  <h3 class="coaching-modal-title">${escapeHtml(title)}</h3>`;
+  html += `  <span class="coaching-modal-count">${questions.length}</span>`;
+  html += '</div>';
+
+  if (questions.length === 0) {
+    html += `<div class="coaching-modal-empty">${t("coachingBoxEmpty", lang)}</div>`;
+  } else {
+    html += '<div class="coaching-modal-list">';
+    for (let i = 0; i < questions.length; i++) {
+      const q = questions[i];
+      const tq = getTranslation(q, lang) || {};
+      const questionText = tq.question || "";
+      html += `<button type="button" class="coaching-modal-item" onclick="window._coaching.jumpToQuestion(${q.id}, ${boxNumber})">`;
+      html += `  <div class="coaching-modal-item-num">${i + 1}</div>`;
+      html += '  <div class="coaching-modal-item-body">';
+      html += '    <div class="coaching-modal-item-badges">';
+      if (!q.official) {
+        html += `      <span class="badge badge-practice">${t("practiceBadge", lang)}</span>`;
+      }
+      html += `      <span class="badge badge-category">${escapeHtml(getCategoryLabel(q.category, lang))}</span>`;
+      html += '    </div>';
+      if (questionText) {
+        html += `    <div class="coaching-modal-item-text">${escapeHtml(truncate(questionText, 120))}</div>`;
+      }
+      html += '  </div>';
+      if (q.originalId) {
+        html += `  <div class="coaching-modal-item-id">ID: ${q.originalId}</div>`;
+      }
+      html += '</button>';
+    }
+    html += '</div>';
+  }
+
+  content.innerHTML = html;
+  overlay.classList.add("open");
+  document.body.style.overflow = "hidden";
+}
+
+export function closeBoxModal() {
+  const overlay = document.getElementById("coaching-modal-overlay");
+  if (overlay) overlay.classList.remove("open");
+  document.body.style.overflow = "";
+}
+
+export function closeBoxModalOutside(event) {
+  if (event && event.target && event.target.id === "coaching-modal-overlay") {
+    closeBoxModal();
+  }
+}
+
+export function jumpToQuestion(questionId, boxNumber) {
+  closeBoxModal();
+
+  const target = state.questions.find((q) => q.id === questionId);
+  if (!target) return;
+
+  const inQueue = state.queue.findIndex((item) => item.question && item.question.id === questionId);
+  if (inQueue >= 0) {
+    state.currentIndex = inQueue;
+  } else {
+    let entry;
+    if (boxNumber === 0) {
+      entry = { question: target, isBonus: false };
+    } else {
+      entry = { question: target, isBonus: false };
+    }
+    state.queue.splice(state.currentIndex, 0, entry);
+  }
+
+  state.selectedIndices = [];
+  state.checked = false;
+  saveState();
+  render();
+}
+
 window._coaching = {
   selectAnswer,
   nextQuestion,
@@ -511,4 +617,8 @@ window._coaching = {
   continueCoaching,
   getState,
   setLanguage,
+  openBoxModal,
+  closeBoxModal,
+  closeBoxModalOutside,
+  jumpToQuestion,
 };

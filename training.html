@@ -86,6 +86,13 @@
         </div>
       </div>
     </main>
+
+    <div class="browse-modal-overlay" id="coaching-modal-overlay" onclick="window._coaching.closeBoxModalOutside(event)">
+      <div class="browse-modal" id="coaching-modal">
+        <button class="browse-modal-close" onclick="window._coaching.closeBoxModal()" aria-label="Close">&times;</button>
+        <div id="coaching-modal-content"></div>
+      </div>
+    </div>
   </div>
 
   <div id="browse-view" class="training-view">
