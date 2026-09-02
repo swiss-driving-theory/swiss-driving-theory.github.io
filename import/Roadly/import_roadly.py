@@ -13,6 +13,9 @@ ROADLY_PATH = BASE / "import" / "Roadly.json"
 QUESTIONS_PATH = BASE / "assets" / "questions.json"
 IMAGES_DIR = BASE / "assets" / "images"
 
+SKIP_NON_PKW = True
+SKIP_SIMULATED = True
+
 LANG_MAP = {"1": "de", "2": "fr", "3": "it"}
 
 IGNORE_TAGS = {"Prüfungstipp", "Neue Fragen", "Neue Fragen Juli 2025", "Alle Graphik-Fragen"}
@@ -71,11 +74,49 @@ CATEGORY_MAP = {
 }
 
 
+def classify_reference(ref_val):
+    try:
+        ref_str = str(ref_val).strip() if ref_val is not None else ""
+        if not ref_str:
+            return "invalid"
+        num = int(ref_str)
+    except (ValueError, TypeError):
+        return "invalid"
+
+    if num < 10000 or num > 999999:
+        return "invalid"
+
+    if num >= 100000:
+        return "simulated"
+
+    if 90000 <= num <= 91999:
+        return "simulated"
+    elif 60000 <= num <= 60999:
+        return "non_pkw"
+    elif 50000 <= num <= 50999:
+        return "official_extended"
+    elif 40000 <= num <= 41999:
+        return "official_extended"
+    elif 30000 <= num <= 31999:
+        return "official_core"
+    elif 25000 <= num <= 25999:
+        return "official_core"
+    elif 20000 <= num <= 21999:
+        return "official_core"
+    elif 10000 <= num <= 11999:
+        return "non_pkw"
+    else:
+        return "unknown"
+
+
 def parse_roadly(path):
     with open(path, encoding="utf-8") as f:
         text = f.read()
-    wrapped = "[" + text.strip() + "]"
-    return json.loads(wrapped)
+    try:
+        return json.loads(text)
+    except json.JSONDecodeError:
+        wrapped = "[" + text.strip() + "]"
+        return json.loads(wrapped)
 
 
 def download_image(url, dest_path):
@@ -89,7 +130,7 @@ def download_image(url, dest_path):
         return False
 
 
-def transform_question(roadly_q, new_id):
+def transform_question(roadly_q, new_id, source_status="unknown"):
     ref = roadly_q.get("reference") or str(roadly_q.get("id", ""))
     image_url = roadly_q.get("image")
     local_image = None
@@ -145,7 +186,8 @@ def transform_question(roadly_q, new_id):
         "originalId": str(ref),
         "type": "text",
         "category": category,
-        "official": bool(ref),
+        "official": source_status in ("official_core", "official_extended"),
+        "source_status": source_status,
         "questionImage": local_image,
         "answers": answers,
         "translations": translations,
@@ -178,15 +220,38 @@ def main():
             skipped_count += 1
             continue
 
+        source_status = classify_reference(ref)
+
+        if source_status == "invalid":
+            warnings.append(f"Invalid reference: {ref} (Roadly id={rq.get('id')})")
+            skipped_count += 1
+            continue
+
+        if source_status == "non_pkw" and SKIP_NON_PKW:
+            warnings.append(f"SKIP_NON_PKW: {ref}")
+            skipped_count += 1
+            continue
+
+        if source_status == "simulated" and SKIP_SIMULATED:
+            warnings.append(f"SKIP_SIMULATED: {ref}")
+            skipped_count += 1
+            continue
+
+        if source_status == "unknown":
+            warnings.append(f"UNKNOWN reference category: {ref}")
+            skipped_count += 1
+            continue
+
         if ref in existing_by_ref:
             eq = existing_by_ref[ref]
             if eq.get("type") == "image":
                 skipped_count += 1
                 continue
-            transformed = transform_question(rq, eq["id"])
+            transformed = transform_question(rq, eq["id"], source_status)
             eq["type"] = eq["type"]
             eq["category"] = transformed["category"]
             eq["official"] = transformed["official"]
+            eq.setdefault("source_status", source_status)
             eq["questionImage"] = transformed["questionImage"]
             eq["answers"] = transformed["answers"]
             for lang in LANG_MAP.values():
@@ -200,7 +265,7 @@ def main():
                     et["questionExplanation"] = nt["questionExplanation"]
             updated_count += 1
         else:
-            transformed = transform_question(rq, next_id)
+            transformed = transform_question(rq, next_id, source_status)
             new_questions.append(transformed)
             added_count += 1
             next_id += 1

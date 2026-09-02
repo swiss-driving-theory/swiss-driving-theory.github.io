@@ -40,3 +40,8 @@ yarn-error.log*
 import/de/
 import/fr/
 import/it/
+import/Driver/de/
+import/Driver/fr/
+import/Driver/it/
+import/Roadly/Roadly.json
+import/Verkehrstheorie/data/
