@@ -331,7 +331,7 @@ function render() {
   html += `      <div class="score-item"><span class="score-wrong">${attemptedCount - correctCount}</span> ${t("scoreWrong", lang)}</div>`;
   html += `      <div class="score-item"><span>${attemptedCount}</span> ${t("scoreAttempted", lang)}</div>`;
   html += '    </div>';
-  html += '    <div class="flex gap-2">';
+  html += '    <div class="quiz-actions flex gap-2">';
   html += `      <button class="btn btn-secondary" onclick="window._quiz.prevQuestion()" ${!canPrev ? "disabled" : ""}>${t("previous", lang)}</button>`;
   html += `      <button class="btn btn-primary" onclick="window._quiz.checkAnswer()" ${state.checked || state.selectedIndices.length === 0 ? "disabled" : ""}>${t("checkAnswer", lang)}</button>`;
   html += `      <button class="btn btn-primary" onclick="window._quiz.nextQuestion()" ${!canNext && !isLast ? "disabled" : ""}>${isLast ? t("finish", lang) : t("next", lang)}</button>`;
