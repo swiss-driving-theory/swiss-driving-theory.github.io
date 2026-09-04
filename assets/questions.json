@@ -92,7 +92,7 @@
       ],
       "translations": {
         "de": {
-          "question": "Welches Lichtsignal zeigt ihnen einen gesperrten Fahrstreifen an?",
+          "question": "Welches Lichtsignal zeigt Ihnen einen gesperrten Fahrstreifen an?",
           "options": [],
           "explanations": {
             "a": "Fahrstreifen gesperrt.",
@@ -233,9 +233,9 @@
           "question": "Quale segnale indica le piazzuole, ove i veicoli lenti devono scansarsi per facilitare il sorpasso ai veicoli più veloci?",
           "options": [],
           "explanations": {
-            "a": "Segnale di prescrizione \"Vietato il sorpasso\"",
-            "b": "Segnale d' indicazione \"Piazzuola\"",
-            "c": "Segnale d'indicazione \" Posto di fermata per veicoli in panne\"."
+            "a": "Segnale di prescrizione \"Vietato il sorpasso\".",
+            "b": "Segnale d'indicazione \"Piazzuola\".",
+            "c": "Segnale d'indicazione \"Posto di fermata per veicoli in panne\"."
           }
         }
       }
@@ -284,7 +284,7 @@
           "question": "Après quel signal devez-vous vous comporter avec un maximum d'égards?",
           "options": [],
           "explanations": {
-            "a": "Le signal d'indication \"Fin de la route postale de montagne\" informe les conducteurs qu'en cas de croisement difficile ils doivent suivre les signaux et instructions des conducteurs des transports publicss.",
+            "a": "Le signal d'indication \"Fin de la route postale de montagne\" informe les conducteurs qu'en cas de croisement difficile ils doivent suivre les signaux et instructions des conducteurs des transports publics.",
             "b": "Le signal d'obligation \"Chemin pour piétons\" oblige les piétons à emprunter le chemin indiqué.",
             "c": "Signal d'indication \"Hôpital\" qui impose de faire particulièrement attention en terme de bruit."
           }
@@ -692,11 +692,11 @@
       ],
       "translations": {
         "de": {
-          "question": "Welches Signal kündigt ihnen einen Abstellplatz an, der nur für Nothalte bestimmt ist?",
+          "question": "Welches Signal kündigt Ihnen einen Abstellplatz an, der nur für Nothalte bestimmt ist?",
           "options": [],
           "explanations": {
             "a": "Das Hinweissignal \"Ausstellplatz\" zeigt an, dass der Ausstellplatz auch zu anderen Zwecken genutzt werden darf.",
-            "b": "Das Hinweissignal \"Abstellplatz für Pannenfahrzeuge\" weist auf einen, nur für Pannenfahrzeuge reservierten Ausstellplatz hin. Ein Anhalten zu anderen Zwecken, wie Pick-Nick, Fotohalt, usw. ist nicht gestattet.",
+            "b": "Das Hinweissignal \"Abstellplatz für Pannenfahrzeuge\" weist auf einen, nur für Pannenfahrzeuge reservierten Ausstellplatz hin. Ein Anhalten zu anderen Zwecken, wie Picknick, Fotohalt, usw. ist nicht gestattet.",
             "c": "Das Hinweissignal \"Pannenhilfe\" weist auf Möglichkeiten zur Pannenhilfe (z.B. Garage) hin."
           }
         },
@@ -872,7 +872,7 @@
       ],
       "translations": {
         "de": {
-          "question": "Welches Lichtsignal zeigt ihnen an, dass sie den Fahrstreifen baldmöglichst verlassen müssen?",
+          "question": "Welches Lichtsignal zeigt Ihnen an, dass Sie den Fahrstreifen baldmöglichst verlassen müssen?",
           "options": [],
           "explanations": {
             "a": "Der grüne, nach unten zeigende Lichtsignal-Pfeil zeigt eine freie Fahrspur an.",
@@ -1472,7 +1472,7 @@
       ],
       "translations": {
         "de": {
-          "question": "Welches Lichtsignal zeigt ihnen einen Fahrstreifen an, der für den Verkehr frei ist?",
+          "question": "Welches Lichtsignal zeigt Ihnen einen Fahrstreifen an, der für den Verkehr frei ist?",
           "options": [],
           "explanations": {
             "a": "Gesperrter Fahrstreifen (Autobahn, Überkopf).",
@@ -2206,7 +2206,7 @@
           "explanations": {
             "a": "Le signal \"Tunnel\" informe les conducteurs de l'obligation d'allumer les feux de croisement.",
             "b": "Le signal de danger \"Autres dangers\" prévient de dangers sur la route pour lesquels il n'existe pas de panneaux spécifiques. La nature du danger sera indiquée, au besoin, par l'adjonction de plaque complémentaire ou, pour des signalisations à court terme, par des plaques placées sous le symbole à l'intérieur des bordures rouges.",
-            "c": "Le signal indiquant \"Début de route postale de montagne\" informe les conducteurs qu'en cas de croisement difficile ils doivent suivre les signaux et instructions des conducteurs des transports publicss."
+            "c": "Le signal indiquant \"Début de route postale de montagne\" informe les conducteurs qu'en cas de croisement difficile ils doivent suivre les signaux et instructions des conducteurs des transports publics."
           }
         },
         "it": {
@@ -2257,7 +2257,7 @@
           "explanations": {
             "a": "Das Signal \"Verbot für Gesellschaftswagen\" gilt für leichte Motorwagen, Lastwagen und Motorräder nicht.",
             "b": "Das Signal \"Verbot für Motorwagen\" gilt für leichte und schwere Motorwagen, nicht jedoch für Motorräder.",
-            "c": "Das Signal \"Verbot für Motorwagen und Motorräder\" gilt für alle Motorfahrzeuge, nicht jedoch für Motorfahrräder (welche keine Motorfahrzeuge sondern Fahrräder mit Hilfsmotor sind und Fahrräder."
+            "c": "Das Signal \"Verbot für Motorwagen und Motorräder\" gilt für alle Motorfahrzeuge, nicht jedoch für Motorfahrräder (welche keine Motorfahrzeuge sondern Fahrräder mit Hilfsmotor sind) und Fahrräder."
           }
         },
         "fr": {
@@ -11619,13 +11619,13 @@
         "fr": {
           "question": "Quand faut-il obligatoirement enclencher les feux?",
           "options": [
-            "Lorsque les véhicules des transports publicss circulent avec les feux",
+            "Lorsque les véhicules des transports publics circulent avec les feux",
             "Lorsque tous les autres véhicules circulent avec les feux",
             "Lorsque mon véhicule ne pourrait être aperçu à temps par les autres usagers de la route",
             "En cas de brouillard, bourrasque de neige ou de forte averse"
           ],
           "explanations": {
-            "a": "En Suisse les transports publicss circulent toujours, en règle générale, avec les feux de croisement. Du reste voir les réponses c) et d).",
+            "a": "En Suisse les transports publics circulent toujours, en règle générale, avec les feux de croisement. Du reste voir les réponses c) et d).",
             "b": "Voir réponses c) et d).",
             "c": "En principe tous les véhicules doivent circuler avec les feux de croisement, y compris de jour et par bonne visibilité. Cependant ces derniers doivent obligatoirement être enclenchés dès que le véhicule ne peut plus être vu à temps par les autres usagers de la route.",
             "d": "Les feux de croisement doivent également et obligatoirement être enclenchés par temps de brouillard, bourrasques de neige ou fortes averses."
@@ -18641,7 +18641,7 @@
       ],
       "translations": {
         "de": {
-          "question": "Was versteht man unter vorsichtiger fahrweise?",
+          "question": "Was versteht man unter vorsichtiger Fahrweise?",
           "options": [
             "Allgemein langsamer fahren",
             "Die geltenden Vortrittsregeln in jedem Fall anwenden",
@@ -28457,7 +28457,7 @@
             "Das entgegenkommende Fahrzeug hat Vortritt"
           ],
           "explanations": {
-            "a": "Eine verschmutzte Fahrbahn macht einsetzender Regen besonders gefährlich. Der Schmutz (auch Lau b) wirkt dann wie Schmierseife.",
+            "a": "Eine verschmutzte Fahrbahn macht einsetzenden Regen besonders gefährlich. Der Schmutz (auch Laub) wirkt dann wie Schmierseife.",
             "b": "Bei länger andauerndem Regen wurde der Schmutz durch das Wasser bereits weggeschwemmt.",
             "c": "Da das entgegenkommende Fahrzeug das Hindernis auf seiner Seite hat, habe ich den Vortritt."
           }
@@ -30183,7 +30183,7 @@
           "options": [
             "Dieses Fahrzeug wurde korrekt parkiert",
             "Dieses Fahrzeug ist nicht korrekt parkiert",
-            "Da das Fahrzeug innerhalb der Markiertung steht, ist es korrekt parkiert"
+            "Da das Fahrzeug innerhalb der Markierung steht, ist es korrekt parkiert"
           ],
           "explanations": {
             "a": "Siehe Antwort b).",
@@ -30933,7 +30933,7 @@
           ],
           "explanations": {
             "a": "Siehe Antwort b).",
-            "b": "Eine Doppellinie darf nur überfahren werden, wenn die unterbrochene Linie näher liegt. Somit darf diese Doppellinie von dieser Seite her nicht überfahren werden und ein zurück Wechseln auf die Autobahn ist hier somit verboten.",
+            "b": "Eine Doppellinie darf nur überfahren werden, wenn die unterbrochene Linie näher liegt. Somit darf diese Doppellinie von dieser Seite her nicht überfahren werden und ein Zurückwechseln auf die Autobahn ist hier somit verboten.",
             "c": "Ich darf nur mit gebotener Vorsicht auf die Autobahn zurückwechseln, wenn ich dies noch vor Beginn der Doppellinie tun kann."
           }
         },
@@ -31678,7 +31678,7 @@
           ],
           "explanations": {
             "a": "Siehe Antwort b).",
-            "b": "Gegenüber dem entgegnkommenden, links abbiegenden Personenwagen geniesse ich als geradeausfahrendes Fahrzeug den Vortritt.",
+            "b": "Gegenüber dem entgegenkommenden, links abbiegenden Personenwagen geniesse ich als geradeausfahrendes Fahrzeug den Vortritt.",
             "c": "Siehe Antwort b)."
           },
           "questionExplanation": "Vor dem Abbiegen nach links muss entgegenkommenden Fahrzeugen der Vortritt gewährt werden."
@@ -33173,7 +33173,7 @@
           ],
           "explanations": {
             "a": "Die erste, nähere Haltelinie, gilt nur bei Rotlicht.",
-            "b": "Da die Lichtsignalanlage ausser Betrieb ist, gelten die Signale und hier insbesondere das Signal \"Stop\". Bei der zweiten Haltelinie (die erste gilt nur bei eingeschalteter Lichtsignalanlag e) muss somit aus Übersichtlichkeitsgründen ein Sicherheitshalt eingeschaltet werden.",
+            "b": "Da die Lichtsignalanlage ausser Betrieb ist, gelten die Signale und hier insbesondere das Signal \"Stop\". Bei der zweiten Haltelinie (die erste gilt nur bei eingeschalteter Lichtsignalanlage) muss somit aus Übersichtlichkeitsgründen ein Sicherheitshalt eingeschaltet werden.",
             "c": "Ein Anhalten an der zweiten Haltelinie bei eingeschalteter Lichtsignalanlage ist genauso unnötig wie ein Halten an der ersten Haltelinie bei ausgeschalteter Lichtsignalanlage oder bei Grün.",
             "d": "Bei ausgeschalteter Lichtsignalanlage muss ich in jedem Fall aus Übersichtlichkeitsgründen aufgrund des Signals \"Stop\" an der zweiten Haltelinie einen Sicherheitshalt einlegen."
           }
@@ -34813,7 +34813,7 @@
           "explanations": {
             "a": "Weil die Strecke übersichtlich ist und kein Gegenverkehr naht, kann ich hier, sobald die Gegenfahrbahn frei ist, überholen.",
             "b": "Siehe Antwort a).",
-            "c": "Da hier die Übersicht genügt und keine Sicherheitslinie es verbietet, darf ich hier überholenEin zu nahes Aufschliessen ist hier nicht angezeigt, da mir der Tankzug sonst die Sicht verdeckt.",
+            "c": "Da hier die Übersicht genügt und keine Sicherheitslinie es verbietet, darf ich hier überholen. Ein zu nahes Aufschliessen ist hier nicht angezeigt, da mir der Tankzug sonst die Sicht verdeckt.",
             "d": "Siehe Antwort c)"
           }
         },
@@ -35760,7 +35760,7 @@
           "question": null,
           "options": [
             "Da ich zum Rechtsabbiegen auf die Gegenseite ausholen müsste, fahre ich weiter und wende an günstiger Stelle",
-            "Ich kann hier zum Rechtabbiegen ohne weiteres auf die Gegenseite ausholen"
+            "Ich kann hier zum Rechtsabbiegen ohne weiteres auf die Gegenseite ausholen"
           ],
           "explanations": {
             "a": "An dieser unübersichtlichen Stelle ist es viel zu gefährlich, zum Rechtsabbiegen in die Gegenfahrbahn auszuholen. Daher muss ich hier weiterfahren, um an einer günstigeren Stelle zu wenden.",
@@ -38172,7 +38172,7 @@
           "options": [
             "Diese haltende Strassenbahn darf nicht überholt werden",
             "Diese haltende Strassenbahn darf nur in langsamer Fahrt links überholt werden",
-            "Bei einer haltenden Stassenbahn muss man mit Fussgängern rechnen, die plötzlich auf die Fahrbahn treten",
+            "Bei einer haltenden Strassenbahn muss man mit Fussgängern rechnen, die plötzlich auf die Fahrbahn treten",
             "Haltende Strassenbahnen dürfen nie links überholt werden"
           ],
           "explanations": {
@@ -38249,7 +38249,7 @@
           "question": "Was trifft zu?",
           "options": [
             "Nur wenn niemand aussteigt, darf ich vorsichtig vorbeifahren",
-            "Ich muss hinter dem haltenden Tam mit einem Abstand von mindestens 2 m warten",
+            "Ich muss hinter dem haltenden Tram mit einem Abstand von mindestens 2 m warten",
             "Man darf langsam und vorsichtig vorbeifahren"
           ],
           "explanations": {
@@ -38634,7 +38634,7 @@
           "explanations": {
             "a": "Auf Hauptstrassen ist jegliches Parkieren untersagt.",
             "b": "Allein zum Güterumschlag darf hier angehalten werden.",
-            "c": "Das Schild \"Ortsende auf Hauptstrassen\" (weisse Schrift auf blauem Grun d) weist mich darauf hin, dass ich mich auf einer Hauptstrasse befinde."
+            "c": "Das Schild \"Ortsende auf Hauptstrassen\" (weisse Schrift auf blauem Grund) weist mich darauf hin, dass ich mich auf einer Hauptstrasse befinde."
           }
         },
         "fr": {
@@ -54663,7 +54663,7 @@
             "Je ne dois en aucun cas conduire sur la voie de gauche."
           ],
           "explanations": {},
-          "questionExplanation": "Le signal indique que les voies de circulation ne peuvent être utilisées que par des covoitureurs. Les covoitureurs doivent donc pouvoir conduire sur les voies de bus s'ils ne gênent pas les transports publicss. Le symbole est également utilisé pour réserver des places de parking pour les covoitureurs."
+          "questionExplanation": "Le signal indique que les voies de circulation ne peuvent être utilisées que par des covoitureurs. Les covoitureurs doivent donc pouvoir conduire sur les voies de bus s'ils ne gênent pas les transports publics. Le symbole est également utilisé pour réserver des places de parking pour les covoitureurs."
         },
         "it": {
           "question": "Cosa è corretto?",
@@ -56427,7 +56427,7 @@
             "Elle signale une zone particulière et a une signification juridique"
           ],
           "explanations": {},
-          "questionExplanation": "Il convient de faire la distinction entre les marques et les formes. Les premiers ont une valeur juridique, les seconds non.\n\nLes couleurs de marquage sont les suivantes :\n+ Blanc : la couleur est obligatoire pour tous les usagers de la route. Les lignes de sécurité ou les dents de requin en sont des exemples.\n\n+ Jaune : Le jaune est la couleur de la mobilité douce et des transports publicss. Les exemples typiques sont le passage piéton, la bande cyclable ou la ligne en zigzag aux arrêts de bus.\n\n+ Bleu : l'utilisation la plus connue est sans doute celle de la zone bleue. Le bleu est également une couleur de marquage.\n\n+ Jaune-orange : cette couleur est utilisée pour les marquages temporaires, qui annulent la validité des marquages blancs existants lors de chantiers.\n\nCouleurs d'aménagement : Les teintes recommandées figurent dans une norme de l'Association suisse des professionnels de la route et des transports (VSS) relative à la conception colorée des surfaces routières. Une centaine de teintes sont autorisées, du vert au rouge et au violet en passant par le gris et le brun. Ces couleurs doivent être choisies de manière à former une unité avec les couleurs environnantes et à correspondre aux façades et à la nature.\n\nSelon la norme, seuls ces trois types de couleurs peuvent être appliqués à la surface des routes. Toutes n'ont aucune valeur juridique.\n\n+ Coloration sur une grande surface : il s'agit d'une coloration avec deux couleurs au maximum sur toute la chaussée. Elle doit être au moins 3 fois plus longue que la largeur de la route d'un trottoir à l'autre. Ainsi, elle est certainement plus étendue qu'un passage pour piétons.\n\n+ Bande polyvalente : Celle-ci se trouve au milieu de la chaussée. Elle peut également être remplie avec deux couleurs au maximum.\n\n+ Bandes larges au bord de la chaussée : elles peuvent être réalisées avec une couleur au maximum.\n\nRemarque : la couleur peut être un aspect de sécurité dans l'espace routier. Cela signifie par exemple, dans l'exemple de cette question théorique : grâce à la couleur verte, les automobilistes sont plus attentifs et peut-être plus prudents à ce carrefour, ce qui augmenterait la sécurité."
+          "questionExplanation": "Il convient de faire la distinction entre les marques et les formes. Les premiers ont une valeur juridique, les seconds non.\n\nLes couleurs de marquage sont les suivantes :\n+ Blanc : la couleur est obligatoire pour tous les usagers de la route. Les lignes de sécurité ou les dents de requin en sont des exemples.\n\n+ Jaune : Le jaune est la couleur de la mobilité douce et des transports publics. Les exemples typiques sont le passage piéton, la bande cyclable ou la ligne en zigzag aux arrêts de bus.\n\n+ Bleu : l'utilisation la plus connue est sans doute celle de la zone bleue. Le bleu est également une couleur de marquage.\n\n+ Jaune-orange : cette couleur est utilisée pour les marquages temporaires, qui annulent la validité des marquages blancs existants lors de chantiers.\n\nCouleurs d'aménagement : Les teintes recommandées figurent dans une norme de l'Association suisse des professionnels de la route et des transports (VSS) relative à la conception colorée des surfaces routières. Une centaine de teintes sont autorisées, du vert au rouge et au violet en passant par le gris et le brun. Ces couleurs doivent être choisies de manière à former une unité avec les couleurs environnantes et à correspondre aux façades et à la nature.\n\nSelon la norme, seuls ces trois types de couleurs peuvent être appliqués à la surface des routes. Toutes n'ont aucune valeur juridique.\n\n+ Coloration sur une grande surface : il s'agit d'une coloration avec deux couleurs au maximum sur toute la chaussée. Elle doit être au moins 3 fois plus longue que la largeur de la route d'un trottoir à l'autre. Ainsi, elle est certainement plus étendue qu'un passage pour piétons.\n\n+ Bande polyvalente : Celle-ci se trouve au milieu de la chaussée. Elle peut également être remplie avec deux couleurs au maximum.\n\n+ Bandes larges au bord de la chaussée : elles peuvent être réalisées avec une couleur au maximum.\n\nRemarque : la couleur peut être un aspect de sécurité dans l'espace routier. Cela signifie par exemple, dans l'exemple de cette question théorique : grâce à la couleur verte, les automobilistes sont plus attentifs et peut-être plus prudents à ce carrefour, ce qui augmenterait la sécurité."
         },
         "it": {
           "question": "Qual è lo scopo del disegno colorato di questo attraversamento?",
@@ -69006,7 +69006,7 @@
             "Non, l'arrêt n'est autorisé que pour le transbordement de marchandises"
           ],
           "explanations": {},
-          "questionExplanation": "A moins de 10 m des panneaux indiquant un arrêt des transports publicss ainsi que devant des locaux et magasins du service du feu, l'arrêt n'est autorisé que pour permettre à des passagers de monter dans le véhicule ou d'en descendre; les transports publicss et les services du feu ne doivent pas être gênés.\n\ncf. Art. 18 VRV"
+          "questionExplanation": "A moins de 10 m des panneaux indiquant un arrêt des transports publics ainsi que devant des locaux et magasins du service du feu, l'arrêt n'est autorisé que pour permettre à des passagers de monter dans le véhicule ou d'en descendre; les transports publics et les services du feu ne doivent pas être gênés.\n\ncf. Art. 18 VRV"
         },
         "it": {
           "question": "Qui è consentito fermarsi per fare salire o scendere qualcuno?",
@@ -73933,7 +73933,7 @@
             "Si je ne gêne pas le bus, je peux m'arrêter ici à droite pour faire monter ou descendre des personnes"
           ],
           "explanations": {},
-          "questionExplanation": "Lorsque aucun tramway ou chemin de fer routier ne s'approche, les conducteurs qui obliquent à gauche peuvent s'engager sur les rails pour se mettre en ordre de présélection.\n\ncf. Art. 25 VRV\n\nLes lignes en zigzag (jaunes) désignent les emplacements réservés aux arrêts des transports publicss en trafic de ligne. Sur ces emplacements, l'arrêt n'est autorisé que pour permettre à des passagers de monter dans le véhicule ou d'en descendre, dans la mesure où les véhicules des transports publicss en trafic de ligne n'en sont pas gênés. Elles peuvent être utilisées.\n\ncf. Art. 77 SSV"
+          "questionExplanation": "Lorsque aucun tramway ou chemin de fer routier ne s'approche, les conducteurs qui obliquent à gauche peuvent s'engager sur les rails pour se mettre en ordre de présélection.\n\ncf. Art. 25 VRV\n\nLes lignes en zigzag (jaunes) désignent les emplacements réservés aux arrêts des transports publics en trafic de ligne. Sur ces emplacements, l'arrêt n'est autorisé que pour permettre à des passagers de monter dans le véhicule ou d'en descendre, dans la mesure où les véhicules des transports publics en trafic de ligne n'en sont pas gênés. Elles peuvent être utilisées.\n\ncf. Art. 77 SSV"
         },
         "it": {
           "question": "",
@@ -89464,7 +89464,7 @@
             "S'il n'y a pas de bus qui arrive, je peux m'arrêter brièvement pour laisser quelqu'un monter ou descendre."
           ],
           "explanations": {},
-          "questionExplanation": "Les lignes en zigzag (jaunes) désignent les emplacements réservés aux arrêts des transports publicss en trafic de ligne. Sur ces emplacements, l'arrêt n'est autorisé que pour permettre à des passagers de monter dans le véhicule ou d'en descendre, dans la mesure où les véhicules des transports publicss en trafic de ligne n'en sont pas gênés. Elles peuvent être utilisées.\n\ncf. Art. 77 SSV"
+          "questionExplanation": "Les lignes en zigzag (jaunes) désignent les emplacements réservés aux arrêts des transports publics en trafic de ligne. Sur ces emplacements, l'arrêt n'est autorisé que pour permettre à des passagers de monter dans le véhicule ou d'en descendre, dans la mesure où les véhicules des transports publics en trafic de ligne n'en sont pas gênés. Elles peuvent être utilisées.\n\ncf. Art. 77 SSV"
         },
         "it": {
           "question": "Che cosa vale alle fermate degli autobus?",
