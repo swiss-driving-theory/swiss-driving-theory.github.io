@@ -225,7 +225,7 @@
           "options": [],
           "explanations": {
             "a": "Signal d'interdiction \"Interdiction de dépasser\".",
-            "b": "Signal d'indication  \"Place d'évitement \".",
+            "b": "Signal d'indication \"Place d'évitement\".",
             "c": "Signal d'indication \"Place d'arrêt pour véhicules en panne\"."
           }
         },
@@ -286,7 +286,7 @@
           "explanations": {
             "a": "Le signal d'indication \"Fin de la route postale de montagne\" informe les conducteurs qu'en cas de croisement difficile ils doivent suivre les signaux et instructions des conducteurs des transports publics.",
             "b": "Le signal d'obligation \"Chemin pour piétons\" oblige les piétons à emprunter le chemin indiqué.",
-            "c": "Signal d'indication \"Hôpital\" qui impose de faire particulièrement attention en terme de bruit."
+            "c": "Signal d'indication \"Hôpital\" qui impose de faire particulièrement attention en termes de bruit."
           }
         },
         "it": {
@@ -644,7 +644,7 @@
           "question": "Après quel signal le chemin de freinage pourrait éventuellement être sensiblement plus long?",
           "options": [],
           "explanations": {
-            "a": "Le signal de danger \"Vent latéral\" prévient d'une possible et inattendue arrivée de vent latéral.(Sur un pont par exemple)",
+            "a": "Le signal de danger \"Vent latéral\" prévient d'une possible et inattendue arrivée de vent latéral (sur un pont par exemple).",
             "b": "Le signal de danger \"Forte montée\" (l'indication du pourcentage sera lu: pente montante) prévient d'une forte montée.",
             "c": "Le signal de danger \"Gravillons\" informe qu'un gravillonnage récent a eu lieu. De ce fait, la distance de freinage peut être beaucoup plus importante."
           }
@@ -706,14 +706,14 @@
           "explanations": {
             "a": "Le signal d'indication \"Place d'évitement\" informe que l'emplacement peut être utilisé à d'autres fins utiles.",
             "b": "Le signal d'indication \"Place d'arrêt pour véhicules en panne\" informe que l'endroit est uniquement réservé aux véhicules en panne. Un arrêt ayant d'autres buts tels que pique-niques, photos, etc, n'est pas autorisé.",
-            "c": "Le signal d'information \"Poste de dépannage\" informe de la possibilité à recourir à un dépannage (par exemple: Garage)."
+            "c": "Le signal d'information \"Poste de dépannage\" informe de la possibilité de recourir à un dépannage (par exemple: Garage)."
           }
         },
         "it": {
           "question": "Quale segnale vi annuncia un posto di fermata da utilizzare solo in caso d'emergenza?",
           "options": [],
           "explanations": {
-            "a": "Il segnale d'indicazione \"Piazzuola\" indica la piazzuola può essere usata anche per altri fini.",
+            "a": "Il segnale d'indicazione \"Piazzuola\" indica che la piazzuola può essere usata anche per altri fini.",
             "b": "Il segnale d'indicazione \"Posto di fermata per veicoli in panne\" indica che la piazzuola è riservata esclusivamente ai veicoli in panne. La fermata volontaria (per fotografare, fare il pic-nic ecc.) e il parcheggio sono vietati.",
             "c": "Il segnale d'indicazione \"Assistenza meccanica\" indica la possibilità di ricevere aiuto (es. garage)."
           }
@@ -757,7 +757,7 @@
           "explanations": {
             "a": "Hinweissignal \"Ortsende auf Nebenstrassen\" (diese Strasse führt nach 14 km nach Rüti und die nächste Ortschaft ist Mönchaltdorf).",
             "b": "Hinweissignal \"Ortsende auf Hauptstrassen\".",
-            "c": "Hinweissignal \"Ortsbeginn auf Nebenstrassen."
+            "c": "Hinweissignal \"Ortsbeginn auf Nebenstrassen\"."
           }
         },
         "fr": {
@@ -1176,7 +1176,7 @@
           "options": [],
           "explanations": {
             "a": "Das Vorschriftsignal \"Dem Gegenverkehr Vortritt lassen\" weist darauf hin, dass im folgenden Engpass dem Gegenverkehr der Vortritt gelassen werden muss.",
-            "b": "Das Verbotsignal \"Geradeausfahren\" verbietet ein Links- oder Rechtsabbiegen.",
+            "b": "Das Verbotssignal \"Geradeausfahren\" verbietet ein Links- oder Rechtsabbiegen.",
             "c": "Das Hinweissignal \"Einbahnstrasse\" weist als Hinweissignal darauf hin, dass der Fahrzeuglenker in eine Einbahnstrasse einfährt und dass er zum Linksabbiegen ganz an den linken Fahrbahnrand einspuren muss."
           }
         },
@@ -1365,8 +1365,8 @@
           "options": [],
           "explanations": {
             "a": "Route principale.",
-            "b": "Début de semi-autoroute (la vitesse maximale de 100km/h est à respecter)",
-            "c": "Début d'autoroute (la vitesse maximale de 120km/h est à respecter)"
+            "b": "Début de semi-autoroute (la vitesse maximale de 100 km/h est à respecter)",
+            "c": "Début d'autoroute (la vitesse maximale de 120 km/h est à respecter)"
           }
         },
         "it": {
@@ -2093,8 +2093,8 @@
           "question": "Quale segnale vi obbliga a circolare nella direzione indicata?",
           "options": [],
           "explanations": {
-            "a": "Il segnale d' indicazione \"Cartello di direzione\" indica il luogo dove c'è un pericolo, una prescrizione o un'indicazione da osservare.",
-            "b": "L' \"indicatore di direzione per deviazione senza destinazione\" indica in caso di piccole deviazioni quale strada seguire per evitare la strada bloccata.",
+            "a": "Il segnale d'indicazione \"Cartello di direzione\" indica il luogo dove c'è un pericolo, una prescrizione o un'indicazione da osservare.",
+            "b": "L'\"indicatore di direzione per deviazione senza destinazione\" indica in caso di piccole deviazioni quale strada seguire per evitare la strada bloccata.",
             "c": "Il segnale d'obbligo \"Direzione obbligatoria a destra\" obbliga il conducente a seguire la direzione indicata."
           }
         }
@@ -3272,7 +3272,7 @@
       ],
       "translations": {
         "de": {
-          "question": "Nach welchem Signal ist die durchfahrt für motorfahrzeuge mit anhängern verboten?",
+          "question": "Nach welchem Signal ist die Durchfahrt für Motorfahrzeuge mit Anhängern verboten?",
           "options": [],
           "explanations": {
             "a": "Signal \"Höchstlänge\".",
@@ -3473,8 +3473,8 @@
           "question": "Quale segnale indica una strada senza uscita?",
           "options": [],
           "explanations": {
-            "a": "Segnale d'indicazione \" Strada senza uscita\".",
-            "b": "Segnale di divieto \" Divieto di inversione\".",
+            "a": "Segnale d'indicazione \"Strada senza uscita\".",
+            "b": "Segnale di divieto \"Divieto di inversione\".",
             "c": "Segnale \"Fine zona d'incontro\"."
           }
         }
@@ -3816,8 +3816,8 @@
           "options": [],
           "explanations": {
             "a": "Das Signal \"Allgemeines Fahrverbot in beiden Richtungen\" zeigt an, dass der Verkehr grundsätzlich in beiden Richtungen für alle Fahrzeuge (inklusive Fahrräder) verboten ist.",
-            "b": "Das Teilfahrverbotsignal \"Verbot für Motorwagen\" gilt für alle mehrspurigen Motorfahrzeuge, inklusive Motorräder mit Seitenwagen.",
-            "c": "Das Teilfahrverbotsignal \"Verbot für Motorwagen und Motorräder\" verbietet die Durchfahrt mit allen Motorfahrzeugen. Nur gerade Fahrrädern und Motorfahrrädern (diese sind keine Motorfahrzeuge sondern gelten als Fahrräder mit Hilfsmotor) ist die Durchfahrt gestattet."
+            "b": "Das Teilfahrverbotssignal \"Verbot für Motorwagen\" gilt für alle mehrspurigen Motorfahrzeuge, inklusive Motorräder mit Seitenwagen.",
+            "c": "Das Teilfahrverbotssignal \"Verbot für Motorwagen und Motorräder\" verbietet die Durchfahrt mit allen Motorfahrzeugen. Nur gerade Fahrrädern und Motorfahrrädern (diese sind keine Motorfahrzeuge sondern gelten als Fahrräder mit Hilfsmotor) ist die Durchfahrt gestattet."
           }
         },
         "fr": {
@@ -3937,7 +3937,7 @@
           "explanations": {
             "a": "Das Signal \"Allgemeines Fahrverbot in beiden Richtungen\" zeigt an, dass der Verkehr grundsätzlich in beiden Richtungen für alle Fahrzeuge (inklusive Fahrräder) verboten ist.",
             "b": "Das Teilfahrverbot \"Verbot für Motorwagen, Motorräder und Motorfahrräder\" erlaubt die Durchfahrt nur gerade für Fahrräder oder Motorfahrräder mit abgestelltem Motor.",
-            "c": "Das Teilfahrverbotsignal \"Verbot für Motorwagen und Motorräder\" verbietet die Durchfahrt mit allen Motorfahrzeugen. Nur gerade Fahrrädern und Motorfahrrädern (diese sind keine Motorfahrzeuge sondern gelten als Fahrräder mit Hilfsmotor) ist die Durchfahrt gestattet."
+            "c": "Das Teilfahrverbotssignal \"Verbot für Motorwagen und Motorräder\" verbietet die Durchfahrt mit allen Motorfahrzeugen. Nur gerade Fahrrädern und Motorfahrrädern (diese sind keine Motorfahrzeuge sondern gelten als Fahrräder mit Hilfsmotor) ist die Durchfahrt gestattet."
           }
         },
         "fr": {
@@ -6826,7 +6826,7 @@
           "explanations": {
             "a": "Prepararsi a frenare non è sufficiente, così non si riduce la velocità. Ci si deve fermare. Vedi risposta c).",
             "b": "Se è possibile fermarsi in tempo senza pericolo quando il semaforo scatta sul giallo non si deve più continuare la corsa.",
-            "c": "Lo spazio d'arresto a 50 km/h si calcola come segue:\r\n spazio di reazione: 5x3m/s = 15m (10km/h = circa 3m/s),\r\n spazio di frenata con cattive condizioni stradali: 5x5 =25m,\r\n Spazio di frenata con buone condizioni stradali: 1/4 in meno dello spazio di frenata = 19 m,\r\n spazio d'arresto in condizioni favorevoli:\r\n   spazio di reazione =15m, spazio di frenata = 19m, spazio d'arresto = 34m.\r\nEcco perché l'arresto a una velocità di 50km/h è possibile su una distanza di 40m."
+            "c": "Lo spazio d'arresto a 50 km/h si calcola come segue:\r\n spazio di reazione: 5x3m/s = 15m (10 km/h = circa 3m/s),\r\n spazio di frenata con cattive condizioni stradali: 5x5 =25m,\r\n Spazio di frenata con buone condizioni stradali: 1/4 in meno dello spazio di frenata = 19 m,\r\n spazio d'arresto in condizioni favorevoli:\r\n   spazio di reazione =15m, spazio di frenata = 19m, spazio d'arresto = 34m.\r\nEcco perché l'arresto a una velocità di 50 km/h è possibile su una distanza di 40m."
           }
         }
       }
@@ -7185,7 +7185,7 @@
           ],
           "explanations": {
             "a": "Vedi risposta b).",
-            "b": "Lo spazio d'arresto a 50 km/h si calcola come segue:\r\n   spazio di reazione: 5x3m/s = 15m (10km/h = circa 3m/s),\r\n   spazio di frenata in cattive condizioni stradali: 5x5 =25m,\r\n   spazio di frenata con buone condizioni stradali:\r\n      1/4 in meno dello spazio di frenata = 19m,\r\n   spazio d'arresto in condizioni favorevoli:\r\n      spazio di reazione =15m,\r\n      spazio di frenata = 19m,\r\n      spazio d'arresto = 34 m.",
+            "b": "Lo spazio d'arresto a 50 km/h si calcola come segue:\r\n   spazio di reazione: 5x3m/s = 15m (10 km/h = circa 3m/s),\r\n   spazio di frenata in cattive condizioni stradali: 5x5 =25m,\r\n   spazio di frenata con buone condizioni stradali:\r\n      1/4 in meno dello spazio di frenata = 19m,\r\n   spazio d'arresto in condizioni favorevoli:\r\n      spazio di reazione =15m,\r\n      spazio di frenata = 19m,\r\n      spazio d'arresto = 34 m.",
             "c": "Vedi risposta b)."
           }
         }
@@ -8134,7 +8134,7 @@
           ],
           "explanations": {
             "a": "Vedi risposte b)",
-            "b": "Lo spazio d'arresto a 50 km/h si calcola come segue:\r\n   spazio di reazione: 5x3m/s = 15m (10km/h = circa 3m/s),\r\n   spazio di frenata in cattive condizioni stradali: 5x5 =25m,\r\n   spazio di frenata con buone condizioni stradali:\r\n      1/4 in meno dello spazio di frenata = 19m,\r\n   spazio d'arresto in condizioni favorevoli:\r\n      spazio di reazione =15m,\r\n      spazio di frenata = 19m,\r\n      spazio d'arresto = 34 m.",
+            "b": "Lo spazio d'arresto a 50 km/h si calcola come segue:\r\n   spazio di reazione: 5x3m/s = 15m (10 km/h = circa 3m/s),\r\n   spazio di frenata in cattive condizioni stradali: 5x5 =25m,\r\n   spazio di frenata con buone condizioni stradali:\r\n      1/4 in meno dello spazio di frenata = 19m,\r\n   spazio d'arresto in condizioni favorevoli:\r\n      spazio di reazione =15m,\r\n      spazio di frenata = 19m,\r\n      spazio d'arresto = 34 m.",
             "c": "Vedi risposta b)."
           }
         }
@@ -9143,7 +9143,7 @@
           "explanations": {
             "a": "Prepararsi a frenare, non vuol dire già frenare.",
             "b": "Vedi risposta c).",
-            "c": "Lo spazio d'arresto a 50 km/h si calcola in modo seguente:\r\n   spazio di reazione: 5x3m/s = 15m (10km/h = circa 3m/s),\r\n   spazio di frenata in cattive condizioni stradali: 5x5 =25m,\r\n   spazio di frenata con buone condizioni stradali:\r\n      1/4 dello spazio di frenata in meno =19m,\r\n   spazio d'arresto in condizioni favorevoli:\r\n      spazio di reazione 15m,\r\n      spazio di frenata = 19m,\r\n      spazio d'arresto = 34 m.\r\nPoiché non è possibile fermarsi entro 25 metri a una velocità di 50 km/h, si deve continuare la corsa malgrado il semaforo giallo."
+            "c": "Lo spazio d'arresto a 50 km/h si calcola in modo seguente:\r\n   spazio di reazione: 5x3m/s = 15m (10 km/h = circa 3m/s),\r\n   spazio di frenata in cattive condizioni stradali: 5x5 =25m,\r\n   spazio di frenata con buone condizioni stradali:\r\n      1/4 dello spazio di frenata in meno =19m,\r\n   spazio d'arresto in condizioni favorevoli:\r\n      spazio di reazione 15m,\r\n      spazio di frenata = 19m,\r\n      spazio d'arresto = 34 m.\r\nPoiché non è possibile fermarsi entro 25 metri a una velocità di 50 km/h, si deve continuare la corsa malgrado il semaforo giallo."
           }
         }
       }
@@ -11714,7 +11714,7 @@
           ],
           "explanations": {
             "a": "Le batterie dei veicoli che funzionano con corrente a bassa tensione, non presentano alcun rischio di corto circuito a causa dell'umidità.",
-            "b": "Se dovesse infiltrarsi dell'acqua nell' impianto di accensione, il motore non parte.",
+            "b": "Se dovesse infiltrarsi dell'acqua nell'impianto di accensione, il motore non parte.",
             "c": "A causa dell'intenso processo di lavaggio di un veicolo, l'efficacia dei freni può essere temporaneamente compromessa."
           }
         }
@@ -13014,9 +13014,9 @@
             "Sì, se il veicolo ha tutte le ruote motrici"
           ],
           "explanations": {
-            "a": "Le ruote chiodate (spikes) hanno comunque un' aderenza migliore sul ghiaccio.",
+            "a": "Le ruote chiodate (spikes) hanno comunque un'aderenza migliore sul ghiaccio.",
             "b": "Prepararsi a frenare in questa situazione non basta, perché specialmente lo spazio di frenata è particolarmente lungo.",
-            "c": "Lo spazio d'arresto a 50 km/h si calcola nel modo seguente:\r\n   spazio di reazione: 5x3m/s = 15m (10km/h = circa 3m/s),\r\n   spazio di frenata in cattive condizioni stradali: 5x5 =25m,\r\n   spazio arresto con cattive condizioni stradali: 15m,\r\n      spazio di frenata =25m,\r\n      spazio d'arresto = 40 m.\r\nIn caso di cattive condizioni stradali normali una velocità di 50 km/h con una visibilità di 40m basterebbe appena, Però qui lo spazio di frenata è considerevolmente più lungo a causa della carreggiata innevata,e quindi la velocità è chiaramente troppo elevata.",
+            "c": "Lo spazio d'arresto a 50 km/h si calcola nel modo seguente:\r\n   spazio di reazione: 5x3m/s = 15m (10 km/h = circa 3m/s),\r\n   spazio di frenata in cattive condizioni stradali: 5x5 =25m,\r\n   spazio arresto con cattive condizioni stradali: 15m,\r\n      spazio di frenata =25m,\r\n      spazio d'arresto = 40 m.\r\nIn caso di cattive condizioni stradali normali una velocità di 50 km/h con una visibilità di 40m basterebbe appena, Però qui lo spazio di frenata è considerevolmente più lungo a causa della carreggiata innevata,e quindi la velocità è chiaramente troppo elevata.",
             "d": "Le quattro ruote motrici non hanno nessuna influenza sulla distanza dello spazio di frenata."
           }
         }
@@ -13416,7 +13416,7 @@
             "a": "Vedi risposta c).",
             "b": "Vedi risposta c).",
             "c": "In autostrada, anche sulla corsia d'emergenza, è assolutamente proibito fare retromarcia perché è molto pericoloso.",
-            "d": "Abbandonare l'autostrada usando la corsia d' entrata in autostrada, è assolutamente vietato per motivi di sicurezza"
+            "d": "Abbandonare l'autostrada usando la corsia d'entrata in autostrada, è assolutamente vietato per motivi di sicurezza"
           }
         }
       }
@@ -14547,7 +14547,7 @@
           "explanations": {
             "a": "Vedi risposta c).",
             "b": "Non è necessario prepararsi a frenare, perché qui non ci si può fermare.Vedi risposta c).",
-            "c": "Lo spazio d'arresto a 50 km/h si calcola nel modo seguente:\r\n   spazio di reazione: 5x3m/s = 15m (10km/h = circa 3m/s),\r\n   spazio di frenata in cattive condizioni stradali: 5x5 =25m,\r\n   spazio di frenata con condizioni favorevoli:\r\n      1/4 in meno dello spazio di frenata =19 m,\r\n   spazio di reazione = 15 m , spazio d'arresto = 34 m.\r\nComunque, perché non è possibile fermarsi sulla distanza di 20 m, bisogna continuare malgrado il semaforo giallo.",
+            "c": "Lo spazio d'arresto a 50 km/h si calcola nel modo seguente:\r\n   spazio di reazione: 5x3m/s = 15m (10 km/h = circa 3m/s),\r\n   spazio di frenata in cattive condizioni stradali: 5x5 =25m,\r\n   spazio di frenata con condizioni favorevoli:\r\n      1/4 in meno dello spazio di frenata =19 m,\r\n   spazio di reazione = 15 m, spazio d'arresto = 34 m.\r\nComunque, perché non è possibile fermarsi sulla distanza di 20 m, bisogna continuare malgrado il semaforo giallo.",
             "d": "L'incrocio può essere oltrepassato malgrado il segnale stia cambiando sul rosso, perché non è più possibile fermarsi. Vedi risposta c)."
           }
         }
@@ -17410,10 +17410,10 @@
             "Solo se ciò permette ad un autoveicolo di passare sulla destra"
           ],
           "explanations": {
-            "a": "Secondo le circostanze , per svoltare a sinistra su una strada stretta si deve fare la preselezione un po' più a destra, affinché resti sufficientemente spazio per la circolazione proveniente in senso inverso.",
+            "a": "Secondo le circostanze, per svoltare a sinistra su una strada stretta si deve fare la preselezione un po' più a destra, affinché resti sufficientemente spazio per la circolazione proveniente in senso inverso.",
             "b": "In linea di principio, per svoltare devo mettermi il più possibile in preselezione.",
             "c": "Vedi risposte a) e b).",
-            "d": "edi risposte a) e b)."
+            "d": "Vedi risposte a) e b)."
           }
         }
       }
@@ -19277,7 +19277,7 @@
           "explanations": {
             "a": "Più velocemente circola un veicolo sulla strada bagnata, tanto più galleggiano i pneumatici sulla pellicola d'acqua.",
             "b": "Più il profilo dei pneumatici è in cattivo stato e più larghi sono, tanto più galleggeranno sullo strato d'acqua.",
-            "c": "Il fenomeno dell' \"aquaplaning\" può subentrare guidando anche a una velocità relativamente bassa, secondo il tipo di pneumatici e la quantità d'acqua."
+            "c": "Il fenomeno dell'\"aquaplaning\" può subentrare guidando anche a una velocità relativamente bassa, secondo il tipo di pneumatici e la quantità d'acqua."
           }
         }
       }
@@ -21449,7 +21449,7 @@
           ],
           "explanations": {
             "a": "Voir réponse b).",
-            "b": "Les signaux \" Stop \" et \" Cédez le passage \" sont égaux. Le plus souvent c'est seulement pour cause de visibilité que le conducteur arrivant sur une route munie d'un stop doit observer un court moment d'arrêt.",
+            "b": "Les signaux \"Stop\" et \"Cédez le passage\" sont égaux. Le plus souvent c'est seulement pour cause de visibilité que le conducteur arrivant sur une route munie d'un stop doit observer un court moment d'arrêt.",
             "c": "Comme la priorité est réglementée par des signaux, aucune concertation n'est nécessaire."
           },
           "questionExplanation": "Les rouges et les bleus n'ont pas la priorité. La règle suivante s'applique alors. Les véhicules arrivant en sens inverse doivent avoir la priorité avant de tourner à gauche. Rouge veut tourner à gauche et doit laisser la priorité à Bleu."
@@ -21669,7 +21669,7 @@
           "explanations": {
             "a": "Une ligne double ne peut être franchie que si la ligne interrompue se trouve de mon côté.",
             "b": "Quand je peux franchir la ligne double parce que la ligne de direction se trouve de mon côté, le dépassement est autorisé.",
-            "c": "Les véhicules qui ne sont pas autorisés à rouler à plus de 30 km/h, ainsi que les véhicules à une seule roue, peuvent être dépassés malgré le signal \" Interdiction de dépasser \", en l'absence toutefois de ligne de sécurité l'interdisant et d'une visibilité suffisante."
+            "c": "Les véhicules qui ne sont pas autorisés à rouler à plus de 30 km/h, ainsi que les véhicules à une seule roue, peuvent être dépassés malgré le signal \"Interdiction de dépasser\", en l'absence toutefois de ligne de sécurité l'interdisant et d'une visibilité suffisante."
           },
           "questionExplanation": "Il est permis de dépasser. Il est interdit aux véhicules se trouvant du côté de la ligne de sécurité de franchir les lignes doubles ou d'empiéter sur elles. Bleu est ici du côté de la ligne pointillée et peut donc dépasser."
         },
@@ -21683,7 +21683,7 @@
           "explanations": {
             "a": "La linea doppia di sicurezza non può essere oltrepassata salvo che la linea discontinua sia dalla mia parte.",
             "b": "Quando posso oltrepassare la linea doppia perché la linea di direzione discontinua si trova dalla mia parte, il sorpasso è autorizzato.",
-            "c": "I veicoli che non sono autorizzati a circolare a più di 30km/h, così come i veicoli a due ruote, possono essere sorpassati malgrado il segnale \"Divieto di sorpasso\", se non c'è la linea di sicurezza e se la visibilità lo consente."
+            "c": "I veicoli che non sono autorizzati a circolare a più di 30 km/h, così come i veicoli a due ruote, possono essere sorpassati malgrado il segnale \"Divieto di sorpasso\", se non c'è la linea di sicurezza e se la visibilità lo consente."
           },
           "questionExplanation": "Sorpassare è permesso. È vietato ai veicoli che si trovano dalla parte della linea di sicurezza di oltrepassare le linee doppie o di passarci sopra. Il blu si trova sul lato della linea tratteggiata ed è quindi autorizzato a sorpassare."
         }
@@ -22653,7 +22653,7 @@
             "a": "Comme le dispositif de signaux lumineux indique vert, le véhicule rouge doit céder la priorité au véhicule jaune puisque son feu est rouge.",
             "b": "Voir réponse a).",
             "c": "Le véhicule jaune doit uniquement s'arrêter à la ligne d'arrêt, si le dispositif de signaux lumineux est hors de fonctionnement.",
-            "d": "Le signal \" Stop \" n'a de signification qu'en cas de signaux lumineux éteints (pas de feu ou avec feu jaune clignotant)."
+            "d": "Le signal \"Stop\" n'a de signification qu'en cas de signaux lumineux éteints (pas de feu ou avec feu jaune clignotant)."
           }
         },
         "it": {
@@ -22970,7 +22970,7 @@
             "a": "Comme le véhicule jaune obliquant à gauche doit céder la priorité au véhicule noir, il ne peut pas s'engager.",
             "b": "Comme le véhicule noir doit céder la priorité au véhicule rouge approchant par la droite, il ne peut pas s'engager.",
             "c": "Comme personne ne peut s'engager en premier étant donné que, mis à part le véhicule jaune, tous ont un véhicule prioritaire arrivant de la droite et que le véhicule jaune souhaitant obliquer à gauche doit céder la priorité au véhicule noir, une concertation est nécessaire.",
-            "d": "La règle de la priorité de droite prévaut au croisement parce qu'aucun autre signal de priorité n'existe hormis le signal \" Intersection comportant la priorité de droite\"."
+            "d": "La règle de la priorité de droite prévaut au croisement parce qu'aucun autre signal de priorité n'existe hormis le signal \"Intersection comportant la priorité de droite\"."
           }
         },
         "it": {
@@ -23194,7 +23194,7 @@
           ],
           "explanations": {
             "a": "Voir réponse b).",
-            "b": "La \" Ligne interdisant l'arrêt \" interdit tout arrêt volontaire. Seul un arrêt involontaire est autorisé ici (par ex. laisser passer des piétons, colonne à l'arrêt, panne, accident, etc.).",
+            "b": "La \"Ligne interdisant l'arrêt\" interdit tout arrêt volontaire. Seul un arrêt involontaire est autorisé ici (par ex. laisser passer des piétons, colonne à l'arrêt, panne, accident, etc.).",
             "c": "Voir réponse b)."
           },
           "questionExplanation": "Les lignes marquées au bord de la chaussée (jaunes, continues) interdisent l'arrêt volontaire à l'endroit indiqué."
@@ -23777,7 +23777,7 @@
             "a": "Voir réponse c).",
             "b": "Voir réponse d).",
             "c": "Le véhicule bleu se dirigeant tout droit a la priorité sur le véhicule jaune obliquant à gauche.",
-            "d": "Comme la priorité est retirée au cycliste par le signal \" Cédez le passage \", le véhicule jaune bénéficie de la priorité."
+            "d": "Comme la priorité est retirée au cycliste par le signal \"Cédez le passage\", le véhicule jaune bénéficie de la priorité."
           }
         },
         "it": {
@@ -23869,10 +23869,10 @@
             "La voiture jaune doit s'arrêter à la ligne d'arrêt"
           ],
           "explanations": {
-            "a": "Le véhicule bleu obliquant à droite a la priorité sur le véhicule jaune obliquant à gauche. Le feu vert \" plein \" indique au conducteur du véhicule jaune que la circulation arrivant en sens inverse et les piétons dans la voie de circulation transversale peuvent avoir vert également.",
+            "a": "Le véhicule bleu obliquant à droite a la priorité sur le véhicule jaune obliquant à gauche. Le feu vert \"plein\" indique au conducteur du véhicule jaune que la circulation arrivant en sens inverse et les piétons dans la voie de circulation transversale peuvent avoir vert également.",
             "b": "Le véhicule rouge dans la voie de circulation transversale doit avoir rouge.",
             "c": "Voir réponse a).",
-            "d": "Le signal \" Stop \" n'a de signification qu'en cas de signal lumineux éteint.",
+            "d": "Le signal \"Stop\" n'a de signification qu'en cas de signal lumineux éteint.",
             "e": "Le véhicule jaune ne doit nullement s'arrêter à la ligne d'arrêt parce qu'il a vert. Celle-ci n'a d'importance qu'en cas de signal lumineux éteint."
           }
         },
@@ -24873,7 +24873,7 @@
           ],
           "explanations": {
             "a": "Vedi risposta b).",
-            "b": "Il veicolo non può parcheggiare a meno di 5 metri dall' intersezione",
+            "b": "Il veicolo non può parcheggiare a meno di 5 metri dall'intersezione",
             "c": "Vedi risposta b)."
           }
         }
@@ -25293,7 +25293,7 @@
             "Non sono tenuto a seguire le istruzioni dell'autopostale."
           ],
           "explanations": {
-            "a": "Il segnale \" Strada postale di montagna\" è un segnale di indicazione e non dice nulla riguardo al diritto di precedenza. Bisogna quindi seguire i cenni e le istruzioni degli autisti degli autopostali, perché conoscono bene la tratta ed il loro veicolo e sanno, inoltre, dove sono gli spazi adatti per incrociare.",
+            "a": "Il segnale \"Strada postale di montagna\" è un segnale di indicazione e non dice nulla riguardo al diritto di precedenza. Bisogna quindi seguire i cenni e le istruzioni degli autisti degli autopostali, perché conoscono bene la tratta ed il loro veicolo e sanno, inoltre, dove sono gli spazi adatti per incrociare.",
             "b": "Vedi risposta a).",
             "c": "Anche l'autopostale deve circolare sempre sulla destra, altrimenti ci sarebbero problemi con il traffico."
           },
@@ -26006,7 +26006,7 @@
             "Se nessun passeggero del tram viene messo in pericolo, il conducente del veicolo può continuare prestando la dovuta attenzione"
           ],
           "explanations": {
-            "a": "Si deve sempre mantenere una distanza minima di 2 metri dietro un tram fermo (c'è il pericolo che scivoli all' indietro su una strada in pendenza se i binari sono scivolosi)",
+            "a": "Si deve sempre mantenere una distanza minima di 2 metri dietro un tram fermo (c'è il pericolo che scivoli all'indietro su una strada in pendenza se i binari sono scivolosi)",
             "b": "Vedi risposta a).",
             "c": "Se non c'è una banchina, i veicoli non devono superare sulla destra i tram fermi alle fermate, anche quando le porte sono chiuse."
           },
@@ -26081,7 +26081,7 @@
           "explanations": {
             "a": "Il segnale che indica una strada senza diritto di precedenza è collocato fuori delle località a 150 metri e nelle località a 50 metri dall'intersezione. Altrimenti i conducenti degli autoveicoli verrebbero sorpresi dalla situazione e di conseguenza, non potrebbero più reagire in tempo.",
             "b": "Vedi risposta a).",
-            "c": "Se il segnale si trovasse a più o meno di 150 metri fuori delle località e più o meno a 50 metri nelle località prima dell' intersezione, si dovrebbe indicare la distanza effettiva su una tavola complementare."
+            "c": "Se il segnale si trovasse a più o meno di 150 metri fuori delle località e più o meno a 50 metri nelle località prima dell'intersezione, si dovrebbe indicare la distanza effettiva su una tavola complementare."
           }
         }
       }
@@ -28704,7 +28704,7 @@
           "explanations": {
             "a": "Vedi risposta b).",
             "b": "Siccome i bambini sono ancora piccoli, quindi imprevedibili, e non badano al traffico, si deve rallentare e per sicurezza dare un colpo di clacson .",
-            "c": "Qui non basta dare solo un colpo di clacson. Se i bambini invadono la carreggiata all' improvviso, è impossibile fermarsi senza aver prima ridotto la velocità."
+            "c": "Qui non basta dare solo un colpo di clacson. Se i bambini invadono la carreggiata all'improvviso, è impossibile fermarsi senza aver prima ridotto la velocità."
           }
         }
       }
@@ -29423,7 +29423,7 @@
             "Siccome i veicoli circolano con le luci accese, posso circolare più velocemente di quanto lo permetterebbe lo spazio visibile"
           ],
           "explanations": {
-            "a": "Poiché qui è possibile un incrocio senza problemi , devo circolare ad una velocità che mi permetta di fermarmi sul tratto visibile.",
+            "a": "Poiché qui è possibile un incrocio senza problemi, devo circolare ad una velocità che mi permetta di fermarmi sul tratto visibile.",
             "b": "Solo quando l'incrocio è difficile devo potermi fermare sulla metà dello spazio visibile, perché il traffico in senso contrario ha bisogno dell'altra metà di questo spazio.",
             "c": "Qui è obbligatorio circolare con i fari anabbaglianti accesi."
           },
@@ -32413,7 +32413,7 @@
             "b": "Der grüne Pfeil des Lichtsignals zwingt mich zum Linksabbiegen.",
             "c": "Siehe Antworten  a) und b)."
           },
-          "questionExplanation": "Das Schild 'Abbiegen nach rechts verboten' sagt, dass das Abbiegen nach rechts an der betreffenden Stelle verboten ist. Grüne Pfeile an der Ampel erlauben den Verkehr in der angezeigten Richtung."
+          "questionExplanation": "Das Schild \"Abbiegen nach rechts verboten\" sagt, dass das Abbiegen nach rechts an der betreffenden Stelle verboten ist. Grüne Pfeile an der Ampel erlauben den Verkehr in der angezeigten Richtung."
         },
         "fr": {
           "question": "Qu'est-ce qui est correct?",
@@ -32427,7 +32427,7 @@
             "b": "La flèche verte du signal lumineux m'oblige à obliquer à gauche.",
             "c": "Voir réponses a) et b)."
           },
-          "questionExplanation": "Le panneau 'Ne pas tourner à droite' indique qu'il est interdit de tourner à droite. Les flèches vertes aux feux tricolores permettent d'indiquer le sens de circulation."
+          "questionExplanation": "Le panneau \"Ne pas tourner à droite\" indique qu'il est interdit de tourner à droite. Les flèches vertes aux feux tricolores permettent d'indiquer le sens de circulation."
         },
         "it": {
           "question": "Che cosa è corretto?",
@@ -32441,7 +32441,7 @@
             "b": "La freccia verde del semaforo mi obbliga a svoltare a sinistra.",
             "c": "Vedi risposte a) e b)."
           },
-          "questionExplanation": "Il segno 'Non girare a destra' indica che è vietata la svolta a destra. Le frecce verdi al semaforo consentono di regolare il traffico nella direzione indicata."
+          "questionExplanation": "Il segno \"Non girare a destra\" indica che è vietata la svolta a destra. Le frecce verdi al semaforo consentono di regolare il traffico nella direzione indicata."
         }
       }
     },
@@ -35145,7 +35145,7 @@
             "a": "In primo luogo devo fare attenzione al bambino e non reagire alla vista del ciclista.",
             "b": "In primo luogo devo fare attenzione al bambino e non reagire alla porta che si sta aprendo.",
             "c": "Non serve a niente qui azionare il clacson.",
-            "d": "Devo rallentare e se necessario, fermarmi, specialmente a causa del bambino che si trova all' entrata di una proprietà privata sulla destra. Inoltre posso segnalare la mia presenza al bambino suonando il clacson."
+            "d": "Devo rallentare e se necessario, fermarmi, specialmente a causa del bambino che si trova all'entrata di una proprietà privata sulla destra. Inoltre posso segnalare la mia presenza al bambino suonando il clacson."
           }
         }
       }
@@ -37626,7 +37626,7 @@
           ],
           "explanations": {
             "a": "Si deve sempre essere pronti ad una frenata imprevista, (per esempio a causa di un difetto tecnico).",
-            "b": "La distanza di sicurezza dal veicolo che mi precede dovrebbe corrispondere almeno alla metà della velocità indicata sul tachimetro in metri, oppure a 2 secondi. Se la velocità dell' autotreno fosse stimata a 80 km/h, la distanza qui sarebbe troppo corta.",
+            "b": "La distanza di sicurezza dal veicolo che mi precede dovrebbe corrispondere almeno alla metà della velocità indicata sul tachimetro in metri, oppure a 2 secondi. Se la velocità dell'autotreno fosse stimata a 80 km/h, la distanza qui sarebbe troppo corta.",
             "c": "Vedi risposte a) e b)."
           }
         }
@@ -39307,9 +39307,9 @@
         "fr": {
           "question": null,
           "options": [
-            "Même si le chargement est muni d'un signal, il ne doit pas dépasser de plus de 3 m à l' arrière, à compter du centre de l'essieu arrière",
-            "Même si le chargement est muni d'un signal, il ne doit pas dépasser de plus de 6 m à l' arrière, à compter du centre de l'essieu arrière",
-            "Même si le chargement est muni d'un signal, il ne doit pas dépasser de plus de 5 m à l' arrière, à compter du centre de l'essieu arrière"
+            "Même si le chargement est muni d'un signal, il ne doit pas dépasser de plus de 3 m à l'arrière, à compter du centre de l'essieu arrière",
+            "Même si le chargement est muni d'un signal, il ne doit pas dépasser de plus de 6 m à l'arrière, à compter du centre de l'essieu arrière",
+            "Même si le chargement est muni d'un signal, il ne doit pas dépasser de plus de 5 m à l'arrière, à compter du centre de l'essieu arrière"
           ],
           "explanations": {
             "a": "Voir réponse c).",
@@ -39659,7 +39659,7 @@
             "Wir müssen uns durch Handzeichen verständigen"
           ],
           "explanations": {},
-          "questionExplanation": "Fahrzeuge auf einer Haupt- oder Nebenstraße haben Vortritt vor denen, die aus Fabriken, Höfen, Garagen, Feldwegen, Radwegen, Parkplätzen, Tankstellen oder ähnlichen Orten kommen oder über ein Trottoir fahren müssen."
+          "questionExplanation": "Fahrzeuge auf einer Haupt- oder Nebenstrasse haben Vortritt vor denen, die aus Fabriken, Höfen, Garagen, Feldwegen, Radwegen, Parkplätzen, Tankstellen oder ähnlichen Orten kommen oder über ein Trottoir fahren müssen."
         },
         "fr": {
           "question": "En quittant une place de parc, vous vous engagez sur une route secondaire. De gauche s'approche un cycliste. Qui bénéficie de la priorité?",
@@ -40183,7 +40183,7 @@
             "Solo per far salire o scendere dei passeggeri"
           ],
           "explanations": {},
-          "questionExplanation": "Le 'linee vietanti l'arresto' sul margine del manto stradale vietano di fermarsi liberamente (fermarsi in fila non significa fermarsi liberamente) nel posto contrassegnato. Sulle strisce pedonali non è consentito fermarsi."
+          "questionExplanation": "Le \"linee vietanti l'arresto\" sul margine del manto stradale vietano di fermarsi liberamente (fermarsi in fila non significa fermarsi liberamente) nel posto contrassegnato. Sulle strisce pedonali non è consentito fermarsi."
         }
       }
     },
@@ -40282,7 +40282,7 @@
       ],
       "translations": {
         "de": {
-          "question": "Wann dürfen Sie eine Stelle außerorts, an der das vorausfahrende Fahrzeug gerade vorbeifährt, frühestens passieren, um den richtigen Abstand einzuhalten?",
+          "question": "Wann dürfen Sie eine Stelle ausserorts, an der das vorausfahrende Fahrzeug gerade vorbeifährt, frühestens passieren, um den richtigen Abstand einzuhalten?",
           "options": [
             "In 1 Sekunde",
             "In 2 Sekunden",
@@ -40352,7 +40352,7 @@
             "In Situationen mit dichterem Verkehr"
           ],
           "explanations": {},
-          "questionExplanation": "Halten Sie einen Abstand von mindestens 2 Sekunden zum vorausfahrenden Fahrzeug ein. \r\n\r\nDie Größe des Sicherheitsabstandes hängt ab von:\r\n+ der Fahrgeschwindigkeit\r\n+ der Fahrbahnbeschaffenheit: trocken, nass, Schnee, Eis etc.\r\n+ der Art und Beschaffenheit des eigenen und des vorausfahrenden\r\nFahrzeuges, wie z.B.: Bereifung, Bremsen, Beladung, Anhänger, …\r\n+ sowie besonderen Eigenschaften des vorausfahrenden Fahrzeuges: z.B. unvorsichtige, unsichere Fahrweise etc."
+          "questionExplanation": "Halten Sie einen Abstand von mindestens 2 Sekunden zum vorausfahrenden Fahrzeug ein. \r\n\r\nDie Grösse des Sicherheitsabstandes hängt ab von:\r\n+ der Fahrgeschwindigkeit\r\n+ der Fahrbahnbeschaffenheit: trocken, nass, Schnee, Eis etc.\r\n+ der Art und Beschaffenheit des eigenen und des vorausfahrenden\r\nFahrzeuges, wie z.B.: Bereifung, Bremsen, Beladung, Anhänger, …\r\n+ sowie besonderen Eigenschaften des vorausfahrenden Fahrzeuges: z.B. unvorsichtige, unsichere Fahrweise etc."
         },
         "fr": {
           "question": "Dans quelles situations augmentez-vous la distance qui vous sépare du véhicule qui vous précède?",
@@ -40786,14 +40786,14 @@
       ],
       "translations": {
         "de": {
-          "question": "Wozu kann eine regelmäßige Fahrzeugwartung beitragen?",
+          "question": "Wozu kann eine regelmässige Fahrzeugwartung beitragen?",
           "options": [
             "Den Kraftstoffverbrauch gering zu halten",
             "Die Emissionswerte gering zu halten",
             "Es verbessert die Motorenleistung des Fahrzeugs"
           ],
           "explanations": {},
-          "questionExplanation": "Eine regelmäßige Fahrzeugwartung kann zu mehreren positiven Ergebnissen beitragen:\r\n\r\nSicherheit: Eine gut gewartete Fahrzeugkomponenten wie Bremsen, Reifen, Lichter und Lenkung tragen zur Fahrzeugsicherheit bei. Potenziell gefährliche Ausfälle oder Mängel können frühzeitig erkannt und behoben werden.\r\n\r\nVermeidung von Ausfällen: Regelmäßige Wartung minimiert das Risiko von unerwarteten Fahrzeugausfällen. Dies kann Unfälle, Abschleppkosten und Unannehmlichkeiten verhindern.\r\n\r\nLanglebigkeit: Eine ordnungsgemäße Wartung verlängert die Lebensdauer Ihres Fahrzeugs. Verschleißteile werden rechtzeitig ersetzt, was teure Reparaturen in der Zukunft verhindern kann.\r\n\r\nKraftstoffeffizienz: Ein gut gewartetes Fahrzeug läuft effizienter, was zu einem geringeren Kraftstoffverbrauch führt. Saubere Luftfilter, korrekt ausgerichtete Räder und optimale Motoreinstellungen tragen dazu bei.\r\n\r\nWerterhalt: Ein gepflegtes und gut gewartetes Fahrzeug behält seinen Wiederverkaufswert besser. Käufer sind eher bereit, für ein Fahrzeug zu zahlen, das in gutem Zustand ist.\r\n\r\nUmweltfreundlichkeit: Ein optimal funktionierendes Fahrzeug produziert weniger Schadstoffe. Regelmäßige Emissionstests und Wartungen tragen zum Umweltschutz bei.\r\n\r\nRechtliche Einhaltung: In vielen Ländern sind regelmäßige Fahrzeugwartungen gesetzlich vorgeschrieben. Die Nichteinhaltung kann zu Bußgeldern oder anderen rechtlichen Konsequenzen führen.\r\n\r\nFahrkomfort: Ein gut gewartetes Fahrzeug bietet einen besseren Fahrkomfort. Gut funktionierende Klimaanlagen, Federung und andere Systeme tragen zu einer angenehmen Fahrt bei.\r\n\r\nFrühzeitige Erkennung von Problemen: Bei regelmäßiger Wartung werden Probleme frühzeitig erkannt, bevor sie sich verschlimmern. Das kann die Reparaturkosten reduzieren.\r\n\r\nInsgesamt trägt regelmäßige Fahrzeugwartung zu einem sicheren, effizienten und zuverlässigen Fahrerlebnis bei und kann langfristig Kosten sparen."
+          "questionExplanation": "Eine regelmässige Fahrzeugwartung kann zu mehreren positiven Ergebnissen beitragen:\r\n\r\nSicherheit: Eine gut gewartete Fahrzeugkomponenten wie Bremsen, Reifen, Lichter und Lenkung tragen zur Fahrzeugsicherheit bei. Potenziell gefährliche Ausfälle oder Mängel können frühzeitig erkannt und behoben werden.\r\n\r\nVermeidung von Ausfällen: Regelmässige Wartung minimiert das Risiko von unerwarteten Fahrzeugausfällen. Dies kann Unfälle, Abschleppkosten und Unannehmlichkeiten verhindern.\r\n\r\nLanglebigkeit: Eine ordnungsgemässe Wartung verlängert die Lebensdauer Ihres Fahrzeugs. Verschleissteile werden rechtzeitig ersetzt, was teure Reparaturen in der Zukunft verhindern kann.\r\n\r\nKraftstoffeffizienz: Ein gut gewartetes Fahrzeug läuft effizienter, was zu einem geringeren Kraftstoffverbrauch führt. Saubere Luftfilter, korrekt ausgerichtete Räder und optimale Motoreinstellungen tragen dazu bei.\r\n\r\nWerterhalt: Ein gepflegtes und gut gewartetes Fahrzeug behält seinen Wiederverkaufswert besser. Käufer sind eher bereit, für ein Fahrzeug zu zahlen, das in gutem Zustand ist.\r\n\r\nUmweltfreundlichkeit: Ein optimal funktionierendes Fahrzeug produziert weniger Schadstoffe. Regelmässige Emissionstests und Wartungen tragen zum Umweltschutz bei.\r\n\r\nRechtliche Einhaltung: In vielen Ländern sind regelmässige Fahrzeugwartungen gesetzlich vorgeschrieben. Die Nichteinhaltung kann zu Bussgeldern oder anderen rechtlichen Konsequenzen führen.\r\n\r\nFahrkomfort: Ein gut gewartetes Fahrzeug bietet einen besseren Fahrkomfort. Gut funktionierende Klimaanlagen, Federung und andere Systeme tragen zu einer angenehmen Fahrt bei.\r\n\r\nFrühzeitige Erkennung von Problemen: Bei regelmässiger Wartung werden Probleme frühzeitig erkannt, bevor sie sich verschlimmern. Das kann die Reparaturkosten reduzieren.\r\n\r\nInsgesamt trägt regelmässige Fahrzeugwartung zu einem sicheren, effizienten und zuverlässigen Fahrerlebnis bei und kann langfristig Kosten sparen."
         },
         "fr": {
           "question": "A quoi peut contribuer un entretien régulier des véhicules ?",
@@ -41297,7 +41297,7 @@
             "Beim Bremsen wird das Blockieren der Räder verhindert"
           ],
           "explanations": {},
-          "questionExplanation": "Ein Traktionskontrollsystem (TCS) bietet mehrere Vorteile, die die Fahrsicherheit und Fahrzeugkontrolle verbessern. Hier sind die wichtigsten Vorteile:\r\n\r\n+ Verhinderung des Durchdrehens der Räder: Das TCS verhindert, dass die Antriebsräder auf rutschigem oder unebenem Untergrund durchdrehen. Dies sorgt für eine bessere Traktion und Kontrolle, insbesondere beim Anfahren und Beschleunigen auf nassen, vereisten oder schneebedeckten Straßen.\r\n\r\n+ Erhöhte Stabilität: Durch die Vermeidung des Durchdrehens der Räder trägt das TCS zur Stabilität des Fahrzeugs bei. Dies ist besonders wichtig bei schwierigen Wetterbedingungen oder auf rutschigen Straßen, wo die Gefahr des Schleuderns oder Kontrollverlusts besteht.\r\n\r\n+ Verbesserte Fahrdynamik: Das TCS überwacht kontinuierlich die Radgeschwindigkeiten und passt die Antriebskraft an, um die dynamische Balance des Fahrzeugs zu erhalten. Dadurch wird das Fahrverhalten in Kurven und auf unebenem Untergrund verbessert."
+          "questionExplanation": "Ein Traktionskontrollsystem (TCS) bietet mehrere Vorteile, die die Fahrsicherheit und Fahrzeugkontrolle verbessern. Hier sind die wichtigsten Vorteile:\r\n\r\n+ Verhinderung des Durchdrehens der Räder: Das TCS verhindert, dass die Antriebsräder auf rutschigem oder unebenem Untergrund durchdrehen. Dies sorgt für eine bessere Traktion und Kontrolle, insbesondere beim Anfahren und Beschleunigen auf nassen, vereisten oder schneebedeckten Strassen.\r\n\r\n+ Erhöhte Stabilität: Durch die Vermeidung des Durchdrehens der Räder trägt das TCS zur Stabilität des Fahrzeugs bei. Dies ist besonders wichtig bei schwierigen Wetterbedingungen oder auf rutschigen Strassen, wo die Gefahr des Schleuderns oder Kontrollverlusts besteht.\r\n\r\n+ Verbesserte Fahrdynamik: Das TCS überwacht kontinuierlich die Radgeschwindigkeiten und passt die Antriebskraft an, um die dynamische Balance des Fahrzeugs zu erhalten. Dadurch wird das Fahrverhalten in Kurven und auf unebenem Untergrund verbessert."
         },
         "fr": {
           "question": "Quels sont les avantages d'un système anti-patinage ?",
@@ -41360,7 +41360,7 @@
             "Das Fahrzeug kann nicht aus der Kurve rutschen"
           ],
           "explanations": {},
-          "questionExplanation": "Bei einem Fahrzeug mit Antiblockiersystem (ABS) bestehen folgende Besonderheiten, wenn Sie in einer Kurve auf nasser Fahrbahn plötzlich bremsen müssen:\r\n\r\n+ Erhaltene Lenkfähigkeit: Das ABS verhindert das Blockieren der Räder, wodurch die Lenkfähigkeit des Fahrzeugs auch während einer starken Bremsung in der Kurve erhalten bleibt. Dies ermöglicht es Ihnen, das Fahrzeug weiterhin zu lenken und die Spur zu halten.\r\n\r\n+ Verkürzter Bremsweg: Auf nasser Fahrbahn kann das ABS den Bremsweg deutlich verkürzen. Dies ist besonders wichtig in Kurven, wo die Haftung ohnehin reduziert ist.\r\n\r\n+ Optimierte Bremskraftverteilung: Das ABS regelt den Bremsdruck für jedes Rad individuell, um den optimalen Schlupf zu erreichen. In Kurven kann dies besonders wichtig sein, da die Räder unterschiedlich belastet werden.\r\n\r\n+ Pulsierendes Bremspedal: Während des ABS-Eingriffs spüren Sie möglicherweise ein Pulsieren oder Vibrieren im Bremspedal. Dies ist normal und zeigt an, dass das System arbeitet. Sie sollten das Bremspedal weiterhin fest durchtreten.\r\n\r\n+ Verbesserte Fahrstabilität: Das ABS hilft, die Fahrstabilität in der Kurve aufrechtzuerhalten, indem es verhindert, dass das Fahrzeug ausbricht oder über die Vorderräder schiebt.\r\n\r\n+ Angepasste Bremstechnik: Bei einem Fahrzeug mit ABS sollten Sie in Notsituationen das Bremspedal kräftig durchtreten und gedrückt halten. Das System übernimmt die Regelung der Bremskraft.\r\n\r\nEs ist wichtig zu beachten, dass das ABS zwar die Fahrsicherheit erhöht, aber die physikalischen Grenzen nicht aufheben kann. Passen Sie Ihre Geschwindigkeit und Fahrweise immer den Straßen- und Wetterbedingungen an."
+          "questionExplanation": "Bei einem Fahrzeug mit Antiblockiersystem (ABS) bestehen folgende Besonderheiten, wenn Sie in einer Kurve auf nasser Fahrbahn plötzlich bremsen müssen:\r\n\r\n+ Erhaltene Lenkfähigkeit: Das ABS verhindert das Blockieren der Räder, wodurch die Lenkfähigkeit des Fahrzeugs auch während einer starken Bremsung in der Kurve erhalten bleibt. Dies ermöglicht es Ihnen, das Fahrzeug weiterhin zu lenken und die Spur zu halten.\r\n\r\n+ Verkürzter Bremsweg: Auf nasser Fahrbahn kann das ABS den Bremsweg deutlich verkürzen. Dies ist besonders wichtig in Kurven, wo die Haftung ohnehin reduziert ist.\r\n\r\n+ Optimierte Bremskraftverteilung: Das ABS regelt den Bremsdruck für jedes Rad individuell, um den optimalen Schlupf zu erreichen. In Kurven kann dies besonders wichtig sein, da die Räder unterschiedlich belastet werden.\r\n\r\n+ Pulsierendes Bremspedal: Während des ABS-Eingriffs spüren Sie möglicherweise ein Pulsieren oder Vibrieren im Bremspedal. Dies ist normal und zeigt an, dass das System arbeitet. Sie sollten das Bremspedal weiterhin fest durchtreten.\r\n\r\n+ Verbesserte Fahrstabilität: Das ABS hilft, die Fahrstabilität in der Kurve aufrechtzuerhalten, indem es verhindert, dass das Fahrzeug ausbricht oder über die Vorderräder schiebt.\r\n\r\n+ Angepasste Bremstechnik: Bei einem Fahrzeug mit ABS sollten Sie in Notsituationen das Bremspedal kräftig durchtreten und gedrückt halten. Das System übernimmt die Regelung der Bremskraft.\r\n\r\nEs ist wichtig zu beachten, dass das ABS zwar die Fahrsicherheit erhöht, aber die physikalischen Grenzen nicht aufheben kann. Passen Sie Ihre Geschwindigkeit und Fahrweise immer den Strassen- und Wetterbedingungen an."
         },
         "fr": {
           "question": "Vous devez freiner brusquement dans un virage sur une chaussée mouillée. Quelles sont les particularités d'un véhicule équipé d'un système de freinage antiblocage (ABS) ?",
@@ -41423,7 +41423,7 @@
             "Abstandswarner"
           ],
           "explanations": {},
-          "questionExplanation": "Gemäß den neuen Sicherheitsstandards für Fahrzeuge in der Schweiz, die seit dem 1. April 2024 in Kraft sind, müssen neue Fahrzeuge mit folgenden Systemen ausgerüstet werden:\r\nUnfalldatenschreiber (Event Data Recorder - EDR): Dieses System zeichnet wichtige Daten wie Geschwindigkeit, Verzögerung, Beschleunigung und verschiedene Fahrzeugfunktionen vor, während und nach einem Unfallereignis auf.\r\n\r\nNeue Fahrassistenzsysteme, darunter:\r\n+ Müdigkeitswarner: Warnt den Fahrer vor Müdigkeit.\r\n+ Ablenkungswarner: Alarmiert den Fahrer bei Ablenkung.\r\n+ Automatisches Notbremssystem: Bremst das Fahrzeug bei Gefahr automatisch.\r\n+ Rückfahrassistent: Unterstützt den Fahrer beim Rückwärtsfahren.\r\n+ Abbiegeassistent: Hilft dem Fahrer beim Abbiegen"
+          "questionExplanation": "Gemäss den neuen Sicherheitsstandards für Fahrzeuge in der Schweiz, die seit dem 1. April 2024 in Kraft sind, müssen neue Fahrzeuge mit folgenden Systemen ausgerüstet werden:\r\nUnfalldatenschreiber (Event Data Recorder - EDR): Dieses System zeichnet wichtige Daten wie Geschwindigkeit, Verzögerung, Beschleunigung und verschiedene Fahrzeugfunktionen vor, während und nach einem Unfallereignis auf.\r\n\r\nNeue Fahrassistenzsysteme, darunter:\r\n+ Müdigkeitswarner: Warnt den Fahrer vor Müdigkeit.\r\n+ Ablenkungswarner: Alarmiert den Fahrer bei Ablenkung.\r\n+ Automatisches Notbremssystem: Bremst das Fahrzeug bei Gefahr automatisch.\r\n+ Rückfahrassistent: Unterstützt den Fahrer beim Rückwärtsfahren.\r\n+ Abbiegeassistent: Hilft dem Fahrer beim Abbiegen"
         },
         "fr": {
           "question": "Pour la Suisse, la règle est la suivante : conformément aux dispositions européennes en matière d'immatriculation, les nouveaux véhicules doivent être équipés d'un enregistreur de données d'accident et de nouveaux systèmes d'assistance à la conduite. Quels sont ces derniers ?",
@@ -42252,7 +42252,7 @@
             "Les enfants de plus de 150 cm doivent être attachés avec la ceinture de sécurité existante."
           ],
           "explanations": {},
-          "questionExplanation": "Les enfants de moins de 12 ans doivent être assis dans un siège spécial pour enfants en voiture s'ils mesurent moins de 150 centimètres.\n\nLes enfants mesurant plus de 150 centimètres et les enfants de plus de 12 ans doivent être attachés avec la ceinture de sécurité existante.\n\nLe siège d'enfant doit être adapté à l'âge et au poids de l'enfant et porter l'étiquette de contrôle correcte.\n\nDepuis le , les sièges pour enfants ou les simples rehausseurs de siège conformes au règlement ECE sont corrects en tant que dispositifs de retenue autorisés."
+          "questionExplanation": "Les enfants de moins de 12 ans doivent être assis dans un siège spécial pour enfants en voiture s'ils mesurent moins de 150 centimètres.\n\nLes enfants mesurant plus de 150 centimètres et les enfants de plus de 12 ans doivent être attachés avec la ceinture de sécurité existante.\n\nLe siège d'enfant doit être adapté à l'âge et au poids de l'enfant et porter l'étiquette de contrôle correcte.\n\nDepuis le, les sièges pour enfants ou les simples rehausseurs de siège conformes au règlement ECE sont corrects en tant que dispositifs de retenue autorisés."
         },
         "it": {
           "question": "Cosa è corretto?",
@@ -42315,7 +42315,7 @@
             "Pour les trajets courts, il est possible de renoncer aux sièges pour enfants."
           ],
           "explanations": {},
-          "questionExplanation": "Les enfants de moins de 12 ans doivent être assis dans un siège spécial pour enfants en voiture s'ils mesurent moins de 150 centimètres.\n\nLes enfants mesurant plus de 150 centimètres et les enfants de plus de 12 ans doivent être attachés avec la ceinture de sécurité existante.\n\nLe siège d'enfant doit être adapté à l'âge et au poids de l'enfant et porter l'étiquette de contrôle correcte.\n\nDepuis le , les sièges pour enfants ou les simples rehausseurs de siège conformes au règlement ECE sont corrects en tant que dispositifs de retenue autorisés."
+          "questionExplanation": "Les enfants de moins de 12 ans doivent être assis dans un siège spécial pour enfants en voiture s'ils mesurent moins de 150 centimètres.\n\nLes enfants mesurant plus de 150 centimètres et les enfants de plus de 12 ans doivent être attachés avec la ceinture de sécurité existante.\n\nLe siège d'enfant doit être adapté à l'âge et au poids de l'enfant et porter l'étiquette de contrôle correcte.\n\nDepuis le, les sièges pour enfants ou les simples rehausseurs de siège conformes au règlement ECE sont corrects en tant que dispositifs de retenue autorisés."
         },
         "it": {
           "question": "Cosa è corretto?",
@@ -42756,7 +42756,7 @@
             "Ce signal n'a pas de signification particulière"
           ],
           "explanations": {},
-          "questionExplanation": "Le signal \" réduction de voie \" sur les autoroutes en Suisse indique qu'une ou plusieurs voies de circulation sont temporairement supprimées, par exemple en raison de travaux ou d'accidents. Dans de telles situations, il est important d'appliquer correctement le principe de la fermeture éclair afin de maintenir la fluidité du trafic et d'éviter les embouteillages.\n\nEn cas de réduction de voie, tu dois être particulièrement attentif aux véhicules qui changent de voie"
+          "questionExplanation": "Le signal \"réduction de voie\" sur les autoroutes en Suisse indique qu'une ou plusieurs voies de circulation sont temporairement supprimées, par exemple en raison de travaux ou d'accidents. Dans de telles situations, il est important d'appliquer correctement le principe de la fermeture éclair afin de maintenir la fluidité du trafic et d'éviter les embouteillages.\n\nEn cas de réduction de voie, tu dois être particulièrement attentif aux véhicules qui changent de voie"
         },
         "it": {
           "question": "Cosa si applica?",
@@ -42809,7 +42809,7 @@
             "Ich fahre aufmerksam mit gleicher Geschwindigkeit weiter"
           ],
           "explanations": {},
-          "questionExplanation": "Vorausschauendes Fahren bedeutet in erster Linie, dass Autofahrer Gefahren im Straßenverkehr frühzeitig erkennen und daraufhin auch rechtzeitig und angemessen reagieren können. Dazu gehört Bremsbereitschaft erstellen, wenn eine Gefahr erkannt wird und die Geschwindigkeit reduzieren (Angepasste Geschwindigkeit: Die Geschwindigkeit der Situation anpassen)"
+          "questionExplanation": "Vorausschauendes Fahren bedeutet in erster Linie, dass Autofahrer Gefahren im Strassenverkehr frühzeitig erkennen und daraufhin auch rechtzeitig und angemessen reagieren können. Dazu gehört Bremsbereitschaft erstellen, wenn eine Gefahr erkannt wird und die Geschwindigkeit reduzieren (Angepasste Geschwindigkeit: Die Geschwindigkeit der Situation anpassen)"
         },
         "fr": {
           "question": "Comment vous comportez-vous dans cette situation ?",
@@ -42872,7 +42872,7 @@
             "Ja, weil zum Überholen ausreichend Platz ist"
           ],
           "explanations": {},
-          "questionExplanation": "In der Schweiz ist das Rechtsüberholen auf Autobahnen grundsätzlich nicht gestattet. Gemäß den Verkehrsregeln in der Schweiz sollen Fahrzeuge auf Autobahnen die rechte Fahrspur verwenden, es sei denn, sie überholen ein anderes Fahrzeug. Das Überholen sollte vorzugsweise auf der linken Fahrspur erfolgen. Rechts vorbeifahren (also das Überholen auf der rechten Fahrspur) ist nicht erlaubt.\r\n\r\nRechtsüberholen (mit aktivem Spurwechsel zum Überholen und Wiedereinbiegen) ist verboten.\r\n\r\nRechtsvorbeifahren (Passieren eines langsameren Fahrzeugs auf der rechten Spur, ohne aktiven Spurwechsel zum Überholen und Wiedereinbiegen, insbesondere bei Kolonnenverkehr oder auf speziellen Fahrstreifen) ist unter bestimmten Bedingungen erlaubt.\r\n\r\nSeit 2021 unter bestimmten Bedingungen erlaubt: Seit dem 1. Januar 2021 ist das Rechtsvorbeifahren unter bestimmten Voraussetzungen auf Autobahnen und Autostrassen erlaubt, um den Verkehrsfluss zu verbessern.\r\n\r\nKolonnenverkehr: Wenn auf dem linken (und/oder mittleren) Fahrstreifen Kolonnenverkehr herrscht (dichter, paralleler Verkehr, bei dem sich die Fahrzeuge auf allen Spuren mit relativ gleicher Geschwindigkeit bewegen), darf man auf der rechten Spur mit der nötigen Vorsicht vorbeifahren. Es muss nicht mehr abgebremst werden, nur weil die linke Spur langsamer wird.\r\n\r\nSpezielle Fahrstreifen: Erlaubt ist das Rechtsvorbeifahren auch auf:\r\n+ Beschleunigungsstreifen von Autobahneinfahrten (bis zum Ende der Doppellinie).\r\n+ Verzögerungsstreifen von Ausfahrten.\r\n+ Einspurstrecken, wenn die einzelnen Fahrstreifen zu unterschiedlichen Fahrzielen führen."
+          "questionExplanation": "In der Schweiz ist das Rechtsüberholen auf Autobahnen grundsätzlich nicht gestattet. Gemäss den Verkehrsregeln in der Schweiz sollen Fahrzeuge auf Autobahnen die rechte Fahrspur verwenden, es sei denn, sie überholen ein anderes Fahrzeug. Das Überholen sollte vorzugsweise auf der linken Fahrspur erfolgen. Rechts vorbeifahren (also das Überholen auf der rechten Fahrspur) ist nicht erlaubt.\r\n\r\nRechtsüberholen (mit aktivem Spurwechsel zum Überholen und Wiedereinbiegen) ist verboten.\r\n\r\nRechtsvorbeifahren (Passieren eines langsameren Fahrzeugs auf der rechten Spur, ohne aktiven Spurwechsel zum Überholen und Wiedereinbiegen, insbesondere bei Kolonnenverkehr oder auf speziellen Fahrstreifen) ist unter bestimmten Bedingungen erlaubt.\r\n\r\nSeit 2021 unter bestimmten Bedingungen erlaubt: Seit dem 1. Januar 2021 ist das Rechtsvorbeifahren unter bestimmten Voraussetzungen auf Autobahnen und Autostrassen erlaubt, um den Verkehrsfluss zu verbessern.\r\n\r\nKolonnenverkehr: Wenn auf dem linken (und/oder mittleren) Fahrstreifen Kolonnenverkehr herrscht (dichter, paralleler Verkehr, bei dem sich die Fahrzeuge auf allen Spuren mit relativ gleicher Geschwindigkeit bewegen), darf man auf der rechten Spur mit der nötigen Vorsicht vorbeifahren. Es muss nicht mehr abgebremst werden, nur weil die linke Spur langsamer wird.\r\n\r\nSpezielle Fahrstreifen: Erlaubt ist das Rechtsvorbeifahren auch auf:\r\n+ Beschleunigungsstreifen von Autobahneinfahrten (bis zum Ende der Doppellinie).\r\n+ Verzögerungsstreifen von Ausfahrten.\r\n+ Einspurstrecken, wenn die einzelnen Fahrstreifen zu unterschiedlichen Fahrzielen führen."
         },
         "fr": {
           "question": "Avez-vous le droit de dépasser le véhicule noir par la droite sur cette autoroute ?",
@@ -42993,9 +42993,9 @@
         "de": {
           "question": "Wie verhalten Sie sich in dieser Situation?",
           "options": [
-            "Ich bremse frühzeitig, um den Fußgängern deutlich zu machen, dass ich ihnen das Überqueren ermögliche",
-            "Ich fahre weiter, auch wenn die Fußgänger kurz stehen bleiben",
-            "Ich fahre mit einem Bogen um die Fußgänger, um den nachfolgenden Verkehr nicht zu behindern"
+            "Ich bremse frühzeitig, um den Fussgängern deutlich zu machen, dass ich ihnen das Überqueren ermögliche",
+            "Ich fahre weiter, auch wenn die Fussgänger kurz stehen bleiben",
+            "Ich fahre mit einem Bogen um die Fussgänger, um den nachfolgenden Verkehr nicht zu behindern"
           ],
           "explanations": {},
           "questionExplanation": "Fussgänger haben Vortritt am Fussgängerstreifen\r\n\r\nDas Strassenverkehrsgesetz verlangt, dass Fahrzeuglenkende vor Fussgängerstreifen besonders vorsichtig fahren und nötigenfalls anhalten, um den Fussgängern den Vortritt zu gewähren, die sich schon auf dem Streifen befinden oder im Begriff sind, ihn zu betreten."
@@ -43817,7 +43817,7 @@
             "Ich rechne mit unsicherer Fahrweise des Motorradfahrers"
           ],
           "explanations": {},
-          "questionExplanation": "Gefahrensituation. Schnee auf der Strasse.\r\n\r\nRutschige Straßenoberfläche: Schnee auf der Straße kann zu einer stark reduzierten Traktion führen, was das Bremsen, Beschleunigen und das Halten der Fahrspur erschwert. \r\n\r\nUnvorhersehbare Fahrverhältnisse: Schneebedeckte Straßen können unvorhersehbar sein. \r\n\r\nDer Motorradfahrer kann aufgrund der winterlichen Straßenbedingungen möglicherweise langsamer fahren oder unsicherer in der Fahrspur bleiben. Berücksichtige dies bei deiner Einschätzung der Situation."
+          "questionExplanation": "Gefahrensituation. Schnee auf der Strasse.\r\n\r\nRutschige Strassenoberfläche: Schnee auf der Strasse kann zu einer stark reduzierten Traktion führen, was das Bremsen, Beschleunigen und das Halten der Fahrspur erschwert. \r\n\r\nUnvorhersehbare Fahrverhältnisse: Schneebedeckte Strassen können unvorhersehbar sein. \r\n\r\nDer Motorradfahrer kann aufgrund der winterlichen Strassenbedingungen möglicherweise langsamer fahren oder unsicherer in der Fahrspur bleiben. Berücksichtige dies bei deiner Einschätzung der Situation."
         },
         "fr": {
           "question": "Devant la moto, un véhicule veut reculer sur la chaussée. Comment vous comportez-vous dans cette situation ?",
@@ -43943,7 +43943,7 @@
             "Der blaue Wagen befindet sich auf einer Nebenstrasse."
           ],
           "explanations": {},
-          "questionExplanation": "Dieses Signal bedeutet: ' Verzweigung mit Strasse ohne Vortritt'. Es steht nur auf Nebenstraßen.\r\n\r\nIm Detail:\r\nBlau befindet sich auf einer Nebenstrasse mit Vortritt. Schwarz und Grün haben keinen Vortritt"
+          "questionExplanation": "Dieses Signal bedeutet: \"Verzweigung mit Strasse ohne Vortritt\". Es steht nur auf Nebenstrassen.\r\n\r\nIm Detail:\r\nBlau befindet sich auf einer Nebenstrasse mit Vortritt. Schwarz und Grün haben keinen Vortritt"
         },
         "fr": {
           "question": "Qu'est-ce qui est correct ?",
@@ -43953,7 +43953,7 @@
             "La voiture bleue est sur une route secondaire."
           ],
           "explanations": {},
-          "questionExplanation": "Ce signal signifie : \" Intersection avec une route sans priorité \". Il n'est disponible que sur les rues secondaires.\r\n\r\nEn détail :\r\nBleu se trouve sur une route secondaire avec priorité. Noir et vert n'ont pas la priorité"
+          "questionExplanation": "Ce signal signifie : \"Intersection avec une route sans priorité\". Il n'est disponible que sur les rues secondaires.\r\n\r\nEn détail :\r\nBleu se trouve sur une route secondaire avec priorité. Noir et vert n'ont pas la priorité"
         },
         "it": {
           "question": "Cos'è giusto?",
@@ -43963,7 +43963,7 @@
             "L'autoveicolo blu si trova su una strada secondaria."
           ],
           "explanations": {},
-          "questionExplanation": "Questo segnale significa: 'Intersezione con strada senza precedenza'. È disponibile solo su strade laterali.\r\n\r\nIn dettaglio:\r\nIl blu si trova su una strada secondaria con diritto di precedenza. Il nero e il verde non hanno diritto di precedenza"
+          "questionExplanation": "Questo segnale significa: \"Intersezione con strada senza precedenza\". È disponibile solo su strade laterali.\r\n\r\nIn dettaglio:\r\nIl blu si trova su una strada secondaria con diritto di precedenza. Il nero e il verde non hanno diritto di precedenza"
         }
       }
     },
@@ -44699,7 +44699,7 @@
             "Der blaue Wagen hat Vortritt vor dem gelben"
           ],
           "explanations": {},
-          "questionExplanation": "Den entgegenkommenden Fahrzeugen ist vor dem Linksabbiegen der Vortritt zu lassen. Das Signal 'Kein Vortritt' gilt für den Fahrradstreifen. Der Fahrradfahrer hat keinen Vortritt.\r\n\r\nIm Detail:\r\nDer Radstreifen ist weiter als 2 Meter von der Fahrbahn entfernt und hat darum eigene Schilder und Markierungen. Gelb will links abbiegen und muss Blau den Vortritt gewähren. Schwarz hat keinen Vortritt und muss Gelb den Vortritt gewähren."
+          "questionExplanation": "Den entgegenkommenden Fahrzeugen ist vor dem Linksabbiegen der Vortritt zu lassen. Das Signal \"Kein Vortritt\" gilt für den Fahrradstreifen. Der Fahrradfahrer hat keinen Vortritt.\r\n\r\nIm Detail:\r\nDer Radstreifen ist weiter als 2 Meter von der Fahrbahn entfernt und hat darum eigene Schilder und Markierungen. Gelb will links abbiegen und muss Blau den Vortritt gewähren. Schwarz hat keinen Vortritt und muss Gelb den Vortritt gewähren."
         },
         "fr": {
           "question": "Qu'est-ce qui est correct?",
@@ -44709,7 +44709,7 @@
             "La voiture bleue a la priorité sur la jaune"
           ],
           "explanations": {},
-          "questionExplanation": "Avant d'obliquer à gauche, le conducteur doit accorder la priorité aux véhicules venant en sens inverse. Le signal \" Cédez le passage \" s'applique aux pistes cyclables. Le cycliste n'a pas la priorité.\r\n\r\nEn détail :\r\nLa bande cyclable se trouve à plus de 2 mètres de la chaussée et possède donc ses propres panneaux et marquages. Jaune veut tourner à gauche et doit céder la priorité à Bleu. Noir n'a pas la priorité et doit la céder à Jaune."
+          "questionExplanation": "Avant d'obliquer à gauche, le conducteur doit accorder la priorité aux véhicules venant en sens inverse. Le signal \"Cédez le passage\" s'applique aux pistes cyclables. Le cycliste n'a pas la priorité.\r\n\r\nEn détail :\r\nLa bande cyclable se trouve à plus de 2 mètres de la chaussée et possède donc ses propres panneaux et marquages. Jaune veut tourner à gauche et doit céder la priorité à Bleu. Noir n'a pas la priorité et doit la céder à Jaune."
         },
         "it": {
           "question": "Che cosa è corretto?",
@@ -44719,7 +44719,7 @@
             "L'automobile azzurra ha la precedenza sull'automobile gialla"
           ],
           "explanations": {},
-          "questionExplanation": "Prima della svolta a sinistra occorrerà dare la precedenza ai veicoli provenienti nel senso inverso. Il segnale 'divieto di accesso' è valido solamente per le corsie ciclabili. Il ciclista non ha la precedenza.\r\n\r\nIn dettaglio:\r\nLa corsia ciclabile si trova a più di 2 metri dalla carreggiata e quindi ha una propria segnaletica. Il giallo vuole svoltare a sinistra e deve cedere il passo al blu. Il nero non ha diritto di precedenza e deve dare la precedenza al giallo."
+          "questionExplanation": "Prima della svolta a sinistra occorrerà dare la precedenza ai veicoli provenienti nel senso inverso. Il segnale \"divieto di accesso\" è valido solamente per le corsie ciclabili. Il ciclista non ha la precedenza.\r\n\r\nIn dettaglio:\r\nLa corsia ciclabile si trova a più di 2 metri dalla carreggiata e quindi ha una propria segnaletica. Il giallo vuole svoltare a sinistra e deve cedere il passo al blu. Il nero non ha diritto di precedenza e deve dare la precedenza al giallo."
         }
       }
     },
@@ -45077,7 +45077,7 @@
             "Ich fahre mit gleicher Geschwindigkeit weiter"
           ],
           "explanations": {},
-          "questionExplanation": "Vorausschauendes Fahren bedeutet in erster Linie, dass Autofahrer Gefahren im Straßenverkehr frühzeitig erkennen und daraufhin auch rechtzeitig und angemessen reagieren können. Dazu gehört Bremsbereitschaft erstellen, wenn eine Gefahr erkannt wird und die Geschwindigkeit reduzieren (Angepasste Geschwindigkeit: Die Geschwindigkeit der Situation anpassen)"
+          "questionExplanation": "Vorausschauendes Fahren bedeutet in erster Linie, dass Autofahrer Gefahren im Strassenverkehr frühzeitig erkennen und daraufhin auch rechtzeitig und angemessen reagieren können. Dazu gehört Bremsbereitschaft erstellen, wenn eine Gefahr erkannt wird und die Geschwindigkeit reduzieren (Angepasste Geschwindigkeit: Die Geschwindigkeit der Situation anpassen)"
         },
         "fr": {
           "question": "Comment vous comportez-vous dans cette situation ?",
@@ -46018,8 +46018,8 @@
           "question": "Wie verhalten Sie sich richtig?",
           "options": [
             "Warten, weil der Seitenabstand zum Radfahrer sonst zu gering ist",
-            "Mit mäßiger Geschwindigkeit weiterfahren, weil der Seitenabstand zum Radfahrer sehr gering ist",
-            "Gleichmäßig weiterfahren, weil der Seitenabstand zum Radfahrer ausreichend ist"
+            "Mit mässiger Geschwindigkeit weiterfahren, weil der Seitenabstand zum Radfahrer sehr gering ist",
+            "Gleichmässig weiterfahren, weil der Seitenabstand zum Radfahrer ausreichend ist"
           ],
           "explanations": {},
           "questionExplanation": "Gegenüber allen Strassenbenützern ist ausreichender Abstand zu wahren.\r\n\r\nAls Faustregel wird empfohlen, einen seitlichen Abstand von mindestens 1,5 bis 2 Metern zu anderen Fahrzeugen einzuhalten. Dieser Abstand ermöglicht es dir, ausreichend Platz zu haben, um sicher am anderen Fahrzeug vorbeizufahren, ohne es zu gefährden.\r\n\r\nIn diesem Fall musst Du warten, bis der Radfahrer den Engpass passiert hat."
@@ -46400,7 +46400,7 @@
             "Hier gibt es keine besonderen Gefahren"
           ],
           "explanations": {},
-          "questionExplanation": "Ein ständiger Wechsel von Licht und Schatten im Straßenverkehr kann verschiedene Gefahren mit sich bringen, die die Sichtbarkeit und Reaktionsfähigkeit der Fahrer beeinträchtigen können.\r\n\r\nVerminderte Sichtbarkeit: Schatten können Teile der Straße oder anderer Verkehrsteilnehmer vorübergehend verbergen. Dadurch könnten Hindernisse oder Verkehrssituationen erst spät erkannt werden, was das Unfallrisiko erhöhen kann.\r\n\r\nErmüdung und Ablenkung: Ständige Veränderungen in den Lichtverhältnissen können die Augen der Fahrer belasten und zu Ermüdung führen. Dies kann die Konzentrationsfähigkeit beeinträchtigen und das Unfallrisiko erhöhen. Fahrer könnten auch abgelenkt sein, während sie versuchen, sich an die sich ändernden Lichtbedingungen anzupassen.\r\n\r\nVeränderung der Straßenumgebung: Schatten können dazu führen, dass Straßendetails wie Unebenheiten, Schlaglöcher oder Straßenschilder weniger sichtbar sind. Fahrer könnten dadurch in unerwarteten Situationen landen, die zu gefährlichen Manövern führen könnten.\r\n\r\nSchwierigkeiten bei der Entfernungsabschätzung: Sich ändernde Lichtverhältnisse können die Wahrnehmung der Entfernung von Objekten beeinträchtigen. Dies kann die Fähigkeit beeinträchtigen, den richtigen Abstand zu anderen Fahrzeugen oder Hindernissen zu bewahren."
+          "questionExplanation": "Ein ständiger Wechsel von Licht und Schatten im Strassenverkehr kann verschiedene Gefahren mit sich bringen, die die Sichtbarkeit und Reaktionsfähigkeit der Fahrer beeinträchtigen können.\r\n\r\nVerminderte Sichtbarkeit: Schatten können Teile der Strasse oder anderer Verkehrsteilnehmer vorübergehend verbergen. Dadurch könnten Hindernisse oder Verkehrssituationen erst spät erkannt werden, was das Unfallrisiko erhöhen kann.\r\n\r\nErmüdung und Ablenkung: Ständige Veränderungen in den Lichtverhältnissen können die Augen der Fahrer belasten und zu Ermüdung führen. Dies kann die Konzentrationsfähigkeit beeinträchtigen und das Unfallrisiko erhöhen. Fahrer könnten auch abgelenkt sein, während sie versuchen, sich an die sich ändernden Lichtbedingungen anzupassen.\r\n\r\nVeränderung der Strassenumgebung: Schatten können dazu führen, dass Strassendetails wie Unebenheiten, Schlaglöcher oder Strassenschilder weniger sichtbar sind. Fahrer könnten dadurch in unerwarteten Situationen landen, die zu gefährlichen Manövern führen könnten.\r\n\r\nSchwierigkeiten bei der Entfernungsabschätzung: Sich ändernde Lichtverhältnisse können die Wahrnehmung der Entfernung von Objekten beeinträchtigen. Dies kann die Fähigkeit beeinträchtigen, den richtigen Abstand zu anderen Fahrzeugen oder Hindernissen zu bewahren."
         },
         "fr": {
           "question": "A quoi faut-il faire attention dans cette situation ?",
@@ -46463,7 +46463,7 @@
             "Ich suche eine Werkstatt auf, da die ESP-Anzeige auf einen Defekt hinweist"
           ],
           "explanations": {},
-          "questionExplanation": "Beim Aufleuchten des ESP (Elektronisches Stabilitätsprogramm) im Fahrzeug auf schneebedeckten Straßen ist es ratsam, die Geschwindigkeit zu reduzieren. Das ESP signalisiert, dass das System aktiv ist, um die Stabilität und Kontrolle des Fahrzeugs auf glatter Fahrbahn zu unterstützen. Wenn das ESP aktiv ist, deutet dies darauf hin, dass die Straßenverhältnisse möglicherweise anspruchsvoll sind und die Traktion beeinträchtigt ist.\r\n\r\nDurch das Verringern der Geschwindigkeit können Sie mehr Zeit haben, auf unerwartete Situationen zu reagieren, und das Fahrzeug bleibt besser kontrollierbar."
+          "questionExplanation": "Beim Aufleuchten des ESP (Elektronisches Stabilitätsprogramm) im Fahrzeug auf schneebedeckten Strassen ist es ratsam, die Geschwindigkeit zu reduzieren. Das ESP signalisiert, dass das System aktiv ist, um die Stabilität und Kontrolle des Fahrzeugs auf glatter Fahrbahn zu unterstützen. Wenn das ESP aktiv ist, deutet dies darauf hin, dass die Strassenverhältnisse möglicherweise anspruchsvoll sind und die Traktion beeinträchtigt ist.\r\n\r\nDurch das Verringern der Geschwindigkeit können Sie mehr Zeit haben, auf unerwartete Situationen zu reagieren, und das Fahrzeug bleibt besser kontrollierbar."
         },
         "fr": {
           "question": "A quoi faut-il faire attention dans cette situation ?",
@@ -46589,7 +46589,7 @@
             "Da ich Vortritt habe, beschleunige ich"
           ],
           "explanations": {},
-          "questionExplanation": "Benützer der Autobahnen und Autostrassen haben den Vortritt vor Fahrzeugen auf den Zufahrtsstrecken. Das einfahrende Fahrzeug muss sich der Geschwindigkeit anpassen.\r\n\r\nFahren Sie in konstanter Geschwindigkeit weiter, damit Sie berechenbar sind. Das heißt jedoch nicht, dass Sie auf der Autobahn keine Rücksicht nehmen sollten. Wenn es sicher ist und den Verkehrsfluss nicht beeinträchtigt, können Sie gegebenenfalls Platz machen, um das Einfahren anderer Fahrzeuge zu erleichtern. Es ist wichtig, den Verkehr um Sie herum aufmerksam zu beobachten und sich situationsabhängig zu verhalten."
+          "questionExplanation": "Benützer der Autobahnen und Autostrassen haben den Vortritt vor Fahrzeugen auf den Zufahrtsstrecken. Das einfahrende Fahrzeug muss sich der Geschwindigkeit anpassen.\r\n\r\nFahren Sie in konstanter Geschwindigkeit weiter, damit Sie berechenbar sind. Das heisst jedoch nicht, dass Sie auf der Autobahn keine Rücksicht nehmen sollten. Wenn es sicher ist und den Verkehrsfluss nicht beeinträchtigt, können Sie gegebenenfalls Platz machen, um das Einfahren anderer Fahrzeuge zu erleichtern. Es ist wichtig, den Verkehr um Sie herum aufmerksam zu beobachten und sich situationsabhängig zu verhalten."
         },
         "fr": {
           "question": "Comment vous comportez-vous correctement ?",
@@ -47869,7 +47869,7 @@
             "Mi devo fermare ad ambedue le linee di arresto"
           ],
           "explanations": {},
-          "questionExplanation": "I segnali di 'stop' e 'divieto di accesso' vicino alle diramazioni con impianti di segnalazione luminosa sono da osservare quando il traffico non è regolato attraverso segnali luminosi.\r\n\r\nIn questo caso, la situazione del traffico non è regolata dal segnale stradale. Devo fermarmi alla linea di arresto anteriore."
+          "questionExplanation": "I segnali di \"stop\" e \"divieto di accesso\" vicino alle diramazioni con impianti di segnalazione luminosa sono da osservare quando il traffico non è regolato attraverso segnali luminosi.\r\n\r\nIn questo caso, la situazione del traffico non è regolata dal segnale stradale. Devo fermarmi alla linea di arresto anteriore."
         }
       }
     },
@@ -48031,11 +48031,11 @@
       ],
       "translations": {
         "de": {
-          "question": "Sind Sie verpflichtet, den Fußgängerstreifen freizuhalten, wenn Sie sich in einer Fahrzeugkolonne befinden, die zum Stillstand kommt?",
+          "question": "Sind Sie verpflichtet, den Fussgängerstreifen freizuhalten, wenn Sie sich in einer Fahrzeugkolonne befinden, die zum Stillstand kommt?",
           "options": [
-            "Nein, ich muss näher zum Fahrzeug vor mir aufschließen",
+            "Nein, ich muss näher zum Fahrzeug vor mir aufschliessen",
             "Ja",
-            "Nur wenn Fußgänger durch das Halten der Kolonne behindert werden, müssen Sie den Fußgängerstreifen freihalten."
+            "Nur wenn Fussgänger durch das Halten der Kolonne behindert werden, müssen Sie den Fussgängerstreifen freihalten."
           ],
           "explanations": {},
           "questionExplanation": "Freiwilliges halten auf dem Fussgängerstreifen ist verboten (z.B. bei stockendem Kolonnenverkehr). Lassen Sie ihn frei, so dass ihn die Fussgänger ungehindert benützen können."
@@ -48227,7 +48227,7 @@
             "Ich achte vor dem Abblenden auf eventuelle Hindernisse auf der Fahrbahn"
           ],
           "explanations": {},
-          "questionExplanation": "Das Fernlicht reicht etwa 100 bis 200 Meter weit und erleuchtet die Straße, die vor einem liegt. Nur wenn die Sicht stark eingeschränkt ist und das Fahrzeug fährt, darf das Fernlicht eingeschaltet werden.\r\n\r\nDas Fernlicht blendet entgegenkommende Verkehrsteilnehmer. Blenden Sie also ab, sobald jemand entgegen kommt. Autofahrer, die in geringem Abstand vor dir Fahren, werden durch den Rückspiegel ebenfalls von deinem Fernlicht geblendet."
+          "questionExplanation": "Das Fernlicht reicht etwa 100 bis 200 Meter weit und erleuchtet die Strasse, die vor einem liegt. Nur wenn die Sicht stark eingeschränkt ist und das Fahrzeug fährt, darf das Fernlicht eingeschaltet werden.\r\n\r\nDas Fernlicht blendet entgegenkommende Verkehrsteilnehmer. Blenden Sie also ab, sobald jemand entgegen kommt. Autofahrer, die in geringem Abstand vor dir Fahren, werden durch den Rückspiegel ebenfalls von deinem Fernlicht geblendet."
         },
         "fr": {
           "question": "De nuit, comment vous comportez-vous lorsque, circulant à grande vitesse, vous devez passer des feux de route aux feux de croisement?",
@@ -48290,7 +48290,7 @@
             "Der Motorradfahrer"
           ],
           "explanations": {},
-          "questionExplanation": "Fahrzeuge auf einer Haupt- oder Nebenstraße haben Vortritt vor denen, die aus Fabriken, Höfen, Garagen, Feldwegen, Radwegen, Parkplätzen, Tankstellen oder ähnlichen Orten kommen oder über ein Trottoir fahren müssen."
+          "questionExplanation": "Fahrzeuge auf einer Haupt- oder Nebenstrasse haben Vortritt vor denen, die aus Fabriken, Höfen, Garagen, Feldwegen, Radwegen, Parkplätzen, Tankstellen oder ähnlichen Orten kommen oder über ein Trottoir fahren müssen."
         },
         "fr": {
           "question": "En sortant d'une cour, vous vous engagez sur une route secondaire. De gauche s'approche un motocycliste. Qui a la priorité?",
@@ -48426,7 +48426,7 @@
             "Oui, pour autant que personne ne soit gêné ou mis en danger"
           ],
           "explanations": {},
-          "questionExplanation": "Le signal 'dépassement interdit' interdit aux conducteurs de véhicules de dépasser multi-piste véhicules. Malgré du signal on peut dépasser les véhicules qui ne peuvent pas aller plus vite que 30 kilomètres par heure. Mais seulement si possible sans danger."
+          "questionExplanation": "Le signal \"dépassement interdit\" interdit aux conducteurs de véhicules de dépasser multi-piste véhicules. Malgré du signal on peut dépasser les véhicules qui ne peuvent pas aller plus vite que 30 kilomètres par heure. Mais seulement si possible sans danger."
         },
         "it": {
           "question": "È permesso sorpassare un veicolo a motore la cui velocità massima è limitata a 30 km/h su un tratto di strada dove è segnalato il divieto di sorpasso?",
@@ -48436,7 +48436,7 @@
             "Sì, nella misura in cui nessuno è ostacolato o messo in pericolo"
           ],
           "explanations": {},
-          "questionExplanation": "Il segnale 'divieto di sorpasso' vieta ai conducenti di veicoli a motore di sorpassare veicoli a motore multi-traccia e tram. Nonostante il divieto di sorpasso, è possibile sorpassare veicoli che non possono andare più veloci di 30 km/h, ma solo se è possibile farlo senza pericolo."
+          "questionExplanation": "Il segnale \"divieto di sorpasso\" vieta ai conducenti di veicoli a motore di sorpassare veicoli a motore multi-traccia e tram. Nonostante il divieto di sorpasso, è possibile sorpassare veicoli che non possono andare più veloci di 30 km/h, ma solo se è possibile farlo senza pericolo."
         }
       }
     },
@@ -48731,7 +48731,7 @@
             "Ja, bei starkem Regen und schneller Fahrt"
           ],
           "explanations": {},
-          "questionExplanation": "Aquaplaning tritt auf, wenn ein Fahrzeug auf einer nassen Straße die Haftung zur Fahrbahn verliert, weil Wasser zwischen Reifen und Straße einen Film bildet. \r\n\r\nDas Risiko von Aquaplaning wird maßgeblich durch hohe Geschwindigkeit, abgenutzte Reifen, starke Regenfälle, tiefe Wasseransammlungen und ungünstige Straßenverhältnisse beeinflusst. Eine angepasste Fahrweise, gute Reifen und vorausschauendes Fahren können das Risiko deutlich reduzieren.\r\n\r\nVerschmutzungen der Fahrbahn wie Staub, Sand oder Laub alleine verursachen keinen Wasserfilm und sind daher kein direkter Faktor für Aquaplaning."
+          "questionExplanation": "Aquaplaning tritt auf, wenn ein Fahrzeug auf einer nassen Strasse die Haftung zur Fahrbahn verliert, weil Wasser zwischen Reifen und Strasse einen Film bildet. \r\n\r\nDas Risiko von Aquaplaning wird massgeblich durch hohe Geschwindigkeit, abgenutzte Reifen, starke Regenfälle, tiefe Wasseransammlungen und ungünstige Strassenverhältnisse beeinflusst. Eine angepasste Fahrweise, gute Reifen und vorausschauendes Fahren können das Risiko deutlich reduzieren.\r\n\r\nVerschmutzungen der Fahrbahn wie Staub, Sand oder Laub alleine verursachen keinen Wasserfilm und sind daher kein direkter Faktor für Aquaplaning."
         },
         "fr": {
           "question": "Y a-t-il danger \"d'aquaplaning\" sur les routes mouillées?",
@@ -49294,11 +49294,11 @@
           "question": "Welche Faktoren können die Fahrfähigkeit ähnlich stark beeinflussen wie der Konsum von Alkohol?",
           "options": [
             "Der Konsum von Drogen",
-            "Hohe Verkehrsdichte auf den Straßen",
+            "Hohe Verkehrsdichte auf den Strassen",
             "Die Verwendung von Medikamenten"
           ],
           "explanations": {},
-          "questionExplanation": "Alkohol kann die Fahrtüchtigkeit erheblich einschränken. Ebenso Medikamente oder Drogen. \r\n\r\nHier sind einige der Auswirkungen, die Alkohol auf das Fahrverhalten haben kann:\r\n\r\nVerminderte Reaktionsfähigkeit: Alkohol beeinträchtigt die Fähigkeit, schnell auf Verkehrssituationen zu reagieren. Die Reaktionszeit wird verlangsamt, was zu einem erhöhten Unfallrisiko führt.\r\n\r\nEingeschränktes Urteilsvermögen: Alkoholkonsum beeinflusst das Urteilsvermögen und die Entscheidungsfähigkeit. Dadurch kann eine Person risikoreiche oder gefährliche Fahrmanöver durchführen, die sie unter normalen Umständen vermeiden würde.\r\n\r\nBeeinträchtigte Koordination: Alkohol wirkt sich auf die motorische Koordination aus, was zu einer verminderten Kontrolle über das Fahrzeug führen kann. Dies kann zu unsicherem Lenken, Schleudern oder unkontrollierten Bewegungen des Fahrzeugs führen.\r\n\r\nVerengtes Blickfeld: Alkoholkonsum kann das periphere Sichtfeld einschränken, sodass der Fahrer wichtige Informationen und potenzielle Gefahren auf der Straße möglicherweise nicht rechtzeitig wahrnimmt.\r\n\r\nMüdigkeit und Schläfrigkeit: Alkohol kann zu Müdigkeit und Schläfrigkeit führen, was das Risiko von Sekundenschlaf und dadurch bedingten Unfällen erhöht.\r\n\r\nEs ist wichtig zu beachten, dass bereits geringe Mengen Alkohol die Fahrtüchtigkeit beeinträchtigen können."
+          "questionExplanation": "Alkohol kann die Fahrtüchtigkeit erheblich einschränken. Ebenso Medikamente oder Drogen. \r\n\r\nHier sind einige der Auswirkungen, die Alkohol auf das Fahrverhalten haben kann:\r\n\r\nVerminderte Reaktionsfähigkeit: Alkohol beeinträchtigt die Fähigkeit, schnell auf Verkehrssituationen zu reagieren. Die Reaktionszeit wird verlangsamt, was zu einem erhöhten Unfallrisiko führt.\r\n\r\nEingeschränktes Urteilsvermögen: Alkoholkonsum beeinflusst das Urteilsvermögen und die Entscheidungsfähigkeit. Dadurch kann eine Person risikoreiche oder gefährliche Fahrmanöver durchführen, die sie unter normalen Umständen vermeiden würde.\r\n\r\nBeeinträchtigte Koordination: Alkohol wirkt sich auf die motorische Koordination aus, was zu einer verminderten Kontrolle über das Fahrzeug führen kann. Dies kann zu unsicherem Lenken, Schleudern oder unkontrollierten Bewegungen des Fahrzeugs führen.\r\n\r\nVerengtes Blickfeld: Alkoholkonsum kann das periphere Sichtfeld einschränken, sodass der Fahrer wichtige Informationen und potenzielle Gefahren auf der Strasse möglicherweise nicht rechtzeitig wahrnimmt.\r\n\r\nMüdigkeit und Schläfrigkeit: Alkohol kann zu Müdigkeit und Schläfrigkeit führen, was das Risiko von Sekundenschlaf und dadurch bedingten Unfällen erhöht.\r\n\r\nEs ist wichtig zu beachten, dass bereits geringe Mengen Alkohol die Fahrtüchtigkeit beeinträchtigen können."
         },
         "fr": {
           "question": "Indiquez ce qui peut, comme la consommation d'alcool, porter atteinte à l'aptitude à la conduite?",
@@ -49358,10 +49358,10 @@
           "options": [
             "Ja, auch wenn keine Absicht besteht, abzubiegen oder zu überholen, ist es dennoch wichtig, gelegentlich in den Rückspiegel zu schauen",
             "Nein, es ist nur erforderlich, vor einem Fahrstreifenwechsel zum Abbiegen oder Überholen den rückwärtigen Bereich zu überprüfen.",
-            "Ja, außerhalb von Autobahnen ist es notwendig, während der Fahrt gelegentlich in den Rückspiegel zu schauen."
+            "Ja, ausserhalb von Autobahnen ist es notwendig, während der Fahrt gelegentlich in den Rückspiegel zu schauen."
           ],
           "explanations": {},
-          "questionExplanation": "Vorausschauendes Fahren bedeutet in erster Linie, dass Autofahrer Gefahren im Straßenverkehr frühzeitig erkennen und daraufhin auch rechtzeitig und angemessen reagieren können.\r\n\r\nRichten Sie Ihren Blick nicht nur auf das Fahrzeug vor Ihnen sondern auch auf den Verkehr weiter vorne.  Schauen Sie regelmässig in den Rückspiegel. So werden Sie nicht  überrascht und sind entspannter, sicherer und sparsamer unterwegs."
+          "questionExplanation": "Vorausschauendes Fahren bedeutet in erster Linie, dass Autofahrer Gefahren im Strassenverkehr frühzeitig erkennen und daraufhin auch rechtzeitig und angemessen reagieren können.\r\n\r\nRichten Sie Ihren Blick nicht nur auf das Fahrzeug vor Ihnen sondern auch auf den Verkehr weiter vorne.  Schauen Sie regelmässig in den Rückspiegel. So werden Sie nicht  überrascht und sind entspannter, sicherer und sparsamer unterwegs."
         },
         "fr": {
           "question": "Pendant le trajet, est-il nécessaire d'observer, de temps en temps, en arrière au moyen du rétroviseur?",
@@ -49858,14 +49858,14 @@
       ],
       "translations": {
         "de": {
-          "question": "Wozu kann eine regelmäßige Fahrzeugwartung beitragen?",
+          "question": "Wozu kann eine regelmässige Fahrzeugwartung beitragen?",
           "options": [
             "Die Verkehrssicherheit zu gewährleisten",
             "Die Versicherungssumme zu senken",
             "Die frühzeitige Erkennung von Problemen beim Fahrzeug"
           ],
           "explanations": {},
-          "questionExplanation": "Eine regelmäßige Fahrzeugwartung kann zu mehreren positiven Ergebnissen beitragen:\r\n\r\nSicherheit: Eine gut gewartete Fahrzeugkomponenten wie Bremsen, Reifen, Lichter und Lenkung tragen zur Fahrzeugsicherheit bei. Potenziell gefährliche Ausfälle oder Mängel können frühzeitig erkannt und behoben werden.\r\n\r\nVermeidung von Ausfällen: Regelmäßige Wartung minimiert das Risiko von unerwarteten Fahrzeugausfällen. Dies kann Unfälle, Abschleppkosten und Unannehmlichkeiten verhindern.\r\n\r\nLanglebigkeit: Eine ordnungsgemäße Wartung verlängert die Lebensdauer Ihres Fahrzeugs. Verschleißteile werden rechtzeitig ersetzt, was teure Reparaturen in der Zukunft verhindern kann.\r\n\r\nKraftstoffeffizienz: Ein gut gewartetes Fahrzeug läuft effizienter, was zu einem geringeren Kraftstoffverbrauch führt. Saubere Luftfilter, korrekt ausgerichtete Räder und optimale Motoreinstellungen tragen dazu bei.\r\n\r\nWerterhalt: Ein gepflegtes und gut gewartetes Fahrzeug behält seinen Wiederverkaufswert besser. Käufer sind eher bereit, für ein Fahrzeug zu zahlen, das in gutem Zustand ist.\r\n\r\nUmweltfreundlichkeit: Ein optimal funktionierendes Fahrzeug produziert weniger Schadstoffe. Regelmäßige Emissionstests und Wartungen tragen zum Umweltschutz bei.\r\n\r\nRechtliche Einhaltung: In vielen Ländern sind regelmäßige Fahrzeugwartungen gesetzlich vorgeschrieben. Die Nichteinhaltung kann zu Bußgeldern oder anderen rechtlichen Konsequenzen führen.\r\n\r\nFahrkomfort: Ein gut gewartetes Fahrzeug bietet einen besseren Fahrkomfort. Gut funktionierende Klimaanlagen, Federung und andere Systeme tragen zu einer angenehmen Fahrt bei.\r\n\r\nFrühzeitige Erkennung von Problemen: Bei regelmäßiger Wartung werden Probleme frühzeitig erkannt, bevor sie sich verschlimmern. Das kann die Reparaturkosten reduzieren.\r\n\r\nInsgesamt trägt regelmäßige Fahrzeugwartung zu einem sicheren, effizienten und zuverlässigen Fahrerlebnis bei und kann langfristig Kosten sparen."
+          "questionExplanation": "Eine regelmässige Fahrzeugwartung kann zu mehreren positiven Ergebnissen beitragen:\r\n\r\nSicherheit: Eine gut gewartete Fahrzeugkomponenten wie Bremsen, Reifen, Lichter und Lenkung tragen zur Fahrzeugsicherheit bei. Potenziell gefährliche Ausfälle oder Mängel können frühzeitig erkannt und behoben werden.\r\n\r\nVermeidung von Ausfällen: Regelmässige Wartung minimiert das Risiko von unerwarteten Fahrzeugausfällen. Dies kann Unfälle, Abschleppkosten und Unannehmlichkeiten verhindern.\r\n\r\nLanglebigkeit: Eine ordnungsgemässe Wartung verlängert die Lebensdauer Ihres Fahrzeugs. Verschleissteile werden rechtzeitig ersetzt, was teure Reparaturen in der Zukunft verhindern kann.\r\n\r\nKraftstoffeffizienz: Ein gut gewartetes Fahrzeug läuft effizienter, was zu einem geringeren Kraftstoffverbrauch führt. Saubere Luftfilter, korrekt ausgerichtete Räder und optimale Motoreinstellungen tragen dazu bei.\r\n\r\nWerterhalt: Ein gepflegtes und gut gewartetes Fahrzeug behält seinen Wiederverkaufswert besser. Käufer sind eher bereit, für ein Fahrzeug zu zahlen, das in gutem Zustand ist.\r\n\r\nUmweltfreundlichkeit: Ein optimal funktionierendes Fahrzeug produziert weniger Schadstoffe. Regelmässige Emissionstests und Wartungen tragen zum Umweltschutz bei.\r\n\r\nRechtliche Einhaltung: In vielen Ländern sind regelmässige Fahrzeugwartungen gesetzlich vorgeschrieben. Die Nichteinhaltung kann zu Bussgeldern oder anderen rechtlichen Konsequenzen führen.\r\n\r\nFahrkomfort: Ein gut gewartetes Fahrzeug bietet einen besseren Fahrkomfort. Gut funktionierende Klimaanlagen, Federung und andere Systeme tragen zu einer angenehmen Fahrt bei.\r\n\r\nFrühzeitige Erkennung von Problemen: Bei regelmässiger Wartung werden Probleme frühzeitig erkannt, bevor sie sich verschlimmern. Das kann die Reparaturkosten reduzieren.\r\n\r\nInsgesamt trägt regelmässige Fahrzeugwartung zu einem sicheren, effizienten und zuverlässigen Fahrerlebnis bei und kann langfristig Kosten sparen."
         },
         "fr": {
           "question": "A quoi peut contribuer un entretien régulier du véhicule ?",
@@ -50747,7 +50747,7 @@
             "In der Kurve zurückschalten"
           ],
           "explanations": {},
-          "questionExplanation": "Sie müssen Ihre Geschwindigkeit an die Sichtweite und den Straßenverlauf anpassen. Daher müssen Sie rechtzeitig vor der Kurve Ihre Geschwindigkeit verringern. Rechnen Sie mit Gegenverkehr, der zu schnell ist und nicht auf seiner Fahrbahnhälfte bleibt.\n\nVor und in unübersichtlichen Kurven müssen Sie ganz am rechten Fahrbahnrand fahren. Verboten sind das Halten, Parken und Umkehren."
+          "questionExplanation": "Sie müssen Ihre Geschwindigkeit an die Sichtweite und den Strassenverlauf anpassen. Daher müssen Sie rechtzeitig vor der Kurve Ihre Geschwindigkeit verringern. Rechnen Sie mit Gegenverkehr, der zu schnell ist und nicht auf seiner Fahrbahnhälfte bleibt.\n\nVor und in unübersichtlichen Kurven müssen Sie ganz am rechten Fahrbahnrand fahren. Verboten sind das Halten, Parken und Umkehren."
         },
         "fr": {
           "question": "Comment éviter que le véhicule ne se retrouve sur la voie opposée dans un virage ?",
@@ -52070,7 +52070,7 @@
             "Wenn Weiden nicht eingezäunt sind, müssen die Tiere durch einen Hirten beaufsichtigt werden"
           ],
           "explanations": {},
-          "questionExplanation": "Ich kann mich nicht darauf verlassen, dass Weidegebiete immer eingezäunt sind\r\n\r\nAls Autofahrer solltest du dich niemals darauf verlassen, dass Weidezäune vollständig intakt oder ausreichend stabil sind, um Tiere davon abzuhalten, auf die Straße zu gelangen. Weidezäune dienen zwar als Barrieren, können jedoch beschädigt oder unterbrochen sein, was dazu führen kann, dass Tiere auf die Fahrbahn laufen und eine potenzielle Gefahr darstellen. Besonders in ländlichen Gebieten ist es wichtig, stets aufmerksam zu fahren und auf Tiere in der Nähe der Straße zu achten, selbst wenn Zäune vorhanden sind."
+          "questionExplanation": "Ich kann mich nicht darauf verlassen, dass Weidegebiete immer eingezäunt sind\r\n\r\nAls Autofahrer solltest du dich niemals darauf verlassen, dass Weidezäune vollständig intakt oder ausreichend stabil sind, um Tiere davon abzuhalten, auf die Strasse zu gelangen. Weidezäune dienen zwar als Barrieren, können jedoch beschädigt oder unterbrochen sein, was dazu führen kann, dass Tiere auf die Fahrbahn laufen und eine potenzielle Gefahr darstellen. Besonders in ländlichen Gebieten ist es wichtig, stets aufmerksam zu fahren und auf Tiere in der Nähe der Strasse zu achten, selbst wenn Zäune vorhanden sind."
         },
         "fr": {
           "question": "Qu'est-ce qui est correct?",
@@ -52574,7 +52574,7 @@
             "Es reicht, wenn ich ein wenig langsamer fahre"
           ],
           "explanations": {},
-          "questionExplanation": "Vorausschauendes Fahren bedeutet in erster Linie, dass Autofahrer Gefahren im Straßenverkehr frühzeitig erkennen und daraufhin auch rechtzeitig und angemessen reagieren können.\n\nEs liegt an Ihnen, selbstständig das Risiko jeder Situation einzuschätzen. Fahren Sie der Situation angepasst, d.h. deutlich langsamer als die erlaubte Höchstgeschwindigkeit, sobald ein Risiko besteht. Vorsicht Gefahr. Seitlichen Abstand vergrössern."
+          "questionExplanation": "Vorausschauendes Fahren bedeutet in erster Linie, dass Autofahrer Gefahren im Strassenverkehr frühzeitig erkennen und daraufhin auch rechtzeitig und angemessen reagieren können.\n\nEs liegt an Ihnen, selbstständig das Risiko jeder Situation einzuschätzen. Fahren Sie der Situation angepasst, d.h. deutlich langsamer als die erlaubte Höchstgeschwindigkeit, sobald ein Risiko besteht. Vorsicht Gefahr. Seitlichen Abstand vergrössern."
         },
         "fr": {
           "question": "Qu'est-ce qui est correct ?",
@@ -52763,7 +52763,7 @@
             "Ich rechne mit keinen besonderen Gefahren"
           ],
           "explanations": {},
-          "questionExplanation": "Vorausschauendes Fahren bedeutet in erster Linie, dass Autofahrer Gefahren im Straßenverkehr frühzeitig erkennen und daraufhin auch rechtzeitig und angemessen reagieren können.\n\nEs liegt an Ihnen, selbstständig das Risiko jeder Situation einzuschätzen. Fahren Sie der Situation angepasst, d.h. deutlich langsamer als die erlaubte Höchstgeschwindigkeit, sobald ein Risiko besteht. Vorsicht Gefahr."
+          "questionExplanation": "Vorausschauendes Fahren bedeutet in erster Linie, dass Autofahrer Gefahren im Strassenverkehr frühzeitig erkennen und daraufhin auch rechtzeitig und angemessen reagieren können.\n\nEs liegt an Ihnen, selbstständig das Risiko jeder Situation einzuschätzen. Fahren Sie der Situation angepasst, d.h. deutlich langsamer als die erlaubte Höchstgeschwindigkeit, sobald ein Risiko besteht. Vorsicht Gefahr."
         },
         "fr": {
           "question": "Comment vous comportez-vous ?",
@@ -52826,7 +52826,7 @@
             "Busse haben immer Vortritt"
           ],
           "explanations": {},
-          "questionExplanation": "Fahrzeuge auf einer Haupt- oder Nebenstraße haben Vortritt vor denen, die aus Fabriken, Höfen, Garagen, Feldwegen, Radwegen, Parkplätzen, Tankstellen oder ähnlichen Orten kommen oder über ein Trottoir fahren müssen."
+          "questionExplanation": "Fahrzeuge auf einer Haupt- oder Nebenstrasse haben Vortritt vor denen, die aus Fabriken, Höfen, Garagen, Feldwegen, Radwegen, Parkplätzen, Tankstellen oder ähnlichen Orten kommen oder über ein Trottoir fahren müssen."
         },
         "fr": {
           "question": "Le bus conduit du dernier arrêt sur la route. Qu'est-ce qui est correct ?",
@@ -53078,7 +53078,7 @@
             "Ich hupe"
           ],
           "explanations": {},
-          "questionExplanation": "Vorausschauendes Fahren bedeutet in erster Linie, dass Autofahrer Gefahren im Straßenverkehr frühzeitig erkennen und daraufhin auch rechtzeitig und angemessen reagieren können.\n\nEs liegt an Ihnen, selbstständig das Risiko jeder Situation einzuschätzen. Fahren Sie der Situation angepasst, d.h. deutlich langsamer als die erlaubte Höchstgeschwindigkeit, sobald ein Risiko besteht. Vorsicht Gefahr. Seitlichen Abstand vergrössern."
+          "questionExplanation": "Vorausschauendes Fahren bedeutet in erster Linie, dass Autofahrer Gefahren im Strassenverkehr frühzeitig erkennen und daraufhin auch rechtzeitig und angemessen reagieren können.\n\nEs liegt an Ihnen, selbstständig das Risiko jeder Situation einzuschätzen. Fahren Sie der Situation angepasst, d.h. deutlich langsamer als die erlaubte Höchstgeschwindigkeit, sobald ein Risiko besteht. Vorsicht Gefahr. Seitlichen Abstand vergrössern."
         },
         "fr": {
           "question": "Qu'est-ce qui est correct ?",
@@ -53141,7 +53141,7 @@
             "Hier muss ich mit keinen Gefahren rechnen"
           ],
           "explanations": {},
-          "questionExplanation": "Vorausschauendes Fahren bedeutet in erster Linie, dass Autofahrer Gefahren im Straßenverkehr frühzeitig erkennen und daraufhin auch rechtzeitig und angemessen reagieren können.\n\nEs liegt an Ihnen, selbstständig das Risiko jeder Situation einzuschätzen. Fahren Sie der Situation angepasst, d.h. deutlich langsamer als die erlaubte Höchstgeschwindigkeit, sobald ein Risiko besteht. Vorsicht Gefahr. Seitlichen Abstand vergrössern."
+          "questionExplanation": "Vorausschauendes Fahren bedeutet in erster Linie, dass Autofahrer Gefahren im Strassenverkehr frühzeitig erkennen und daraufhin auch rechtzeitig und angemessen reagieren können.\n\nEs liegt an Ihnen, selbstständig das Risiko jeder Situation einzuschätzen. Fahren Sie der Situation angepasst, d.h. deutlich langsamer als die erlaubte Höchstgeschwindigkeit, sobald ein Risiko besteht. Vorsicht Gefahr. Seitlichen Abstand vergrössern."
         },
         "fr": {
           "question": "Qu'est-ce qui est correct ?",
@@ -54779,7 +54779,7 @@
             "Das Fahrzeug von rechts hat Vortritt"
           ],
           "explanations": {},
-          "questionExplanation": "Auf Strassenverzweigungen hat grundsätzlich das von rechts kommende Fahrzeug den Vortritt. Aber es gibt Ausnahmen: Fahrzeuge auf einer Haupt- oder Nebenstraße haben Vortritt vor denen, die aus Fabriken, Höfen, Garagen, Feldwegen, Radwegen, Parkplätzen, Tankstellen oder ähnlichen Orten kommen oder über ein Trottoir fahren müssen.\n\nIn dieser Verkehrssituation regelt grundsätzlich die Trottoir-Überfahrt die Vortrittssituation. Das schwarze Fahrzeug hat deshalb keinen Vortritt."
+          "questionExplanation": "Auf Strassenverzweigungen hat grundsätzlich das von rechts kommende Fahrzeug den Vortritt. Aber es gibt Ausnahmen: Fahrzeuge auf einer Haupt- oder Nebenstrasse haben Vortritt vor denen, die aus Fabriken, Höfen, Garagen, Feldwegen, Radwegen, Parkplätzen, Tankstellen oder ähnlichen Orten kommen oder über ein Trottoir fahren müssen.\n\nIn dieser Verkehrssituation regelt grundsätzlich die Trottoir-Überfahrt die Vortrittssituation. Das schwarze Fahrzeug hat deshalb keinen Vortritt."
         },
         "fr": {
           "question": "Qu'est-ce qui est correct ?",
@@ -56354,7 +56354,7 @@
             "Fehlende Leitplanken"
           ],
           "explanations": {},
-          "questionExplanation": "Die Funktion eines Spurhalteassistenten kann durch folgende Faktoren eingeschränkt werden:\r\n\r\n+ Eine verschmutzte Fahrbahn: Dies kann die Erkennung der Fahrbahnmarkierungen durch die Sensoren des Systems beeinträchtigen.\r\n\r\n+ Fehlende Fahrbahnmarkierungen: Der Spurhalteassistent benötigt klar erkennbare Fahrbahnmarkierungen, um ordnungsgemäß zu funktionieren. Wenn diese fehlen, kann das System nicht effektiv arbeiten.\r\n\r\n+ Enge Kurven: In sehr engen Kurven kann das System möglicherweise nicht korrekt funktionieren.\r\n\r\n+ Hohe Geschwindigkeiten: Bei sehr hohen Geschwindigkeiten kann der Lenkeingriff des Systems erschwert sein.\r\n\r\n+ Wetterbedingungen: Starker Regen, Schnee oder Nebel können die Sensorerkennung beeinträchtigen.\r\n\r\nFehlende Leitplanken: Der Spurhalteassistent orientiert sich primär an den Fahrbahnmarkierungen, nicht an Leitplanken.\r\n\r\nEs ist wichtig zu beachten, dass der Spurhalteassistent ein Hilfssystem ist und die Verantwortung für das sichere Lenken des Fahrzeugs weiterhin beim Fahrer liegt"
+          "questionExplanation": "Die Funktion eines Spurhalteassistenten kann durch folgende Faktoren eingeschränkt werden:\r\n\r\n+ Eine verschmutzte Fahrbahn: Dies kann die Erkennung der Fahrbahnmarkierungen durch die Sensoren des Systems beeinträchtigen.\r\n\r\n+ Fehlende Fahrbahnmarkierungen: Der Spurhalteassistent benötigt klar erkennbare Fahrbahnmarkierungen, um ordnungsgemäss zu funktionieren. Wenn diese fehlen, kann das System nicht effektiv arbeiten.\r\n\r\n+ Enge Kurven: In sehr engen Kurven kann das System möglicherweise nicht korrekt funktionieren.\r\n\r\n+ Hohe Geschwindigkeiten: Bei sehr hohen Geschwindigkeiten kann der Lenkeingriff des Systems erschwert sein.\r\n\r\n+ Wetterbedingungen: Starker Regen, Schnee oder Nebel können die Sensorerkennung beeinträchtigen.\r\n\r\nFehlende Leitplanken: Der Spurhalteassistent orientiert sich primär an den Fahrbahnmarkierungen, nicht an Leitplanken.\r\n\r\nEs ist wichtig zu beachten, dass der Spurhalteassistent ein Hilfssystem ist und die Verantwortung für das sichere Lenken des Fahrzeugs weiterhin beim Fahrer liegt"
         },
         "fr": {
           "question": "Qu'est-ce qui peut limiter le fonctionnement d'un système d'alerte de franchissement involontaire de ligne ?",
@@ -57803,7 +57803,7 @@
             "Die allgemein höchstzulässige Geschwindigkeit ausnutzen, weil keine konkrete Gefahr erkennbar ist"
           ],
           "explanations": {},
-          "questionExplanation": "Vorausschauendes Fahren bedeutet in erster Linie, dass Autofahrer Gefahren im Straßenverkehr frühzeitig erkennen und daraufhin auch rechtzeitig und angemessen reagieren können. Dazu gehört Bremsbereitschaft erstellen, wenn eine Gefahr erkannt wird und die Geschwindigkeit reduzieren (Angepasste Geschwindigkeit: Die Geschwindigkeit der Situation anpassen)"
+          "questionExplanation": "Vorausschauendes Fahren bedeutet in erster Linie, dass Autofahrer Gefahren im Strassenverkehr frühzeitig erkennen und daraufhin auch rechtzeitig und angemessen reagieren können. Dazu gehört Bremsbereitschaft erstellen, wenn eine Gefahr erkannt wird und die Geschwindigkeit reduzieren (Angepasste Geschwindigkeit: Die Geschwindigkeit der Situation anpassen)"
         },
         "fr": {
           "question": "A quoi faut-il faire attention dans cette situation ?",
@@ -58632,7 +58632,7 @@
             "Ici, il est nécessaire de se faire comprendre sur la priorité"
           ],
           "explanations": {},
-          "questionExplanation": "Ce signal signifie \" Laissez passer les véhicules venant en sens inverse \"."
+          "questionExplanation": "Ce signal signifie \"Laissez passer les véhicules venant en sens inverse\"."
         },
         "it": {
           "question": "Chi ha il diritto di precedenza?",
@@ -58743,9 +58743,9 @@
         "de": {
           "question": "Wie verhalten Sie sich in dieser Situation?",
           "options": [
-            "Ich lasse den Fußgänger die Fahrbahn überqueren",
-            "Ich warte vor dem Fußgängerstreifen, bis das blaue Fahrzeug abgebogen ist",
-            "Ich schließe unmittelbar zum blauen Fahrzeug auf"
+            "Ich lasse den Fussgänger die Fahrbahn überqueren",
+            "Ich warte vor dem Fussgängerstreifen, bis das blaue Fahrzeug abgebogen ist",
+            "Ich schliesse unmittelbar zum blauen Fahrzeug auf"
           ],
           "explanations": {},
           "questionExplanation": "Der Fussgänger hat Vortritt. Stockt der Verkehr, dann ist es nicht erlaubt, auf dem Fussgängerstreifen anzuhalten. Man muss vor dem Fussgängerstreifen anhalten."
@@ -59335,7 +59335,7 @@
             "Sono su una strada secondaria"
           ],
           "explanations": {},
-          "questionExplanation": "Il segnale 'Incrocio con strada senza precedenza' indica al conducente le strade secondarie al prossimo incrocio rispetto alle quali ha diritto di precedenza. Questo segnale è presente solo sulle strade secondarie. \n\nHo il diritto di precedenza rispetto al veicolo giallo"
+          "questionExplanation": "Il segnale \"Incrocio con strada senza precedenza\" indica al conducente le strade secondarie al prossimo incrocio rispetto alle quali ha diritto di precedenza. Questo segnale è presente solo sulle strade secondarie. \n\nHo il diritto di precedenza rispetto al veicolo giallo"
         }
       }
     },
@@ -59563,7 +59563,7 @@
           "question": "Warum dürfen Sie jetzt nicht überholen?",
           "options": [
             "Wegen des Motorrads das entgegen kommt",
-            "Wegen des Straßenverlaufs",
+            "Wegen des Strassenverlaufs",
             "Wegen des roten Fahrzeugs hinter Ihnen"
           ],
           "explanations": {},
@@ -59693,7 +59693,7 @@
             "Ich fahre mit gleicher Geschwindigkeit weiter"
           ],
           "explanations": {},
-          "questionExplanation": "Vorausschauendes Fahren bedeutet in erster Linie, dass Autofahrer Gefahren im Straßenverkehr frühzeitig erkennen und daraufhin auch rechtzeitig und angemessen reagieren können. Dazu gehört Bremsbereitschaft erstellen, wenn eine Gefahr erkannt wird und die Geschwindigkeit reduzieren (Angepasste Geschwindigkeit: Die Geschwindigkeit der Situation anpassen)\r\n\r\nIn diesem Fall ist ein Kind mit Hund auf der einen Seite und auf der anderen Seite eine Katze. Der Hund orientiert sich zur Katze und könnte auf die Strasse springen"
+          "questionExplanation": "Vorausschauendes Fahren bedeutet in erster Linie, dass Autofahrer Gefahren im Strassenverkehr frühzeitig erkennen und daraufhin auch rechtzeitig und angemessen reagieren können. Dazu gehört Bremsbereitschaft erstellen, wenn eine Gefahr erkannt wird und die Geschwindigkeit reduzieren (Angepasste Geschwindigkeit: Die Geschwindigkeit der Situation anpassen)\r\n\r\nIn diesem Fall ist ein Kind mit Hund auf der einen Seite und auf der anderen Seite eine Katze. Der Hund orientiert sich zur Katze und könnte auf die Strasse springen"
         },
         "fr": {
           "question": "Comment vous comportez-vous dans cette situation ?",
@@ -60071,7 +60071,7 @@
             "Ich beachte den Rückspiegel und wechsle erst nachdem mich das Fahrzeug im Rückspiegel passiert hat auf die linke Fahrbahn"
           ],
           "explanations": {},
-          "questionExplanation": "Achtung: Fahrzeug im Rückspiegel beachten.\r\n\r\nBeim Wechsel der Fahrspur immer den Rückspiegel beachten. Dabei können Fahrzeuge auch im toten Winkel der Rückspiegel sein. Deshalb ist der regelmässige Blick in die Rückspiegel wichtig. Zudem: Schulterblick. Innen- und Außenspiegel, sowie der Schulterblick sind unabkömmlich, wenn Sie sicher abbiegen oder die Spur wechseln möchten."
+          "questionExplanation": "Achtung: Fahrzeug im Rückspiegel beachten.\r\n\r\nBeim Wechsel der Fahrspur immer den Rückspiegel beachten. Dabei können Fahrzeuge auch im toten Winkel der Rückspiegel sein. Deshalb ist der regelmässige Blick in die Rückspiegel wichtig. Zudem: Schulterblick. Innen- und Aussenspiegel, sowie der Schulterblick sind unabkömmlich, wenn Sie sicher abbiegen oder die Spur wechseln möchten."
         },
         "fr": {
           "question": "Le bus s'arrête à l'arrêt. Comment vous comportez-vous ?",
@@ -60449,7 +60449,7 @@
             "Der Lastwagen hat Vortritt"
           ],
           "explanations": {},
-          "questionExplanation": "Wenn sich zwei Nebenstraßen kreuzen, gilt Vortritt von Rechts. Ich muss dem Fahrrad Vortritt gewähren und habe selbst Vortritt vor dem Lastwagen."
+          "questionExplanation": "Wenn sich zwei Nebenstrassen kreuzen, gilt Vortritt von Rechts. Ich muss dem Fahrrad Vortritt gewähren und habe selbst Vortritt vor dem Lastwagen."
         },
         "fr": {
           "question": "Qu'est-ce qui est valable dans cette situation ?",
@@ -60638,7 +60638,7 @@
             "Der blaue Wagen vor den anderen Fahrzeugen"
           ],
           "explanations": {},
-          "questionExplanation": "Rechtsvortritt. Kreuzen sich zwei Nebenstrassen, so hat das Fahrzeug von Rechts Vortritt. (Grundsätzlich aber: Ungeregelter Fall des Rechtsvortritts).\r\n\r\nIm Detail:\r\nBlau hat Vortritt vor Rot.\r\nSchwarz hat Vortritt vor Blau.\r\nRot hatVortritt vor Schwarz.\r\n\r\nAlle diese Aussagen stimmen. Aber keiner hat Vortritt vor den beiden anderen Fahrzeugen.\r\n\r\n-> Ein sogenannt ungeregelter Fall des Rechtsvortritts. Der Rechtsvortritt hebt sich gegenseitig auf. Es ist Verständigung über den Vortritt notwendig."
+          "questionExplanation": "Rechtsvortritt. Kreuzen sich zwei Nebenstrassen, so hat das Fahrzeug von Rechts Vortritt. (Grundsätzlich aber: Ungeregelter Fall des Rechtsvortritts).\r\n\r\nIm Detail:\r\nBlau hat Vortritt vor Rot.\r\nSchwarz hat Vortritt vor Blau.\r\nRot hat Vortritt vor Schwarz.\r\n\r\nAlle diese Aussagen stimmen. Aber keiner hat Vortritt vor den beiden anderen Fahrzeugen.\r\n\r\n-> Ein sogenannt ungeregelter Fall des Rechtsvortritts. Der Rechtsvortritt hebt sich gegenseitig auf. Es ist Verständigung über den Vortritt notwendig."
         },
         "fr": {
           "question": "Qui a la priorité?",
@@ -61457,7 +61457,7 @@
             "Der blaue Wagen hat Vortritt"
           ],
           "explanations": {},
-          "questionExplanation": "Das Signal \"Verzweigung mit Strasse ohne Vortritt\" zeigt dem Führer auf Nebenstrassen an, dass er bei der nächsten Verzweigung vortrittsberechtigt ist. Diese Signal steht nur auf Nebenstrassen. \r\n\r\nGrün hat Vortritt vor den anderen Fahrzeugen."
+          "questionExplanation": "Das Signal \"Verzweigung mit Strasse ohne Vortritt\" zeigt dem Führer auf Nebenstrassen an, dass er bei der nächsten Verzweigung vortrittsberechtigt ist. Dieses Signal steht nur auf Nebenstrassen. \r\n\r\nGrün hat Vortritt vor den anderen Fahrzeugen."
         },
         "fr": {
           "question": "Qu'est-ce qui est correct?",
@@ -61477,7 +61477,7 @@
             "L'automobile blu ha la precedenza"
           ],
           "explanations": {},
-          "questionExplanation": "Il segnale 'Incrocio con strada senza precedenza' indica al conducente le strade secondarie al prossimo incrocio rispetto alle quali ha diritto di precedenza. Questo segnale è presente solo sulle strade secondarie. \r\n\r\nIl verde ha la precedenza sugli altri veicoli."
+          "questionExplanation": "Il segnale \"Incrocio con strada senza precedenza\" indica al conducente le strade secondarie al prossimo incrocio rispetto alle quali ha diritto di precedenza. Questo segnale è presente solo sulle strade secondarie. \r\n\r\nIl verde ha la precedenza sugli altri veicoli."
         }
       }
     },
@@ -61540,7 +61540,7 @@
             "In questo caso il segnale \"stop\" è privo di significato"
           ],
           "explanations": {},
-          "questionExplanation": "Se il traffico è regolato da segnali luminosi, non è necessario rispettare i segnali \"Stop\" e \" Nessuna precedenza\". \r\n\r\nImportante regola di base (da ricordare)\r\n\r\nLivelli gerarchici nel traffico:\r\n1. le istruzioni delle persone (polizia, vigili del fuoco, servizio di viabilità, ecc.) hanno la precedenza.\r\n2. segnali luminosi\r\n3. segnaletica e cartelli stradali\r\n\r\nDopodiché si applicano le norme giuridiche generali (come il diritto di passaggio, ecc.)"
+          "questionExplanation": "Se il traffico è regolato da segnali luminosi, non è necessario rispettare i segnali \"Stop\" e \"Nessuna precedenza\". \r\n\r\nImportante regola di base (da ricordare)\r\n\r\nLivelli gerarchici nel traffico:\r\n1. le istruzioni delle persone (polizia, vigili del fuoco, servizio di viabilità, ecc.) hanno la precedenza.\r\n2. segnali luminosi\r\n3. segnaletica e cartelli stradali\r\n\r\nDopodiché si applicano le norme giuridiche generali (come il diritto di passaggio, ecc.)"
         }
       }
     },
@@ -62087,7 +62087,7 @@
             "Hier muss ich mit keinen besonderen Gefahren rechnen"
           ],
           "explanations": {},
-          "questionExplanation": "Vorausschauendes Fahren bedeutet in erster Linie, dass Autofahrer Gefahren im Straßenverkehr frühzeitig erkennen und daraufhin auch rechtzeitig und angemessen reagieren können. Dazu gehört Bremsbereitschaft erstellen, wenn eine Gefahr erkannt wird und die Geschwindigkeit reduzieren (Angepasste Geschwindigkeit: Die Geschwindigkeit der Situation anpassen)\r\n\r\nIn diesem Fall zeigt das Signal \"Achtung Kinder\" an, dass häufig mit Kindern auf der Fahrbahn zu rechnen ist; es ist im Bereich von Schulhäusern, Spielplätzen und dergleichen aufgestellt. Die Situation ist unübersichtlich. Passe also dein Fahrverhalten entsprechend an."
+          "questionExplanation": "Vorausschauendes Fahren bedeutet in erster Linie, dass Autofahrer Gefahren im Strassenverkehr frühzeitig erkennen und daraufhin auch rechtzeitig und angemessen reagieren können. Dazu gehört Bremsbereitschaft erstellen, wenn eine Gefahr erkannt wird und die Geschwindigkeit reduzieren (Angepasste Geschwindigkeit: Die Geschwindigkeit der Situation anpassen)\r\n\r\nIn diesem Fall zeigt das Signal \"Achtung Kinder\" an, dass häufig mit Kindern auf der Fahrbahn zu rechnen ist; es ist im Bereich von Schulhäusern, Spielplätzen und dergleichen aufgestellt. Die Situation ist unübersichtlich. Passe also dein Fahrverhalten entsprechend an."
         },
         "fr": {
           "question": "Comment vous comportez-vous dans cette situation ?",
@@ -64868,7 +64868,7 @@
             "Je continue à circuler de manière très attentive à la même vitesse."
           ],
           "explanations": {},
-          "questionExplanation": "Afin de pouvoir réagir le plus tôt possible dans le trafic routier, il est important d'observer les autres usagers et d'anticiper leur comportement (deviner, ce qu'ils vont faire). L'âge des usagers joue également un rôle.\n\n1. Les personnes plus âgées ont besoin de plus de temps pour traverser la rue et peuvent soudainement s'immobiliser , effrayées.\n\n2. Le comportement des enfants est imprévisible - absorbés par le jeu, ils ne pensent souvent pas à la circulation routière.\n\n3. L'espace doit être augmenté si le conducteur précédent roule de manière mal assurée.\n\nSur les routes secondaires situées dans les quartiers d'habitation et sur les routes secondaires sur lesquelles la circulation des véhicules n'est autorisée que dans une mesure limitée, les conducteurs sont tenus de circuler d'une manière particulièrement prudente et prévenante. Les conducteurs doivent se tenir prêts à freiner aux endroits sans visibilité.\n\ncf. Art. 41 VRV"
+          "questionExplanation": "Afin de pouvoir réagir le plus tôt possible dans le trafic routier, il est important d'observer les autres usagers et d'anticiper leur comportement (deviner, ce qu'ils vont faire). L'âge des usagers joue également un rôle.\n\n1. Les personnes plus âgées ont besoin de plus de temps pour traverser la rue et peuvent soudainement s'immobiliser, effrayées.\n\n2. Le comportement des enfants est imprévisible - absorbés par le jeu, ils ne pensent souvent pas à la circulation routière.\n\n3. L'espace doit être augmenté si le conducteur précédent roule de manière mal assurée.\n\nSur les routes secondaires situées dans les quartiers d'habitation et sur les routes secondaires sur lesquelles la circulation des véhicules n'est autorisée que dans une mesure limitée, les conducteurs sont tenus de circuler d'une manière particulièrement prudente et prévenante. Les conducteurs doivent se tenir prêts à freiner aux endroits sans visibilité.\n\ncf. Art. 41 VRV"
         },
         "it": {
           "question": "Come vi comportate in questa situazione?",
@@ -66254,7 +66254,7 @@
             "Je me prépare à freiner."
           ],
           "explanations": {},
-          "questionExplanation": "Afin de pouvoir réagir le plus tôt possible dans le trafic routier, il est important d'observer les autres usagers et d'anticiper leur comportement (deviner, ce qu'ils vont faire). L'âge des usagers joue également un rôle.\n\n1. Les personnes plus âgées ont besoin de plus de temps pour traverser la rue et peuvent soudainement s'immobiliser , effrayées.\n\n2. Le comportement des enfants est imprévisible - absorbés par le jeu, ils ne pensent souvent pas à la circulation routière.\n\n3. L'espace doit être augmenté si le conducteur précédent roule de manière mal assurée.\n\nLe conducteur donnera des signaux acoustiques lorsque des enfants qui semblent ne pas prêter attention à la circulation se trouvent sur la route ou à ses abords et, sur les routes étroites à l'extérieur des localités, avant de s'engager dans un virage serré et dépourvu de visibilité.\n\ncf. Art. 29 VRV"
+          "questionExplanation": "Afin de pouvoir réagir le plus tôt possible dans le trafic routier, il est important d'observer les autres usagers et d'anticiper leur comportement (deviner, ce qu'ils vont faire). L'âge des usagers joue également un rôle.\n\n1. Les personnes plus âgées ont besoin de plus de temps pour traverser la rue et peuvent soudainement s'immobiliser, effrayées.\n\n2. Le comportement des enfants est imprévisible - absorbés par le jeu, ils ne pensent souvent pas à la circulation routière.\n\n3. L'espace doit être augmenté si le conducteur précédent roule de manière mal assurée.\n\nLe conducteur donnera des signaux acoustiques lorsque des enfants qui semblent ne pas prêter attention à la circulation se trouvent sur la route ou à ses abords et, sur les routes étroites à l'extérieur des localités, avant de s'engager dans un virage serré et dépourvu de visibilité.\n\ncf. Art. 29 VRV"
         },
         "it": {
           "question": "Qual è il modo migliore di reagire in questa situazione?",
@@ -66380,7 +66380,7 @@
             "Je garde une certaine distance pour que la piétonne ne se sente pas menacée."
           ],
           "explanations": {},
-          "questionExplanation": "Chacun doit se comporter, dans la circulation, de manière à ne pas gêner ni mettre en danger ceux qui utilisent la route conformément aux règles établies.\n\nUne prudence particulière s'impose à l'égard des enfants, des infirmes et des personnes âgées, ainsi que s'il apparaît qu'un usager de la route va se comporter de manière incorrecte.\n\ncf. Art. 26 SVG\n\nAfin de pouvoir réagir le plus tôt possible dans le trafic routier, il est important d'observer les autres usagers et d'anticiper leur comportement (deviner, ce qu'ils vont faire). L'âge des usagers joue également un rôle.\n\n1. Les personnes plus âgées ont besoin de plus de temps pour traverser la rue et peuvent soudainement s'immobiliser , effrayées.\n\n2. Le comportement des enfants est imprévisible - absorbés par le jeu, ils ne pensent souvent pas à la circulation routière.\n\n3. L'espace doit être augmenté si le conducteur précédent roule de manière mal assurée."
+          "questionExplanation": "Chacun doit se comporter, dans la circulation, de manière à ne pas gêner ni mettre en danger ceux qui utilisent la route conformément aux règles établies.\n\nUne prudence particulière s'impose à l'égard des enfants, des infirmes et des personnes âgées, ainsi que s'il apparaît qu'un usager de la route va se comporter de manière incorrecte.\n\ncf. Art. 26 SVG\n\nAfin de pouvoir réagir le plus tôt possible dans le trafic routier, il est important d'observer les autres usagers et d'anticiper leur comportement (deviner, ce qu'ils vont faire). L'âge des usagers joue également un rôle.\n\n1. Les personnes plus âgées ont besoin de plus de temps pour traverser la rue et peuvent soudainement s'immobiliser, effrayées.\n\n2. Le comportement des enfants est imprévisible - absorbés par le jeu, ils ne pensent souvent pas à la circulation routière.\n\n3. L'espace doit être augmenté si le conducteur précédent roule de manière mal assurée."
         },
         "it": {
           "question": "Che cosa fa in questa situazione?",
@@ -66506,7 +66506,7 @@
             "Je klaxonne pour attirer l'attention sur moi."
           ],
           "explanations": {},
-          "questionExplanation": "Chacun doit se comporter, dans la circulation, de manière à ne pas gêner ni mettre en danger ceux qui utilisent la route conformément aux règles établies.\n\nUne prudence particulière s'impose à l'égard des enfants, des infirmes et des personnes âgées, ainsi que s'il apparaît qu'un usager de la route va se comporter de manière incorrecte.\n\ncf. Art. 26 SVG\n\nAfin de pouvoir réagir le plus tôt possible dans le trafic routier, il est important d'observer les autres usagers et d'anticiper leur comportement (deviner, ce qu'ils vont faire). L'âge des usagers joue également un rôle.\n\n1. Les personnes plus âgées ont besoin de plus de temps pour traverser la rue et peuvent soudainement s'immobiliser , effrayées.\n\n2. Le comportement des enfants est imprévisible - absorbés par le jeu, ils ne pensent souvent pas à la circulation routière.\n\n3. L'espace doit être augmenté si le conducteur précédent roule de manière mal assurée."
+          "questionExplanation": "Chacun doit se comporter, dans la circulation, de manière à ne pas gêner ni mettre en danger ceux qui utilisent la route conformément aux règles établies.\n\nUne prudence particulière s'impose à l'égard des enfants, des infirmes et des personnes âgées, ainsi que s'il apparaît qu'un usager de la route va se comporter de manière incorrecte.\n\ncf. Art. 26 SVG\n\nAfin de pouvoir réagir le plus tôt possible dans le trafic routier, il est important d'observer les autres usagers et d'anticiper leur comportement (deviner, ce qu'ils vont faire). L'âge des usagers joue également un rôle.\n\n1. Les personnes plus âgées ont besoin de plus de temps pour traverser la rue et peuvent soudainement s'immobiliser, effrayées.\n\n2. Le comportement des enfants est imprévisible - absorbés par le jeu, ils ne pensent souvent pas à la circulation routière.\n\n3. L'espace doit être augmenté si le conducteur précédent roule de manière mal assurée."
         },
         "it": {
           "question": "Come vi comportate qui?",
@@ -67620,7 +67620,7 @@
             "… sont autorisés à obliquer mais n'ont pas la priorité."
           ],
           "explanations": {},
-          "questionExplanation": "les feux clignotants rouges, les feux rouges, ainsi que les signaux acoustiques signifient \"arrêt\". Autorisation de tourner à droite au feu rouge pour les cyclistes et les conducteurs de cyclomoteurs: \" Au feu rouge, on s'arrête ! \". Ce principe restera valable. La nouveauté concerne les cyclistes et les conducteurs de cyclomoteurs, qui seront désormais autorisés à tourner à droite au feu rouge en présence d'un panneau ad hoc pourvu d'un vélo jaune et d'une flèche. Lors de cette manœuvre, ils devront prêter attention aux piétons et à la circulation transversale, ces derniers ayant la priorité. En l'absence de signalisation complémentaire, les vélos et les cyclomoteurs sont tenus de s'arrêter au feu rouge.\n\ncf. Art. 93 SSV"
+          "questionExplanation": "les feux clignotants rouges, les feux rouges, ainsi que les signaux acoustiques signifient \"arrêt\". Autorisation de tourner à droite au feu rouge pour les cyclistes et les conducteurs de cyclomoteurs: \"Au feu rouge, on s'arrête !\". Ce principe restera valable. La nouveauté concerne les cyclistes et les conducteurs de cyclomoteurs, qui seront désormais autorisés à tourner à droite au feu rouge en présence d'un panneau ad hoc pourvu d'un vélo jaune et d'une flèche. Lors de cette manœuvre, ils devront prêter attention aux piétons et à la circulation transversale, ces derniers ayant la priorité. En l'absence de signalisation complémentaire, les vélos et les cyclomoteurs sont tenus de s'arrêter au feu rouge.\n\ncf. Art. 93 SSV"
         },
         "it": {
           "question": "Se il semaforo è rosso, qui i ciclisti…",
@@ -68250,7 +68250,7 @@
             "Je me déporte sur la voie opposée"
           ],
           "explanations": {},
-          "questionExplanation": "Afin de pouvoir réagir le plus tôt possible dans le trafic routier, il est important d'observer les autres usagers et d'anticiper leur comportement (deviner, ce qu'ils vont faire). L'âge des usagers joue également un rôle.\n\n1. Les personnes plus âgées ont besoin de plus de temps pour traverser la rue et peuvent soudainement s'immobiliser , effrayées.\n\n2. Le comportement des enfants est imprévisible - absorbés par le jeu, ils ne pensent souvent pas à la circulation routière.\n\n3. L'espace doit être augmenté si le conducteur précédent roule de manière mal assurée.\n\nLe signal \"Enfants\" indique qu'il faut s'attendre à la présence d'enfants sur la chaussée. Il sera placé aux abords des écoles, des places de jeux, etc. Le conducteur doit réduire sa vitesse et s'arrêter au besoin lorsque des enfants non attentifs à la circulation se trouvent sur la route ou à ses abords. Il donnera des signaux acoustiques lorsque des enfants qui semblent ne pas prêter attention à la circulation se trouvent sur la route ou à ses abords.\n\ncf. Art. 11 SSV"
+          "questionExplanation": "Afin de pouvoir réagir le plus tôt possible dans le trafic routier, il est important d'observer les autres usagers et d'anticiper leur comportement (deviner, ce qu'ils vont faire). L'âge des usagers joue également un rôle.\n\n1. Les personnes plus âgées ont besoin de plus de temps pour traverser la rue et peuvent soudainement s'immobiliser, effrayées.\n\n2. Le comportement des enfants est imprévisible - absorbés par le jeu, ils ne pensent souvent pas à la circulation routière.\n\n3. L'espace doit être augmenté si le conducteur précédent roule de manière mal assurée.\n\nLe signal \"Enfants\" indique qu'il faut s'attendre à la présence d'enfants sur la chaussée. Il sera placé aux abords des écoles, des places de jeux, etc. Le conducteur doit réduire sa vitesse et s'arrêter au besoin lorsque des enfants non attentifs à la circulation se trouvent sur la route ou à ses abords. Il donnera des signaux acoustiques lorsque des enfants qui semblent ne pas prêter attention à la circulation se trouvent sur la route ou à ses abords.\n\ncf. Art. 11 SSV"
         },
         "it": {
           "question": "Questi bambini non fanno caso alla circolazione stradale. Qual è la risposta migliore?",
@@ -71181,7 +71181,7 @@
             "Das zuerst beim Engpass eintreffende Fahrzeug hat Vortritt"
           ],
           "explanations": {},
-          "questionExplanation": "Das Signal \"Dem Gegenverkehr Vortritt lassen\" verpflichtet den in Richtung des roten Pfeils fahrenden Führer bei Fahrbahnverengungen, dem Gegenverkehr den Vortritt zu lassen. Die Wartepflicht gilt nicht für einspurige Fahrzeuge, deren Führer erkennen können, dass die verengte Fahrbahn ein gefahrloses Kreuzen zulässt. Am andern Ende der Verengung steht das Signal \"Vortritt vor dem Gegenverkehr \".\n\nvgl. Art. 42 SSV"
+          "questionExplanation": "Das Signal \"Dem Gegenverkehr Vortritt lassen\" verpflichtet den in Richtung des roten Pfeils fahrenden Führer bei Fahrbahnverengungen, dem Gegenverkehr den Vortritt zu lassen. Die Wartepflicht gilt nicht für einspurige Fahrzeuge, deren Führer erkennen können, dass die verengte Fahrbahn ein gefahrloses Kreuzen zulässt. Am andern Ende der Verengung steht das Signal \"Vortritt vor dem Gegenverkehr\".\n\nvgl. Art. 42 SSV"
         },
         "fr": {
           "question": "",
@@ -84473,7 +84473,7 @@
           "question": "Was trifft zu?",
           "options": [
             "Dieses Schild zeigt an, dass ich mich ausserorts befinde",
-            "Dieses Schild zeigt an, dass ich maximal 50km/h fahren darf",
+            "Dieses Schild zeigt an, dass ich maximal 50 km/h fahren darf",
             "Dieses Schild zeigt an, dass ich mich auf einer Hauptstrasse befinde"
           ],
           "explanations": {},
@@ -84483,7 +84483,7 @@
           "question": "Qu'est-ce qui est correct?",
           "options": [
             "Ce panneau indique que je suis à l'extérieur de la localité",
-            "Ce panneau indique que je peux rouler au maximum à 50km/h",
+            "Ce panneau indique que je peux rouler au maximum à 50 km/h",
             "Ce panneau indique que je me trouve sur une route principale"
           ],
           "explanations": {},
@@ -86427,7 +86427,7 @@
           "options": [
             "Die zuvor signalisierte Höchstgeschwindigkeit ist aufgehoben",
             "Es gilt freie Fahrt. Alle zuvor signalisierten Beschränkungen sind aufgehoben",
-            "Nach dem Signal gilt die allgemeine Höchstgeschwindigkeit von 80km/h"
+            "Nach dem Signal gilt die allgemeine Höchstgeschwindigkeit von 80 km/h"
           ],
           "explanations": {},
           "questionExplanation": "Die allgemeine Höchstgeschwindigkeit von 80 km/h gilt ab dem Signal \"Ende der Höchstgeschwindigkeit 50 generell\" oder \"Ende der Höchstgeschwindigkeit\", beim Verlassen einer Autostrasse oder Autobahn ab dem Signal \"Ende der Autostrasse\" oder dem Signal \"Ende der Autobahn\".\n\nvgl. Art. 4 VRV"
@@ -86934,17 +86934,17 @@
             "Nein, die Geschwindigkeit ist zu hoch"
           ],
           "explanations": {},
-          "questionExplanation": "Angemessene Geschwindigkeit. Der Fahrzeugführer darf nur so schnell fahren, dass er innerhalb der überblickbaren Strecke halten kann; wo das Kreuzen schwierig ist, muss er auf halbe Sichtweite halten können.\n\nvgl. Art. 4 VRV\n\nDer Bremsweg ist abhängig von der Beschaffenheit der Fahrbahn (trocken oder nass, griffig oder glitschig) sowie vom Zustand Ihres Fahrzeuges (Bremsen, Bereifung).\n\nReaktionsweg: 3m pro 10km/h (Die Reaktionszeit ist ca 1 sec.)\n50 km/h -> 5 x 3 = 15 m\n80 km/h -> 8 x 3 = 24 m\nBremsbereitschaft kann die Reaktionszeit verkürzen!\n\nBremsweg (km/h : 10)2\na) nasse Strasse\n50 km/h -> 5 x 5 = 25 m\n100 km/h -> 10 x 10 = 100 m\n\nb) trockene Strasse (1/4 weniger als bei nasser Strasse)\n50 km/h -> 5 x 5 = 25 m\n25 x 3/4 = 18.75 m\n\n100 km/h -> 10 x 10 = 100 m\n100 x 3/4 = 75 m\n\nAnhalteweg = Reaktionsweg + Bremsweg (a)\n50 km/h -> 15 m + 25 m = 40 m"
+          "questionExplanation": "Angemessene Geschwindigkeit. Der Fahrzeugführer darf nur so schnell fahren, dass er innerhalb der überblickbaren Strecke halten kann; wo das Kreuzen schwierig ist, muss er auf halbe Sichtweite halten können.\n\nvgl. Art. 4 VRV\n\nDer Bremsweg ist abhängig von der Beschaffenheit der Fahrbahn (trocken oder nass, griffig oder glitschig) sowie vom Zustand Ihres Fahrzeuges (Bremsen, Bereifung).\n\nReaktionsweg: 3m pro 10 km/h (Die Reaktionszeit ist ca 1 sec.)\n50 km/h -> 5 x 3 = 15 m\n80 km/h -> 8 x 3 = 24 m\nBremsbereitschaft kann die Reaktionszeit verkürzen!\n\nBremsweg (km/h : 10)2\na) nasse Strasse\n50 km/h -> 5 x 5 = 25 m\n100 km/h -> 10 x 10 = 100 m\n\nb) trockene Strasse (1/4 weniger als bei nasser Strasse)\n50 km/h -> 5 x 5 = 25 m\n25 x 3/4 = 18.75 m\n\n100 km/h -> 10 x 10 = 100 m\n100 x 3/4 = 75 m\n\nAnhalteweg = Reaktionsweg + Bremsweg (a)\n50 km/h -> 15 m + 25 m = 40 m"
         },
         "fr": {
-          "question": "Un véhicule automobile roule à 60km/h dans le brouillard. Il y a une visibilité de 30m. Est-ce que la vitesse est adaptée?",
+          "question": "Un véhicule automobile roule à 60 km/h dans le brouillard. Il y a une visibilité de 30m. Est-ce que la vitesse est adaptée?",
           "options": [
             "Oui, parce que je circule avec les phares allumés",
             "Oui, parce qu'il est possible de croiser",
             "Non, la vitesse est trop élevée"
           ],
           "explanations": {},
-          "questionExplanation": "Adaptation de la vitesse. Le conducteur ne doit pas circuler à une vitesse qui l'empêcherait de s'arrêter sur la distance de visibilité.Lorsque le croisement est malaisé, il doit pouvoir s'arrêter sur la moitié de cette distance.\n\ncf. Art. 4 VRV\n\nLa distance de freinage dépend de l'état de la chaussée (sèche ou humide, adhérente ou glissante) ainsi que de celui du véhicule (freins, pneus).\n\nDistance de réaction: 3m par 10km/h (Le temps de réaction est environ 1 sec.)\n50 km/h -> 5 x 3 = 15 m\n80 km/h -> 8 x 3 = 24 m\nÊtre prêt à freigner peut réduire la distance de réaction!\n\nDistance de freinage (km/h : 10)2\na) chaussée mouillée\n50 km/h -> 5 x 5 = 25 m\n100 km/h -> 10 x 10 = 100 m\n\nb) chaussée sèche (1/4 moins que sur chaussée mouillée)\n50 km/h -> 5 x 5 = 25 m\n25 x 3/4 = 18.75 m\n\n100 km/h -> 10 x 10 = 100 m\n100 x 3/4 = 75 m\n\nDistance d'arrêt = Distance de réaction + distance de freinage (a)\n50 km/h -> 15 m + 25 m = 40 m"
+          "questionExplanation": "Adaptation de la vitesse. Le conducteur ne doit pas circuler à une vitesse qui l'empêcherait de s'arrêter sur la distance de visibilité.Lorsque le croisement est malaisé, il doit pouvoir s'arrêter sur la moitié de cette distance.\n\ncf. Art. 4 VRV\n\nLa distance de freinage dépend de l'état de la chaussée (sèche ou humide, adhérente ou glissante) ainsi que de celui du véhicule (freins, pneus).\n\nDistance de réaction: 3m par 10 km/h (Le temps de réaction est environ 1 sec.)\n50 km/h -> 5 x 3 = 15 m\n80 km/h -> 8 x 3 = 24 m\nÊtre prêt à freigner peut réduire la distance de réaction!\n\nDistance de freinage (km/h : 10)2\na) chaussée mouillée\n50 km/h -> 5 x 5 = 25 m\n100 km/h -> 10 x 10 = 100 m\n\nb) chaussée sèche (1/4 moins que sur chaussée mouillée)\n50 km/h -> 5 x 5 = 25 m\n25 x 3/4 = 18.75 m\n\n100 km/h -> 10 x 10 = 100 m\n100 x 3/4 = 75 m\n\nDistance d'arrêt = Distance de réaction + distance de freinage (a)\n50 km/h -> 15 m + 25 m = 40 m"
         },
         "it": {
           "question": "Un autoveicolo viaggia nella nebbia a 60 km/h. La visibilità è limitata a 30 metri. Questa velocità è adeguata?",
@@ -86954,7 +86954,7 @@
             "No, la velocità è eccessiva"
           ],
           "explanations": {},
-          "questionExplanation": "Velocità adeguata. Il conducente deve circolare a una velocità che gli permetta di fermarsi nello spazio visibile; se l'incrocio con altri veicoli è difficile, egli deve poter fermarsi nella metà dello spazio visibile.\n\ncfr. Art. 4 VRV\n\nLo spazio di frenata dipende dalla conformazione della carreggiata (asciutta o bagnata, antisdrucciolevole o scivolosa) nonché dallo stato del Vostro veicolo (freni, pneumatici).\n\nDistanza di reazione: 3m ogni 10km/h (Il tempo per reagire é più o meno 1 sec.)\n50 km/h -> 5 x 3 = 15 m\n80 km/h -> 8 x 3 = 24 m\nL'essere pronti a frenare può diminuiere la distanza di reazione!\n\nDistanza di frenata (km/h : 10)2\na) strada bagnata\n50 km/h -> 5 x 5 = 25 m\n100 km/h -> 10 x 10 = 100 m\n\nb) strada asciutta (1/4 di meno che sulla strada bagnata)\n50 km/h -> 5 x 5 = 25 m\n25 x 3/4 = 18.75m\n\n100 km/h -> 10 x 10 = 100 m\n100 x 3/4 = 75 m\n\nDistanza di fermata = Distanza di reazione + Distanza di frenata (a)\n50 km/h -> 15 m + 25 m = 40 m"
+          "questionExplanation": "Velocità adeguata. Il conducente deve circolare a una velocità che gli permetta di fermarsi nello spazio visibile; se l'incrocio con altri veicoli è difficile, egli deve poter fermarsi nella metà dello spazio visibile.\n\ncfr. Art. 4 VRV\n\nLo spazio di frenata dipende dalla conformazione della carreggiata (asciutta o bagnata, antisdrucciolevole o scivolosa) nonché dallo stato del Vostro veicolo (freni, pneumatici).\n\nDistanza di reazione: 3m ogni 10 km/h (Il tempo per reagire é più o meno 1 sec.)\n50 km/h -> 5 x 3 = 15 m\n80 km/h -> 8 x 3 = 24 m\nL'essere pronti a frenare può diminuiere la distanza di reazione!\n\nDistanza di frenata (km/h : 10)2\na) strada bagnata\n50 km/h -> 5 x 5 = 25 m\n100 km/h -> 10 x 10 = 100 m\n\nb) strada asciutta (1/4 di meno che sulla strada bagnata)\n50 km/h -> 5 x 5 = 25 m\n25 x 3/4 = 18.75m\n\n100 km/h -> 10 x 10 = 100 m\n100 x 3/4 = 75 m\n\nDistanza di fermata = Distanza di reazione + Distanza di frenata (a)\n50 km/h -> 15 m + 25 m = 40 m"
         }
       },
       "id": 1770
@@ -87060,7 +87060,7 @@
             "70 km/h"
           ],
           "explanations": {},
-          "questionExplanation": "Der Bremsweg ist abhängig von der Beschaffenheit der Fahrbahn (trocken oder nass, griffig oder glitschig) sowie vom Zustand Ihres Fahrzeuges (Bremsen, Bereifung).\n\nReaktionsweg: 3m pro 10km/h (Die Reaktionszeit ist ca 1 sec.)\n50 km/h -> 5 x 3 = 15 m\n80 km/h -> 8 x 3 = 24 m\nBremsbereitschaft kann die Reaktionszeit verkürzen!\n\nBremsweg (km/h : 10)2\na) nasse Strasse\n50 km/h -> 5 x 5 = 25 m\n100 km/h -> 10 x 10 = 100 m\n\nb) trockene Strasse (1/4 weniger als bei nasser Strasse)\n50 km/h -> 5 x 5 = 25 m\n25 x 3/4 = 18.75 m\n\n100 km/h -> 10 x 10 = 100 m\n100 x 3/4 = 75 m\n\nAnhalteweg = Reaktionsweg + Bremsweg (a)\n50 km/h -> 15 m + 25 m = 40 m\n\nReaktions-, Brems- und Anhalteweg"
+          "questionExplanation": "Der Bremsweg ist abhängig von der Beschaffenheit der Fahrbahn (trocken oder nass, griffig oder glitschig) sowie vom Zustand Ihres Fahrzeuges (Bremsen, Bereifung).\n\nReaktionsweg: 3m pro 10 km/h (Die Reaktionszeit ist ca 1 sec.)\n50 km/h -> 5 x 3 = 15 m\n80 km/h -> 8 x 3 = 24 m\nBremsbereitschaft kann die Reaktionszeit verkürzen!\n\nBremsweg (km/h : 10)2\na) nasse Strasse\n50 km/h -> 5 x 5 = 25 m\n100 km/h -> 10 x 10 = 100 m\n\nb) trockene Strasse (1/4 weniger als bei nasser Strasse)\n50 km/h -> 5 x 5 = 25 m\n25 x 3/4 = 18.75 m\n\n100 km/h -> 10 x 10 = 100 m\n100 x 3/4 = 75 m\n\nAnhalteweg = Reaktionsweg + Bremsweg (a)\n50 km/h -> 15 m + 25 m = 40 m\n\nReaktions-, Brems- und Anhalteweg"
         },
         "fr": {
           "question": "Quelle vitesse est adaptée à une visibilité de 35m ?",
@@ -87070,7 +87070,7 @@
             "70 km/h"
           ],
           "explanations": {},
-          "questionExplanation": "La distance de freinage dépend de l'état de la chaussée (sèche ou humide, adhérente ou glissante) ainsi que de celui du véhicule (freins, pneus).\n\nDistance de réaction: 3m par 10km/h (Le temps de réaction est environ 1 sec.)\n50 km/h -> 5 x 3 = 15 m\n80 km/h -> 8 x 3 = 24 m\nÊtre prêt à freigner peut réduire la distance de réaction!\n\nDistance de freinage (km/h : 10)2\na) chaussée mouillée\n50 km/h -> 5 x 5 = 25 m\n100 km/h -> 10 x 10 = 100 m\n\nb) chaussée sèche (1/4 moins que sur chaussée mouillée)\n50 km/h -> 5 x 5 = 25 m\n25 x 3/4 = 18.75 m\n\n100 km/h -> 10 x 10 = 100 m\n100 x 3/4 = 75 m\n\nDistance d'arrêt = Distance de réaction + distance de freinage (a)\n50 km/h -> 15 m + 25 m = 40 m\n\nDistances de réaction, de freinage et d'arrêt"
+          "questionExplanation": "La distance de freinage dépend de l'état de la chaussée (sèche ou humide, adhérente ou glissante) ainsi que de celui du véhicule (freins, pneus).\n\nDistance de réaction: 3m par 10 km/h (Le temps de réaction est environ 1 sec.)\n50 km/h -> 5 x 3 = 15 m\n80 km/h -> 8 x 3 = 24 m\nÊtre prêt à freigner peut réduire la distance de réaction!\n\nDistance de freinage (km/h : 10)2\na) chaussée mouillée\n50 km/h -> 5 x 5 = 25 m\n100 km/h -> 10 x 10 = 100 m\n\nb) chaussée sèche (1/4 moins que sur chaussée mouillée)\n50 km/h -> 5 x 5 = 25 m\n25 x 3/4 = 18.75 m\n\n100 km/h -> 10 x 10 = 100 m\n100 x 3/4 = 75 m\n\nDistance d'arrêt = Distance de réaction + distance de freinage (a)\n50 km/h -> 15 m + 25 m = 40 m\n\nDistances de réaction, de freinage et d'arrêt"
         },
         "it": {
           "question": "Qual è la velocità adeguata, se la visibilità è limitata a 35 metri?",
@@ -87080,7 +87080,7 @@
             "70 km orari."
           ],
           "explanations": {},
-          "questionExplanation": "Lo spazio di frenata dipende dalla conformazione della carreggiata (asciutta o bagnata, antisdrucciolevole o scivolosa) nonché dallo stato del Vostro veicolo (freni, pneumatici).\n\nDistanza di reazione: 3m ogni 10km/h (Il tempo per reagire é più o meno 1 sec.)\n50 km/h -> 5 x 3 = 15 m\n80 km/h -> 8 x 3 = 24 m\nL'essere pronti a frenare può diminuiere la distanza di reazione!\n\nDistanza di frenata (km/h : 10)2\na) strada bagnata\n50 km/h -> 5 x 5 = 25 m\n100 km/h -> 10 x 10 = 100 m\n\nb) strada asciutta (1/4 di meno che sulla strada bagnata)\n50 km/h -> 5 x 5 = 25 m\n25 x 3/4 = 18.75m\n\n100 km/h -> 10 x 10 = 100 m\n100 x 3/4 = 75 m\n\nDistanza di fermata = Distanza di reazione + Distanza di frenata (a)\n50 km/h -> 15 m + 25 m = 40 m\n\nSpazio di reazione, di frenata e di arresto"
+          "questionExplanation": "Lo spazio di frenata dipende dalla conformazione della carreggiata (asciutta o bagnata, antisdrucciolevole o scivolosa) nonché dallo stato del Vostro veicolo (freni, pneumatici).\n\nDistanza di reazione: 3m ogni 10 km/h (Il tempo per reagire é più o meno 1 sec.)\n50 km/h -> 5 x 3 = 15 m\n80 km/h -> 8 x 3 = 24 m\nL'essere pronti a frenare può diminuiere la distanza di reazione!\n\nDistanza di frenata (km/h : 10)2\na) strada bagnata\n50 km/h -> 5 x 5 = 25 m\n100 km/h -> 10 x 10 = 100 m\n\nb) strada asciutta (1/4 di meno che sulla strada bagnata)\n50 km/h -> 5 x 5 = 25 m\n25 x 3/4 = 18.75m\n\n100 km/h -> 10 x 10 = 100 m\n100 x 3/4 = 75 m\n\nDistanza di fermata = Distanza di reazione + Distanza di frenata (a)\n50 km/h -> 15 m + 25 m = 40 m\n\nSpazio di reazione, di frenata e di arresto"
         }
       },
       "id": 1772
@@ -87249,7 +87249,7 @@
             "Ja"
           ],
           "explanations": {},
-          "questionExplanation": "Der Bremsweg ist abhängig von der Beschaffenheit der Fahrbahn (trocken oder nass, griffig oder glitschig) sowie vom Zustand Ihres Fahrzeuges (Bremsen, Bereifung).\n\nReaktionsweg: 3m pro 10km/h (Die Reaktionszeit ist ca 1 sec.)\n50 km/h -> 5 x 3 = 15 m\n80 km/h -> 8 x 3 = 24 m\nBremsbereitschaft kann die Reaktionszeit verkürzen!\n\nBremsweg (km/h : 10)2\na) nasse Strasse\n50 km/h -> 5 x 5 = 25 m\n100 km/h -> 10 x 10 = 100 m\n\nb) trockene Strasse (1/4 weniger als bei nasser Strasse)\n50 km/h -> 5 x 5 = 25 m\n25 x 3/4 = 18.75 m\n\n100 km/h -> 10 x 10 = 100 m\n100 x 3/4 = 75 m\n\nAnhalteweg = Reaktionsweg + Bremsweg (a)\n50 km/h -> 15 m + 25 m = 40 m\n\nWo das Kreuzen schwierig ist, muss der Lenker auf halbe Sichtweite halten können.\n\nvgl. Art. 4 VRV"
+          "questionExplanation": "Der Bremsweg ist abhängig von der Beschaffenheit der Fahrbahn (trocken oder nass, griffig oder glitschig) sowie vom Zustand Ihres Fahrzeuges (Bremsen, Bereifung).\n\nReaktionsweg: 3m pro 10 km/h (Die Reaktionszeit ist ca 1 sec.)\n50 km/h -> 5 x 3 = 15 m\n80 km/h -> 8 x 3 = 24 m\nBremsbereitschaft kann die Reaktionszeit verkürzen!\n\nBremsweg (km/h : 10)2\na) nasse Strasse\n50 km/h -> 5 x 5 = 25 m\n100 km/h -> 10 x 10 = 100 m\n\nb) trockene Strasse (1/4 weniger als bei nasser Strasse)\n50 km/h -> 5 x 5 = 25 m\n25 x 3/4 = 18.75 m\n\n100 km/h -> 10 x 10 = 100 m\n100 x 3/4 = 75 m\n\nAnhalteweg = Reaktionsweg + Bremsweg (a)\n50 km/h -> 15 m + 25 m = 40 m\n\nWo das Kreuzen schwierig ist, muss der Lenker auf halbe Sichtweite halten können.\n\nvgl. Art. 4 VRV"
         },
         "fr": {
           "question": "Un automobiliste roule à 50 km/h dans un virage sur une route de 3.5 m de large. Il y a une visibilité de 40 m. Est-ce que la vitesse est adaptée aux conditions?",
@@ -87259,7 +87259,7 @@
             "Oui"
           ],
           "explanations": {},
-          "questionExplanation": "La distance de freinage dépend de l'état de la chaussée (sèche ou humide, adhérente ou glissante) ainsi que de celui du véhicule (freins, pneus).\n\nDistance de réaction: 3m par 10km/h (Le temps de réaction est environ 1 sec.)\n50 km/h -> 5 x 3 = 15 m\n80 km/h -> 8 x 3 = 24 m\nÊtre prêt à freigner peut réduire la distance de réaction!\n\nDistance de freinage (km/h : 10)2\na) chaussée mouillée\n50 km/h -> 5 x 5 = 25 m\n100 km/h -> 10 x 10 = 100 m\n\nb) chaussée sèche (1/4 moins que sur chaussée mouillée)\n50 km/h -> 5 x 5 = 25 m\n25 x 3/4 = 18.75 m\n\n100 km/h -> 10 x 10 = 100 m\n100 x 3/4 = 75 m\n\nDistance d'arrêt = Distance de réaction + distance de freinage (a)\n50 km/h -> 15 m + 25 m = 40 m\n\nLorsque le croisement est malaisé, le conducteur doit pouvoir s'arrêter sur la moitié de cette distance.\n\ncf. Art. 4 VRV"
+          "questionExplanation": "La distance de freinage dépend de l'état de la chaussée (sèche ou humide, adhérente ou glissante) ainsi que de celui du véhicule (freins, pneus).\n\nDistance de réaction: 3m par 10 km/h (Le temps de réaction est environ 1 sec.)\n50 km/h -> 5 x 3 = 15 m\n80 km/h -> 8 x 3 = 24 m\nÊtre prêt à freigner peut réduire la distance de réaction!\n\nDistance de freinage (km/h : 10)2\na) chaussée mouillée\n50 km/h -> 5 x 5 = 25 m\n100 km/h -> 10 x 10 = 100 m\n\nb) chaussée sèche (1/4 moins que sur chaussée mouillée)\n50 km/h -> 5 x 5 = 25 m\n25 x 3/4 = 18.75 m\n\n100 km/h -> 10 x 10 = 100 m\n100 x 3/4 = 75 m\n\nDistance d'arrêt = Distance de réaction + distance de freinage (a)\n50 km/h -> 15 m + 25 m = 40 m\n\nLorsque le croisement est malaisé, le conducteur doit pouvoir s'arrêter sur la moitié de cette distance.\n\ncf. Art. 4 VRV"
         },
         "it": {
           "question": "Un automobilista viaggia a 50 km/h in curva su una strada larga 3,5 metri. La visibilità è limitata a 40 metri. Questa velocità è adeguata alle circostanze?",
@@ -87269,7 +87269,7 @@
             "Sì"
           ],
           "explanations": {},
-          "questionExplanation": "Lo spazio di frenata dipende dalla conformazione della carreggiata (asciutta o bagnata, antisdrucciolevole o scivolosa) nonché dallo stato del Vostro veicolo (freni, pneumatici).\n\nDistanza di reazione: 3m ogni 10km/h (Il tempo per reagire é più o meno 1 sec.)\n50 km/h -> 5 x 3 = 15 m\n80 km/h -> 8 x 3 = 24 m\nL'essere pronti a frenare può diminuiere la distanza di reazione!\n\nDistanza di frenata (km/h : 10)2\na) strada bagnata\n50 km/h -> 5 x 5 = 25 m\n100 km/h -> 10 x 10 = 100 m\n\nb) strada asciutta (1/4 di meno che sulla strada bagnata)\n50 km/h -> 5 x 5 = 25 m\n25 x 3/4 = 18.75m\n\n100 km/h -> 10 x 10 = 100 m\n100 x 3/4 = 75 m\n\nDistanza di fermata = Distanza di reazione + Distanza di frenata (a)\n50 km/h -> 15 m + 25 m = 40 m\n\nSe l'incrocio con altri veicoli è difficile, il conducente deve poter fermarsi nella metà dello spazio visibile.\n\ncfr. Art. 4 VRV"
+          "questionExplanation": "Lo spazio di frenata dipende dalla conformazione della carreggiata (asciutta o bagnata, antisdrucciolevole o scivolosa) nonché dallo stato del Vostro veicolo (freni, pneumatici).\n\nDistanza di reazione: 3m ogni 10 km/h (Il tempo per reagire é più o meno 1 sec.)\n50 km/h -> 5 x 3 = 15 m\n80 km/h -> 8 x 3 = 24 m\nL'essere pronti a frenare può diminuiere la distanza di reazione!\n\nDistanza di frenata (km/h : 10)2\na) strada bagnata\n50 km/h -> 5 x 5 = 25 m\n100 km/h -> 10 x 10 = 100 m\n\nb) strada asciutta (1/4 di meno che sulla strada bagnata)\n50 km/h -> 5 x 5 = 25 m\n25 x 3/4 = 18.75m\n\n100 km/h -> 10 x 10 = 100 m\n100 x 3/4 = 75 m\n\nDistanza di fermata = Distanza di reazione + Distanza di frenata (a)\n50 km/h -> 15 m + 25 m = 40 m\n\nSe l'incrocio con altri veicoli è difficile, il conducente deve poter fermarsi nella metà dello spazio visibile.\n\ncfr. Art. 4 VRV"
         }
       },
       "id": 1775
@@ -87690,7 +87690,7 @@
             "70 km/h"
           ],
           "explanations": {},
-          "questionExplanation": "Der Bremsweg ist abhängig von der Beschaffenheit der Fahrbahn (trocken oder nass, griffig oder glitschig) sowie vom Zustand Ihres Fahrzeuges (Bremsen, Bereifung).\n\nReaktionsweg: 3m pro 10km/h (Die Reaktionszeit ist ca 1 sec.)\n50 km/h -> 5 x 3 = 15 m\n80 km/h -> 8 x 3 = 24 m\nBremsbereitschaft kann die Reaktionszeit verkürzen!\n\nBremsweg (km/h : 10)2\na) nasse Strasse\n50 km/h -> 5 x 5 = 25 m\n100 km/h -> 10 x 10 = 100 m\n\nb) trockene Strasse (1/4 weniger als bei nasser Strasse)\n50 km/h -> 5 x 5 = 25 m\n25 x 3/4 = 18.75 m\n\n100 km/h -> 10 x 10 = 100 m\n100 x 3/4 = 75 m\n\nAnhalteweg = Reaktionsweg + Bremsweg (a)\n50 km/h -> 15 m + 25 m = 40 m\n\nReaktions-, Brems- und Anhalteweg"
+          "questionExplanation": "Der Bremsweg ist abhängig von der Beschaffenheit der Fahrbahn (trocken oder nass, griffig oder glitschig) sowie vom Zustand Ihres Fahrzeuges (Bremsen, Bereifung).\n\nReaktionsweg: 3m pro 10 km/h (Die Reaktionszeit ist ca 1 sec.)\n50 km/h -> 5 x 3 = 15 m\n80 km/h -> 8 x 3 = 24 m\nBremsbereitschaft kann die Reaktionszeit verkürzen!\n\nBremsweg (km/h : 10)2\na) nasse Strasse\n50 km/h -> 5 x 5 = 25 m\n100 km/h -> 10 x 10 = 100 m\n\nb) trockene Strasse (1/4 weniger als bei nasser Strasse)\n50 km/h -> 5 x 5 = 25 m\n25 x 3/4 = 18.75 m\n\n100 km/h -> 10 x 10 = 100 m\n100 x 3/4 = 75 m\n\nAnhalteweg = Reaktionsweg + Bremsweg (a)\n50 km/h -> 15 m + 25 m = 40 m\n\nReaktions-, Brems- und Anhalteweg"
         },
         "fr": {
           "question": "Quelle est la vitesse approximative à laquelle je devrais rouler avec une visibilité de 35 m?",
@@ -87700,7 +87700,7 @@
             "70 km/h"
           ],
           "explanations": {},
-          "questionExplanation": "La distance de freinage dépend de l'état de la chaussée (sèche ou humide, adhérente ou glissante) ainsi que de celui du véhicule (freins, pneus).\n\nDistance de réaction: 3m par 10km/h (Le temps de réaction est environ 1 sec.)\n50 km/h -> 5 x 3 = 15 m\n80 km/h -> 8 x 3 = 24 m\nÊtre prêt à freigner peut réduire la distance de réaction!\n\nDistance de freinage (km/h : 10)2\na) chaussée mouillée\n50 km/h -> 5 x 5 = 25 m\n100 km/h -> 10 x 10 = 100 m\n\nb) chaussée sèche (1/4 moins que sur chaussée mouillée)\n50 km/h -> 5 x 5 = 25 m\n25 x 3/4 = 18.75 m\n\n100 km/h -> 10 x 10 = 100 m\n100 x 3/4 = 75 m\n\nDistance d'arrêt = Distance de réaction + distance de freinage (a)\n50 km/h -> 15 m + 25 m = 40 m\n\nDistances de réaction, de freinage et d'arrêt"
+          "questionExplanation": "La distance de freinage dépend de l'état de la chaussée (sèche ou humide, adhérente ou glissante) ainsi que de celui du véhicule (freins, pneus).\n\nDistance de réaction: 3m par 10 km/h (Le temps de réaction est environ 1 sec.)\n50 km/h -> 5 x 3 = 15 m\n80 km/h -> 8 x 3 = 24 m\nÊtre prêt à freigner peut réduire la distance de réaction!\n\nDistance de freinage (km/h : 10)2\na) chaussée mouillée\n50 km/h -> 5 x 5 = 25 m\n100 km/h -> 10 x 10 = 100 m\n\nb) chaussée sèche (1/4 moins que sur chaussée mouillée)\n50 km/h -> 5 x 5 = 25 m\n25 x 3/4 = 18.75 m\n\n100 km/h -> 10 x 10 = 100 m\n100 x 3/4 = 75 m\n\nDistance d'arrêt = Distance de réaction + distance de freinage (a)\n50 km/h -> 15 m + 25 m = 40 m\n\nDistances de réaction, de freinage et d'arrêt"
         },
         "it": {
           "question": "A che velocità devo guidare con una visibilità di 35 m?",
@@ -87710,7 +87710,7 @@
             "70 km orari."
           ],
           "explanations": {},
-          "questionExplanation": "Lo spazio di frenata dipende dalla conformazione della carreggiata (asciutta o bagnata, antisdrucciolevole o scivolosa) nonché dallo stato del Vostro veicolo (freni, pneumatici).\n\nDistanza di reazione: 3m ogni 10km/h (Il tempo per reagire é più o meno 1 sec.)\n50 km/h -> 5 x 3 = 15 m\n80 km/h -> 8 x 3 = 24 m\nL'essere pronti a frenare può diminuiere la distanza di reazione!\n\nDistanza di frenata (km/h : 10)2\na) strada bagnata\n50 km/h -> 5 x 5 = 25 m\n100 km/h -> 10 x 10 = 100 m\n\nb) strada asciutta (1/4 di meno che sulla strada bagnata)\n50 km/h -> 5 x 5 = 25 m\n25 x 3/4 = 18.75m\n\n100 km/h -> 10 x 10 = 100 m\n100 x 3/4 = 75 m\n\nDistanza di fermata = Distanza di reazione + Distanza di frenata (a)\n50 km/h -> 15 m + 25 m = 40 m\n\nSpazio di reazione, di frenata e di arresto"
+          "questionExplanation": "Lo spazio di frenata dipende dalla conformazione della carreggiata (asciutta o bagnata, antisdrucciolevole o scivolosa) nonché dallo stato del Vostro veicolo (freni, pneumatici).\n\nDistanza di reazione: 3m ogni 10 km/h (Il tempo per reagire é più o meno 1 sec.)\n50 km/h -> 5 x 3 = 15 m\n80 km/h -> 8 x 3 = 24 m\nL'essere pronti a frenare può diminuiere la distanza di reazione!\n\nDistanza di frenata (km/h : 10)2\na) strada bagnata\n50 km/h -> 5 x 5 = 25 m\n100 km/h -> 10 x 10 = 100 m\n\nb) strada asciutta (1/4 di meno che sulla strada bagnata)\n50 km/h -> 5 x 5 = 25 m\n25 x 3/4 = 18.75m\n\n100 km/h -> 10 x 10 = 100 m\n100 x 3/4 = 75 m\n\nDistanza di fermata = Distanza di reazione + Distanza di frenata (a)\n50 km/h -> 15 m + 25 m = 40 m\n\nSpazio di reazione, di frenata e di arresto"
         }
       },
       "id": 1782
@@ -87753,7 +87753,7 @@
             "Ja"
           ],
           "explanations": {},
-          "questionExplanation": "Der Bremsweg ist abhängig von der Beschaffenheit der Fahrbahn (trocken oder nass, griffig oder glitschig) sowie vom Zustand Ihres Fahrzeuges (Bremsen, Bereifung).\n\nReaktionsweg: 3m pro 10km/h (Die Reaktionszeit ist ca 1 sec.)\n50 km/h -> 5 x 3 = 15 m\n80 km/h -> 8 x 3 = 24 m\nBremsbereitschaft kann die Reaktionszeit verkürzen!\n\nBremsweg (km/h : 10)2\na) nasse Strasse\n50 km/h -> 5 x 5 = 25 m\n100 km/h -> 10 x 10 = 100 m\n\nb) trockene Strasse (1/4 weniger als bei nasser Strasse)\n50 km/h -> 5 x 5 = 25 m\n25 x 3/4 = 18.75 m\n\n100 km/h -> 10 x 10 = 100 m\n100 x 3/4 = 75 m\n\nAnhalteweg = Reaktionsweg + Bremsweg (a)\n50 km/h -> 15 m + 25 m = 40 m\n\nWo das Kreuzen schwierig ist, muss der Lenker auf halbe Sichtweite halten können.\n\nvgl. Art. 4 VRV"
+          "questionExplanation": "Der Bremsweg ist abhängig von der Beschaffenheit der Fahrbahn (trocken oder nass, griffig oder glitschig) sowie vom Zustand Ihres Fahrzeuges (Bremsen, Bereifung).\n\nReaktionsweg: 3m pro 10 km/h (Die Reaktionszeit ist ca 1 sec.)\n50 km/h -> 5 x 3 = 15 m\n80 km/h -> 8 x 3 = 24 m\nBremsbereitschaft kann die Reaktionszeit verkürzen!\n\nBremsweg (km/h : 10)2\na) nasse Strasse\n50 km/h -> 5 x 5 = 25 m\n100 km/h -> 10 x 10 = 100 m\n\nb) trockene Strasse (1/4 weniger als bei nasser Strasse)\n50 km/h -> 5 x 5 = 25 m\n25 x 3/4 = 18.75 m\n\n100 km/h -> 10 x 10 = 100 m\n100 x 3/4 = 75 m\n\nAnhalteweg = Reaktionsweg + Bremsweg (a)\n50 km/h -> 15 m + 25 m = 40 m\n\nWo das Kreuzen schwierig ist, muss der Lenker auf halbe Sichtweite halten können.\n\nvgl. Art. 4 VRV"
         },
         "fr": {
           "question": "Sur une route de 3,5 m de large, un conducteur de voiture aborde un virage à 50 km/h, avec une visibilité de 40 m. Il est donc nécessaire d'évaluer la situation. La vitesse est-elle adaptée aux conditions?",
@@ -87763,7 +87763,7 @@
             "Oui"
           ],
           "explanations": {},
-          "questionExplanation": "La distance de freinage dépend de l'état de la chaussée (sèche ou humide, adhérente ou glissante) ainsi que de celui du véhicule (freins, pneus).\n\nDistance de réaction: 3m par 10km/h (Le temps de réaction est environ 1 sec.)\n50 km/h -> 5 x 3 = 15 m\n80 km/h -> 8 x 3 = 24 m\nÊtre prêt à freigner peut réduire la distance de réaction!\n\nDistance de freinage (km/h : 10)2\na) chaussée mouillée\n50 km/h -> 5 x 5 = 25 m\n100 km/h -> 10 x 10 = 100 m\n\nb) chaussée sèche (1/4 moins que sur chaussée mouillée)\n50 km/h -> 5 x 5 = 25 m\n25 x 3/4 = 18.75 m\n\n100 km/h -> 10 x 10 = 100 m\n100 x 3/4 = 75 m\n\nDistance d'arrêt = Distance de réaction + distance de freinage (a)\n50 km/h -> 15 m + 25 m = 40 m\n\nLorsque le croisement est malaisé, le conducteur doit pouvoir s'arrêter sur la moitié de cette distance.\n\ncf. Art. 4 VRV"
+          "questionExplanation": "La distance de freinage dépend de l'état de la chaussée (sèche ou humide, adhérente ou glissante) ainsi que de celui du véhicule (freins, pneus).\n\nDistance de réaction: 3m par 10 km/h (Le temps de réaction est environ 1 sec.)\n50 km/h -> 5 x 3 = 15 m\n80 km/h -> 8 x 3 = 24 m\nÊtre prêt à freigner peut réduire la distance de réaction!\n\nDistance de freinage (km/h : 10)2\na) chaussée mouillée\n50 km/h -> 5 x 5 = 25 m\n100 km/h -> 10 x 10 = 100 m\n\nb) chaussée sèche (1/4 moins que sur chaussée mouillée)\n50 km/h -> 5 x 5 = 25 m\n25 x 3/4 = 18.75 m\n\n100 km/h -> 10 x 10 = 100 m\n100 x 3/4 = 75 m\n\nDistance d'arrêt = Distance de réaction + distance de freinage (a)\n50 km/h -> 15 m + 25 m = 40 m\n\nLorsque le croisement est malaisé, le conducteur doit pouvoir s'arrêter sur la moitié de cette distance.\n\ncf. Art. 4 VRV"
         },
         "it": {
           "question": "Su una strada larga 3,5 m, un conducente entra in una curva a 50 km/h, la visibilità è di 40 m. La velocità è appropriata? La velocità è adeguata alle condizioni?",
@@ -87773,7 +87773,7 @@
             "Sì"
           ],
           "explanations": {},
-          "questionExplanation": "Lo spazio di frenata dipende dalla conformazione della carreggiata (asciutta o bagnata, antisdrucciolevole o scivolosa) nonché dallo stato del Vostro veicolo (freni, pneumatici).\n\nDistanza di reazione: 3m ogni 10km/h (Il tempo per reagire é più o meno 1 sec.)\n50 km/h -> 5 x 3 = 15 m\n80 km/h -> 8 x 3 = 24 m\nL'essere pronti a frenare può diminuiere la distanza di reazione!\n\nDistanza di frenata (km/h : 10)2\na) strada bagnata\n50 km/h -> 5 x 5 = 25 m\n100 km/h -> 10 x 10 = 100 m\n\nb) strada asciutta (1/4 di meno che sulla strada bagnata)\n50 km/h -> 5 x 5 = 25 m\n25 x 3/4 = 18.75m\n\n100 km/h -> 10 x 10 = 100 m\n100 x 3/4 = 75 m\n\nDistanza di fermata = Distanza di reazione + Distanza di frenata (a)\n50 km/h -> 15 m + 25 m = 40 m\n\nSe l'incrocio con altri veicoli è difficile, il conducente deve poter fermarsi nella metà dello spazio visibile.\n\ncfr. Art. 4 VRV"
+          "questionExplanation": "Lo spazio di frenata dipende dalla conformazione della carreggiata (asciutta o bagnata, antisdrucciolevole o scivolosa) nonché dallo stato del Vostro veicolo (freni, pneumatici).\n\nDistanza di reazione: 3m ogni 10 km/h (Il tempo per reagire é più o meno 1 sec.)\n50 km/h -> 5 x 3 = 15 m\n80 km/h -> 8 x 3 = 24 m\nL'essere pronti a frenare può diminuiere la distanza di reazione!\n\nDistanza di frenata (km/h : 10)2\na) strada bagnata\n50 km/h -> 5 x 5 = 25 m\n100 km/h -> 10 x 10 = 100 m\n\nb) strada asciutta (1/4 di meno che sulla strada bagnata)\n50 km/h -> 5 x 5 = 25 m\n25 x 3/4 = 18.75m\n\n100 km/h -> 10 x 10 = 100 m\n100 x 3/4 = 75 m\n\nDistanza di fermata = Distanza di reazione + Distanza di frenata (a)\n50 km/h -> 15 m + 25 m = 40 m\n\nSe l'incrocio con altri veicoli è difficile, il conducente deve poter fermarsi nella metà dello spazio visibile.\n\ncfr. Art. 4 VRV"
         }
       },
       "id": 1783
@@ -88204,7 +88204,7 @@
             "Je continue ma route et observe ce que font les enfants."
           ],
           "explanations": {},
-          "questionExplanation": "Le signal \"Enfants\" indique qu'il faut s'attendre à la présence d'enfants sur la chaussée. Il sera placé aux abords des écoles, des places de jeux, etc. Le conducteur doit réduire sa vitesse et s'arrêter au besoin lorsque des enfants non attentifs à la circulation se trouvent sur la route ou à ses abords. Il donnera des signaux acoustiques lorsque des enfants qui semblent ne pas prêter attention à la circulation se trouvent sur la route ou à ses abords.\n\ncf. Art. 11 SSV\n\nAfin de pouvoir réagir le plus tôt possible dans le trafic routier, il est important d'observer les autres usagers et d'anticiper leur comportement (deviner, ce qu'ils vont faire). L'âge des usagers joue également un rôle.\n\n1. Les personnes plus âgées ont besoin de plus de temps pour traverser la rue et peuvent soudainement s'immobiliser , effrayées.\n\n2. Le comportement des enfants est imprévisible - absorbés par le jeu, ils ne pensent souvent pas à la circulation routière.\n\n3. L'espace doit être augmenté si le conducteur précédent roule de manière mal assurée."
+          "questionExplanation": "Le signal \"Enfants\" indique qu'il faut s'attendre à la présence d'enfants sur la chaussée. Il sera placé aux abords des écoles, des places de jeux, etc. Le conducteur doit réduire sa vitesse et s'arrêter au besoin lorsque des enfants non attentifs à la circulation se trouvent sur la route ou à ses abords. Il donnera des signaux acoustiques lorsque des enfants qui semblent ne pas prêter attention à la circulation se trouvent sur la route ou à ses abords.\n\ncf. Art. 11 SSV\n\nAfin de pouvoir réagir le plus tôt possible dans le trafic routier, il est important d'observer les autres usagers et d'anticiper leur comportement (deviner, ce qu'ils vont faire). L'âge des usagers joue également un rôle.\n\n1. Les personnes plus âgées ont besoin de plus de temps pour traverser la rue et peuvent soudainement s'immobiliser, effrayées.\n\n2. Le comportement des enfants est imprévisible - absorbés par le jeu, ils ne pensent souvent pas à la circulation routière.\n\n3. L'espace doit être augmenté si le conducteur précédent roule de manière mal assurée."
         },
         "it": {
           "question": "I bambini giocano sul marciapiede e non badano al traffico. Qual è il comportamento migliore in questo caso?",
@@ -89580,7 +89580,7 @@
             "… falls die Strassenverhältnisse sehr schlecht sind."
           ],
           "explanations": {},
-          "questionExplanation": "\"Rechtskurve\" Kurvensignale warnen vor Kurven, die wegen ihrer Anlage (z. B. fehlende Überhöhung, starke oder ungleichmässige Krümmung der Fahrbahn) zur Mässigung der Gschwindigkeit zwingen.\n\nvgl. Art. 4 SSV\n\nDie Gefahrensignale stehen:\n\na. innerorts kurz vor der Gefahrenstelle; stehen sie mehr als 50 m vorher, wird die Entfernung auf beigefügter \"Distanztafel\" vermerkt;\n\nb. ausserorts 150 - 250 m vor der Gefahrenstelle; kann diese Regel nicht eingehalten werden, wird die Entfernung auf beigefügter \"Distanztafel\" vermerkt;\n\nc. auf Autobahnen und Autostrassen bei der Gefahrenstelle selbst oder höchstens 100 m vorher, ferner zusätzlich als Vorsignale mit beigefügter \"Distanztafel \" 500 - 1000 m vor der Gefahrenstelle.\n\nvgl. Art. 3 SSV"
+          "questionExplanation": "\"Rechtskurve\" Kurvensignale warnen vor Kurven, die wegen ihrer Anlage (z. B. fehlende Überhöhung, starke oder ungleichmässige Krümmung der Fahrbahn) zur Mässigung der Gschwindigkeit zwingen.\n\nvgl. Art. 4 SSV\n\nDie Gefahrensignale stehen:\n\na. innerorts kurz vor der Gefahrenstelle; stehen sie mehr als 50 m vorher, wird die Entfernung auf beigefügter \"Distanztafel\" vermerkt;\n\nb. ausserorts 150 - 250 m vor der Gefahrenstelle; kann diese Regel nicht eingehalten werden, wird die Entfernung auf beigefügter \"Distanztafel\" vermerkt;\n\nc. auf Autobahnen und Autostrassen bei der Gefahrenstelle selbst oder höchstens 100 m vorher, ferner zusätzlich als Vorsignale mit beigefügter \"Distanztafel\" 500 - 1000 m vor der Gefahrenstelle.\n\nvgl. Art. 3 SSV"
         },
         "fr": {
           "question": "A l'approche de ce signal, je modère la vitesse…",
@@ -89644,7 +89644,7 @@
             "Je suis autorisé à poursuivre ma route"
           ],
           "explanations": {},
-          "questionExplanation": "Les palettes à faces alternantes utilisées pour régler la circulation là où la chaussée se rétrécit présentent, sur la face indiquant l'arrêt obligatoire, le signal \"Accès interdit \" et, sur l'autre face indiquant le libre passage, un disque vert ayant une bordure blanche.\n\ncf. Art. 67 SSV"
+          "questionExplanation": "Les palettes à faces alternantes utilisées pour régler la circulation là où la chaussée se rétrécit présentent, sur la face indiquant l'arrêt obligatoire, le signal \"Accès interdit\" et, sur l'autre face indiquant le libre passage, un disque vert ayant une bordure blanche.\n\ncf. Art. 67 SSV"
         },
         "it": {
           "question": "",
@@ -92206,7 +92206,7 @@
             "Es folgen mehrere Rechtskurven"
           ],
           "explanations": {},
-          "questionExplanation": "Die Gefahrensignale stehen:\n\na. innerorts kurz vor der Gefahrenstelle; stehen sie mehr als 50 m vorher, wird die Entfernung auf beigefügter \"Distanztafel\" vermerkt;\n\nb. ausserorts 150 - 250 m vor der Gefahrenstelle; kann diese Regel nicht eingehalten werden, wird die Entfernung auf beigefügter \"Distanztafel\" vermerkt;\n\nc. auf Autobahnen und Autostrassen bei der Gefahrenstelle selbst oder höchstens 100 m vorher, ferner zusätzlich als Vorsignale mit beigefügter \"Distanztafel \" 500 - 1000 m vor der Gefahrenstelle.\n\nvgl. Art. 3 SSV"
+          "questionExplanation": "Die Gefahrensignale stehen:\n\na. innerorts kurz vor der Gefahrenstelle; stehen sie mehr als 50 m vorher, wird die Entfernung auf beigefügter \"Distanztafel\" vermerkt;\n\nb. ausserorts 150 - 250 m vor der Gefahrenstelle; kann diese Regel nicht eingehalten werden, wird die Entfernung auf beigefügter \"Distanztafel\" vermerkt;\n\nc. auf Autobahnen und Autostrassen bei der Gefahrenstelle selbst oder höchstens 100 m vorher, ferner zusätzlich als Vorsignale mit beigefügter \"Distanztafel\" 500 - 1000 m vor der Gefahrenstelle.\n\nvgl. Art. 3 SSV"
         },
         "fr": {
           "question": "",
@@ -92332,7 +92332,7 @@
             "Mit einer kurvenreichen Strecke."
           ],
           "explanations": {},
-          "questionExplanation": "Die Gefahrensignale stehen:\n\na. innerorts kurz vor der Gefahrenstelle; stehen sie mehr als 50 m vorher, wird die Entfernung auf beigefügter \"Distanztafel\" vermerkt;\n\nb. ausserorts 150 - 250 m vor der Gefahrenstelle; kann diese Regel nicht eingehalten werden, wird die Entfernung auf beigefügter \"Distanztafel\" vermerkt;\n\nc. auf Autobahnen und Autostrassen bei der Gefahrenstelle selbst oder höchstens 100 m vorher, ferner zusätzlich als Vorsignale mit beigefügter \"Distanztafel \" 500 - 1000 m vor der Gefahrenstelle.\n\nvgl. Art. 3 SSV\n\nDer Fahrzeugführer hat langsam zu fahren, wo die Strasse verschneit, vereist, mit nassem Laub oder mit Splitt bedeckt ist, besonders wenn Anhänger mitgeführt werden.\n\nBei Temperaturen unter +3°C muss bereits mit Glatteis gerechnet werden. Zweiradfahrzeuge sind besonders gefährdet.\n\nvgl. Art. 4 VRV"
+          "questionExplanation": "Die Gefahrensignale stehen:\n\na. innerorts kurz vor der Gefahrenstelle; stehen sie mehr als 50 m vorher, wird die Entfernung auf beigefügter \"Distanztafel\" vermerkt;\n\nb. ausserorts 150 - 250 m vor der Gefahrenstelle; kann diese Regel nicht eingehalten werden, wird die Entfernung auf beigefügter \"Distanztafel\" vermerkt;\n\nc. auf Autobahnen und Autostrassen bei der Gefahrenstelle selbst oder höchstens 100 m vorher, ferner zusätzlich als Vorsignale mit beigefügter \"Distanztafel\" 500 - 1000 m vor der Gefahrenstelle.\n\nvgl. Art. 3 SSV\n\nDer Fahrzeugführer hat langsam zu fahren, wo die Strasse verschneit, vereist, mit nassem Laub oder mit Splitt bedeckt ist, besonders wenn Anhänger mitgeführt werden.\n\nBei Temperaturen unter +3°C muss bereits mit Glatteis gerechnet werden. Zweiradfahrzeuge sind besonders gefährdet.\n\nvgl. Art. 4 VRV"
         },
         "fr": {
           "question": "A quoi vous attendez-vous après ce signal?",
@@ -92395,7 +92395,7 @@
             "Mit einem Strassen-Abschnitt, der Kurven hat und nicht übersichtlich ist"
           ],
           "explanations": {},
-          "questionExplanation": "Die Gefahrensignale stehen:\n\na. innerorts kurz vor der Gefahrenstelle; stehen sie mehr als 50 m vorher, wird die Entfernung auf beigefügter \"Distanztafel\" vermerkt;\n\nb. ausserorts 150 - 250 m vor der Gefahrenstelle; kann diese Regel nicht eingehalten werden, wird die Entfernung auf beigefügter \"Distanztafel\" vermerkt;\n\nc. auf Autobahnen und Autostrassen bei der Gefahrenstelle selbst oder höchstens 100 m vorher, ferner zusätzlich als Vorsignale mit beigefügter \"Distanztafel \" 500 - 1000 m vor der Gefahrenstelle.\n\nvgl. Art. 3 SSV\n\nDer Fahrzeugführer hat langsam zu fahren, wo die Strasse verschneit, vereist, mit nassem Laub oder mit Splitt bedeckt ist, besonders wenn Anhänger mitgeführt werden.\n\nBei Temperaturen unter +3°C muss bereits mit Glatteis gerechnet werden. Zweiradfahrzeuge sind besonders gefährdet.\n\nvgl. Art. 4 VRV"
+          "questionExplanation": "Die Gefahrensignale stehen:\n\na. innerorts kurz vor der Gefahrenstelle; stehen sie mehr als 50 m vorher, wird die Entfernung auf beigefügter \"Distanztafel\" vermerkt;\n\nb. ausserorts 150 - 250 m vor der Gefahrenstelle; kann diese Regel nicht eingehalten werden, wird die Entfernung auf beigefügter \"Distanztafel\" vermerkt;\n\nc. auf Autobahnen und Autostrassen bei der Gefahrenstelle selbst oder höchstens 100 m vorher, ferner zusätzlich als Vorsignale mit beigefügter \"Distanztafel\" 500 - 1000 m vor der Gefahrenstelle.\n\nvgl. Art. 3 SSV\n\nDer Fahrzeugführer hat langsam zu fahren, wo die Strasse verschneit, vereist, mit nassem Laub oder mit Splitt bedeckt ist, besonders wenn Anhänger mitgeführt werden.\n\nBei Temperaturen unter +3°C muss bereits mit Glatteis gerechnet werden. Zweiradfahrzeuge sind besonders gefährdet.\n\nvgl. Art. 4 VRV"
         },
         "fr": {
           "question": "À quoi devez-vous vous attendre après ce signal?",
@@ -92604,7 +92604,7 @@
             "Non significa niente, il segnale vale per la strada a destra."
           ],
           "explanations": {},
-          "questionExplanation": "Il segnale \"Divieto generale di circolazione nelle due direzioni\" indica che, per principio, la circolazione è vietata nei due sensi a tutti i veicoli. I segnali \"Divieto generale di circolazione nelle due direzioni\" e \"Divieto di accesso \" non valgono per i carri a mano, larghi al massimo 1 m, le carrozzine per bambini, le carrozzelle per invalidi, i velocipedi spinti a mano nonché i ciclomotori e le motociclette a due ruote spinti a mano dal conducente, con motore spento.\n\ncfr. Art. 18 SSV"
+          "questionExplanation": "Il segnale \"Divieto generale di circolazione nelle due direzioni\" indica che, per principio, la circolazione è vietata nei due sensi a tutti i veicoli. I segnali \"Divieto generale di circolazione nelle due direzioni\" e \"Divieto di accesso\" non valgono per i carri a mano, larghi al massimo 1 m, le carrozzine per bambini, le carrozzelle per invalidi, i velocipedi spinti a mano nonché i ciclomotori e le motociclette a due ruote spinti a mano dal conducente, con motore spento.\n\ncfr. Art. 18 SSV"
         }
       },
       "id": 1860
@@ -94978,7 +94978,7 @@
             "Es ist innerhalb der nächsten 250 Metern möglich, dass die Fahrbahn mit Spurrillen versetzt ist"
           ],
           "explanations": {},
-          "questionExplanation": "Die Gefahrensignale stehen:\n\na. innerorts kurz vor der Gefahrenstelle; stehen sie mehr als 50 m vorher, wird die Entfernung auf beigefügter \"Distanztafel\" vermerkt;\n\nb. ausserorts 150 - 250 m vor der Gefahrenstelle; kann diese Regel nicht eingehalten werden, wird die Entfernung auf beigefügter \"Distanztafel\" vermerkt;\n\nc. auf Autobahnen und Autostrassen bei der Gefahrenstelle selbst oder höchstens 100 m vorher, ferner zusätzlich als Vorsignale mit beigefügter \"Distanztafel \" 500 - 1000 m vor der Gefahrenstelle.\n\nvgl. Art. 3 SSV\n\nDer Fahrzeugführer hat langsam zu fahren, wo die Strasse verschneit, vereist, mit nassem Laub oder mit Splitt bedeckt ist, besonders wenn Anhänger mitgeführt werden.\n\nBei Temperaturen unter +3°C muss bereits mit Glatteis gerechnet werden. Zweiradfahrzeuge sind besonders gefährdet.\n\nvgl. Art. 4 VRV"
+          "questionExplanation": "Die Gefahrensignale stehen:\n\na. innerorts kurz vor der Gefahrenstelle; stehen sie mehr als 50 m vorher, wird die Entfernung auf beigefügter \"Distanztafel\" vermerkt;\n\nb. ausserorts 150 - 250 m vor der Gefahrenstelle; kann diese Regel nicht eingehalten werden, wird die Entfernung auf beigefügter \"Distanztafel\" vermerkt;\n\nc. auf Autobahnen und Autostrassen bei der Gefahrenstelle selbst oder höchstens 100 m vorher, ferner zusätzlich als Vorsignale mit beigefügter \"Distanztafel\" 500 - 1000 m vor der Gefahrenstelle.\n\nvgl. Art. 3 SSV\n\nDer Fahrzeugführer hat langsam zu fahren, wo die Strasse verschneit, vereist, mit nassem Laub oder mit Splitt bedeckt ist, besonders wenn Anhänger mitgeführt werden.\n\nBei Temperaturen unter +3°C muss bereits mit Glatteis gerechnet werden. Zweiradfahrzeuge sind besonders gefährdet.\n\nvgl. Art. 4 VRV"
         },
         "fr": {
           "question": "Qu'est-ce qui est correct?",
@@ -100580,7 +100580,7 @@
         "de": {
           "question": "Welche der folgenden Aussagen treffen auf den Hauptzweck des Totwinkelassistenten (Blind Spot Assist) zu?",
           "options": [
-            "Das System unterstützt den Fahrer beim Spurwechsel. Es erkennt Fahrzeuge, die sich im toten Winkel befinden, also in dem Bereich, der trotz Innen- und Außenspiegel nicht einsehbar ist",
+            "Das System unterstützt den Fahrer beim Spurwechsel. Es erkennt Fahrzeuge, die sich im toten Winkel befinden, also in dem Bereich, der trotz Innen- und Aussenspiegel nicht einsehbar ist",
             "Das System ersetzt den Seiten- bzw den Blick über die Schulter",
             "Das System warnt vor Hindernissen, die sich vor dem Fahrzeug befinden"
           ],
@@ -101729,7 +101729,7 @@
             "Je passe seulement lorsque la piétonne aura rejoint le trottoir"
           ],
           "explanations": {},
-          "questionExplanation": "Chacun doit se comporter, dans la circulation, de manière à ne pas gêner ni mettre en danger ceux qui utilisent la route conformément aux règles établies.\n\nUne prudence particulière s'impose à l'égard des enfants, des infirmes et des personnes âgées, ainsi que s'il apparaît qu'un usager de la route va se comporter de manière incorrecte.\n\ncf. Art. 26 SVG\n\nAfin de pouvoir réagir le plus tôt possible dans le trafic routier, il est important d'observer les autres usagers et d'anticiper leur comportement (deviner, ce qu'ils vont faire). L'âge des usagers joue également un rôle.\n\n1. Les personnes plus âgées ont besoin de plus de temps pour traverser la rue et peuvent soudainement s'immobiliser , effrayées.\n\n2. Le comportement des enfants est imprévisible - absorbés par le jeu, ils ne pensent souvent pas à la circulation routière.\n\n3. L'espace doit être augmenté si le conducteur précédent roule de manière mal assurée."
+          "questionExplanation": "Chacun doit se comporter, dans la circulation, de manière à ne pas gêner ni mettre en danger ceux qui utilisent la route conformément aux règles établies.\n\nUne prudence particulière s'impose à l'égard des enfants, des infirmes et des personnes âgées, ainsi que s'il apparaît qu'un usager de la route va se comporter de manière incorrecte.\n\ncf. Art. 26 SVG\n\nAfin de pouvoir réagir le plus tôt possible dans le trafic routier, il est important d'observer les autres usagers et d'anticiper leur comportement (deviner, ce qu'ils vont faire). L'âge des usagers joue également un rôle.\n\n1. Les personnes plus âgées ont besoin de plus de temps pour traverser la rue et peuvent soudainement s'immobiliser, effrayées.\n\n2. Le comportement des enfants est imprévisible - absorbés par le jeu, ils ne pensent souvent pas à la circulation routière.\n\n3. L'espace doit être augmenté si le conducteur précédent roule de manière mal assurée."
         },
         "it": {
           "question": "",
@@ -101855,7 +101855,7 @@
             "Comme les piétons me voient, je peux sans autre poursuivre ma route"
           ],
           "explanations": {},
-          "questionExplanation": "Chacun doit se comporter, dans la circulation, de manière à ne pas gêner ni mettre en danger ceux qui utilisent la route conformément aux règles établies.\n\nUne prudence particulière s'impose à l'égard des enfants, des infirmes et des personnes âgées, ainsi que s'il apparaît qu'un usager de la route va se comporter de manière incorrecte.\n\ncf. Art. 26 SVG\n\nAfin de pouvoir réagir le plus tôt possible dans le trafic routier, il est important d'observer les autres usagers et d'anticiper leur comportement (deviner, ce qu'ils vont faire). L'âge des usagers joue également un rôle.\n\n1. Les personnes plus âgées ont besoin de plus de temps pour traverser la rue et peuvent soudainement s'immobiliser , effrayées.\n\n2. Le comportement des enfants est imprévisible - absorbés par le jeu, ils ne pensent souvent pas à la circulation routière.\n\n3. L'espace doit être augmenté si le conducteur précédent roule de manière mal assurée."
+          "questionExplanation": "Chacun doit se comporter, dans la circulation, de manière à ne pas gêner ni mettre en danger ceux qui utilisent la route conformément aux règles établies.\n\nUne prudence particulière s'impose à l'égard des enfants, des infirmes et des personnes âgées, ainsi que s'il apparaît qu'un usager de la route va se comporter de manière incorrecte.\n\ncf. Art. 26 SVG\n\nAfin de pouvoir réagir le plus tôt possible dans le trafic routier, il est important d'observer les autres usagers et d'anticiper leur comportement (deviner, ce qu'ils vont faire). L'âge des usagers joue également un rôle.\n\n1. Les personnes plus âgées ont besoin de plus de temps pour traverser la rue et peuvent soudainement s'immobiliser, effrayées.\n\n2. Le comportement des enfants est imprévisible - absorbés par le jeu, ils ne pensent souvent pas à la circulation routière.\n\n3. L'espace doit être augmenté si le conducteur précédent roule de manière mal assurée."
         },
         "it": {
           "question": "",
@@ -102170,7 +102170,7 @@
             "... sont autorisés à obliquer mais n'ont pas la priorité."
           ],
           "explanations": {},
-          "questionExplanation": "les feux clignotants rouges, les feux rouges, ainsi que les signaux acoustiques signifient \"arrêt\". Autorisation de tourner à droite au feu rouge pour les cyclistes et les conducteurs de cyclomoteurs: \" Au feu rouge, on s'arrête ! \". Ce principe restera valable. La nouveauté concerne les cyclistes et les conducteurs de cyclomoteurs, qui seront désormais autorisés à tourner à droite au feu rouge en présence d'un panneau ad hoc pourvu d'un vélo jaune et d'une flèche. Lors de cette manœuvre, ils devront prêter attention aux piétons et à la circulation transversale, ces derniers ayant la priorité. En l'absence de signalisation complémentaire, les vélos et les cyclomoteurs sont tenus de s'arrêter au feu rouge.\n\ncf. Art. 93 SSV"
+          "questionExplanation": "les feux clignotants rouges, les feux rouges, ainsi que les signaux acoustiques signifient \"arrêt\". Autorisation de tourner à droite au feu rouge pour les cyclistes et les conducteurs de cyclomoteurs: \"Au feu rouge, on s'arrête !\". Ce principe restera valable. La nouveauté concerne les cyclistes et les conducteurs de cyclomoteurs, qui seront désormais autorisés à tourner à droite au feu rouge en présence d'un panneau ad hoc pourvu d'un vélo jaune et d'une flèche. Lors de cette manœuvre, ils devront prêter attention aux piétons et à la circulation transversale, ces derniers ayant la priorité. En l'absence de signalisation complémentaire, les vélos et les cyclomoteurs sont tenus de s'arrêter au feu rouge.\n\ncf. Art. 93 SSV"
         },
         "it": {
           "question": "Se il semaforo è rosso, qui i ciclisti ...",
@@ -105814,7 +105814,7 @@
             "Eine Rechtskurve ist frühestens nach 150 Metern zu erwarten"
           ],
           "explanations": {},
-          "questionExplanation": "Die Gefahrensignale stehen:\n\na. innerorts kurz vor der Gefahrenstelle; stehen sie mehr als 50 m vorher, wird die Entfernung auf beigefügter \"Distanztafel\" vermerkt;\n\nb. ausserorts 150 - 250 m vor der Gefahrenstelle; kann diese Regel nicht eingehalten werden, wird die Entfernung auf beigefügter \"Distanztafel\" vermerkt;\n\nc. auf Autobahnen und Autostrassen bei der Gefahrenstelle selbst oder höchstens 100 m vorher, ferner zusätzlich als Vorsignale mit beigefügter \"Distanztafel \" 500 - 1000 m vor der Gefahrenstelle.\n\nvgl. Art. 3 SSV\n\n\"Rechtskurve\" Kurvensignale warnen vor Kurven, die wegen ihrer Anlage (z. B. fehlende Überhöhung, starke oder ungleichmässige Krümmung der Fahrbahn) zur Mässigung der Gschwindigkeit zwingen.\n\nvgl. Art. 4 SSV"
+          "questionExplanation": "Die Gefahrensignale stehen:\n\na. innerorts kurz vor der Gefahrenstelle; stehen sie mehr als 50 m vorher, wird die Entfernung auf beigefügter \"Distanztafel\" vermerkt;\n\nb. ausserorts 150 - 250 m vor der Gefahrenstelle; kann diese Regel nicht eingehalten werden, wird die Entfernung auf beigefügter \"Distanztafel\" vermerkt;\n\nc. auf Autobahnen und Autostrassen bei der Gefahrenstelle selbst oder höchstens 100 m vorher, ferner zusätzlich als Vorsignale mit beigefügter \"Distanztafel\" 500 - 1000 m vor der Gefahrenstelle.\n\nvgl. Art. 3 SSV\n\n\"Rechtskurve\" Kurvensignale warnen vor Kurven, die wegen ihrer Anlage (z. B. fehlende Überhöhung, starke oder ungleichmässige Krümmung der Fahrbahn) zur Mässigung der Gschwindigkeit zwingen.\n\nvgl. Art. 4 SSV"
         },
         "fr": {
           "question": "",
@@ -105877,7 +105877,7 @@
             "Innerhalb von 250 Metern besteht die Möglichkeit, dass die Fahrbahn mit Spurrillen versetzt ist"
           ],
           "explanations": {},
-          "questionExplanation": "Die Gefahrensignale stehen:\n\na. innerorts kurz vor der Gefahrenstelle; stehen sie mehr als 50 m vorher, wird die Entfernung auf beigefügter \"Distanztafel\" vermerkt;\n\nb. ausserorts 150 - 250 m vor der Gefahrenstelle; kann diese Regel nicht eingehalten werden, wird die Entfernung auf beigefügter \"Distanztafel\" vermerkt;\n\nc. auf Autobahnen und Autostrassen bei der Gefahrenstelle selbst oder höchstens 100 m vorher, ferner zusätzlich als Vorsignale mit beigefügter \"Distanztafel \" 500 - 1000 m vor der Gefahrenstelle.\n\nvgl. Art. 3 SSV\n\nDer Fahrzeugführer hat langsam zu fahren, wo die Strasse verschneit, vereist, mit nassem Laub oder mit Splitt bedeckt ist, besonders wenn Anhänger mitgeführt werden.\n\nBei Temperaturen unter +3°C muss bereits mit Glatteis gerechnet werden. Zweiradfahrzeuge sind besonders gefährdet.\n\nvgl. Art. 4 VRV"
+          "questionExplanation": "Die Gefahrensignale stehen:\n\na. innerorts kurz vor der Gefahrenstelle; stehen sie mehr als 50 m vorher, wird die Entfernung auf beigefügter \"Distanztafel\" vermerkt;\n\nb. ausserorts 150 - 250 m vor der Gefahrenstelle; kann diese Regel nicht eingehalten werden, wird die Entfernung auf beigefügter \"Distanztafel\" vermerkt;\n\nc. auf Autobahnen und Autostrassen bei der Gefahrenstelle selbst oder höchstens 100 m vorher, ferner zusätzlich als Vorsignale mit beigefügter \"Distanztafel\" 500 - 1000 m vor der Gefahrenstelle.\n\nvgl. Art. 3 SSV\n\nDer Fahrzeugführer hat langsam zu fahren, wo die Strasse verschneit, vereist, mit nassem Laub oder mit Splitt bedeckt ist, besonders wenn Anhänger mitgeführt werden.\n\nBei Temperaturen unter +3°C muss bereits mit Glatteis gerechnet werden. Zweiradfahrzeuge sind besonders gefährdet.\n\nvgl. Art. 4 VRV"
         },
         "fr": {
           "question": "",
@@ -105940,7 +105940,7 @@
             "Auf solch einem Strassenabschnitt ist bei diesen Verhältnissen die Signalisation nicht von Bedeutung"
           ],
           "explanations": {},
-          "questionExplanation": "Die Gefahrensignale stehen:\n\na. innerorts kurz vor der Gefahrenstelle; stehen sie mehr als 50 m vorher, wird die Entfernung auf beigefügter \"Distanztafel\" vermerkt;\n\nb. ausserorts 150 - 250 m vor der Gefahrenstelle; kann diese Regel nicht eingehalten werden, wird die Entfernung auf beigefügter \"Distanztafel\" vermerkt;\n\nc. auf Autobahnen und Autostrassen bei der Gefahrenstelle selbst oder höchstens 100 m vorher, ferner zusätzlich als Vorsignale mit beigefügter \"Distanztafel \" 500 - 1000 m vor der Gefahrenstelle.\n\nvgl. Art. 3 SSV\n\nDer Fahrzeugführer hat langsam zu fahren, wo die Strasse verschneit, vereist, mit nassem Laub oder mit Splitt bedeckt ist, besonders wenn Anhänger mitgeführt werden.\n\nBei Temperaturen unter +3°C muss bereits mit Glatteis gerechnet werden. Zweiradfahrzeuge sind besonders gefährdet.\n\nvgl. Art. 4 VRV"
+          "questionExplanation": "Die Gefahrensignale stehen:\n\na. innerorts kurz vor der Gefahrenstelle; stehen sie mehr als 50 m vorher, wird die Entfernung auf beigefügter \"Distanztafel\" vermerkt;\n\nb. ausserorts 150 - 250 m vor der Gefahrenstelle; kann diese Regel nicht eingehalten werden, wird die Entfernung auf beigefügter \"Distanztafel\" vermerkt;\n\nc. auf Autobahnen und Autostrassen bei der Gefahrenstelle selbst oder höchstens 100 m vorher, ferner zusätzlich als Vorsignale mit beigefügter \"Distanztafel\" 500 - 1000 m vor der Gefahrenstelle.\n\nvgl. Art. 3 SSV\n\nDer Fahrzeugführer hat langsam zu fahren, wo die Strasse verschneit, vereist, mit nassem Laub oder mit Splitt bedeckt ist, besonders wenn Anhänger mitgeführt werden.\n\nBei Temperaturen unter +3°C muss bereits mit Glatteis gerechnet werden. Zweiradfahrzeuge sind besonders gefährdet.\n\nvgl. Art. 4 VRV"
         },
         "fr": {
           "question": "",
@@ -106149,7 +106149,7 @@
             "Devo tener conto del possibile traffico in senso inverso"
           ],
           "explanations": {},
-          "questionExplanation": "Il segnale \"Divieto generale di circolazione nelle due direzioni\" indica che, per principio, la circolazione è vietata nei due sensi a tutti i veicoli. I segnali \"Divieto generale di circolazione nelle due direzioni\" e \"Divieto di accesso \" non valgono per i carri a mano, larghi al massimo 1 m, le carrozzine per bambini, le carrozzelle per invalidi, i velocipedi spinti a mano nonché i ciclomotori e le motociclette a due ruote spinti a mano dal conducente, con motore spento.\n\ncfr. Art. 18 SSV"
+          "questionExplanation": "Il segnale \"Divieto generale di circolazione nelle due direzioni\" indica che, per principio, la circolazione è vietata nei due sensi a tutti i veicoli. I segnali \"Divieto generale di circolazione nelle due direzioni\" e \"Divieto di accesso\" non valgono per i carri a mano, larghi al massimo 1 m, le carrozzine per bambini, le carrozzelle per invalidi, i velocipedi spinti a mano nonché i ciclomotori e le motociclette a due ruote spinti a mano dal conducente, con motore spento.\n\ncfr. Art. 18 SSV"
         }
       },
       "id": 2075
