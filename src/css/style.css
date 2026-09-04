@@ -290,8 +290,8 @@ img { max-width: 100%; height: auto; display: block; }
   line-height: 1;
   cursor: pointer;
   color: var(--text-secondary);
-  width: 40px;
-  height: 40px;
+  width: var(--close-btn-lg);
+  height: var(--close-btn-lg);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -845,13 +845,14 @@ h4 { font-size: var(--text-lg); font-weight: 600; line-height: var(--leading-tig
 
 .answer-btn.selected:not(:disabled) {
   border-color: var(--accent-blue);
-  background: var(--accent-blue-soft);
+  background: var(--accent-blue);
+  color: white;
 }
 
 .answer-btn.selected:not(:disabled) .answer-label {
-  background: var(--accent-blue);
-  color: white;
-  border-color: var(--accent-blue);
+  background: white;
+  color: var(--accent-blue);
+  border-color: white;
 }
 
 .answer-btn.correct {
@@ -1075,7 +1076,7 @@ h4 { font-size: var(--text-lg); font-weight: 600; line-height: var(--leading-tig
   border-radius: var(--radius-sm);
   padding: var(--space-3);
   margin-top: var(--space-2);
-  margin-left: calc(var(--space-3) + 24px + var(--space-1));
+  margin-left: calc(var(--space-3) + var(--answer-label-size) + var(--space-1));
   font-size: var(--text-sm);
   line-height: var(--leading-relaxed);
   border: 1px solid var(--border-light);
@@ -1083,7 +1084,7 @@ h4 { font-size: var(--text-lg); font-weight: 600; line-height: var(--leading-tig
 
 .detail-close {
   position: sticky;
-  top: 80px;
+  top: calc(var(--header-height) + var(--space-4));
 }
 
 .lang-tabs {
@@ -1363,7 +1364,7 @@ h4 { font-size: var(--text-lg); font-weight: 600; line-height: var(--leading-tig
   display: flex;
   align-items: center;
   gap: var(--space-3);
-  padding: var(--space-4) 48px var(--space-4) 0;
+  padding: var(--space-4) calc(var(--close-btn-lg) + var(--space-4)) var(--space-4) 0;
   border-bottom: 1px solid var(--border-color);
   margin-bottom: var(--space-4);
 }
@@ -1714,7 +1715,6 @@ h4 { font-size: var(--text-lg); font-weight: 600; line-height: var(--leading-tig
   margin: auto;
   transform: translateY(20px);
   transition: transform 0.2s;
-  box-sizing: border-box;
 }
 
 .browse-modal .badge {
