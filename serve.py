@@ -5,6 +5,7 @@ import os
 PORT = 8080
 DIRECTORY = os.path.dirname(os.path.abspath(__file__))
 
+
 class Handler(http.server.SimpleHTTPRequestHandler):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, directory=DIRECTORY, **kwargs)
@@ -15,7 +16,16 @@ class Handler(http.server.SimpleHTTPRequestHandler):
         self.send_header('Expires', '0')
         super().end_headers()
 
-with socketserver.TCPServer(("", PORT), Handler) as httpd:
+    def log_message(self, format, *args):
+        pass
+
+
+class ReusableThreadingTCPServer(socketserver.ThreadingTCPServer):
+    allow_reuse_address = True
+    daemon_threads = True
+
+
+with ReusableThreadingTCPServer(("", PORT), Handler) as httpd:
     print(f"Serving at http://localhost:{PORT}")
     print("Press Ctrl+C to stop")
     try:

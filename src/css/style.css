@@ -1270,17 +1270,20 @@ h4 { font-size: var(--text-lg); font-weight: 600; line-height: var(--leading-tig
 /* Coaching mode */
 .coaching-stacked-bar {
   display: flex;
-  height: 10px;
+  height: 6px;
   border-radius: var(--radius-full);
   overflow: hidden;
   background: var(--bg-tertiary);
-  margin-bottom: var(--space-2);
+  margin-bottom: var(--space-3);
 }
 
 .coaching-segment {
   height: 100%;
   transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.coaching-segment:first-child { border-top-left-radius: var(--radius-full); border-bottom-left-radius: var(--radius-full); }
+.coaching-segment:last-child { border-top-right-radius: var(--radius-full); border-bottom-right-radius: var(--radius-full); }
 
 .coaching-segment-mastered { background: var(--success); }
 .coaching-segment-box3 { background: var(--coaching-box3); }
