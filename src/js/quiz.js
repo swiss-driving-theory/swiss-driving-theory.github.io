@@ -171,7 +171,7 @@ function showResults() {
           <div class="wrong-answers-list">
             ${wrong.map((w, i) => {
               const tq = getTranslation(w.question, state.language) || {};
-              const qText = escapeHtml(tq.question || truncate(w.question.originalId, 40));
+              const qText = escapeHtml(tq.question || truncate(w.question.originalId ? `#${w.question.originalId}` : "", 40));
               const correctAns = w.question.answers.find((a) => a.correct);
               const correctText = correctAns ? escapeHtml(tq.options?.[correctAns.index - 1] || `Answer ${correctAns.index}`) : "";
               return `<div class="wrong-answer-item">

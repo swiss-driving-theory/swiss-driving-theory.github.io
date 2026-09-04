@@ -128,7 +128,7 @@ function renderQuestionList() {
     return `
       <div class="question-card" onclick="window._browse.selectQuestion(${q.id})">
         <div class="question-card-header">
-          <span class="question-card-id">#${q.id} · ${q.originalId}</span>
+          <span class="question-card-id">#${q.id}${q.originalId ? ` · ${q.originalId}` : ""}</span>
           <div class="question-card-badges">
             ${q.official ? `<span class="badge badge-official">${t("officialBadge", state.language)}</span>` : ""}
             <span class="badge badge-category">${getCategoryLabel(q.category, state.language)}</span>

@@ -211,7 +211,7 @@ function showExamResults(results, passed) {
     const ep = results.perQuestion[q.id] || 0;
     const ans = state.answers[q.id];
     const tq = getTranslation(q, state.language) || {};
-    const qText = escapeHtml(tq.question || `Question ${q.originalId}`);
+    const qText = escapeHtml(tq.question || `Question #${q.id}`);
 
     let statusBadge = "";
     if (ep === 0) statusBadge = `<span class="badge badge-success">${t("correctBadge", state.language)}</span>`;
