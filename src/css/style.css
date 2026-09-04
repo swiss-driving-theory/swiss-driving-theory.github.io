@@ -918,7 +918,7 @@ h4 { font-size: var(--text-lg); font-weight: 600; line-height: var(--leading-tig
   border-radius: var(--radius-sm);
   font-size: var(--text-base);
   line-height: var(--leading-relaxed);
-  border-left: 3px solid #355da6;
+  border-left: 3px solid var(--accent-blue);
 }
 
 /* Explanation panel */
