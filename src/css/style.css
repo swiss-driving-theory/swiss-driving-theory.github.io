@@ -1841,7 +1841,6 @@ h4 { font-size: var(--text-lg); font-weight: 600; line-height: var(--leading-tig
     width: 100%;
     max-width: 100%;
     margin: 0 auto;
-    padding: var(--space-3);
   }
   .question-image-side img { max-height: 320px; }
   .question-text-main { margin-left: 0; }
