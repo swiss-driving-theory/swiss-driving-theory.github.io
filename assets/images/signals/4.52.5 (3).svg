@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Abbildungen" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        stroke: #1e1e1c;
+        stroke-miterlimit: 3.86;
+        stroke-width: .5px;
+      }
+
+      .cls-2 {
+        fill: #167fc3;
+      }
+    </style>
+  </defs>
+  <rect class="cls-1" x="3.76" y="10.73" width="56.49" height="42.53"/>
+  <rect class="cls-2" x="4.01" y="24.92" width="55.98" height="14.05"/>
+</svg>

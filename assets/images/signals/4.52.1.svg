@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Bestätigungstafel_Beispiel" data-name="Bestätigungstafel Beispiel" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 135.98 34.28">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke: #000;
+        stroke-width: .5px;
+      }
+
+      .cls-1, .cls-2 {
+        fill: none;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-2 {
+        stroke: #1d1d1b;
+        stroke-width: .25px;
+      }
+
+      .cls-3 {
+        fill: #fff;
+      }
+
+      .cls-4 {
+        letter-spacing: -.04em;
+      }
+
+      .cls-5, .cls-6 {
+        isolation: isolate;
+      }
+
+      .cls-7 {
+        letter-spacing: 0em;
+      }
+
+      .cls-6 {
+        fill: #1d1d1b;
+        font-family: ASTRAFrutiger-Standard, 'ASTRA Frutiger Standard';
+        font-size: 11px;
+      }
+    </style>
+  </defs>
+  <polygon class="cls-1" points="121.04 34.03 .25 34.03 .25 .25 121.04 .25 135.64 17.14 121.04 34.03"/>
+  <g class="cls-5">
+    <text class="cls-6" transform="translate(12.89 28.5)"><tspan x="0" y="0">Bärenpark</tspan></text>
+  </g>
+  <g class="cls-5">
+    <text class="cls-6" transform="translate(12.89 13.71)"><tspan class="cls-4" x="0" y="0">W</tspan><tspan class="cls-7" x="8.83" y="0">ankdorf</tspan></text>
+  </g>
+  <g class="cls-5">
+    <text class="cls-6" transform="translate(89.48 28.5)"><tspan x="0" y="0">30 min</tspan></text>
+  </g>
+  <g class="cls-5">
+    <text class="cls-6" transform="translate(89.48 13.62)"><tspan x="0" y="0">15 min</tspan></text>
+  </g>
+  <g>
+    <g>
+      <path d="M65.62,8.48v2.86h6.27l-.31-2.51c-.02-.2-.2-.35-.4-.35h-1.76l.56-.42.15-.11s.02-.05,0-.06l-.16-.09-1.14-.66-.07-.04h-.04l-.07.04-1.14.66-.16.09s-.02.05,0,.06l.15.11.56.42h-2.44ZM69.74,7.97l-.67.51h-.64l-.67-.51s-.02-.05,0-.06l.97-.56h.04l.97.56s.02.05,0,.06Z"/>
+      <rect x="65.45" y="13.06" width="6.51" height=".23"/>
+      <rect x="65.45" y="6.82" width="6.51" height=".16"/>
+      <path class="cls-3" d="M70.64,10.03h.71c.06,0,.11-.05.1-.11l-.11-1.13c0-.05-.05-.09-.1-.09h-.6c-.06,0-.1.05-.1.1v1.13c0,.06.05.1.1.1Z"/>
+      <path class="cls-3" d="M68.67,8.97h-3.04v-.29h3.04c.08,0,.15.07.15.15h0c0,.08-.07.15-.15.15h0Z"/>
+      <path class="cls-3" d="M68.67,9.51h-3.04v-.29h3.04c.08,0,.15.07.15.15h0c0,.08-.07.15-.15.15h0Z"/>
+      <path class="cls-3" d="M68.67,10.04h-3.04v-.29h3.04c.08,0,.15.07.15.15h0c0,.08-.07.15-.15.15h0Z"/>
+      <circle cx="69.52" cy="12.22" r=".71"/>
+      <circle cx="67.96" cy="12.22" r=".71"/>
+      <rect x="65.56" y="11.52" width="1.46" height="1.04"/>
+      <polygon points="70.53 12.55 71.99 12.55 71.9 11.51 70.53 11.51 70.53 12.55"/>
+    </g>
+    <rect class="cls-2" x="63.86" y="5.85" width="10.23" height="8.57" rx=".57" ry=".57"/>
+  </g>
+</svg>

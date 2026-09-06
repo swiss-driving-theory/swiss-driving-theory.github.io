@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Ebene_2" data-name="Ebene 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 291.27 206.74">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-1, .cls-2 {
+        stroke: #000;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-3, .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-4 {
+        clip-path: url(#clippath-1);
+      }
+
+      .cls-5 {
+        clip-path: url(#clippath);
+      }
+    </style>
+    <clipPath id="clippath">
+      <rect class="cls-2" x=".72" y=".26" width="144.78" height="205.83"/>
+    </clipPath>
+    <clipPath id="clippath-1">
+      <rect class="cls-2" x="165.26" y="80.22" width="125.48" height="126.13"/>
+    </clipPath>
+  </defs>
+  <g>
+    <rect class="cls-3" x=".72" y=".26" width="144.78" height="205.83"/>
+    <g class="cls-5">
+      <polygon points="80.54 -3.65 1.01 104.02 83.02 215.74 -9.59 215.22 -12.72 -11.48 80.54 -3.65"/>
+      <polygon points="148.5 -2.87 70.24 104.35 154.24 218.09 153.72 -3.65 148.5 -2.87"/>
+    </g>
+    <rect class="cls-1" x=".72" y=".26" width="144.78" height="205.83"/>
+  </g>
+  <g>
+    <rect class="cls-3" x="165.26" y="80.22" width="125.48" height="126.13"/>
+    <g class="cls-4">
+      <polygon points="234.44 77.82 165.52 143.8 236.59 212.26 156.33 211.94 153.62 73.02 234.44 77.82"/>
+      <polygon points="293.34 78.3 225.51 144 298.31 213.7 297.86 77.82 293.34 78.3"/>
+    </g>
+    <rect class="cls-1" x="165.26" y="80.22" width="125.48" height="126.13"/>
+  </g>
+</svg>

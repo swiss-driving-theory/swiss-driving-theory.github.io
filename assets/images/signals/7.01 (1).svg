@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Ebene_2" data-name="Ebene 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 138.72 180.74">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-1, .cls-3 {
+        stroke: #000;
+        stroke-miterlimit: 10;
+        stroke-width: 3px;
+      }
+
+      .cls-4 {
+        clip-path: url(#clippath-1);
+      }
+
+      .cls-3 {
+        fill: none;
+      }
+
+      .cls-5 {
+        clip-path: url(#clippath);
+      }
+
+      .cls-6 {
+        fill: #e52528;
+      }
+    </style>
+    <clipPath id="clippath">
+      <rect class="cls-1" x="1.92" y="1.78" width="48.91" height="148.3"/>
+    </clipPath>
+    <clipPath id="clippath-1">
+      <rect class="cls-1" x="88.14" y="1.78" width="48.91" height="148.3" transform="translate(225.2 151.87) rotate(-180)"/>
+    </clipPath>
+  </defs>
+  <g>
+    <g>
+      <rect class="cls-2" x="1.92" y="1.78" width="48.91" height="148.3"/>
+      <g class="cls-5">
+        <polygon class="cls-6" points="-8.61 105.64 -8.33 105.85 65.74 160.62 -26.61 180.38 -30.52 123.05 -8.61 105.64"/>
+        <polygon class="cls-6" points="-3.9 71.22 70.71 129.39 60.53 81.39 -6.77 32.35 -3.9 71.22"/>
+        <polygon class="cls-6" points="-5.21 -4.7 62.62 49.3 68.88 .26 37.84 -20.09 -5.21 -4.7"/>
+      </g>
+      <rect class="cls-3" x="1.92" y="1.78" width="48.91" height="148.3"/>
+    </g>
+    <line class="cls-3" x1="3.16" y1="179.24" x2="49.47" y2="179.24"/>
+    <line class="cls-3" x1="26.45" y1="179.47" x2="25.86" y2="149.83"/>
+  </g>
+  <g>
+    <g>
+      <rect class="cls-2" x="88.14" y="1.78" width="48.91" height="148.3" transform="translate(225.2 151.87) rotate(-180)"/>
+      <g class="cls-4">
+        <polygon class="cls-6" points="147.59 105.64 147.31 105.85 73.24 160.62 165.59 180.38 169.5 123.05 147.59 105.64"/>
+        <polygon class="cls-6" points="142.88 71.22 68.27 129.39 78.45 81.39 145.75 32.35 142.88 71.22"/>
+        <polygon class="cls-6" points="144.18 -4.7 76.36 49.3 70.1 .26 101.14 -20.09 144.18 -4.7"/>
+      </g>
+      <rect class="cls-3" x="88.14" y="1.78" width="48.91" height="148.3" transform="translate(225.2 151.87) rotate(-180)"/>
+    </g>
+    <line class="cls-3" x1="135.82" y1="179.24" x2="89.51" y2="179.24"/>
+    <line class="cls-3" x1="112.53" y1="179.47" x2="113.12" y2="149.83"/>
+  </g>
+</svg>

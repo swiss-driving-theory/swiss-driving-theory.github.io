@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Ebene_2" data-name="Ebene 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 138.13 180.33">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-1, .cls-3 {
+        stroke: #000;
+        stroke-miterlimit: 10;
+        stroke-width: 3px;
+      }
+
+      .cls-4 {
+        clip-path: url(#clippath-1);
+      }
+
+      .cls-3 {
+        fill: none;
+      }
+
+      .cls-5 {
+        clip-path: url(#clippath);
+      }
+
+      .cls-6 {
+        fill: #e52528;
+      }
+    </style>
+    <clipPath id="clippath">
+      <rect class="cls-1" x="1.57" y="1.63" width="48.52" height="147.65"/>
+    </clipPath>
+    <clipPath id="clippath-1">
+      <rect class="cls-1" x="88.04" y="1.63" width="48.52" height="147.65" transform="translate(224.61 150.91) rotate(-180)"/>
+    </clipPath>
+  </defs>
+  <g>
+    <rect class="cls-2" x="1.57" y="1.63" width="48.52" height="147.65"/>
+    <g class="cls-5">
+      <polygon class="cls-6" points="-5.48 153.98 58.17 104.93 66.26 171.46 -37.3 190.76 -5.48 153.98"/>
+      <polygon class="cls-6" points="-6.26 116.8 48.55 75.7 -5.38 33.46 -6.26 116.8"/>
+      <polyline class="cls-6" points="-5.12 -3.26 68.64 55.83 55.34 -5.02 9.16 -9.13 -5.71 -3.65"/>
+    </g>
+    <rect class="cls-3" x="1.57" y="1.63" width="48.52" height="147.65"/>
+  </g>
+  <line class="cls-3" x1="47.87" y1="178.58" x2="1.57" y2="178.58"/>
+  <line class="cls-3" x1="24.59" y1="178.81" x2="25.17" y2="149.17"/>
+  <g>
+    <rect class="cls-2" x="88.04" y="1.63" width="48.52" height="147.65" transform="translate(224.61 150.91) rotate(-180)"/>
+    <g class="cls-4">
+      <polygon class="cls-6" points="143.61 153.98 79.96 104.93 71.87 171.46 175.43 190.76 143.61 153.98"/>
+      <polygon class="cls-6" points="144.39 116.8 89.58 75.7 143.51 33.46 144.39 116.8"/>
+      <polyline class="cls-6" points="143.25 -3.26 69.49 55.83 82.79 -5.02 128.97 -9.13 143.84 -3.65"/>
+    </g>
+    <rect class="cls-3" x="88.04" y="1.63" width="48.52" height="147.65" transform="translate(224.61 150.91) rotate(-180)"/>
+  </g>
+  <line class="cls-3" x1="90.26" y1="178.58" x2="136.57" y2="178.58"/>
+  <line class="cls-3" x1="113.54" y1="178.81" x2="112.96" y2="149.17"/>
+</svg>

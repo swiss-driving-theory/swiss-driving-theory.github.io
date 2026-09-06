@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Abbildungen" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #e52822;
+      }
+    </style>
+  </defs>
+  <polygon class="cls-1" points="60.42 23.38 60.42 40.6 40.54 40.6 40.54 60.48 23.32 60.48 23.32 40.6 3.45 40.6 3.45 23.38 23.32 23.38 23.32 3.52 40.54 3.52 40.54 23.38 60.42 23.38"/>
+</svg>
