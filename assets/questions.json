@@ -791,7 +791,7 @@
         {
           "index": 1,
           "correct": true,
-          "image": "assets/images/signals/615.svg",
+          "image": "assets/images/signals/615-616.svg",
           "paragraph": "a",
           "hidden": false
         },
@@ -805,7 +805,7 @@
         {
           "index": 3,
           "correct": false,
-          "image": "assets/images/signals/602.svg",
+          "image": "assets/images/signals/602-603.svg",
           "paragraph": "c",
           "hidden": false
         }

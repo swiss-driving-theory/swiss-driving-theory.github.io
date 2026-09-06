@@ -116,25 +116,29 @@ function renderQuestionList() {
     const q = getQuestion(id);
     if (!q) return "";
     const tq = getTranslation(q, state.language) || {};
-    const text = truncate(tq.question || `Question #${id}`, 80);
+    const text = truncate(tq.question || "", 80);
     const imageHtml = q.questionImage
       ? `<img src="../../${q.questionImage}" alt="" class="question-card-image" loading="lazy">`
       : "";
+    const isImageType = q.type === "image";
+    const answerImages = q.answers.filter((a) => a.image);
 
     return `
       <div class="question-card" onclick="window._browse.selectQuestion(${q.id})">
         <div class="question-card-header">
-          <span class="question-card-id">#${q.id}${q.originalId ? ` · ${q.originalId}` : ""}</span>
+          <span class="question-card-id">${q.originalId ? `#${q.originalId}` : ""}</span>
           <div class="question-card-badges">
             ${q.official ? `<span class="badge badge-official">${t("officialBadge", state.language)}</span>` : ""}
             <span class="badge badge-category">${getCategoryLabel(q.category, state.language)}</span>
           </div>
         </div>
         ${imageHtml}
-        <div class="question-card-text">${escapeHtml(text)}</div>
-        <div class="question-card-footer">
-          <span class="hidden-text">${getTypeLabel(q.type, state.language)} · ${q.answers.length} ${t("answersCount", state.language, { count: q.answers.length })}</span>
-        </div>
+        ${text ? `<div class="question-card-text">${escapeHtml(text)}</div>` : ""}
+        ${isImageType && answerImages.length > 0 ? `
+          <div class="question-card-answers">
+            ${answerImages.map((a) => `<img src="../../${a.image}" alt="" class="question-card-answer-img" loading="lazy">`).join("")}
+          </div>
+        ` : ""}
       </div>
     `;
   }).join("");
