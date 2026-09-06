@@ -75,13 +75,15 @@
       </div>
     </div>
 
-    <div id="quiz-container">
-      <div class="quiz-container text-center empty-state">
-        <div class="empty-state-icon">?</div>
-        <div class="empty-state-title" data-i18n="loadingQuestions">Loading questions...</div>
-        <div class="empty-state-desc" data-i18n="fetchingQuestions">Fetching the latest questions from the server.</div>
+    <main class="container section-tight">
+      <div id="quiz-container">
+        <div class="quiz-container text-center empty-state">
+          <div class="empty-state-icon">?</div>
+          <div class="empty-state-title" data-i18n="loadingQuestions">Loading questions...</div>
+          <div class="empty-state-desc" data-i18n="fetchingQuestions">Fetching the latest questions from the server.</div>
+        </div>
       </div>
-    </div>
+    </main>
   </div>
 
   <div id="coaching-view" class="training-view">
@@ -104,14 +106,20 @@
   </div>
 
   <div id="browse-view" class="training-view">
-    <div id="browse-filters"></div>
+    <div class="toolbar">
+      <div class="container">
+        <div id="browse-filters"></div>
+      </div>
+    </div>
 
     <main class="container section-tight">
-      <div id="question-grid" class="question-grid">
-        <div class="empty-state">
-          <div class="empty-state-icon">?</div>
-          <div class="empty-state-title" data-i18n="loadingQuestions">Loading questions...</div>
-          <div class="empty-state-desc" data-i18n="fetchingQuestions">Fetching questions from the server.</div>
+      <div class="quiz-container">
+        <div id="question-grid" class="question-grid">
+          <div class="empty-state">
+            <div class="empty-state-icon">?</div>
+            <div class="empty-state-title" data-i18n="loadingQuestions">Loading questions...</div>
+            <div class="empty-state-desc" data-i18n="fetchingQuestions">Fetching questions from the server.</div>
+          </div>
         </div>
       </div>
     </main>

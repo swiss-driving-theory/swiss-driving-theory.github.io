@@ -32,29 +32,25 @@ function renderFilters() {
   if (!container) return;
 
   container.innerHTML = `
-    <div class="browse-toolbar">
-      <div class="container">
-        <div class="browse-toolbar-inner">
-          <div class="browse-search-wrap">
-            <input type="text" id="browse-search" class="browse-search" placeholder="${t("searchQuestions", state.language)}">
-          </div>
-          <div class="toolbar-group">
-            <span class="toolbar-label">${t("official", state.language)}</span>
-            <label class="toggle">
-              <input type="checkbox" id="filter-official">
-              <span class="toggle-track"><span class="toggle-thumb"></span></span>
-            </label>
-          </div>
-          <div class="toolbar-group">
-            <span class="toolbar-label">${t("category", state.language)}</span>
-            <select id="filter-category" class="form-select">
-              <option value="all">${t("allCategories", state.language)}</option>
-            </select>
-          </div>
-          <div class="toolbar-group">
-            <button class="btn btn-sm btn-secondary" id="filter-reset">${t("reset", state.language)}</button>
-          </div>
-        </div>
+    <div class="toolbar-inner">
+      <div class="browse-search-wrap">
+        <input type="text" id="browse-search" class="browse-search" placeholder="${t("searchQuestions", state.language)}">
+      </div>
+      <div class="toolbar-group">
+        <span class="toolbar-label">${t("official", state.language)}</span>
+        <label class="toggle">
+          <input type="checkbox" id="filter-official">
+          <span class="toggle-track"><span class="toggle-thumb"></span></span>
+        </label>
+      </div>
+      <div class="toolbar-group">
+        <span class="toolbar-label">${t("category", state.language)}</span>
+        <select id="filter-category" class="form-select">
+          <option value="all">${t("allCategories", state.language)}</option>
+        </select>
+      </div>
+      <div class="toolbar-group">
+        <button class="btn btn-sm btn-secondary" id="filter-reset">${t("reset", state.language)}</button>
       </div>
     </div>
   `;
