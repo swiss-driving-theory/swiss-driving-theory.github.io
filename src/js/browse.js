@@ -1,11 +1,7 @@
 import { getQuestion, getTranslation, getQuestions } from "./data.js";
 import { getSavedLanguage, setSavedLanguage } from "./filters.js";
-import { getCategoryLabel, getTypeLabel, truncate, escapeHtml, escapeHtmlWithBreaks } from "./utils.js";
-import { t } from "./i18n.js";
-
-function getAnswerLabel(index) {
-  return String.fromCharCode(96 + index);
-}
+import { truncate, escapeHtml, escapeHtmlWithBreaks, getAnswerLabel } from "./utils.js";
+import { t, getCategoryLabel, getTypeLabel } from "./i18n.js";
 
 let state = {
   questions: [],
@@ -143,7 +139,7 @@ function renderQuestionList() {
     `;
   }).join("");
 
-  grid.innerHTML = items || `<p class="text-center browse-empty empty-state-full">${t("noQuestionsMatch", state.language)}</p>`;
+  grid.innerHTML = items || `<p class="empty-state">${t("noQuestionsMatch", state.language)}</p>`;
 }
 
 export function selectQuestion(id) {

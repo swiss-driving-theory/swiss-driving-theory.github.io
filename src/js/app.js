@@ -6,6 +6,47 @@ import { initExam } from "./exam.js";
 import { initCoaching } from "./coaching.js";
 import { getPageTitle, t, getCategoryLabel } from "./i18n.js";
 
+let deferredInstallPrompt = null;
+
+function initPWA() {
+  const installBtns = document.querySelectorAll(".js-install-btn");
+  const show = () => installBtns.forEach((b) => b.classList.remove("hidden"));
+  const hide = () => installBtns.forEach((b) => b.classList.add("hidden"));
+
+  window.addEventListener("beforeinstallprompt", (e) => {
+    e.preventDefault();
+    deferredInstallPrompt = e;
+    show();
+  });
+
+  installBtns.forEach((btn) => {
+    btn.addEventListener("click", async () => {
+      if (!deferredInstallPrompt) return;
+      deferredInstallPrompt.prompt();
+      await deferredInstallPrompt.userChoice;
+      deferredInstallPrompt = null;
+      hide();
+    });
+  });
+
+  window.addEventListener("appinstalled", () => {
+    deferredInstallPrompt = null;
+    hide();
+  });
+
+  if ("serviceWorker" in navigator) {
+    window.addEventListener("load", () => {
+      navigator.serviceWorker
+        .register("./service-worker.js")
+        .then((reg) => {
+          if (reg.waiting) reg.waiting && console.log("ServiceWorker waiting");
+          if (reg.installing) console.log("ServiceWorker installing");
+        })
+        .catch((err) => console.error("ServiceWorker registration failed:", err));
+    });
+  }
+}
+
 let allQuestions = [];
 let meta = null;
 let currentPage = "home";
@@ -116,6 +157,9 @@ async function init() {
   else if (currentPage === "training") initTrainingPage();
   else if (currentPage === "exam") initExamPage();
   else initHomePage();
+
+  initPWA();
+  bindGlobalHandlers();
 }
 
 function initHomePage() {
@@ -200,23 +244,28 @@ function initExamPage() {
 }
 
 export function switchTab(tab) {
-  document.querySelectorAll(".mode-tab").forEach((t) => t.classList.remove("active"));
-  document.querySelectorAll(".training-view").forEach((v) => v.classList.remove("active"));
+  const tabs = document.querySelectorAll(".mode-tab");
+  const views = document.querySelectorAll(".training-view");
+  tabs.forEach((t) => {
+    t.classList.remove("active");
+    t.setAttribute("aria-selected", "false");
+  });
+  views.forEach((v) => {
+    v.classList.remove("active");
+    v.removeAttribute("hidden");
+  });
 
-  if (tab === "quiz") {
-    document.querySelector('.mode-tab:first-child').classList.add("active");
-    document.getElementById("quiz-view").classList.add("active");
-  } else if (tab === "coaching") {
-    const coachingTab = document.querySelectorAll('.mode-tab')[1];
-    coachingTab.classList.add("active");
-    document.getElementById("coaching-view").classList.add("active");
-    if (window._coaching) {
-      window._coaching.initCoaching();
-    }
-  } else {
-    const browseTab = document.querySelector('.mode-tab:last-child');
-    browseTab.classList.add("active");
-    document.getElementById("browse-view").classList.add("active");
+  const targetTab = document.querySelector(`.mode-tab[data-tab="${tab}"]`);
+  const targetView = document.getElementById(`${tab}-view`);
+  targetTab?.classList.add("active");
+  targetTab?.setAttribute("aria-selected", "true");
+  if (!targetView) return;
+  targetView.classList.add("active");
+  targetView.removeAttribute("hidden");
+
+  if (tab === "coaching" && window._coaching) {
+    window._coaching.initCoaching();
+  } else if (tab === "browse") {
     const questionGrid = document.getElementById("question-grid");
     if (questionGrid && questionGrid.children.length === 0 && allQuestions.length > 0) {
       applyBrowseFilters();
@@ -231,14 +280,78 @@ export function closeDetail() {
   if (window._browse) window._browse.closeDetail();
 }
 
-export function closeModalOutside(event) {
-  if (event.target === document.getElementById("browse-modal-overlay")) {
-    closeDetail();
+function bindGlobalHandlers() {
+  const hamburger = document.querySelector(".hamburger");
+  const drawer = document.getElementById("drawer");
+  if (hamburger) {
+    hamburger.setAttribute("aria-controls", "drawer");
+    hamburger.setAttribute("aria-expanded", "false");
+    hamburger.addEventListener("click", () => toggleDrawer());
+  }
+  if (drawer) {
+    drawer.setAttribute("aria-hidden", "true");
+  }
+  document.querySelectorAll("[data-action='close-drawer']").forEach((el) => {
+    el.addEventListener("click", () => closeDrawer());
+  });
+  const drawerOverlay = document.getElementById("drawer-overlay");
+  if (drawerOverlay) {
+    drawerOverlay.addEventListener("click", (e) => {
+      if (e.target === drawerOverlay) closeDrawer();
+    });
+  }
+  document.querySelectorAll("[data-action='close-modal']").forEach((el) => {
+    el.addEventListener("click", () => closeDetail());
+  });
+  document.querySelectorAll(".mode-tab").forEach((tab, i) => {
+    tab.setAttribute("role", "tab");
+    tab.setAttribute("aria-selected", tab.classList.contains("active") ? "true" : "false");
+    tab.setAttribute("aria-controls", ["quiz-view", "coaching-view", "browse-view"][i] || "");
+    tab.addEventListener("click", () => {
+      const key = tab.dataset.tab || (i === 0 ? "quiz" : i === 1 ? "coaching" : "browse");
+      switchTab(key);
+    });
+  });
+  document.querySelectorAll(".training-view").forEach((v) => v.setAttribute("role", "tabpanel"));
+  document.querySelectorAll("[data-action='switch-tab']").forEach((el) => {
+    el.addEventListener("click", (e) => {
+      e.preventDefault();
+      switchTab(el.dataset.tab);
+    });
+  });
+  document.querySelectorAll("[data-action='apply-quiz-filters']").forEach((el) => {
+    el.addEventListener("change", () => applyQuizFilters());
+  });
+
+  const finishExamBtn = document.getElementById("finish-exam-btn");
+  if (finishExamBtn) {
+    finishExamBtn.addEventListener("click", () => window._exam?.finishExam());
+  }
+  const restartQuizBtn = document.getElementById("restart-quiz-btn");
+  if (restartQuizBtn) {
+    restartQuizBtn.addEventListener("click", () => window._quiz?.resetQuiz());
+  }
+  const coachingClose = document.querySelector("[data-action='close-coaching-modal']");
+  if (coachingClose) {
+    coachingClose.addEventListener("click", () => window._coaching?.closeBoxModal());
+  }
+  const browseOverlay = document.getElementById("browse-modal-overlay");
+  if (browseOverlay) {
+    browseOverlay.addEventListener("click", (e) => {
+      if (e.target === browseOverlay) closeDetail();
+    });
+  }
+  const coachingOverlay = document.getElementById("coaching-modal-overlay");
+  if (coachingOverlay) {
+    coachingOverlay.addEventListener("click", (e) => {
+      if (e.target === coachingOverlay) window._coaching?.closeBoxModal();
+    });
   }
 }
 
 export function toggleDrawer() {
   const overlay = document.getElementById("drawer-overlay");
+  const drawer = document.getElementById("drawer");
   const hamburger = document.querySelector(".hamburger");
   if (!overlay) return;
   const isOpen = overlay.classList.contains("open");
@@ -248,16 +361,21 @@ export function toggleDrawer() {
     overlay.classList.add("open");
     document.body.style.overflow = "hidden";
     hamburger?.classList.add("open");
+    hamburger?.setAttribute("aria-expanded", "true");
+    drawer?.setAttribute("aria-hidden", "false");
   }
 }
 
 export function closeDrawer() {
   const overlay = document.getElementById("drawer-overlay");
+  const drawer = document.getElementById("drawer");
   const hamburger = document.querySelector(".hamburger");
   if (overlay) {
     overlay.classList.remove("open");
     document.body.style.overflow = "";
     hamburger?.classList.remove("open");
+    hamburger?.setAttribute("aria-expanded", "false");
+    drawer?.setAttribute("aria-hidden", "true");
   }
 }
 
@@ -266,7 +384,7 @@ function syncDrawerLangSelect(lang) {
   if (drawerLangSelect) drawerLangSelect.value = lang;
 }
 
-window._app = { switchTab, closeDetail, closeModalOutside, toggleDrawer, closeDrawer };
+window._app = { switchTab, closeDetail, toggleDrawer, closeDrawer };
 window._applyQuizFilters = applyQuizFilters;
 
 if (document.readyState === "loading") {

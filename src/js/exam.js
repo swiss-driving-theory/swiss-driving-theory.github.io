@@ -1,14 +1,11 @@
-import { getTranslation, getOptions, getExplanation, getQuestion, getOfficialQuestions } from "./data.js";
+import { getTranslation, getOptions, getExplanation, getOfficialQuestions } from "./data.js";
 import { getSavedLanguage, setSavedLanguage } from "./filters.js";
-import { shuffleArray, escapeHtml, escapeHtmlWithBreaks, getCategoryLabel } from "./utils.js";
-import { t } from "./i18n.js";
+import { shuffleArray, escapeHtml, escapeHtmlWithBreaks, getAnswerLabel } from "./utils.js";
+import { t, getCategoryLabel } from "./i18n.js";
 import { getSessionState, setSessionState, clearSessionState } from "./progress.js";
+import { renderQuestionHeader, renderQuestionBody, renderAnswerExplanation } from "./question-render.js";
 
 const EXAM_KEY = "swiss-driving-theory-exam-state";
-
-function getAnswerLabel(index) {
-  return String.fromCharCode(96 + index);
-}
 
 let state = {
   questions: [],
@@ -192,7 +189,7 @@ function showExamResults(results, passed) {
   html += `  <div class="card results-card">`;
   html += `    <h2 class="results-header">${t("examComplete", state.language)}</h2>`;
   html += `    <div class="exam-result-verdict ${verdictClass}">${verdictText}</div>`;
-  html += `    <div class="results-score">${results.total} <span style="font-size:var(--text-xs);font-weight:600;">${t("errorPoints", state.language, { points: "" })}</span></div>`;
+  html += `    <div class="results-score">${results.total} <span class="results-score-unit">${t("errorPoints", state.language, { points: "" })}</span></div>`;
   html += `    <div class="results-detail">${passed ? t("youPassed", state.language) : t("maxAllowed", state.language)}</div>`;
   html += `    <div class="results-controls">`;
   html += `      <button class="btn btn-primary" onclick="location.reload()">${t("newExam", state.language)}</button>`;
@@ -344,35 +341,8 @@ function render() {
   html += `  <div class="progress-bar"><div class="progress-fill" style="width: ${pct}%"></div></div>`;
   html += `  <div class="progress-text">${t("questionOf", lang, { current, total, pct })}</div>`;
   html += `  <div class="question-display">`;
-  html += `    <div class="question-header">`;
-  html += `      <div class="flex items-center gap-3 flex-wrap">`;
-  html += `        <span class="badge badge-official">${q.official ? t("officialBadge", lang) : t("practiceBadge", lang)}</span>`;
-  html += `        <span class="badge badge-category">${getCategoryLabel(q.category, lang)}</span>`;
-  html += `      </div>`;
-  if (q.originalId) {
-    html += `      <span class="question-id">ID: ${q.originalId}</span>`;
-  }
-  html += `    </div>`;
-
-  if (hasQuestionImage || questionText) {
-    html += `    <div class="question-body-stacked">`;
-    if (questionText) {
-      html += `      <div class="question-text-main">${escapeHtml(questionText)}</div>`;
-    }
-    html += `      <div class="question-body">`;
-    if (hasQuestionImage) {
-      html += `        <div class="question-image-side">`;
-      html += `          <img src="${q.questionImage}" alt="Question image" loading="lazy">`;
-      html += `        </div>`;
-    }
-    html += `        <div class="question-content">`;
-    html += `          <div class="answers-grid${isImageType ? " answers-grid-images" : ""}">${answersHtml}</div>`;
-    html += `        </div>`;
-    html += `      </div>`;
-    html += `    </div>`;
-  } else {
-    html += `    <div class="answers-grid${isImageType ? " answers-grid-images" : ""}">${answersHtml}</div>`;
-  }
+  html += renderQuestionHeader(q, lang);
+  html += renderQuestionBody(q, tq, answersHtml);
   html += `  </div>`;
 
   html += `  <div class="quiz-controls">`;

@@ -1,21 +1,11 @@
-import { getCategoryLabel as _getCategoryLabel, getTypeLabel as _getTypeLabel, getLanguageName as _getLanguageName } from "./i18n.js";
-
-export function getCategoryLabel(catId, lang = "de") {
-  return _getCategoryLabel(catId, lang);
-}
-
-export function getTypeLabel(type, lang = "de") {
-  return _getTypeLabel(type, lang);
-}
-
-export function getLanguageName(code, lang = "de") {
-  return _getLanguageName(code, lang);
-}
-
 export function truncate(text, maxLen = 80) {
   if (!text) return "";
   if (text.length <= maxLen) return text;
   return text.slice(0, maxLen).trim() + "...";
+}
+
+export function getAnswerLabel(index) {
+  return String.fromCharCode(96 + index);
 }
 
 export function shuffleArray(arr) {

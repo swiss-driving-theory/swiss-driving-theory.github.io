@@ -50,10 +50,6 @@ export function getQuestions() {
   return questions;
 }
 
-export function getIndexes() {
-  return indexes;
-}
-
 export function getTranslation(q, lang) {
   if (!q || !q.translations) return null;
   return q.translations[lang] || q.translations["de"] || null;

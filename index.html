@@ -19,122 +19,76 @@
         <img class="logo-icon" src="./assets/icons/icon.svg" alt="">
         <span data-i18n="appName">Swiss Driving Theory</span>
       </a>
-      <button class="hamburger" aria-label="Menu" onclick="window._app.toggleDrawer()">
+      <button class="hamburger" type="button" aria-label="Menu">
         <span></span>
         <span></span>
         <span></span>
       </button>
-      <nav class="nav">
+      <nav class="nav" aria-label="Primary">
         <a href="training.html" class="nav-btn" data-i18n="training">Training</a>
         <a href="exam.html" class="nav-btn" data-i18n="exam">Exam Simulation</a>
-        <button id="install-btn" class="nav-btn hidden" data-i18n="installApp">Install App</button>
+        <button type="button" class="nav-btn js-install-btn hidden" data-i18n="installApp">Install App</button>
+        <label class="visually-hidden" for="lang-select">Language</label>
         <select id="lang-select" class="lang-select"></select>
       </nav>
     </div>
   </header>
 
-  <div class="drawer-overlay" id="drawer-overlay" onclick="window._app.closeDrawer()">
-    <div class="drawer" id="drawer" onclick="event.stopPropagation()">
-      <button class="drawer-close" aria-label="Close menu" onclick="window._app.closeDrawer()">&times;</button>
-      <nav class="drawer-nav">
+  <div class="drawer-overlay" id="drawer-overlay">
+    <div class="drawer" id="drawer">
+      <button type="button" class="drawer-close" aria-label="Close menu" data-action="close-drawer">&times;</button>
+      <nav class="drawer-nav" aria-label="Mobile">
         <a href="training.html" class="nav-btn" data-i18n="training">Training</a>
         <a href="exam.html" class="nav-btn" data-i18n="exam">Exam Simulation</a>
-        <button id="drawer-install-btn" class="nav-btn" data-i18n="installApp">Install App</button>
+        <button type="button" class="nav-btn js-install-btn hidden" data-i18n="installApp">Install App</button>
       </nav>
+      <label class="visually-hidden" for="drawer-lang-select">Language</label>
       <select id="drawer-lang-select" class="lang-select"></select>
     </div>
   </div>
 
-  <section class="hero">
-    <div class="container">
-      <h1 data-i18n="appName">Swiss Driving Theory</h1>
-      <p data-i18n="aboutText">Prepare for your driving theory exam with official ASA questions. Available in German, French, and Italian.</p>
-      <div class="hero-actions">
-        <a href="training.html" class="hero-btn hero-btn-primary" data-i18n="startTraining">Start Training</a>
-        <a href="exam.html" class="hero-btn hero-btn-secondary" data-i18n="startExam">Exam Simulation</a>
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container">
+        <h1 id="hero-title" data-i18n="appName">Swiss Driving Theory</h1>
+        <p data-i18n="aboutText">Prepare for your driving theory exam with official ASA questions. Available in German, French, and Italian.</p>
+        <div class="hero-actions">
+          <a href="training.html" class="hero-btn hero-btn-primary" data-i18n="startTraining">Start Training</a>
+          <a href="exam.html" class="hero-btn hero-btn-secondary" data-i18n="startExam">Exam Simulation</a>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="section">
-    <div class="container">
-      <div class="stats-grid">
-        <div class="stat-card">
-          <div class="stat-value" id="total-questions">--</div>
-          <div class="stat-label" data-i18n="totalQuestions">Total Questions</div>
-        </div>
-        <div class="stat-card">
-          <div class="stat-value" id="official-count">--</div>
-          <div class="stat-label" data-i18n="officialASA">Official ASA</div>
-        </div>
-        <div class="stat-card">
-          <div class="stat-value">3</div>
-          <div class="stat-label" data-i18n="languages">Languages</div>
-        </div>
-        <div class="stat-card">
-          <div class="stat-value">795</div>
-          <div class="stat-label" data-i18n="images">Images</div>
+    <section class="section" aria-label="Statistics">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-card">
+            <div class="stat-value" id="total-questions">--</div>
+            <div class="stat-label" data-i18n="totalQuestions">Total Questions</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-value" id="official-count">--</div>
+            <div class="stat-label" data-i18n="officialASA">Official ASA</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-value">3</div>
+            <div class="stat-label" data-i18n="languages">Languages</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-value">795</div>
+            <div class="stat-label" data-i18n="images">Images</div>
+          </div>
         </div>
       </div>
+    </section>
+  </main>
+
+  <noscript>
+    <div class="container section">
+      <p>This application requires JavaScript to run. Please enable it to use the Swiss Driving Theory trainer.</p>
     </div>
-  </section>
+  </noscript>
 
   <script type="module" src="src/js/app.js"></script>
-  <script>
-    let deferredPrompt = null;
-    const installBtn = document.getElementById('install-btn');
-    const drawerInstallBtn = document.getElementById('drawer-install-btn');
-
-    function showInstallButtons() {
-      if (installBtn) installBtn.classList.remove('hidden');
-      if (drawerInstallBtn) drawerInstallBtn.classList.remove('hidden');
-    }
-
-    function hideInstallButtons() {
-      if (installBtn) installBtn.classList.add('hidden');
-      if (drawerInstallBtn) drawerInstallBtn.classList.add('hidden');
-    }
-
-    window.addEventListener('beforeinstallprompt', (e) => {
-      e.preventDefault();
-      deferredPrompt = e;
-      showInstallButtons();
-      console.log('PWA install prompt available');
-    });
-
-    async function triggerInstall() {
-      if (!deferredPrompt) return;
-      deferredPrompt.prompt();
-      const { outcome } = await deferredPrompt.userChoice;
-      console.log('Install prompt outcome:', outcome);
-      deferredPrompt = null;
-      hideInstallButtons();
-    }
-
-    if (installBtn) {
-      installBtn.addEventListener('click', triggerInstall);
-    }
-
-    if (drawerInstallBtn) {
-      drawerInstallBtn.addEventListener('click', triggerInstall);
-    }
-
-    window.addEventListener('appinstalled', () => {
-      console.log('PWA installed');
-      hideInstallButtons();
-    });
-
-    if ('serviceWorker' in navigator) {
-      window.addEventListener('load', () => {
-        navigator.serviceWorker.register('./service-worker.js')
-          .then((reg) => {
-            console.log('ServiceWorker registered:', reg.scope);
-            if (reg.waiting) console.log('ServiceWorker waiting:', reg.waiting);
-            if (reg.installing) console.log('ServiceWorker installing:', reg.installing);
-          })
-          .catch((err) => console.error('ServiceWorker registration failed:', err));
-      });
-    }
-  </script>
 </body>
 </html>

@@ -1,16 +1,13 @@
 import { getOfficialQuestions, getQuestions, getTranslation } from "./data.js";
 import { getSavedLanguage, setSavedLanguage } from "./filters.js";
 import { getSessionState, setSessionState, clearSessionState } from "./progress.js";
-import { shuffleArray, truncate, escapeHtml, escapeHtmlWithBreaks, getCategoryLabel } from "./utils.js";
-import { t } from "./i18n.js";
+import { shuffleArray, truncate, escapeHtml, escapeHtmlWithBreaks, getAnswerLabel } from "./utils.js";
+import { t, getCategoryLabel } from "./i18n.js";
+import { renderQuestionHeader, renderQuestionBody, renderAnswerExplanation } from "./question-render.js";
 
 const SESSION_KEY = "swiss-driving-theory-coaching-state";
 const BOXES_KEY = "swiss-driving-theory-coaching-boxes";
 const BONUS_INTERVAL = 6;
-
-function getAnswerLabel(index) {
-  return String.fromCharCode(96 + index);
-}
 
 let state = {
   questions: [],
@@ -349,58 +346,29 @@ function render() {
   const hasQuestionImage = !!q.questionImage;
 
   let answersHtml = "";
-  if (isImageType) {
-    for (let i = 0; i < q.answers.length; i++) {
-      const a = q.answers[i];
-      const imgSrc = a.image ? a.image : "";
-      let cls = "answer-btn";
-      if (state.checked) {
-        if (a.correct) cls += " correct";
-        else if (state.selectedIndices.indexOf(a.index) >= 0 && !a.correct) cls += " incorrect";
-      } else {
-        if (state.selectedIndices.indexOf(a.index) >= 0) cls += " selected";
-      }
-      const disabled = state.checked ? "disabled" : "";
-      answersHtml += '<div class="answer-wrapper">';
-      answersHtml += `<button type="button" class="${cls}" onclick="window._coaching.selectAnswer(${a.index})" ${disabled}>`;
-      if (imgSrc) answersHtml += `<img src="${imgSrc}" alt="Answer ${a.index}" loading="lazy">`;
-      answersHtml += `  <span class="answer-label">${getAnswerLabel(a.index)}</span>`;
-      answersHtml += '</button>';
-      if (state.checked && a.paragraph) {
-        const explText = explanations[a.paragraph];
-        if (explText) {
-          const explCls = "answer-explanation" + (a.correct ? " correct-explanation" : "");
-          answersHtml += `<div class="${explCls}">${escapeHtml(explText)}</div>`;
-        }
-      }
-      answersHtml += '</div>';
+  for (let i = 0; i < q.answers.length; i++) {
+    const a = q.answers[i];
+    let cls = "answer-btn";
+    if (state.checked) {
+      if (a.correct) cls += " correct";
+      else if (state.selectedIndices.indexOf(a.index) >= 0 && !a.correct) cls += " incorrect";
+    } else if (state.selectedIndices.indexOf(a.index) >= 0) {
+      cls += " selected";
     }
-  } else {
-    for (let i = 0; i < q.answers.length; i++) {
-      const a = q.answers[i];
-      const text = options[a.index - 1] || `Option ${getAnswerLabel(a.index)}`;
-      let cls = "answer-btn";
-      if (state.checked) {
-        if (a.correct) cls += " correct";
-        else if (state.selectedIndices.indexOf(a.index) >= 0 && !a.correct) cls += " incorrect";
-      } else {
-        if (state.selectedIndices.indexOf(a.index) >= 0) cls += " selected";
-      }
-      const disabled = state.checked ? "disabled" : "";
-      answersHtml += '<div class="answer-wrapper">';
-      answersHtml += `<button type="button" class="${cls}" onclick="window._coaching.selectAnswer(${a.index})" ${disabled}>`;
-      answersHtml += `  <span class="answer-label">${getAnswerLabel(a.index)}</span>`;
+    const disabled = state.checked ? "disabled" : "";
+    const text = options[a.index - 1] || `Option ${getAnswerLabel(a.index)}`;
+    answersHtml += '<div class="answer-wrapper">';
+    answersHtml += `<button type="button" class="${cls}" onclick="window._coaching.selectAnswer(${a.index})" ${disabled}>`;
+    if (isImageType && a.image) {
+      answersHtml += `<img src="${a.image}" alt="Answer ${a.index}" loading="lazy">`;
+    }
+    answersHtml += `  <span class="answer-label">${getAnswerLabel(a.index)}</span>`;
+    if (!isImageType) {
       answersHtml += `  <span>${escapeHtml(text)}</span>`;
-      answersHtml += '</button>';
-      if (state.checked && a.paragraph) {
-        const explText = explanations[a.paragraph];
-        if (explText) {
-          const explCls = "answer-explanation" + (a.correct ? " correct-explanation" : "");
-          answersHtml += `<div class="${explCls}">${escapeHtml(explText)}</div>`;
-        }
-      }
-      answersHtml += '</div>';
     }
+    answersHtml += '</button>';
+    if (state.checked) answersHtml += renderAnswerExplanation(a, explanations);
+    answersHtml += '</div>';
   }
 
   const canNext = state.currentIndex < state.queue.length - 1;
@@ -449,38 +417,9 @@ function render() {
   html += `    <button class="btn-coaching-reset" onclick="window._coaching.resetCoachingProgress()">${t("resetCoachingProgress", lang)}</button>`;
   html += '  </div>';
   html += '  <div class="question-display">';
-  html += '    <div class="question-header">';
-  html += '      <div class="flex items-center gap-3 flex-wrap">';
-  html += `        <span class="badge badge-official">${q.official ? t("officialBadge", lang) : t("practiceBadge", lang)}</span>`;
-  html += `        <span class="badge badge-category">${getCategoryLabel(q.category, lang)}</span>`;
-  if (item.isBonus) {
-    html += `        <span class="badge badge-success">${t("coachingBonus", lang)}</span>`;
-  }
-  html += '      </div>';
-  if (q.originalId) {
-    html += `      <span class="question-id">ID: ${q.originalId}</span>`;
-  }
-  html += '    </div>';
-
-  if (hasQuestionImage || questionText) {
-    html += '    <div class="question-body-stacked">';
-    if (questionText) {
-      html += `      <div class="question-text-main">${escapeHtml(questionText)}</div>`;
-    }
-    html += '      <div class="question-body">';
-    if (hasQuestionImage) {
-      html += '        <div class="question-image-side">';
-      html += `          <img src="${q.questionImage}" alt="Question image" loading="lazy">`;
-      html += '        </div>';
-    }
-    html += '        <div class="question-content">';
-    html += `          <div class="answers-grid${isImageType ? " answers-grid-images" : ""}">${answersHtml}</div>`;
-    html += '        </div>';
-    html += '      </div>';
-    html += '    </div>';
-  } else {
-    html += `    <div class="answers-grid${isImageType ? " answers-grid-images" : ""}">${answersHtml}</div>`;
-  }
+  const extraBadge = item.isBonus ? `<span class="badge badge-success">${t("coachingBonus", lang)}</span>` : "";
+  html += renderQuestionHeader(q, lang, extraBadge);
+  html += renderQuestionBody(q, tq, answersHtml);
   if (state.checked && questionExplanation) {
     html += `    <div class="question-explanation">${escapeHtmlWithBreaks(questionExplanation)}</div>`;
   }

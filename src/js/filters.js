@@ -1,6 +1,5 @@
 import { getAllCategories } from "./data.js";
-import { t } from "./i18n.js";
-import { getCategoryLabel, getLanguageName } from "./utils.js";
+import { t, getCategoryLabel, getLanguageName } from "./i18n.js";
 
 const LANGUAGE_KEY = "swiss-driving-theory-lang";
 const OFFICIAL_KEY = "swiss-driving-theory-official";
